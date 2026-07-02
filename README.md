@@ -1,5 +1,7 @@
 # 4DGL VSCode Extension
 
+> Note: All documentation and functions are derived from 4D System's official documentation: https://resources.4dsystems.com.au/ . 
+
 This extension adds initial IDE support for 4D Systems 4DGL on Diablo16 devices. Note that this repository has explicit permission from 4DGL to build intellisense using their documentation provided that this repository remains open source.
 
 Phase 1 intentionally avoids a parser or language server. Built-in function docs are extracted into JSON and used directly for:
