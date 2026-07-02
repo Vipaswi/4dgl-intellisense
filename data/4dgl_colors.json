@@ -1,0 +1,1408 @@
+{
+  "ALICEBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#F7FBFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF7DF"
+  },
+  "ANTIQUEWHITE": {
+    "category": "Colour Constant",
+    "cssHex": "#FFEBD6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFF5A"
+  },
+  "AQUA": {
+    "category": "Colour Constant",
+    "cssHex": "#00FFFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x07FF"
+  },
+  "AQUAMARINE": {
+    "category": "Colour Constant",
+    "cssHex": "#7BFFD6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x7FFA"
+  },
+  "AZURE": {
+    "category": "Colour Constant",
+    "cssHex": "#F7FFFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF7FF"
+  },
+  "BEIGE": {
+    "category": "Colour Constant",
+    "cssHex": "#F7F7DE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF7BB"
+  },
+  "BISQUE": {
+    "category": "Colour Constant",
+    "cssHex": "#FFE7C6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFF38"
+  },
+  "BLACK": {
+    "category": "Colour Constant",
+    "cssHex": "#000000",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x0000"
+  },
+  "BLANCHEDALMOND": {
+    "category": "Colour Constant",
+    "cssHex": "#FFEBCE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFF59"
+  },
+  "BLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#0000FF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x001F"
+  },
+  "BLUEVIOLET": {
+    "category": "Colour Constant",
+    "cssHex": "#8C28E7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x895C"
+  },
+  "BROWN": {
+    "category": "Colour Constant",
+    "cssHex": "#A52829",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xA145"
+  },
+  "BURLYWOOD": {
+    "category": "Colour Constant",
+    "cssHex": "#DEBA84",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xDDD0"
+  },
+  "CADETBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#5A9EA5",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x5CF4"
+  },
+  "CHARTREUSE": {
+    "category": "Colour Constant",
+    "cssHex": "#7BFF00",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x7FE0"
+  },
+  "CHOCOLATE": {
+    "category": "Colour Constant",
+    "cssHex": "#D66918",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xD343"
+  },
+  "COLOR": {
+    "category": "Colour Constants Reference",
+    "description": "All 139 named colour constants available in 4DGL:\n\n| Name | Value | Name | Value |\n|---|---|---|---|\n| ALICEBLUE | `0xF7DF` | ANTIQUEWHITE | `0xFF5A` |\n| AQUA | `0x07FF` | AQUAMARINE | `0x7FFA` |\n| AZURE | `0xF7FF` | BEIGE | `0xF7BB` |\n| BISQUE | `0xFF38` | BLACK | `0x0000` |\n| BLANCHEDALMOND | `0xFF59` | BLUE | `0x001F` |\n| BLUEVIOLET | `0x895C` | BROWN | `0xA145` |\n| BURLYWOOD | `0xDDD0` | CADETBLUE | `0x5CF4` |\n| CHARTREUSE | `0x7FE0` | CHOCOLATE | `0xD343` |\n| CORAL | `0xFBEA` | CORNFLOWERBLUE | `0x64BD` |\n| CORNSILK | `0xFFDB` | CRIMSON | `0xD8A7` |\n| CYAN | `0x07FF` | DARKBLUE | `0x0011` |\n| DARKCYAN | `0x0451` | DARKGOLDENROD | `0xBC21` |\n| DARKGREEN | `0x0320` | DARKGREY | `0xAD55` |\n| DARKKHARKI | `0xBDAD` | DARKMAGENTA | `0x8811` |\n| DARKOLIVEGREEN | `0x5345` | DARKORANGE | `0xFC60` |\n| DARKORCHID | `0x9999` | DARKRED | `0x8800` |\n| DARKSALMON | `0xECAF` | DARKSEAGREEN | `0x8DF1` |\n| DARKSLATEBLUE | `0x49F1` | DARKSLATEGRAY | `0x2A69` |\n| DARKTURQUOISE | `0x067A` | DARKVIOLET | `0x901A` |\n| DEEPINK | `0xF8B2` | DEEPSKYBLUE | `0x05FF` |\n| DIMGRAY | `0x6B4D` | DODGERBLUE | `0x1C9F` |\n| FIREBRICK | `0xB104` | FLORALWHITE | `0xFFDE` |\n| FORESTGREEN | `0x2444` | FUCHSIA | `0xF81F` |\n| GAINSBORO | `0xDEFB` | GHOSTWHITE | `0xFFDF` |\n| GOLD | `0xFEA0` | GOLDENROD | `0xDD24` |\n| GRAY | `0x8410` | GREEN | `0x0400` |\n| GREENYELLOW | `0xAFE5` | HONEYDEW | `0xF7FE` |\n| HOTPINK | `0xFB56` | INDIANRED | `0xCAEB` |\n| INDIGO | `0x4810` | IVORY | `0xFFFE` |\n| KHAKI | `0xF731` | LAVENDER | `0xE73F` |\n| LAVENDERBLUSH | `0xFF9E` | LAWNGREEN | `0x7FE0` |\n| LEMONCHIFFON | `0xFFD9` | LIGHTBLUE | `0xAEDC` |\n| LIGHTCORAL | `0xF410` | LIGHTCYAN | `0xE7FF` |\n| LIGHTGOLD | `0xFFDA` | LIGHTGREEN | `0x9772` |\n| LIGHTGREY | `0xD69A` | LIGHTPINK | `0xFDB8` |\n| LIGHTSALMON | `0xFD0F` | LIGHTSEAGREEN | `0x2595` |\n| LIGHTSKYBLUE | `0x867F` | LIGHTSLATEGRAY | `0x7453` |\n| LIGHTSTEELBLUE | `0xB63B` | LIGHTYELLOW | `0xFFFC` |\n| LIME | `0x07E0` | LIMEGREEN | `0x3666` |\n| LINEN | `0xFF9C` | MAGENTA | `0xF81F` |\n| MAROON | `0x8000` | MEDIUMAQUAMARINE | `0x6675` |\n| MEDIUMBLUE | `0x0019` | MEDIUMORCHID | `0xBABA` |\n| MEDIUMPURPLE | `0x939B` | MEDIUMSEAGREEN | `0x3D8E` |\n| MEDIUMSLATEBLUE | `0x7B5D` | MEDIUMSPRINGGREEN | `0x07D3` |\n| MEDIUMTURQUOISE | `0x4E99` | MEDIUMVIOLETRED | `0xC0B0` |\n| MIDNIGHTBLUE | `0x18CE` | MINTCREAM | `0xF7FF` |\n| MISTYROSE | `0xFF3C` | MOCCASIN | `0xFF36` |\n| NAVY | `0x0010` | OLDLACE | `0xFFBC` |\n| OLIVE | `0x8400` | OLIVEDRAB | `0x6C64` |\n| ORANGE | `0xFD20` | ORANGERED | `0xFA20` |\n| ORCHID | `0xDB9A` | PALEGOLDENROD | `0xEF55` |\n| PALEGREEN | `0x9FD3` | PALETURQUOISE | `0xAF7D` |\n| PALEVIOLETRED | `0xDB92` | PAPAYAWHIP | `0xFF7A` |\n| PEACHPUFF | `0xFED7` | PERU | `0xCC27` |\n| PINK | `0xFE19` | PLUM | `0xDD1B` |\n| POWDERBLUE | `0xB17C` | PURPLE | `0x8010` |\n| RED | `0xF800` | ROSYBROWN | `0xBC71` |\n| ROYALBLUE | `0x435C` | SADDLEBROWN | `0x8A22` |\n| SALMON | `0xFC0E` | SANDYBROWN | `0xF52C` |\n| SEAGREEN | `0x2C4A` | SEASHELL | `0xFFBD` |\n| SIENNA | `0xA285` | SILVER | `0xC618` |\n| SKYBLUE | `0x867D` | SLATEBLUE | `0x6AD9` |\n| SLATEGRAY | `0x7412` | SNOW | `0xFFDF` |\n| SPRINGGREEN | `0x07EF` | STEELBLUE | `0x4416` |\n| TAN | `0xD5B1` | TEAL | `0x0410` |\n| THISTLE | `0xDDFB` | TOMATO | `0xFB08` |\n| TURQUOISE | `0x471A` | VIOLET | `0xEC1D` |\n| WHEAT | `0xF6F6` | WHITE | `0xFFFF` |\n| WHITESMOKE | `0xF7BE` | YELLOW | `0xFFE0` |\n| YELLOWGREEN | `0x9E66` |  |  |",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    }
+  },
+  "COLOUR": {
+    "category": "Colour Constants Reference",
+    "description": "All 139 named colour constants available in 4DGL:\n\n| Name | Value | Name | Value |\n|---|---|---|---|\n| ALICEBLUE | `0xF7DF` | ANTIQUEWHITE | `0xFF5A` |\n| AQUA | `0x07FF` | AQUAMARINE | `0x7FFA` |\n| AZURE | `0xF7FF` | BEIGE | `0xF7BB` |\n| BISQUE | `0xFF38` | BLACK | `0x0000` |\n| BLANCHEDALMOND | `0xFF59` | BLUE | `0x001F` |\n| BLUEVIOLET | `0x895C` | BROWN | `0xA145` |\n| BURLYWOOD | `0xDDD0` | CADETBLUE | `0x5CF4` |\n| CHARTREUSE | `0x7FE0` | CHOCOLATE | `0xD343` |\n| CORAL | `0xFBEA` | CORNFLOWERBLUE | `0x64BD` |\n| CORNSILK | `0xFFDB` | CRIMSON | `0xD8A7` |\n| CYAN | `0x07FF` | DARKBLUE | `0x0011` |\n| DARKCYAN | `0x0451` | DARKGOLDENROD | `0xBC21` |\n| DARKGREEN | `0x0320` | DARKGREY | `0xAD55` |\n| DARKKHARKI | `0xBDAD` | DARKMAGENTA | `0x8811` |\n| DARKOLIVEGREEN | `0x5345` | DARKORANGE | `0xFC60` |\n| DARKORCHID | `0x9999` | DARKRED | `0x8800` |\n| DARKSALMON | `0xECAF` | DARKSEAGREEN | `0x8DF1` |\n| DARKSLATEBLUE | `0x49F1` | DARKSLATEGRAY | `0x2A69` |\n| DARKTURQUOISE | `0x067A` | DARKVIOLET | `0x901A` |\n| DEEPINK | `0xF8B2` | DEEPSKYBLUE | `0x05FF` |\n| DIMGRAY | `0x6B4D` | DODGERBLUE | `0x1C9F` |\n| FIREBRICK | `0xB104` | FLORALWHITE | `0xFFDE` |\n| FORESTGREEN | `0x2444` | FUCHSIA | `0xF81F` |\n| GAINSBORO | `0xDEFB` | GHOSTWHITE | `0xFFDF` |\n| GOLD | `0xFEA0` | GOLDENROD | `0xDD24` |\n| GRAY | `0x8410` | GREEN | `0x0400` |\n| GREENYELLOW | `0xAFE5` | HONEYDEW | `0xF7FE` |\n| HOTPINK | `0xFB56` | INDIANRED | `0xCAEB` |\n| INDIGO | `0x4810` | IVORY | `0xFFFE` |\n| KHAKI | `0xF731` | LAVENDER | `0xE73F` |\n| LAVENDERBLUSH | `0xFF9E` | LAWNGREEN | `0x7FE0` |\n| LEMONCHIFFON | `0xFFD9` | LIGHTBLUE | `0xAEDC` |\n| LIGHTCORAL | `0xF410` | LIGHTCYAN | `0xE7FF` |\n| LIGHTGOLD | `0xFFDA` | LIGHTGREEN | `0x9772` |\n| LIGHTGREY | `0xD69A` | LIGHTPINK | `0xFDB8` |\n| LIGHTSALMON | `0xFD0F` | LIGHTSEAGREEN | `0x2595` |\n| LIGHTSKYBLUE | `0x867F` | LIGHTSLATEGRAY | `0x7453` |\n| LIGHTSTEELBLUE | `0xB63B` | LIGHTYELLOW | `0xFFFC` |\n| LIME | `0x07E0` | LIMEGREEN | `0x3666` |\n| LINEN | `0xFF9C` | MAGENTA | `0xF81F` |\n| MAROON | `0x8000` | MEDIUMAQUAMARINE | `0x6675` |\n| MEDIUMBLUE | `0x0019` | MEDIUMORCHID | `0xBABA` |\n| MEDIUMPURPLE | `0x939B` | MEDIUMSEAGREEN | `0x3D8E` |\n| MEDIUMSLATEBLUE | `0x7B5D` | MEDIUMSPRINGGREEN | `0x07D3` |\n| MEDIUMTURQUOISE | `0x4E99` | MEDIUMVIOLETRED | `0xC0B0` |\n| MIDNIGHTBLUE | `0x18CE` | MINTCREAM | `0xF7FF` |\n| MISTYROSE | `0xFF3C` | MOCCASIN | `0xFF36` |\n| NAVY | `0x0010` | OLDLACE | `0xFFBC` |\n| OLIVE | `0x8400` | OLIVEDRAB | `0x6C64` |\n| ORANGE | `0xFD20` | ORANGERED | `0xFA20` |\n| ORCHID | `0xDB9A` | PALEGOLDENROD | `0xEF55` |\n| PALEGREEN | `0x9FD3` | PALETURQUOISE | `0xAF7D` |\n| PALEVIOLETRED | `0xDB92` | PAPAYAWHIP | `0xFF7A` |\n| PEACHPUFF | `0xFED7` | PERU | `0xCC27` |\n| PINK | `0xFE19` | PLUM | `0xDD1B` |\n| POWDERBLUE | `0xB17C` | PURPLE | `0x8010` |\n| RED | `0xF800` | ROSYBROWN | `0xBC71` |\n| ROYALBLUE | `0x435C` | SADDLEBROWN | `0x8A22` |\n| SALMON | `0xFC0E` | SANDYBROWN | `0xF52C` |\n| SEAGREEN | `0x2C4A` | SEASHELL | `0xFFBD` |\n| SIENNA | `0xA285` | SILVER | `0xC618` |\n| SKYBLUE | `0x867D` | SLATEBLUE | `0x6AD9` |\n| SLATEGRAY | `0x7412` | SNOW | `0xFFDF` |\n| SPRINGGREEN | `0x07EF` | STEELBLUE | `0x4416` |\n| TAN | `0xD5B1` | TEAL | `0x0410` |\n| THISTLE | `0xDDFB` | TOMATO | `0xFB08` |\n| TURQUOISE | `0x471A` | VIOLET | `0xEC1D` |\n| WHEAT | `0xF6F6` | WHITE | `0xFFFF` |\n| WHITESMOKE | `0xF7BE` | YELLOW | `0xFFE0` |\n| YELLOWGREEN | `0x9E66` |  |  |",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    }
+  },
+  "CORAL": {
+    "category": "Colour Constant",
+    "cssHex": "#FF7D52",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFBEA"
+  },
+  "CORNFLOWERBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#6396EF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x64BD"
+  },
+  "CORNSILK": {
+    "category": "Colour Constant",
+    "cssHex": "#FFFBDE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFDB"
+  },
+  "CRIMSON": {
+    "category": "Colour Constant",
+    "cssHex": "#DE1439",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xD8A7"
+  },
+  "CYAN": {
+    "category": "Colour Constant",
+    "cssHex": "#00FFFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x07FF"
+  },
+  "DARKBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#00008C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x0011"
+  },
+  "DARKCYAN": {
+    "category": "Colour Constant",
+    "cssHex": "#008A8C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x0451"
+  },
+  "DARKGOLDENROD": {
+    "category": "Colour Constant",
+    "cssHex": "#BD8608",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xBC21"
+  },
+  "DARKGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#006500",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x0320"
+  },
+  "DARKGREY": {
+    "category": "Colour Constant",
+    "cssHex": "#ADAAAD",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xAD55"
+  },
+  "DARKKHARKI": {
+    "category": "Colour Constant",
+    "cssHex": "#BDB66B",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xBDAD"
+  },
+  "DARKMAGENTA": {
+    "category": "Colour Constant",
+    "cssHex": "#8C008C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x8811"
+  },
+  "DARKOLIVEGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#526929",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x5345"
+  },
+  "DARKORANGE": {
+    "category": "Colour Constant",
+    "cssHex": "#FF8E00",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFC60"
+  },
+  "DARKORCHID": {
+    "category": "Colour Constant",
+    "cssHex": "#9C30CE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x9999"
+  },
+  "DARKRED": {
+    "category": "Colour Constant",
+    "cssHex": "#8C0000",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x8800"
+  },
+  "DARKSALMON": {
+    "category": "Colour Constant",
+    "cssHex": "#EF967B",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xECAF"
+  },
+  "DARKSEAGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#8CBE8C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x8DF1"
+  },
+  "DARKSLATEBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#4A3C8C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x49F1"
+  },
+  "DARKSLATEGRAY": {
+    "category": "Colour Constant",
+    "cssHex": "#294D4A",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x2A69"
+  },
+  "DARKTURQUOISE": {
+    "category": "Colour Constant",
+    "cssHex": "#00CFD6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x067A"
+  },
+  "DARKVIOLET": {
+    "category": "Colour Constant",
+    "cssHex": "#9400D6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x901A"
+  },
+  "DEEPINK": {
+    "category": "Colour Constant",
+    "cssHex": "#FF1494",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF8B2"
+  },
+  "DEEPSKYBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#00BEFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x05FF"
+  },
+  "DIMGRAY": {
+    "category": "Colour Constant",
+    "cssHex": "#6B696B",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x6B4D"
+  },
+  "DODGERBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#1892FF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x1C9F"
+  },
+  "FIREBRICK": {
+    "category": "Colour Constant",
+    "cssHex": "#B52021",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xB104"
+  },
+  "FLORALWHITE": {
+    "category": "Colour Constant",
+    "cssHex": "#FFFBF7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFDE"
+  },
+  "FORESTGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#218A21",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x2444"
+  },
+  "FUCHSIA": {
+    "category": "Colour Constant",
+    "cssHex": "#FF00FF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF81F"
+  },
+  "GAINSBORO": {
+    "category": "Colour Constant",
+    "cssHex": "#DEDFDE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xDEFB"
+  },
+  "GHOSTWHITE": {
+    "category": "Colour Constant",
+    "cssHex": "#FFFBFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFDF"
+  },
+  "GOLD": {
+    "category": "Colour Constant",
+    "cssHex": "#FFD700",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFEA0"
+  },
+  "GOLDENROD": {
+    "category": "Colour Constant",
+    "cssHex": "#DEA621",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xDD24"
+  },
+  "GRAY": {
+    "category": "Colour Constant",
+    "cssHex": "#848284",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x8410"
+  },
+  "GREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#008200",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x0400"
+  },
+  "GREENYELLOW": {
+    "category": "Colour Constant",
+    "cssHex": "#ADFF29",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xAFE5"
+  },
+  "HONEYDEW": {
+    "category": "Colour Constant",
+    "cssHex": "#F7FFF7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF7FE"
+  },
+  "HOTPINK": {
+    "category": "Colour Constant",
+    "cssHex": "#FF69B5",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFB56"
+  },
+  "INDIANRED": {
+    "category": "Colour Constant",
+    "cssHex": "#CE5D5A",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xCAEB"
+  },
+  "INDIGO": {
+    "category": "Colour Constant",
+    "cssHex": "#4A0084",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x4810"
+  },
+  "IVORY": {
+    "category": "Colour Constant",
+    "cssHex": "#FFFFF7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFFE"
+  },
+  "KHAKI": {
+    "category": "Colour Constant",
+    "cssHex": "#F7E78C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF731"
+  },
+  "LAVENDER": {
+    "category": "Colour Constant",
+    "cssHex": "#E7E7FF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xE73F"
+  },
+  "LAVENDERBLUSH": {
+    "category": "Colour Constant",
+    "cssHex": "#FFF3F7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFF9E"
+  },
+  "LAWNGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#7BFF00",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x7FE0"
+  },
+  "LEMONCHIFFON": {
+    "category": "Colour Constant",
+    "cssHex": "#FFFBCE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFD9"
+  },
+  "LIGHTBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#ADDBE7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xAEDC"
+  },
+  "LIGHTCORAL": {
+    "category": "Colour Constant",
+    "cssHex": "#F78284",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF410"
+  },
+  "LIGHTCYAN": {
+    "category": "Colour Constant",
+    "cssHex": "#E7FFFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xE7FF"
+  },
+  "LIGHTGOLD": {
+    "category": "Colour Constant",
+    "cssHex": "#FFFBD6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFDA"
+  },
+  "LIGHTGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#94EF94",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x9772"
+  },
+  "LIGHTGREY": {
+    "category": "Colour Constant",
+    "cssHex": "#D6D3D6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xD69A"
+  },
+  "LIGHTPINK": {
+    "category": "Colour Constant",
+    "cssHex": "#FFB6C6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFDB8"
+  },
+  "LIGHTSALMON": {
+    "category": "Colour Constant",
+    "cssHex": "#FFA27B",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFD0F"
+  },
+  "LIGHTSEAGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#21B2AD",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x2595"
+  },
+  "LIGHTSKYBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#84CFFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x867F"
+  },
+  "LIGHTSLATEGRAY": {
+    "category": "Colour Constant",
+    "cssHex": "#738A9C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x7453"
+  },
+  "LIGHTSTEELBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#B5C7DE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xB63B"
+  },
+  "LIGHTYELLOW": {
+    "category": "Colour Constant",
+    "cssHex": "#FFFFE7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFFC"
+  },
+  "LIME": {
+    "category": "Colour Constant",
+    "cssHex": "#00FF00",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x07E0"
+  },
+  "LIMEGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#31CF31",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x3666"
+  },
+  "LINEN": {
+    "category": "Colour Constant",
+    "cssHex": "#FFF3E7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFF9C"
+  },
+  "MAGENTA": {
+    "category": "Colour Constant",
+    "cssHex": "#FF00FF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF81F"
+  },
+  "MAROON": {
+    "category": "Colour Constant",
+    "cssHex": "#840000",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x8000"
+  },
+  "MEDIUMAQUAMARINE": {
+    "category": "Colour Constant",
+    "cssHex": "#63CFAD",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x6675"
+  },
+  "MEDIUMBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#0000CE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x0019"
+  },
+  "MEDIUMORCHID": {
+    "category": "Colour Constant",
+    "cssHex": "#BD55D6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xBABA"
+  },
+  "MEDIUMPURPLE": {
+    "category": "Colour Constant",
+    "cssHex": "#9471DE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x939B"
+  },
+  "MEDIUMSEAGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#39B273",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x3D8E"
+  },
+  "MEDIUMSLATEBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#7B69EF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x7B5D"
+  },
+  "MEDIUMSPRINGGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#00FB9C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x07D3"
+  },
+  "MEDIUMTURQUOISE": {
+    "category": "Colour Constant",
+    "cssHex": "#4AD3CE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x4E99"
+  },
+  "MEDIUMVIOLETRED": {
+    "category": "Colour Constant",
+    "cssHex": "#C61484",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xC0B0"
+  },
+  "MIDNIGHTBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#181873",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x18CE"
+  },
+  "MINTCREAM": {
+    "category": "Colour Constant",
+    "cssHex": "#F7FFFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF7FF"
+  },
+  "MISTYROSE": {
+    "category": "Colour Constant",
+    "cssHex": "#FFE7E7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFF3C"
+  },
+  "MOCCASIN": {
+    "category": "Colour Constant",
+    "cssHex": "#FFE7B5",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFF36"
+  },
+  "NAVY": {
+    "category": "Colour Constant",
+    "cssHex": "#000084",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x0010"
+  },
+  "OLDLACE": {
+    "category": "Colour Constant",
+    "cssHex": "#FFF7E7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFBC"
+  },
+  "OLIVE": {
+    "category": "Colour Constant",
+    "cssHex": "#848200",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x8400"
+  },
+  "OLIVEDRAB": {
+    "category": "Colour Constant",
+    "cssHex": "#6B8E21",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x6C64"
+  },
+  "ORANGE": {
+    "category": "Colour Constant",
+    "cssHex": "#FFA600",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFD20"
+  },
+  "ORANGERED": {
+    "category": "Colour Constant",
+    "cssHex": "#FF4500",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFA20"
+  },
+  "ORCHID": {
+    "category": "Colour Constant",
+    "cssHex": "#DE71D6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xDB9A"
+  },
+  "PALEGOLDENROD": {
+    "category": "Colour Constant",
+    "cssHex": "#EFEBAD",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xEF55"
+  },
+  "PALEGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#9CFB9C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x9FD3"
+  },
+  "PALETURQUOISE": {
+    "category": "Colour Constant",
+    "cssHex": "#ADEFEF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xAF7D"
+  },
+  "PALEVIOLETRED": {
+    "category": "Colour Constant",
+    "cssHex": "#DE7194",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xDB92"
+  },
+  "PAPAYAWHIP": {
+    "category": "Colour Constant",
+    "cssHex": "#FFEFD6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFF7A"
+  },
+  "PEACHPUFF": {
+    "category": "Colour Constant",
+    "cssHex": "#FFDBBD",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFED7"
+  },
+  "PERU": {
+    "category": "Colour Constant",
+    "cssHex": "#CE8639",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xCC27"
+  },
+  "PINK": {
+    "category": "Colour Constant",
+    "cssHex": "#FFC3CE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFE19"
+  },
+  "PLUM": {
+    "category": "Colour Constant",
+    "cssHex": "#DEA2DE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xDD1B"
+  },
+  "POWDERBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#B52CE7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xB17C"
+  },
+  "PURPLE": {
+    "category": "Colour Constant",
+    "cssHex": "#840084",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x8010"
+  },
+  "RED": {
+    "category": "Colour Constant",
+    "cssHex": "#FF0000",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF800"
+  },
+  "ROSYBROWN": {
+    "category": "Colour Constant",
+    "cssHex": "#BD8E8C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xBC71"
+  },
+  "ROYALBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#4269E7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x435C"
+  },
+  "SADDLEBROWN": {
+    "category": "Colour Constant",
+    "cssHex": "#8C4510",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x8A22"
+  },
+  "SALMON": {
+    "category": "Colour Constant",
+    "cssHex": "#FF8273",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFC0E"
+  },
+  "SANDYBROWN": {
+    "category": "Colour Constant",
+    "cssHex": "#F7A663",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF52C"
+  },
+  "SEAGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#298A52",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x2C4A"
+  },
+  "SEASHELL": {
+    "category": "Colour Constant",
+    "cssHex": "#FFF7EF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFBD"
+  },
+  "SIENNA": {
+    "category": "Colour Constant",
+    "cssHex": "#A55129",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xA285"
+  },
+  "SILVER": {
+    "category": "Colour Constant",
+    "cssHex": "#C6C3C6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xC618"
+  },
+  "SKYBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#84CFEF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x867D"
+  },
+  "SLATEBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#6B59CE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x6AD9"
+  },
+  "SLATEGRAY": {
+    "category": "Colour Constant",
+    "cssHex": "#738294",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x7412"
+  },
+  "SNOW": {
+    "category": "Colour Constant",
+    "cssHex": "#FFFBFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFDF"
+  },
+  "SPRINGGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#00FF7B",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x07EF"
+  },
+  "STEELBLUE": {
+    "category": "Colour Constant",
+    "cssHex": "#4282B5",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x4416"
+  },
+  "TAN": {
+    "category": "Colour Constant",
+    "cssHex": "#D6B68C",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xD5B1"
+  },
+  "TEAL": {
+    "category": "Colour Constant",
+    "cssHex": "#008284",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x0410"
+  },
+  "THISTLE": {
+    "category": "Colour Constant",
+    "cssHex": "#DEBEDE",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xDDFB"
+  },
+  "TOMATO": {
+    "category": "Colour Constant",
+    "cssHex": "#FF6142",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFB08"
+  },
+  "TURQUOISE": {
+    "category": "Colour Constant",
+    "cssHex": "#42E3D6",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x471A"
+  },
+  "VIOLET": {
+    "category": "Colour Constant",
+    "cssHex": "#EF82EF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xEC1D"
+  },
+  "WHEAT": {
+    "category": "Colour Constant",
+    "cssHex": "#F7DFB5",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF6F6"
+  },
+  "WHITE": {
+    "category": "Colour Constant",
+    "cssHex": "#FFFFFF",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFFF"
+  },
+  "WHITESMOKE": {
+    "category": "Colour Constant",
+    "cssHex": "#F7F7F7",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xF7BE"
+  },
+  "YELLOW": {
+    "category": "Colour Constant",
+    "cssHex": "#FFFF00",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0xFFE0"
+  },
+  "YELLOWGREEN": {
+    "category": "Colour Constant",
+    "cssHex": "#9CCF31",
+    "description": "Named colour constant.",
+    "source": {
+      "confidence": "documented",
+      "document": "colors.pdf"
+    },
+    "value": "0x9E66"
+  }
+}

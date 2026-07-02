@@ -1,0 +1,2004 @@
+{
+  "AUDIO_ENABLE": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "",
+    "library": "picaso",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "Amplifier Chip control pin"
+  },
+  "BACKGROUND_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the screen background colour",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "Colour, 0-65535"
+  },
+  "BACKLITE": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "",
+    "library": "picaso",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "Backlight control pin"
+  },
+  "BEVEL_WIDTH": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set Button Bevel Width, 0 pixel to 15pixels.",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 None 1 to 15 pixels"
+  },
+  "BOTTOM_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Bottom location of Object",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "CLIPPING": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Turns clipping on/off. The clipping points are set with gfx_ClipWindow and must be set first.",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "1 or 0 (ON or OFF)"
+  },
+  "CONTRAST": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "OLED MODULES: Set contrast value, 0 = display off, 1-9 = contrast level LCD MODULES: contrast 0 = display OFF, non-zero = display ON EXCEPTION: uLCD-43 supports Contrast values from 1-15 and 0 to turn the Display off. 3202X-P1 supports Contrast values from 1 to 9 and 0 to turn the Display off.",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 or OFF 1 to 9 for levels 1 or 0 (ON or OFF)"
+  },
+  "DISPLAY_PAGE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Choose Page to be displayed. Value depends on the resolution set. Applies to uVGA-II/III and uLCD-43 only.",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "e.g. 00hex-04hex for 320x240 resolution on a uVGA-II/III."
+  },
+  "FE_CANNOT_INIT": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Cannot init the CARD",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "15"
+  },
+  "FE_CANNOT_READ_MBR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Cannot read the MBR",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "16"
+  },
+  "FE_DIR_FULL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "All root dir entry are taken",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "FE_EOF": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Reached the end of file",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "FE_FAT_EOF": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Fat attempt to read beyond EOF",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "FE_FILE_NOT_FOUND": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "File not found in open for read",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "FE_FILE_OVERWRITE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "A file with same name exist already",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "14"
+  },
+  "FE_FIND_ERROR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Failure during FILE search",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "19"
+  },
+  "FE_IDE_ERROR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "IDE command execution error",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "FE_INVALID_BR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Boot Record invalid signature",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "FE_INVALID_CLUSTER": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Invalid cluster value > maxcls",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "FE_INVALID_FILE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "File not open",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "FE_INVALID_FNAME": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Invalid Filename",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "20"
+  },
+  "FE_INVALID_MBR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "MBR sector invalid signature",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "FE_INVALID_MEDIA": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "bad media",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "21"
+  },
+  "FE_INVALID_MODE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Mode was not r.w.",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "18"
+  },
+  "FE_MALLOC_FAILED": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Malloc could not allocate the FILE struct",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "17"
+  },
+  "FE_MEDIA_FULL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "All clusters in the partition are taken",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "13"
+  },
+  "FE_MEDIA_NOT_MNTD": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Media not mounted",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "FE_NOT_PRESENT": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "CARD not present",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "FE_OK": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "IDE function succesded",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "FE_PARTITION_TYPE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "WRONG partition type, not FAT16",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "FE_SECTOR_READ_FAIL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Sector Read fail",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "22"
+  },
+  "FE_SECTOR_WRITE_FAIL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Sector Write fail",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "23"
+  },
+  "FONT_ID": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the required font. See font table Note: The value could be the name of a custom font included in a users program in a data statement.",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 or FONT1 1 or FONT2 2 or FONT3"
+  },
+  "FRAME_DELAY": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the inter frame delay for media_Video",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 to 255msec"
+  },
+  "GFX_BOTTOM": {
+    "category": "System Registers Memory",
+    "description": "image bottom real point",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_BUTTON_BACKGROUND": {
+    "category": "System Registers Memory",
+    "description": "store default button colour for hilite line tracker",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_BUTTON_FOREGROUND": {
+    "category": "System Registers Memory",
+    "description": "store default text colour for hilite line tracker",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_BUTTON_MODE": {
+    "category": "System Registers Memory",
+    "description": "store current buttons mode",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_BOTTOM": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_BOTTOM_VAL": {
+    "category": "System Registers Memory",
+    "description": "bottom clipping point (set with gfx_ClipWindow(...)",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_LEFT": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_LEFT_VAL": {
+    "category": "System Registers Memory",
+    "description": "left clipping point (set with gfx_ClipWindow(...)",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_RIGHT": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_RIGHT_VAL": {
+    "category": "System Registers Memory",
+    "description": "right clipping point (set with gfx_ClipWindow(...)",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_TOP": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_TOP_VAL": {
+    "category": "System Registers Memory",
+    "description": "top clipping point (set with gfx_ClipWindow(...)",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_HILIGHT_BACKGROUND": {
+    "category": "System Registers Memory",
+    "description": "multi button hilite background colour",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_HILIGHT_FOREGROUND": {
+    "category": "System Registers Memory",
+    "description": "multi button hilite foreground colour",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_HILITE_LINE": {
+    "category": "System Registers Memory",
+    "description": "current multi line button hilite line",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_CHAR_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "calculated height from last call to charHeight function",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_CHAR_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "calculated char width from last call to charWidth function",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_SELECTION": {
+    "category": "System Registers Memory",
+    "description": "Last selected line",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_STR_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "calculated height from last call to strHeight function",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_STR_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "calculated width from last call to strWidth function",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LEFT": {
+    "category": "System Registers Memory",
+    "description": "image left real point",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LEFT_GUTTER_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "width to left",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LINE_COUNT": {
+    "category": "System Registers Memory",
+    "description": "count of lines in multiline button",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_PIXEL_SHIFT": {
+    "category": "System Registers Memory",
+    "description": "pixel shift for button depress illusion",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_RIGHT": {
+    "category": "System Registers Memory",
+    "description": "image right real point",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_RIGHT_GUTTER_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "width to right",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_STATUSBAR_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "height below",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_THUMB_BORDER_DARK": {
+    "category": "System Registers Memory",
+    "description": "darker shadow of thumb",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_THUMB_BORDER_LIGHT": {
+    "category": "System Registers Memory",
+    "description": "lighter shadow of thumb",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_THUMB_PERCENT": {
+    "category": "System Registers Memory",
+    "description": "size of slider thumb as percentage",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOOLBAR_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "height above",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOP": {
+    "category": "System Registers Memory",
+    "description": "image top real point",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_X1": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_X2": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_Y1": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_Y2": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_VECT_X1": {
+    "category": "System Registers Memory",
+    "description": "gp rect, used by multiline button to hilite required line",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X1": {
+    "category": "System Registers Memory",
+    "description": "image left clipped point",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X2": {
+    "category": "System Registers Memory",
+    "description": "image right clipped point",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_XMAX": {
+    "category": "System Registers Memory",
+    "description": "width of current orientation",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X_ORG": {
+    "category": "System Registers Memory",
+    "description": "current X origin",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y1": {
+    "category": "System Registers Memory",
+    "description": "image top clipped point",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y2": {
+    "category": "System Registers Memory",
+    "description": "image bottom clipped point",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_YMAX": {
+    "category": "System Registers Memory",
+    "description": "height of current orientation",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y_ORG": {
+    "category": "System Registers Memory",
+    "description": "current Y origin",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAM_PIXEL_COUNT_HI": {
+    "category": "System Registers Memory",
+    "description": "HI word of count of pixels in the set GRAM area",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAM_PIXEL_COUNT_LO": {
+    "category": "System Registers Memory",
+    "description": "LO word of count of pixels in the set GRAM area",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMAGE_CLUSTER": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image start cluster pos (for FAT16 only)",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "IMAGE_DELAY": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD inter frame delay",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "IMAGE_FLAGS": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD image flags",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "IMAGE_FRAMES": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD number of frames",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "IMAGE_HEIGHT": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image height",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "IMAGE_HIWORD": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image address HI",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "IMAGE_INDEX": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD current frame",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "IMAGE_LOWORD": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image address LO",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "IMAGE_SECTOR": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image start sector in cluster pos (for FAT16 only)",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "IMAGE_TAG": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD user variable #1",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "IMAGE_TAG2": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD user variable #2",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "13"
+  },
+  "IMAGE_WIDTH": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image width",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "IMAGE_XPOS": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD image location X",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "IMAGE_YPOS": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD image location Y",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "IMG_CURRENT_FRAME": {
+    "category": "System Registers Memory",
+    "description": "last frame shown",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_FLAGS": {
+    "category": "System Registers Memory",
+    "description": "bit 4 determines colour mode other bits reserved",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_FRAME_COUNT": {
+    "category": "System Registers Memory",
+    "description": "count of frames in a movie",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_FRAME_DELAY": {
+    "category": "System Registers Memory",
+    "description": "if image else inter frame delay for movie",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "height of currently loaded image",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_PIXEL_COUNT_HI": {
+    "category": "System Registers Memory",
+    "description": "count of pixels in the current frame",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_PIXEL_COUNT_LO": {
+    "category": "System Registers Memory",
+    "description": "count of pixels in the current frame",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "width of currently loaded image",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "INPUT": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set to an input",
+    "library": "picaso",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO1_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "",
+    "library": "picaso",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "pin 1"
+  },
+  "IO2_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "",
+    "library": "picaso",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "pin 64"
+  },
+  "IO3_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "",
+    "library": "picaso",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "pin 63"
+  },
+  "IO4_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "",
+    "library": "picaso",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "pin 62"
+  },
+  "IO5_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "",
+    "library": "picaso",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "pin 44"
+  },
+  "I_DARKEN": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Display dimmed.",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0x4000"
+  },
+  "I_ENABLED": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Set for image enabled.",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0x8000"
+  },
+  "I_LIGHTEN": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Display bright.",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0x2000"
+  },
+  "I_STAYONTOP": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Draw on top of other images always.",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0x0100"
+  },
+  "I_TOPMOST": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Draw on top of other images next update.",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0x0200"
+  },
+  "I_TOUCHED": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Touch test result.",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0x1000"
+  },
+  "I_TOUCH_DISABLE": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Set to disable touch for this image, default=1 for movie, 0 for image.",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0x0020"
+  },
+  "I_X_LOCK": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Stop X movement.",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0x0400"
+  },
+  "I_Y_LOCK": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Stop Y movement.",
+    "library": "picaso",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0x0800"
+  },
+  "LEFT_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Left location of Object",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_ADDRESS_HI": {
+    "category": "System Registers Memory",
+    "description": "uSD byte address HI",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_ADDRESS_LO": {
+    "category": "System Registers Memory",
+    "description": "uSD byte address LO",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_SECTOR_COUNT": {
+    "category": "System Registers Memory",
+    "description": "uSD number of bytes remaining in sector",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_SECTOR_HI": {
+    "category": "System Registers Memory",
+    "description": "uSD sector address HI",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_SECTOR_LO": {
+    "category": "System Registers Memory",
+    "description": "uSD sector address LO",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "OBJECT_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Generic colour for gfx_LineTo, gfx_LineRel, gfx_Dot, gfx_Bullet and gfx_BoxTo",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "Colour, 0-65535"
+  },
+  "OUTLINE_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Outline colour for rectangles and circles(set to 0 for no effect)",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "Colour, 0-65535"
+  },
+  "OUTPUT": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set to an output",
+    "library": "picaso",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PEN_SIZE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the draw mode for gfx_LineTo, gfx_LineRel, gfx_Dot, gfx_Bullet and gfx_BoxTo (default mode is OUTLINE)*",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 or SOLID 1 or OUTLINE"
+  },
+  "RANDOM_HI": {
+    "category": "System Registers Memory",
+    "description": "random number generator HI word",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "RANDOM_LO": {
+    "category": "System Registers Memory",
+    "description": "random number generator LO word",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "READ_PAGE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Choose Page to be read. Value depends on the resolution set. Applies to uVGA-II/III and uLCD-43 only.",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "e.g. 00hex-04hex for 320x240 resolution on a uVGA-II/III."
+  },
+  "RIGHT_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Right location of Object",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SCREEN_MODE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set required screen behaviour/orientation.",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 or LANDSCAPE 1 or LANDSCAPE_R 2 or PORTRAIT 3 or PORTRAIT_R"
+  },
+  "SCREEN_RES": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set VGA Screen resolution. Applies to uVGA-II/III only",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 for 320x240 1 for 640 x 480 2 for800 x 480"
+  },
+  "SYSTEM_TIMER_HI": {
+    "category": "System Registers Memory",
+    "description": "1msec system timer HI word",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYSTEM_TIMER_LO": {
+    "category": "System Registers Memory",
+    "description": "1msec system timer LO word",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_X_MAX": {
+    "category": "System Registers Memory",
+    "description": "display hardware X res-1",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_Y_MAX": {
+    "category": "System Registers Memory",
+    "description": "display hardware Y res-1",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_ATTRIBUTES": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Control of functions 9,10,11,12 grouped (bits can be combined by using logical 'or' of bits) nb:- bits 0-3 and 8-15 are reserved",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "16 or BOLD 32 or ITALIC 64 or INVERSE 128 or UNDERLINED"
+  },
+  "TEXT_BOLD": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Embolden text",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_COLOUR": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text foreground colour.",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "Colour 0-65535"
+  },
+  "TEXT_HEIGHT": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text height multiplier.",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "1 to 16 Default = 1"
+  },
+  "TEXT_HIGHLIGHT": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text background colour.",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "Colour 0-65535"
+  },
+  "TEXT_INVERSE": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Inverted text",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_ITALIC": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Italicise text",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_MARGIN": {
+    "category": "System Registers Memory",
+    "description": "text left pixel pos for carriage return",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_OPACITY": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Selects whether or not the 'background' pixels are drawn.",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 or TRANSPARENT 1 or OPAQUE Default = 1 (OPAQUE)"
+  },
+  "TEXT_PRINTDELAY": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the delay between character printing to give a 'teletype' like effect.",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "Default = 0 msec"
+  },
+  "TEXT_UNDERLINED": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Underlined text",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_WIDTH": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text width multiplier.",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "1 to 16 Default = 1"
+  },
+  "TEXT_WRAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets the pixel position where text wrap will occur at RHS The feature automatically resets when screen mode is changed. The value is in pixel units. Default value is 0.",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 to n (OFF or Value)"
+  },
+  "TEXT_XGAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the pixel gap between characters. The gap is in pixel units.",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 to 32 Default = 0"
+  },
+  "TEXT_XPOS": {
+    "category": "System Registers Memory",
+    "description": "text current x pixel position",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_YGAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the pixel gap between lines. The gap is in pixel units.",
+    "library": "picaso",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "0 to 32 Default = 0"
+  },
+  "TEXT_YPOS": {
+    "category": "System Registers Memory",
+    "description": "text current y pixel position",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER0": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 0",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER1": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 1",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER2": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 2",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER3": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 3",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER4": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 4",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER5": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 5",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER6": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 6",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER7": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 7",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOP_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Top location of Object",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_RAW_X": {
+    "category": "System Registers Memory",
+    "description": "12 bit raw A2D X value from touch screen",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_RAW_Y": {
+    "category": "System Registers Memory",
+    "description": "12 bit raw A2D Y value from touch screen",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_XMAXCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_XMINCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_YMAXCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_YMINCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TRANSPARENCY": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Turn the transparency ON or OFF. Transparency is automatically turned OFF after the next image or video command.",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "1 or 0 (ON or OFF)"
+  },
+  "TRANSPARENT_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Colour that needs to be made transparent.",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "Colour, 0-65535"
+  },
+  "TXT_FONT_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "current font height",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_MAX": {
+    "category": "System Registers Memory",
+    "description": "max number of chars in font",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_OFFSET": {
+    "category": "System Registers Memory",
+    "description": "starting offset (normally 0x20)",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_TYPE": {
+    "category": "System Registers Memory",
+    "description": "font type, 0 = system font, else pointer to user font",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "current font width",
+    "library": "picaso",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "WRITE_PAGE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Choose Page to be written. Value depends on the resolution set. Applies to uVGA-II/III and uLCD-43 only.",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": "e.g. 00hex-04hex for 320x240 resolution on a uVGA-II/III."
+  },
+  "X_MAX": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Current orientations Max X Value (X_MAX)",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "X_ORG": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Get current internal X position",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "Y_MAX": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Current orientations Max Y Value (Y_MAX)",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "Y_ORG": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Get current internal Y position",
+    "library": "picaso",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  }
+}

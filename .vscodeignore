@@ -1,0 +1,9 @@
+.vscode/**
+.vscodeignore
+.gitignore
+Resources/**
+UserTest/**
+intellisense_versions/**
+tools/**
+**/__pycache__/**
+*.vsix

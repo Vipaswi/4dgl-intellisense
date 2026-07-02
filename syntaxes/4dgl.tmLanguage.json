@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "4DGL",
+  "scopeName": "source.4dgl",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#directives"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.4dgl",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.4dgl",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.4dgl",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.4dgl",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "directives": {
+      "patterns": [
+        {
+          "name": "keyword.control.directive.4dgl",
+          "match": "#[A-Za-z_]+"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.4dgl",
+          "match": "\\b(if|else|endif|while|wend|repeat|until|forever|goto|for|next|switch|case|endswitch|break|continue|gosub|endsub|func|endfunc|return|print)\\b"
+        },
+        {
+          "name": "storage.modifier.4dgl",
+          "match": "\\b(var|const|private)\\b"
+        },
+        {
+          "name": "storage.type.4dgl",
+          "match": "\\b(byte|word|long|string)\\b"
+        },
+        {
+          "name": "support.function.builtin.4dgl",
+          "match": "\\b(sizeof|argcount)\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.hex.4dgl",
+          "match": "\\b0x[0-9A-Fa-f]+\\b"
+        },
+        {
+          "name": "constant.numeric.decimal.4dgl",
+          "match": "\\b\\d+\\b"
+        }
+      ]
+    }
+  }
+}

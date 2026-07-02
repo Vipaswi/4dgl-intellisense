@@ -1,0 +1,2631 @@
+{
+  "ANALOGUE": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set as analog input",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "BACKGROUND_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the screen background colour",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "16-bit Colour, 0x0000-0xFFFF"
+  },
+  "BEVEL_WIDTH": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set Button Bevel Width, 0 pixel to 15 pixels.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 None1 to 15 pixels"
+  },
+  "BOTTOM_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Bottom location of Object",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "CHECKUPDATE_INVALIDFILE": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "The specified file is not valid '4xe' or '4fn'",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "CHECKUPDATE_NEWFILE": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "The specified file is newer than the file running in Flash",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "CHECKUPDATE_NOFILE": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "The specified file does not exist",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "CHECKUPDATE_OLDFILE": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "The specified file is equal to or older than the file running in Flash",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "CHECKUPDATE_QUERY": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "Checks the specified file and compares its DateTime to the program running in Flash",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "CHECKUPDATE_UPDATEALWAYS": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "Always updates the program in Flash",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "CHECKUPDATE_UPDATEDONE": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "An update was performed, and the program is running from RAM",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "CHECKUPDATE_UPDATENEWER": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "Updates the program in Flash if the program on uSD is newer",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "CLIPPING": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Turns clipping on/offThe clipping points are set with gfx_ClipWindow and must be set first.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1 or 0 (ON or OFF)"
+  },
+  "CONTRAST": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set contrast value, 0 = display off, 1-15 = contrast level",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 or OFF1 to 15 for levels"
+  },
+  "EAST": {
+    "category": "Graphics Functions / gfx_BlitSprite",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_blitsprite",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "EAST_MIRRORED": {
+    "category": "Graphics Functions / gfx_BlitSprite",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_blitsprite",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "FE_CANNOT_INIT": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Cannot init the CARD",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "15"
+  },
+  "FE_CANNOT_READ_MBR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Cannot read the MBR",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "16"
+  },
+  "FE_DIR_FULL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "All root dir entry are taken",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "FE_EOF": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Reached the end of file",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "FE_FAT_EOF": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Fat attempt to read beyond EOF",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "FE_FILE_NOT_FOUND": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "File not found in open for read",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "FE_FILE_OVERWRITE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "A file with same name exist already",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "14"
+  },
+  "FE_FIND_ERROR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Failure during FILE search",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "19"
+  },
+  "FE_IDE_ERROR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "IDE command execution error",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "FE_INVALID_BR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Boot Record invalid signature",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "FE_INVALID_CLUSTER": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Invalid cluster value > maxcls",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "FE_INVALID_FILE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "File not open",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "FE_INVALID_FNAME": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Invalid Filename",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "20"
+  },
+  "FE_INVALID_MBR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "MBR sector invalid signature",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "FE_INVALID_MEDIA": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "bad media",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "21"
+  },
+  "FE_INVALID_MODE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Mode was not r.w.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "18"
+  },
+  "FE_MALLOC_FAILED": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Malloc could not allocate the FILE struct",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "17"
+  },
+  "FE_MEDIA_FULL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "All clusters in partition are taken",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "13"
+  },
+  "FE_MEDIA_NOT_MNTD": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Media not mounted",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "FE_NOT_PRESENT": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "CARD not present",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "FE_OK": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "IDE Function Succeeded",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "FE_PARTITION_TYPE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "WRONG partition type, not FAT16",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "FE_SECTOR_READ_FAIL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Sector Read fail",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "22"
+  },
+  "FE_SECTOR_WRITE_FAIL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Sector write fail",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "23"
+  },
+  "FONT_ID": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the required font. See font table Note: The value could be the name of a custom font included in a users program in a data statement.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1 to 11 or (FONT_1 to FONT_11) Default = FONT_3"
+  },
+  "FRAME_DELAY": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the inter frame delay for media_Video(...)",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 to 255msec"
+  },
+  "GFX_BOTTOM": {
+    "category": "System Registers Memory",
+    "description": "image bottom real point",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_BUTTON_BACKGROUND": {
+    "category": "System Registers Memory",
+    "description": "store default button colour for hilite line tracker",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_BUTTON_FOREGROUND": {
+    "category": "System Registers Memory",
+    "description": "store default text colour for hilite line tracker",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_BUTTON_MODE": {
+    "category": "System Registers Memory",
+    "description": "store current buttons mode",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_BOTTOM": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_BOTTOM_VAL": {
+    "category": "System Registers Memory",
+    "description": "bottom clipping point (set with gfx_ClipWindow(...))",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_LEFT": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_LEFT_VAL": {
+    "category": "System Registers Memory",
+    "description": "left clipping point (set with gfx_ClipWindow(...))",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_RIGHT": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_RIGHT_VAL": {
+    "category": "System Registers Memory",
+    "description": "right clipping point (set with gfx_ClipWindow(...))",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_TOP": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_TOP_VAL": {
+    "category": "System Registers Memory",
+    "description": "top clipping point (set with gfx_ClipWindow(...))",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_HILIGHT_BACKGROUND": {
+    "category": "System Registers Memory",
+    "description": "multi button hilite background colour",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_HILIGHT_FOREGROUND": {
+    "category": "System Registers Memory",
+    "description": "multi button hilite background colour",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_HILITE_LINE": {
+    "category": "System Registers Memory",
+    "description": "current multi line button hilite line",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_CHAR_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "calculated height from last call to charHeight function",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_CHAR_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "calculated char width from last call to charWidth function",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_SELECTION": {
+    "category": "System Registers Memory",
+    "description": "last selected line",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_STR_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "calculated height from last call to strHeight function",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_STR_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "calculated width from last call to strWidth function",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LEFT": {
+    "category": "System Registers Memory",
+    "description": "image left real point",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LEFT_GUTTER_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "width to left",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LINE_COUNT": {
+    "category": "System Registers Memory",
+    "description": "count of lines in multiline button",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_PIXEL_SHIFT": {
+    "category": "System Registers Memory",
+    "description": "pixel shift for button depress illusion",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_RIGHT": {
+    "category": "System Registers Memory",
+    "description": "image right real point",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_RIGHT_GUTTER_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "width to right",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_STATUSBAR_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "height below",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_THUMB_BORDER_DARK": {
+    "category": "System Registers Memory",
+    "description": "darker shadow of thumb",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_THUMB_BORDER_LIGHT": {
+    "category": "System Registers Memory",
+    "description": "lighter shadow of thumb",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_THUMB_PERCENT": {
+    "category": "System Registers Memory",
+    "description": "size of slider thumb as percentage",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOOLBAR_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "height above",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOP": {
+    "category": "System Registers Memory",
+    "description": "image top real point",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_X1": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_X2": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_Y": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_Y2": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_VECT_X1": {
+    "category": "System Registers Memory",
+    "description": "gp rect, used by multiline button to hilite required line",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X1": {
+    "category": "System Registers Memory",
+    "description": "image left clipped point",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X2": {
+    "category": "System Registers Memory",
+    "description": "image right clipped point",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_XMAX": {
+    "category": "System Registers Memory",
+    "description": "width of current orientation",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X_ORG": {
+    "category": "System Registers Memory",
+    "description": "current X origin",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y1": {
+    "category": "System Registers Memory",
+    "description": "image top clipped point",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y2": {
+    "category": "System Registers Memory",
+    "description": "image bottom clipped point",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_YMAX": {
+    "category": "System Registers Memory",
+    "description": "height of current orientation",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y_ORG": {
+    "category": "System Registers Memory",
+    "description": "current Y origin",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAD_DOWN": {
+    "category": "Graphics Functions / gfx_Gradient",
+    "description": "gradient changes in the vertical direction",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_gradient",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAD_LEFT": {
+    "category": "Graphics Functions / gfx_Gradient",
+    "description": "gradient changes in the horizontal direction",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_gradient",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAD_RIGHT": {
+    "category": "Graphics Functions / gfx_Gradient",
+    "description": "gradient changes in the horizontal direction",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_gradient",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAD_UP": {
+    "category": "Graphics Functions / gfx_Gradient",
+    "description": "gradient changes in the vertical direction",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_gradient",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAD_WAVE_HOR": {
+    "category": "Graphics Functions / gfx_Gradient",
+    "description": "gradient wave in the horizontal direction",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_gradient",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAD_WAVE_VER": {
+    "category": "Graphics Functions / gfx_Gradient",
+    "description": "gradient wave in the vertical direction",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_gradient",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAM_PIXEL_COUNT_HI": {
+    "category": "System Registers Memory",
+    "description": "HI word of count of pixels in the set GRAM area",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAM_PIXEL_COUNT_LO": {
+    "category": "System Registers Memory",
+    "description": "LO word of count of pixels in the set GRAM area",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMAGE_CLUSTER": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "Specifies the image start cluster pos (for FAT16 only)",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "IMAGE_DELAY": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "Specifies the inter frame delay",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "IMAGE_FLAGS": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "Specifies the image flags",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "IMAGE_FRAMES": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "Specifies the number of frames",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "IMAGE_HEIGHT": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "Specifies the image height",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "IMAGE_HIWORD": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "Specifies the image address HI",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "IMAGE_INDEX": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "Specifies the current frame",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "IMAGE_LOWORD": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "Specifies the image address LO",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "IMAGE_SECTOR": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "Specifies the image start sector in cluster pos (for FAT16 only)",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "IMAGE_TAG": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "Specifies the user variable #1",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "IMAGE_TAG2": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "Specifies the user variable #2",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "13"
+  },
+  "IMAGE_WIDTH": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "Specifies the image width",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "IMAGE_XPOS": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "Specifies the image location X",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "IMAGE_YPOS": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "Specifies the image location Y",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "IMG_CURRENT_FRAME": {
+    "category": "System Registers Memory",
+    "description": "last frame shown",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_FLAGS": {
+    "category": "System Registers Memory",
+    "description": "bit 4 determines colour mode, other bits reserved",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_FRAME_COUNT": {
+    "category": "System Registers Memory",
+    "description": "count of frames in a movie",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_FRAME_DELAY": {
+    "category": "System Registers Memory",
+    "description": "if image, else inter frame delay for movie",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "height of currently loaded image",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_PIXEL_COUNT_HI": {
+    "category": "System Registers Memory",
+    "description": "count of pixels in the current frame",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_PIXEL_COUNT_LO": {
+    "category": "System Registers Memory",
+    "description": "count of pixels in the current frame",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "width of currently loaded image",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "INPUT": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set to an input",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "IO12_PIN": {
+    "category": "GPIO Functions / bus_In",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "bus_in",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "IO13_PIN": {
+    "category": "GPIO Functions / bus_In",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "bus_in",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "IO14_PIN": {
+    "category": "GPIO Functions / bus_In",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "bus_in",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "IO15_PIN": {
+    "category": "GPIO Functions / bus_In",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "bus_in",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "IO16_PIN": {
+    "category": "GPIO Functions / bus_In",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "bus_in",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "IO17_PIN": {
+    "category": "GPIO Functions / bus_In",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "bus_in",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "IO18_PIN": {
+    "category": "GPIO Functions / bus_In",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "bus_in",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "44"
+  },
+  "I_DARKEN": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "display dimmed",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x4000"
+  },
+  "I_ENABLED": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "set for image enabled",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x8000"
+  },
+  "I_LIGHTEN": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "display bright",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x2000"
+  },
+  "I_STAYONTOP": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "draw on top of other images always",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x0100"
+  },
+  "I_TOPMOST": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "draw on top of other images next update",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x0200"
+  },
+  "I_TOUCHED": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "touch test result",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x1000"
+  },
+  "I_TOUCH_DISABLE": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "set to disable touch for this image:\u20031 for movie or 0 for image",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x0020"
+  },
+  "I_X_LOCK": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "stop X movement",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x0400"
+  },
+  "I_Y_LOCK": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "stop Y movement",
+    "library": "pixxi",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x0800"
+  },
+  "JOY_BTNA": {
+    "category": "GPIO Functions / joystick",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "joystick",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "JOY_BTNB": {
+    "category": "GPIO Functions / joystick",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "joystick",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "JOY_DOWN": {
+    "category": "GPIO Functions / joystick",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "joystick",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "JOY_LEFT": {
+    "category": "GPIO Functions / joystick",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "joystick",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "JOY_RELEASED": {
+    "category": "GPIO Functions / joystick",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "joystick",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "JOY_RIGHT": {
+    "category": "GPIO Functions / joystick",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "joystick",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "JOY_UP": {
+    "category": "GPIO Functions / joystick",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "joystick",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "LANDSCAPE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Landscape Orientation",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "LANDSCAPE_R": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Reversed Landscape Orientation",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "LEFT_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Left location of Object",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_ADDRESS_HI": {
+    "category": "System Registers Memory",
+    "description": "uSD byte address HI",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_ADDRESS_LO": {
+    "category": "System Registers Memory",
+    "description": "uSD byte address LO",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_SECTOR_COUNT": {
+    "category": "System Registers Memory",
+    "description": "uSD number of bytes remaining in sector",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_SECTOR_HI": {
+    "category": "System Registers Memory",
+    "description": "uSD sector address HI",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_SECTOR_LO": {
+    "category": "System Registers Memory",
+    "description": "uSD sector address LO",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "NEEDLE_F_DOUBLETRIANGLE": {
+    "category": "Graphics Functions / gfx_Needle",
+    "description": "Double ended triangular needle pointer",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_needle",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "NEEDLE_F_LINE": {
+    "category": "Graphics Functions / gfx_Needle",
+    "description": "Line needle pointer",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_needle",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "NEEDLE_F_POINTRECTANGLE": {
+    "category": "Graphics Functions / gfx_Needle",
+    "description": "Pointed rectangular needle pointer",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_needle",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "NEEDLE_F_RECTANGLE": {
+    "category": "Graphics Functions / gfx_Needle",
+    "description": "Rectangular needle pointer",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_needle",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "NEEDLE_F_ROUNDEDRECTANGLE": {
+    "category": "Graphics Functions / gfx_Needle",
+    "description": "Rounded corner rectangular needle pointer",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_needle",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "NEEDLE_F_TRIANGLE": {
+    "category": "Graphics Functions / gfx_Needle",
+    "description": "Triangular needle pointer",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_needle",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "NORTH": {
+    "category": "Graphics Functions / gfx_BlitSprite",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_blitsprite",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "NORTH_MIRRORED": {
+    "category": "Graphics Functions / gfx_BlitSprite",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_blitsprite",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "OBJECT_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Generic colour for gfx_LineTo, gfx_LineRel, gfx_Dot, gfx_Bullet and gfx_BoxTo",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "16-bit Colour, 0x0000-0xFFFF"
+  },
+  "OUTLINE_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Outline colour for rectangles and circles(set to 0 for no effect)",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "16-bit Colour, 0x0000-0xFFFF"
+  },
+  "OUTPUT": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set to an output",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "PEN_SIZE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the draw mode for gfx_LineTo, gfx_LineRel, gfx_Dot, gfx_Bullet and gfx_BoxTo (default mode is OUTLINE)",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 or SOLID1 or OUTLINE"
+  },
+  "PORTRAIT": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Portrait Orientation",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "PORTRAIT_R": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Reversed Portrait Orientation",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "RANDOM_HI": {
+    "category": "System Registers Memory",
+    "description": "random generator HI word",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "RANDOM_LO": {
+    "category": "System Registers Memory",
+    "description": "random generator LO word",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "RIGHT_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Right location of Object",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SCREEN_MODE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set required screen behaviour/orientation.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 or LANDSCAPE1 or LANDSCAPE_R2 or PORTRAIT3 or PORTRAIT_R"
+  },
+  "SOUND": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set as sound output",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "SOUTH": {
+    "category": "Graphics Functions / gfx_BlitSprite",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_blitsprite",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "SOUTH_MIRRORED": {
+    "category": "Graphics Functions / gfx_BlitSprite",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_blitsprite",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "SYSTEM_TIMER_HI": {
+    "category": "System Registers Memory",
+    "description": "1msec system timer HI word",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYSTEM_TIMER_LO": {
+    "category": "System Registers Memory",
+    "description": "1msec system timer LO word",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_X_MAX": {
+    "category": "System Registers Memory",
+    "description": "display hardware X res-1",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_Y_MAX": {
+    "category": "System Registers Memory",
+    "description": "display hardware Y res-1",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_ATTRIBUTES": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Allows a combination of text attributes to be defined together by 'or'ing the bits together. The feature automatically resets after printing using putstr or print has completed. Example: txt_Set(TEXT_ATTRIBUTES, BOLD | INVERSE); // bold + inverse Note: bits 0-3 and 8-15 are reserved.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "16 or BOLD 32 or ITALIC 64 or INVERSE 128 or UNDERLINED"
+  },
+  "TEXT_BOLD": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets Bold Text mode for the next string or char. The feature automatically resets after printing using putstr or print has completed.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_COLOUR": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text foreground colour.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "Colour 0-65535 Default = LIME"
+  },
+  "TEXT_HEIGHT": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text height multiplier. Text will be printed magnified vertically by this factor.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1 to 16 Default = 1"
+  },
+  "TEXT_HIGHLIGHT": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text background colour.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "Colour 0-65535 Default = BLACK"
+  },
+  "TEXT_INVERSE": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets Inverse Text mode for the next string or char. The feature automatically resets after printing using putstr or print has completed.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_ITALIC": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets Italic Text mode for the next string or char. The feature automatically resets after printing using putstr or print has completed.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_MARGIN": {
+    "category": "System Registers Memory",
+    "description": "text left pixel pos for carriage return",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_OPACITY": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Selects whether or not the 'background' pixels are drawn.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 or TRANSPARENT 1 or OPAQUE Default = 1 (OPAQUE)"
+  },
+  "TEXT_PRINTDELAY": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the delay between character printing to give a 'teletype' like effect.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 to 255 Default = 0 msec"
+  },
+  "TEXT_UNDERLINED": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets Underlined Text mode for the next string or char. The feature automatically resets after printing using putstr or print has completed.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_WIDTH": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text width multiplier. Text will be printed magnified horizontally by this factor.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1 to 16 Default = 1"
+  },
+  "TEXT_WRAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets the pixel position where text wrap will occur at RHS The feature automatically resets when screen mode is changed. If the value is set to 0, text wrap is turned off of the current screen. Note: The value is in pixel.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 to n (OFF or Value) Default = 0"
+  },
+  "TEXT_XGAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the pixel gap between characters. The gap is in pixel units.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 to 32 Default = 0"
+  },
+  "TEXT_XPOS": {
+    "category": "System Registers Memory",
+    "description": "text current x pixel position",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_YGAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the pixel gap between lines. The gap is in pixel units.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0 to 32 Default = 0"
+  },
+  "TEXT_YPOS": {
+    "category": "System Registers Memory",
+    "description": "text current y pixel position",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER0": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 0",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER1": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 1",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER2": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 2",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER3": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 3",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER4": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 3",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER5": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 3",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER6": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 3",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER7": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 3",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOP_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Top location of Object",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_RAW_X": {
+    "category": "System Registers Memory",
+    "description": "12-bit raw A2D X value from touch screen",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_RAW_Y": {
+    "category": "System Registers Memory",
+    "description": "12-bit raw A2D Y value from touch screen",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_XMAXCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_XMINCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_YMAXCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_YMINCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TRANSPARENCY": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Turn the transparency ON or OFF. Transparency is automatically turned OFF after the next image or video command.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "1 or 0 (ON or OFF)"
+  },
+  "TRANSPARENT_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Colour that needs to be made transparent.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "16-bit Colour, 0x0000-0xFFFF"
+  },
+  "TXT_FONT_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "current font height",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_MAX": {
+    "category": "System Registers Memory",
+    "description": "max number of chars in font",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_OFFSET": {
+    "category": "System Registers Memory",
+    "description": "starting offset (normally 0x20)",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_TYPE": {
+    "category": "System Registers Memory",
+    "description": "font type, 0 = system font, else pointer to user font",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "current font width",
+    "library": "pixxi",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "WEST": {
+    "category": "Graphics Functions / gfx_BlitSprite",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_blitsprite",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "WEST_MIRRORED": {
+    "category": "Graphics Functions / gfx_BlitSprite",
+    "description": "",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_blitsprite",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "WIDGET_DELAY": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "Inter frame delay (Flash widgets only).",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "WIDGET_FLAGS": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "RAM Flags.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "WIDGET_FRAMES": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "Number of frames (Flash widgets only).",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "WIDGET_F_FLASH": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "set if this is a flash based widget.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x0400"
+  },
+  "WIDGET_F_INITIALISED": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "Flag when 'base gauge needle, etc.' is done",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x2000"
+  },
+  "WIDGET_F_INPUT": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "Set if this is an input (Used only with the IDE).",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x0800"
+  },
+  "WIDGET_F_INTERNAL": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "Internal use only (force redraw on next write).",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x4000"
+  },
+  "WIDGET_F_RESERVED": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "bits 9-6 reserved.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x03c0"
+  },
+  "WIDGET_F_TOUCH_ENABLE": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "Set to disable touch for this image, (default=1 for movie, 0 for image).",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x8000"
+  },
+  "WIDGET_F_UNDRAW_ONLY": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "Set to prevent draw of new needle.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0x1000"
+  },
+  "WIDGET_HEIGHT": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "RAM height, needed for touch.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "WIDGET_HI_WORD": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "Flash offset high word (Flash widgets only).",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "WIDGET_LO_WORD": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "Flash offset low word (External Flash widgets only).",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "WIDGET_TAG": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "RAM tag (user or FORM#).",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "WIDGET_TAG2": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "RAM tag2 (user or object << 8",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "WIDGET_VAL1": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "RAM current value.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "WIDGET_WIDTH": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "RAM width, needed for touch.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "WIDGET_XOTHER": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "RAM xpos 'other' (Non Flash widgets only).",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "WIDGET_XPOS": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "RAM xpos",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "WIDGET_YOTHER": {
+    "category": "Widget Functions / widget_SetWord",
+    "description": "RAM ypos 'other' (Non Flash widgets only).",
+    "library": "pixxi",
+    "source": {
+      "anchor": "widget_setword",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "X_MAX": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Current orientations maximum X Value",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "X_ORG": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Get current internal X position",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "Y_MAX": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Current orientations maximum Y Value",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "Y_ORG": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Get current internal Y position",
+    "library": "pixxi",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  }
+}

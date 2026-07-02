@@ -1,0 +1,914 @@
+{
+  "argcount": {
+    "category": "Functions and Subroutines",
+    "description": "This compiler function returns then number of arguments required by a PmmC or user function. It is used often for getting the argument count when using the @ operator when using a function pointer. Syntax: argcount(functionName);",
+    "examples": [
+      "func aIsLarger(var a, var b)\n    return a > b;\nendfunc\n\nfunc main()\n    print(\"argcount :=\", argcount(aIsLarger));\nendfunc"
+    ],
+    "kind": "keyword",
+    "names": [
+      "argcount"
+    ],
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the User/PmmC function to check for number of arguments",
+        "name": "functionName"
+      }
+    ],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "argcount",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "break-and-continue": {
+    "category": "Language Flow Control",
+    "description": "It is possible exit from a while, repeat, or for loop at any time by using the break statement. When the execution path encounters a break statement the looping will stop, and execution will proceed to the code immediately following the loop. It is important to note that in the case of nested loops the break statement only exits the current loop leaving the outer loop to continue execution. The continue statement causes all remaining code statements in a loop to be skipped and execution to be returned to the top of the loop.",
+    "examples": [],
+    "kind": "keyword",
+    "names": [
+      "break",
+      "continue"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "func main()\n    while (n < 20)\n        n++;\n        if (n == 3) continue;\n        if (n == 7) break;  // output is 12456\n        print(n);\n    wend\nendfunc",
+    "source": {
+      "anchor": "break-and-continue",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "func main()\n    while (n < 20)\n        n++;\n        if (n == 3) continue;\n        if (n == 7) break;  // output is 12456\n        print(n);\n    wend\nendfunc"
+    ]
+  },
+  "cond-#ELSE": {
+    "category": "Pre-Processor Directives",
+    "description": "These pre-processor directives allow you to test the value of an arithmetic expression, or the existence of a pre-defined constant or PmmC function name, or the size of a predefined array. #IFNOT gives the inverse response of #IF. EXISTS can be appended to these two to test the existence of a pre-defined constant or PmmC function name. USING can be appended to #IF to determine whether or not a certain function is to be used and therefore, compiled. Combined with #ELSE and #ENDIF, conditional inheritance of other files and control of blocks of code can be performed. The following pre-processor directives can be used together with #IF and #IFNOT for specific evaluation: The following pre-processor directives can be use to provide helpful notices, warnings and showing errors.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#ELSE"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "cond-#ENDIF": {
+    "category": "Pre-Processor Directives",
+    "description": "These pre-processor directives allow you to test the value of an arithmetic expression, or the existence of a pre-defined constant or PmmC function name, or the size of a predefined array. #IFNOT gives the inverse response of #IF. EXISTS can be appended to these two to test the existence of a pre-defined constant or PmmC function name. USING can be appended to #IF to determine whether or not a certain function is to be used and therefore, compiled. Combined with #ELSE and #ENDIF, conditional inheritance of other files and control of blocks of code can be performed. The following pre-processor directives can be used together with #IF and #IFNOT for specific evaluation: The following pre-processor directives can be use to provide helpful notices, warnings and showing errors.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#ENDIF"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "cond-#IF": {
+    "category": "Pre-Processor Directives",
+    "description": "These pre-processor directives allow you to test the value of an arithmetic expression, or the existence of a pre-defined constant or PmmC function name, or the size of a predefined array. #IFNOT gives the inverse response of #IF. EXISTS can be appended to these two to test the existence of a pre-defined constant or PmmC function name. USING can be appended to #IF to determine whether or not a certain function is to be used and therefore, compiled. Combined with #ELSE and #ENDIF, conditional inheritance of other files and control of blocks of code can be performed. The following pre-processor directives can be used together with #IF and #IFNOT for specific evaluation: The following pre-processor directives can be use to provide helpful notices, warnings and showing errors.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#IF"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "cond-#IF EXISTS": {
+    "category": "Pre-Processor Directives",
+    "description": "These pre-processor directives allow you to test the value of an arithmetic expression, or the existence of a pre-defined constant or PmmC function name, or the size of a predefined array. #IFNOT gives the inverse response of #IF. EXISTS can be appended to these two to test the existence of a pre-defined constant or PmmC function name. USING can be appended to #IF to determine whether or not a certain function is to be used and therefore, compiled. Combined with #ELSE and #ENDIF, conditional inheritance of other files and control of blocks of code can be performed. The following pre-processor directives can be used together with #IF and #IFNOT for specific evaluation: The following pre-processor directives can be use to provide helpful notices, warnings and showing errors.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#IF EXISTS"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "cond-#IFNOT": {
+    "category": "Pre-Processor Directives",
+    "description": "These pre-processor directives allow you to test the value of an arithmetic expression, or the existence of a pre-defined constant or PmmC function name, or the size of a predefined array. #IFNOT gives the inverse response of #IF. EXISTS can be appended to these two to test the existence of a pre-defined constant or PmmC function name. USING can be appended to #IF to determine whether or not a certain function is to be used and therefore, compiled. Combined with #ELSE and #ENDIF, conditional inheritance of other files and control of blocks of code can be performed. The following pre-processor directives can be used together with #IF and #IFNOT for specific evaluation: The following pre-processor directives can be use to provide helpful notices, warnings and showing errors.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#IFNOT"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "cond-#IFNOT EXISTS": {
+    "category": "Pre-Processor Directives",
+    "description": "These pre-processor directives allow you to test the value of an arithmetic expression, or the existence of a pre-defined constant or PmmC function name, or the size of a predefined array. #IFNOT gives the inverse response of #IF. EXISTS can be appended to these two to test the existence of a pre-defined constant or PmmC function name. USING can be appended to #IF to determine whether or not a certain function is to be used and therefore, compiled. Combined with #ELSE and #ENDIF, conditional inheritance of other files and control of blocks of code can be performed. The following pre-processor directives can be used together with #IF and #IFNOT for specific evaluation: The following pre-processor directives can be use to provide helpful notices, warnings and showing errors.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#IFNOT EXISTS"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "constants": {
+    "category": "Constants and Variables",
+    "description": "A constant is a data value that cannot be changed during run-time. A constant can be declared as a single line entry with the #constant directive. A block of constants can be declared with the #CONST and #END directives. Every constant is declared with a unique name which must be a valid identifier. It is a good practice to write constant names in uppercase. The constant's value can be expressed as decimal, binary, hex or string. If a constant's value is prepended with a $it becomes a complete text substitution with no validation during pre-processing.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#constant",
+      "#CONST"
+    ],
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The required symbol to define",
+        "name": "#constant"
+      },
+      {
+        "description": "The name of the constant",
+        "name": "name"
+      },
+      {
+        "description": "A value to set the symbol to",
+        "name": "value"
+      }
+    ],
+    "related": [],
+    "signature": "#constant NAME value",
+    "source": {
+      "anchor": "constants",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "#constant NAME value",
+      "#constant NAME1 := value1, NAME2 := value2,..., NAMEN := valueN",
+      "#constant NAME equation",
+      "#constant NAME $TextSubstitution",
+      "#CONST\n    BUTTONCOLOUR    0xC0C0\n    SLIDERMAX       200\n#END"
+    ]
+  },
+  "data-blocks": {
+    "category": "Constants and Variables",
+    "description": "#DATA blocks reside in the CODE space and can be bytes or words. Data cannot be changed during run-time (i.e., it is read only). A block of data can be indexed like an array. A block of data is declared with the #DATA and #END directives. Every data entry is declared with a unique name which must be a valid identifier.",
+    "examples": [
+      "#DATA\n    word values     0x0123, 0x4567, 0x89AB, 0xCDEF\n    byte hexval     \"0123456789ABCDEF\"\n#END\n\n// and in a function,\nfunc main()\n    var ch, wd, index1, index2;\n    ch := hexval[index1];\n\n    // load ch with the correct ascii character\n\n    wd := values[index2];   // get the required value to wd\n    // ...\nendfunc",
+      "#constant SPEED 33\n\n#DATA\n    word mylimits (BUFSIZE1+BUFSIZE2)*750/1000, 100, 200, (SPEED*20)\n#END\n\nfunc main()\n    var n;\n    for (n:=0; n < sizeof(mylimits); n++) print(mylimits[n],\"\\n\");\nendfunc",
+      "#DATA\n    word myfuncs    tom, joey, harry\n#END\n\nfunc main()\n    var n;\n    for (n:=0; n < sizeof(myfuncs); n++) myfuncs[n]();\nendfunc\n\nfunc tom()\n    putstr(\"Tom\\n\");\nendfunc\n\nfunc joey()\n    putstr(\"Joey\\n\");\nendfunc\n\nfunc harry()\n    putstr(\"Harry\\n\");\nendfunc"
+    ],
+    "kind": "directive",
+    "names": [
+      "#DATA",
+      "#END"
+    ],
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The required symbol to define",
+        "name": "#DATA"
+      },
+      {
+        "description": "byte or word data type keyword",
+        "name": "type"
+      },
+      {
+        "description": "The name of the data array",
+        "name": "name"
+      },
+      {
+        "description": "A list of 8 bit or 16 bit values in the data array",
+        "name": "value"
+      }
+    ],
+    "related": [],
+    "signature": "#DATA\n    type name   value1, value2, /* ... */ valueN\n#END",
+    "source": {
+      "anchor": "data-blocks",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "#DATA\n    type name   value1, value2, /* ... */ valueN\n#END",
+      "#DATA\n    type name\n    value1, value2, /* ... */ valueN\n#END",
+      "#DATA\n    type name   equation1, equation2, /* ... */ equationN\n#END"
+    ]
+  },
+  "for-next": {
+    "category": "Language Flow Control",
+    "description": "Repeats a set of statement certain number of times. The for statement contain 3 main sections: initialisation, condition and update These three sections are separated by semicolon ;. The for-loop is typically started with:",
+    "examples": [
+      "for (n := 5; n < 15; n++) myfunc();",
+      "func main()\n    for (rad:=0; rad < 100; rad++)\n        gfx_Circle(63, 63, rad, color);\n    next\nendfunc"
+    ],
+    "kind": "keyword",
+    "names": [
+      "for",
+      "next"
+    ],
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Assign a value to an already existing variable. More than one variable may be initialized here, not necessarily associated with the loop control.",
+        "name": "initialisation"
+      },
+      {
+        "description": "Tells the program that while the conditional expression is true the loop should continue to repeat itself.",
+        "name": "condition"
+      },
+      {
+        "description": "A statement that may update the variable being used in the conditional expression or call a function",
+        "name": "update"
+      },
+      {
+        "description": "Optional single statement to be executed",
+        "name": "statement"
+      },
+      {
+        "description": "Optional block of statements or single statement to be executed",
+        "name": "statements"
+      }
+    ],
+    "related": [
+      {
+        "description": "Break out of the for-next loop by jumping to the statement following the next. (optional)",
+        "name": "break;"
+      },
+      {
+        "description": "Skip back to beginning of the for/next updater (last section). (optional)",
+        "name": "continue;"
+      }
+    ],
+    "signature": "for (initialisation; condition; update)",
+    "source": {
+      "anchor": "for-next",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "for (initialisation; condition; update)",
+      "for (initialisation; condition; update) [statement];",
+      "for (initialisation; condition; update)\n    // statements to execute while the condition is true\n    [statements]\nnext"
+    ]
+  },
+  "func-endfunc": {
+    "category": "Functions and Subroutines",
+    "description": "A function in 4DGL, just as in the C language, is a block of code that performs a specific task. Each function has a unique name, and it is reusable i.e., it can be called and executed from as many different parts in a 4DGL program. A function can also optionally return a value to the calling program. Functions can also be viewed as small programs on their own.",
+    "examples": [
+      "/*\n    This example shows how to create a function and its usage in\n    calling and passing parameters.\n*/\n\nfunc add2(var x, var y)\n    var z;\n    z := x + y;\n    return z;\nendfunc\n\nfunc main()\n    var a;\n    a := add2(10, 4);\n    print(a);\nendfunc",
+      "func myfunc(var n) print(\"Error: \", [STR] errorstrings[n]); endfunc",
+      "bill = CalculateBill(data, ...);"
+    ],
+    "kind": "keyword",
+    "names": [
+      "func",
+      "endfunc",
+      "return"
+    ],
+    "notes": [
+      "Functions must be created before they can be used. Functions can optionally return a value"
+    ],
+    "parameters": [
+      {
+        "description": "Required name/identifier for the function",
+        "name": "name"
+      },
+      {
+        "description": "Optional list of parameters to be passed to the function",
+        "name": "parameterN"
+      },
+      {
+        "description": "A block of statements that make up the body of the function",
+        "name": "statements"
+      },
+      {
+        "description": "Exit this function, returning control back to the calling function (optional)",
+        "name": "return"
+      },
+      {
+        "description": "Exit this function, with a variable or expression to return a value for this function (optional)",
+        "name": "return value"
+      }
+    ],
+    "related": [],
+    "signature": "func name([var parameter1, var parameter2, /* ... */ var parameterN])\n    [statements]\n    [return value;]\nendfunc",
+    "source": {
+      "anchor": "func-endfunc",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "func name([var parameter1, var parameter2, /* ... */ var parameterN])\n    [statements]\n    [return value;]\nendfunc",
+      "func name([var parameter1, var parameter2, /* ... */ var parameterN])\n    [statements]\n    [return;]\nendfunc"
+    ]
+  },
+  "gosub-endsub": {
+    "category": "Functions and Subroutines",
+    "description": "The gosub starts executing the statements at the label (subroutine name) until it reaches endsub and returns to continue after the gosub statement. The above syntax executes the statements at label:. When the endsub; statement is reached, execution resumes with the statement following the gosub statement. The code between label: and the endsub; statement is called a subroutine.",
+    "examples": [
+      "func myfunc()\n    gosub mysub1;\n    gosub mysub2;\n    gosub mysub3;\n    print(\"\\nAll Done\\n\")\n    return; // return from function *** see below\n\nmysub1:\n    print(\"\\nexecuted sub #1\");\nendsub; // return from subroutine\n\nmysub2:\n    print(\"\\nexecuted sub #2\");\nendsub; // return from subroutine\n\nmysub3:\n    print(\"\\nexecuted sub #3\");\nendsub; // return from subroutine\nendfunc\n\nfunc main()\n    myfunc();\nendfunc",
+      "gosub (index), (label1, label2, /* ... */ labelN);\n\nlabel1:\n    [statements]\nendsub;\n\nlabel2:\n    [statements]\nendsub;\n\nlabelN:\n    [statements]\nendsub;",
+      "func myfunc(var key)\n\n    var r;\n    to (COM0);  // set redirection for the next print command\n                // to the COM port\n\n    r := lookup8(key, \"fbsclx?h\");\n    gosub(r), (unknown, forward, backward, set, clear, load, exit, help);\n\n    goto done;\n\nhelp:\n    putstr(\"Menu f,b,i,d,s,c,l or x (? or h for help)\\n\");\nendsub;\n\nunknown:\n    print(\"\\nBad command '\", [CHR]key, \"' ?\");\n    /* more code here */\nendsub;\n\nforward:\n    print(\"\\nFORWARD  \");\n    /* more code here */\nendsub;\n\nbackward:\n    print(\"\\nBACKWARD \");\n    /* more code here */\nendsub;\n\nset:\n    print(\"\\nSET      \");\n    /* more code here */\nendsub;\n\nclear:\n    print(\"\\nCLEAR    \");\n    /* more code here */\nendsub;\n\nload:\n    print(\"\\nLOAD     \");\n    /* more code here */\nendsub;\n\nexit:\n    print(\"\\nEXIT     \");\n    print(\"\\nbye....\");\n    /* more code here */\n    r := -1;   // signal an exit\nendsub;\n\ndone:\n    return r;\n\nendfunc\n\nfunc main()\n    var ch;\n    putstr(\"Open the Workshop4 terminal\\n\");\n    putstr(\"Enter f,b,i,d,s,c,l or x\\n\");\n    putstr(\"Enter ? or h for help\\n\");\n    putstr(\"Enter x for exit\\n\");\n    ch := '?';\n\n    goto here; // enter here to show help menu first up\n\n    repeat\n        while ((ch := serin()) < 0); // wait for a character\n\nhere:\n        if (myfunc(ch) == -1) break;\n\n    // keep going until we get the exit command\n    forever\n\n    putstr(\"\\nEXITING\");\nendfunc"
+    ],
+    "kind": "keyword",
+    "names": [
+      "gosub",
+      "endsub"
+    ],
+    "notes": [
+      "The gosub statement can only be used within a function. All gosub labels are private within the function body. All subroutines must end with endsub; All labels must be followed by a colon :. ** A common mistake is to forget the 'return' to return from a subroutine within a function.",
+      "The indexed gosub can only be used within a function. If index is zero or greater than the number of labels, the first label is always executed."
+    ],
+    "parameters": [],
+    "related": [],
+    "signature": "gosub label;\n\nlabel:\n    [statements]\nendsub;",
+    "source": {
+      "anchor": "gosub-endsub",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "gosub label;\n\nlabel:\n    [statements]\nendsub;"
+    ]
+  },
+  "goto": {
+    "category": "Language Flow Control",
+    "description": "The goto instruction will force a jump to the label and continue execution from the statement following the label. Unlike the gosub there is no return. It is strongly recommended that goto SHOULD NEVER BE USED, however, it is included in the language for completeness. The goto statement can only be used within a function and all labels are private within the function body. All labels must be followed by a colon :.",
+    "examples": [
+      "func main()\n\n   if (x < 20) goto bypass1;\n   print(\"X too small\");\n   x := 20;\n\nbypass1:\n   if (y < 50) goto bypass2;\n   print(\"Y too small\");\n   y := 50;\n\nbypass2:\n   // more code here\n\nendfunc"
+    ],
+    "kind": "keyword",
+    "names": [
+      "goto"
+    ],
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Required label for the goto jump",
+        "name": "label"
+      }
+    ],
+    "related": [],
+    "signature": "   goto label; // branches to the statements at label:\n   // ...\n   // insert code here\n   // ...\n\nlabel:\n   [statements]",
+    "source": {
+      "anchor": "goto",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "   goto label; // branches to the statements at label:\n   // ...\n   // insert code here\n   // ...\n\nlabel:\n   [statements]"
+    ]
+  },
+  "helper-argcount": {
+    "category": "Pre-Processor Directives",
+    "description": "number of arguments required by User/PmmC function",
+    "examples": [],
+    "kind": "keyword",
+    "names": [
+      "argcount"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "helper-sizeof": {
+    "category": "Pre-Processor Directives",
+    "description": "size of a predefined array",
+    "examples": [],
+    "kind": "keyword",
+    "names": [
+      "sizeof"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "if-else-endif": {
+    "category": "Language Flow Control",
+    "description": "The if-else statement is a two-way decision statement. The if statement answers the question, \"Is this true or false?\", then proceeds on some action based on this. If the condition was true, then the statement(s) following the if is executed and if the condition was false then the statement(s) following the else is executed.",
+    "examples": [
+      "func collision()\n    if (ball_x <= LEFTWALL)\n        ball_x := LEFTWALL;\n        ball_colour := LEFTCOLOUR;\n        xdir := -xdir;\n    endif\n\n    if (ball_x >= RIGHTWALL)\n        ball_x := RIGHTWALL;\n        ball_colour := RIGHTCOLOUR;\n        xdir := -xdir;\n    endif\nendfunc"
+    ],
+    "kind": "keyword",
+    "names": [
+      "if",
+      "else",
+      "endif"
+    ],
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Required conditional expression to evaluate",
+        "name": "condition"
+      },
+      {
+        "description": "Optional single statement",
+        "name": "statement"
+      },
+      {
+        "description": "Optional block of statements or single statement to be executed",
+        "name": "statements"
+      }
+    ],
+    "related": [],
+    "signature": "if (condition) statement;",
+    "source": {
+      "anchor": "if-else-endif",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "if (condition) statement;",
+      "if (condition) statement; else statement;",
+      "if (condition)\n    [statements]\nelse\n    [statements]\nendif"
+    ]
+  },
+  "inherit": {
+    "category": "Pre-Processor Directives",
+    "description": "#inherit \"filename\" includes another source file. Inherited files can be nested. Inherited files can now also contain #DATA, functions, and variables. There is no special ordering required for functions. main function can now be the first function in the program if required, however, pre-processor calculation cannot be forward referenced. There is now also a mechanism to allow selected portions of an inherited file to be compiled on demand (see #USE and USING below). Syntax: #inherit \"filename.fnc\"",
+    "examples": [
+      "#platform \"GOLDELOX\"\n#inherit \"4DGL_16bitColours.fnc\"\n\nfunc main()\n    // do something\nendfunc"
+    ],
+    "kind": "directive",
+    "names": [
+      "#inherit"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "inherit",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "mode": {
+    "category": "Pre-Processor Directives",
+    "description": "This is used to define pre-processor directives such as the memory section you want you program to run from, and Flash Memory protection. These pre-processor Directives do not apply to GOLDELOX. #MODE is defined at the start of your program, typically after any #inherit lines. PICASO, PIXXI-28 and PIXXI-44 Processors have the following directives available.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#MODE"
+    ],
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Program will execute from processor Flash Memory. If omitted, the Program loaded in Flash memory will load to RAM before it is run. A program that runs directly from Flash will run a little slower than a program that is run from RAM but has the advantage of leaving RAM space free for other functions.",
+        "name": "RUNFLASH"
+      },
+      {
+        "description": "Irrelevant for DIABLO as the RUNFLASH overhead for DIABLO is negligible and therefore is always used. The Program will execute from processor Flash Memory whether this is defined or not. Listed for information purposes only.",
+        "name": "RUNFLASH"
+      },
+      {
+        "description": "Program target is Flashbank 0 (or 1, 2, 3, 4, 5 as defined). This is useful when writing child programs and defining which Flashbank the child program will reside in.",
+        "name": "FLASHBANK_0FLASHBANK_1FLASHBANK_2FLASHBANK_3FLASHBANK_4FLASHBANK_5"
+      },
+      {
+        "description": "This saves the current program to the uSD on the display. Ensure that the program file on your computer is saved and has an 8.3 filename, otherwise the first 12 characters will become the filename.ext",
+        "name": "SAVE_TO_DISK"
+      },
+      {
+        "description": "This makes the Flashbank that the code is written to read protected so that it cannot be read by flash read type commands.",
+        "name": "FLASH_READ_PROTECT"
+      },
+      {
+        "description": "This makes the Flashbank that the code is written to write protected so it cannot be overwritten using the various flash write type commands. It can only be erased using flash_EraseBank() with the confirmation.",
+        "name": "FLASH_WRITE_PROTECT"
+      }
+    ],
+    "related": [],
+    "signature": "#MODE RUNFLASH      // This prog intended to be 'front end' and run from FLASH",
+    "source": {
+      "anchor": "mode",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "#MODE RUNFLASH      // This prog intended to be 'front end' and run from FLASH",
+      "#MODE SAVE_TO_DISK  // This prog will be saved to uSD card on DIABLO-",
+      "// This program will reside on FlashBank 2 and will be Read/Write Protected\n#MODE FLASHBANK_2 + FLASH_READ_PROTECT + FLASH_WRITE_PROTECT"
+    ]
+  },
+  "notice-#ERROR": {
+    "category": "Pre-Processor Directives",
+    "description": "Pre-processor directive used to provide helpful notices, warnings, or errors during compilation.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#ERROR"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "notice-#MESSAGE": {
+    "category": "Pre-Processor Directives",
+    "description": "Pre-processor directive used to provide helpful notices, warnings, or errors during compilation.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#MESSAGE"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "notice-#NOTICE": {
+    "category": "Pre-Processor Directives",
+    "description": "Pre-processor directive used to provide helpful notices, warnings, or errors during compilation.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#NOTICE"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "conditional-pre-processor-directives",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "private-variables": {
+    "category": "Constants and Variables",
+    "description": "In the normal course of program execution, any variables declared locally in functions are discarded when the function exits, freeing up the stack. If we want the value of a variable or variable array to be retained after the function has executed, we simply declare the variable as private. A private variable may be initialised just like a normal global or local variable, however, it will only be initialised once during the program initialisation in the start-up code (just like a global variable); therefore, each time the function is called, the value that was set during the last call - is persistent, OR it is the value that was set during initialisation (if this is the first call, or it has not been changed).",
+    "examples": [
+      "func myfunc()\nvar private hitcounter := 100;  // initial hitcounter value is 100\nprint(\"\\nHits = \",hit\"ounter++)\"\nendfunc"
+    ],
+    "kind": "keyword",
+    "names": [
+      "private"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "private-variables",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "programexit": {
+    "category": "Functions and Subroutines",
+    "description": "This function resets contrast to 0 and puts the display into low power sleep mode. For some devices, the only wakeup procedure is a reset or power cycle. Refer to individual module or chip specifications for information on other sleep/wakeup modes. Syntax: ProgramExit();",
+    "examples": [
+      "if (exitNow)\n    ProgramExit();\nendif"
+    ],
+    "kind": "function",
+    "names": [
+      "ProgramExit"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "programexit",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "repeat-untilforever": {
+    "category": "Language Flow Control",
+    "description": "Loop through a block of statements until a specified condition is true. The statement block will always execute at least once even if the until(condition) result is true. For example, you may need to step through an array until a specific item is found. The repeat statement may also be used on a single line with until(condition);",
+    "examples": [
+      "i := 0;\nrepeat i++; until(i >= 5);",
+      "i := 0;\nrepeat\n    myVar := myVar * i;\n    i++;\nuntil (i >= 5);",
+      "i := 0;\nrepeat\n    myVar := myVar * i;\n    i++;\n    if (i >= 5) break;\nforever"
+    ],
+    "kind": "keyword",
+    "names": [
+      "repeat",
+      "until",
+      "forever"
+    ],
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Optional single statement to be executed",
+        "name": "statement"
+      },
+      {
+        "description": "Optional block of statements or single statement to be executed",
+        "name": "statements"
+      },
+      {
+        "description": "Required keyword to specify the end of the repeat loop block if not using until(condition);",
+        "name": "forever"
+      },
+      {
+        "description": "Required keyword to specify the end of the repeat loop block if not using forever",
+        "name": "until"
+      },
+      {
+        "description": "Required condition to evaluate at the end of loop. The loop will be repeated until the condition is true.",
+        "name": "condition"
+      }
+    ],
+    "related": [
+      {
+        "description": "Break out of the repeat loop by jumping to the statement following the until(condition) or forever keywords. (optional)",
+        "name": "break;"
+      },
+      {
+        "description": "Skip back to beginning of the repeat loop (optional)",
+        "name": "continue;"
+      }
+    ],
+    "signature": "repeat (statement); until(condition);",
+    "source": {
+      "anchor": "repeat-untilforever",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "repeat (statement); until(condition);",
+      "while (condition);\n// Program will stop here, continuously evaluating the\n// condition and proceeds when condition is FALSE",
+      "while (condition)\n    [statements]\n    [break;]\n    [continue;]\nwend"
+    ]
+  },
+  "stack": {
+    "category": "Pre-Processor Directives",
+    "description": "The Stack is a fixed portion of RAM on the system Heap (The Heap comprises all the RAM available to the user and is largely managed automatically) when a program starts. It contains local variables, parameters, and the return address of the previous function for the current function. The same information for all previous functions is also stored on the stack. #STACK xxx is used to define the size of RAM, where xxx is the desired size. The default value, when not specified is 200 'entries' in size, each entry is a word long. In ViSi-Genie, the #STACK is handled automatically. In Designer and ViSi, the #STACK needs to be handled by the User, as the size of the Stack required depends on the code that has been written. Generally, the default is adequate, although for programs with recursive functions, functions with large quantities of variables, or where the function 'depth' is large, a larger value might be needed.",
+    "examples": [
+      "#STACK 500"
+    ],
+    "kind": "directive",
+    "names": [
+      "#STACK"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "stack",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "stop": {
+    "category": "Pre-Processor Directives",
+    "description": "This pre-processor directive terminates compilation, it is mainly used for debugging purposes to disable compilation of code from a certain point onwards.",
+    "examples": [
+      "#STOP // compiler will stop here"
+    ],
+    "kind": "directive",
+    "names": [
+      "#STOP"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "stop",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "switch-endswitch": {
+    "category": "Language Flow Control",
+    "description": "Runs one of several groups of statements, depending on the value of an expression. In 4DGL, there are 2 different classes of switch-case statement. The first type is switch with expression. It evaluates the conditional expression following the switch statement and tests it against numerous constant values (the cases). A case that matches the value of the expression executes the statement block. The case statements and the default statement can occur in any order in the switch body. The default statement is optional and is activated if none of the constants in the case statements can be matched. The continue statement may be used to force the switch statement to re-evaluate the expression and restart the switch body.",
+    "examples": [
+      "var msg[100];\nfunc main()\n    var result;\n    to (msg); putstr(\"This msg contains 4DGL and other words\");\n    print(\"string has \", strlen(msg), \" characters\\n\");\n    result := test1();\n    print(\"found '4DGL' at position \", result, \"\\n\");\n    repeat forever\nendfunc\n\n// Uses four nested switch statements in a loop to scan character patterns.\n// Not a good way to scan for patterns, but a good switch test.\n// Note, the breaks have been commented out as they are redundant as there are no more cases in the nested switch level.\n\nfunc test1()\n    var i, p;\n    p := str_Ptr(msg);\n    for (i := 0; i < strlen(msg) - 3; i++)\n        switch (str_GetByte(p + i))\n            case '4':\n                switch (str_GetByte(p + i + 1))\n                    case 'd':\n                    case 'D':\n                        switch (str_GetByte(p + i + 2))\n                            case 'g':\n                            case 'G':\n                                switch (str_GetByte(p + i + 3))\n                                    case 'l':\n                                    case 'L':\n                                        return i;\n                                endswitch\n                            break;\n                        endswitch\n                    break;\n                endswitch\n            break;\n        endswitch\n    next\n    return 0;\nendfunc",
+      "switch\n    case (expression1)     // see note #2\n        [statements];       // statementsBlock1\n        break;              // optional break\n\n    case (expression2)\n        [statements];       // statementsBlock2A\n        continue;           // optional continue\n        [statements];       // statementsBlock2B\n        break;              // optional break\n\n    case (expression3)\n        [statements];       // statementsBlock3\n        break;              // optional break\n\n    case (expressionN)\n        [statements];       // statementsBlockN\n        break;              // optional break\n\n    default:\n        [statements];       // defaultStatementBlock\n    break;                  // optional break\nendswitch"
+    ],
+    "kind": "keyword",
+    "names": [
+      "switch",
+      "endswitch",
+      "case"
+    ],
+    "notes": [
+      "Multiple case statement values can be associated with a statement block. The compiler produces the most efficient code if the case values are a consecutive range of numbers in which case it can produce a simple linear vector table which will not only be compact but will execute a bit faster than non-consecutive values. This does not mean that the cases need to be in this order, they are sorted during compilation to produce a linear table if possible. If the case values are not ordered, the compiler still determines the best strategy for building case statements depending on case values, eg. if you use values less than 255 it can build a match table for the vectors in a linear byte array (similar to the lookup8 function), but if the values exceed 255 it needs to build a match table with words (similar to the lookup16 function).",
+      "For this class of switch, the switch statement has no expression. Each case must be a parenthesised comparison expression, and no colon follows."
+    ],
+    "parameters": [
+      {
+        "description": "Expression to check the value of for each of the constants",
+        "name": "expression"
+      },
+      {
+        "description": "Values to check the expression with",
+        "name": "constantN"
+      },
+      {
+        "description": "Optional block of statements or single statement to be executed",
+        "name": "statements"
+      },
+      {
+        "description": "Break out of the switch-endswitch by jumping to the statement following the emdswitch. (optional)",
+        "name": "break;"
+      },
+      {
+        "description": "Force the switch statement to re-evaluate the expression and restart the switch body. (optional)",
+        "name": "continue;"
+      },
+      {
+        "description": "Expressions/Condition to check",
+        "name": "expressionN"
+      },
+      {
+        "description": "Optional block of statements or single statement to be executed",
+        "name": "statements"
+      },
+      {
+        "description": "Break out of the switch-endswitch by jumping to the statement following the emdswitch. (optional)",
+        "name": "break;"
+      },
+      {
+        "description": "Force the switch statement to re-evaluate the expression and restart the switch body. (optional)",
+        "name": "continue;"
+      }
+    ],
+    "related": [],
+    "signature": "switch (expression)\n    case constant1:\n    case constantN:     // see note #1\n        [statements];   // statementsBlock1\n        break;          // optional break\n\n    case constant2:\n        [statements];   // statementsBlock2A\n        continue;       // optional continue\n        [statements];   // statementsBlock2B\n        break;          // optional break\n\n    case constant3:\n        [statements];   // statementsBlock3\n        break;          // optional break\n\n    default:\n        [statements];   // defaultStatementBlock\n        break;          // optional break\nendswitch",
+    "source": {
+      "anchor": "switch-endswitch",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "switch (expression)\n    case constant1:\n    case constantN:     // see note #1\n        [statements];   // statementsBlock1\n        break;          // optional break\n\n    case constant2:\n        [statements];   // statementsBlock2A\n        continue;       // optional continue\n        [statements];   // statementsBlock2B\n        break;          // optional break\n\n    case constant3:\n        [statements];   // statementsBlock3\n        break;          // optional break\n\n    default:\n        [statements];   // defaultStatementBlock\n        break;          // optional break\nendswitch"
+    ]
+  },
+  "systemreset": {
+    "category": "Functions and Subroutines",
+    "description": "This function resets and restarts the program, it is the equivalent of a 'cold boot' (i.e., a total hardware reset). There is a 2 second delay before the program restarts, this is due to the EVE boot procedure time. Syntax: SystemReset();",
+    "examples": [
+      "if (resetNow)\n    SystemReset();\nendif"
+    ],
+    "kind": "function",
+    "names": [
+      "SystemReset"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "systemreset",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "use-and-if-using": {
+    "category": "Pre-Processor Directives",
+    "description": "The compiler will compile all functions it finds but will only link functions that are referenced. This allows to inherit other files that could be considered as function libraries with your favourite routines in them. To reduce compile time and improve code readability, the #USE and USING pre-processor directives are used to selectively include functions in inherited files, allowing you to build libraries of code, but only selectively inherit the functions required by the project.",
+    "examples": [],
+    "kind": "directive",
+    "names": [
+      "#USE",
+      "#IF USING"
+    ],
+    "notes": [],
+    "parameters": [],
+    "related": [],
+    "signature": "#IF USING tom\nfunc tom()\n    putstr(\"Tom\\n\");\nendfunc\n#ENDIF\n\n#IF USING joey\nfunc joey()\n    putstr(\"Joey\\n\");\nendfunc\n#ENDIF\n\n#IF USING harry\nfunc harry()\n    putstr(\"Harry\\n\");\nendfunc\n#ENDIF\n\n#IF USING george\nfunc george()\n    putstr(\"George\\n\");\nendfunc\n#ENDIF",
+    "source": {
+      "anchor": "use-and-if-using",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "#IF USING tom\nfunc tom()\n    putstr(\"Tom\\n\");\nendfunc\n#ENDIF\n\n#IF USING joey\nfunc joey()\n    putstr(\"Joey\\n\");\nendfunc\n#ENDIF\n\n#IF USING harry\nfunc harry()\n    putstr(\"Harry\\n\");\nendfunc\n#ENDIF\n\n#IF USING george\nfunc george()\n    putstr(\"George\\n\");\nendfunc\n#ENDIF",
+      "#USE tom, george\n\n// this instructs the compiler to compile those\n// functions and use them in your program\n\nfunc main()\n    tom();\n    george();\nendfunc\n// note that joey and harry are not compiled or linked"
+    ]
+  },
+  "variables": {
+    "category": "Constants and Variables",
+    "description": "Like most programming languages, 4DGL can use and process named variables and their contents. Variables are simply names used to refer to some location in memory - a location that holds a value with which we are working with. Variables used by the -GFX based target platforms are signed 16-bit. Variables are defined with the var statement, and are visible globally if placed outside a function (scope is global) or private if placed inside a function (scope is local).",
+    "examples": [
+      "var ball_x, ball_y, ball_r;\nvar ball_colour;\nvar xdir, var ydir;",
+      "var PlotInfoX[100], PlotInfoY[100];   // Index starting from 0 to 99.",
+      "var myvar;          // initialise to 0 when declared\nvar myvar2 := 100;  // initialise to 100 when declared\nvar myArray[4] := [5, 200, 500, 2000];  // initialise the array"
+    ],
+    "kind": "keyword",
+    "names": [
+      "var"
+    ],
+    "notes": [
+      "A var is a 16-bit signed integer with a range of -32768 to 32767",
+      "Global variables and arrays are persistent and exist during the entire execution of a program. Global variables and arrays are visible to all functions and are considered a shared resource. Local variables are created on the stack and are only visible inside a function call. Local variables are released at the end of a function call. More data types will be added in future releases."
+    ],
+    "parameters": [],
+    "related": [],
+    "signature": "",
+    "source": {
+      "anchor": "variables",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": []
+  },
+  "while-wend": {
+    "category": "Language Flow Control",
+    "description": "Loop through a block of statements while a specified condition is true. Note that the while statement may be used on a single line without the wend statement. The while-wend loop evaluates an expression before executing the code up to the end of the block that is marked with a wend. If the expression evaluates to FALSE on the first check, then the code is not executed.",
+    "examples": [
+      "i := 0;\nval := 5;\n\nwhile (i < val) myVar := myVar * i++;",
+      "i := 0;\nval := 5;\n\nwhile (i < val)\n    myVar := myVar * i;\n    i++;\nwend",
+      "// This example shows the nesting of the while..wend loops\nvar rad, color, counter;\nfunc main()\n    color := 0xF0F0;\n    gfx_Set(0, 1);    // set PenSize to 1 for outline objects\n    while (counter++ != 1000)\n        rad := 10;\n        while (rad < 100)\n            gfx_Circle(120, 160, rad++, color++);\n            gfx_Ellipse(120, 160, rad++, 20, color++);\n            gfx_Line(120, 160, 20, rad++, color++);\n            gfx_Rectangle(10, 10, rad++, rad++, color++);\n        wend\n    wend\nendfunc"
+    ],
+    "kind": "keyword",
+    "names": [
+      "while",
+      "wend"
+    ],
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Required condition to evaluate each time through the loop. The loop will be executed while the condition is true.",
+        "name": "condition"
+      },
+      {
+        "description": "Optional single statement to be executed",
+        "name": "statement"
+      },
+      {
+        "description": "Optional block of statements or single statement to be executed",
+        "name": "statements"
+      }
+    ],
+    "related": [
+      {
+        "description": "Break out of the while loop by jumping to the statement following the wend keyword. (optional)",
+        "name": "break;"
+      },
+      {
+        "description": "Skip back to beginning of the while loop and re-evaluate the condition. (optional)",
+        "name": "continue;"
+      }
+    ],
+    "signature": "while (condition) statement;",
+    "source": {
+      "anchor": "while-wend",
+      "document": "directives_and_syntax.txt"
+    },
+    "syntaxVariants": [
+      "while (condition) statement;",
+      "while (condition);\n// Program will stop here, continuously evaluating the\n// condition and proceeds when condition is FALSE",
+      "while (condition)\n    [statements]\n    [break;]\n    [continue;]\nwend"
+    ]
+  }
+}

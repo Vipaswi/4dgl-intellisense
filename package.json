@@ -1,0 +1,92 @@
+{
+  "name": "4dgl-vscode",
+  "displayName": "4DGL",
+  "description": "Open-source, community-built IDE support for 4D Systems 4DGL (hover docs, completion, signature help, semantic highlighting). Not affiliated with 4D Systems. Supports function types but not libraries; #include targets must live within the project directory to resolve — it does not ship the full 4D Systems include folder.",
+  "version": "1.0.0",
+  "publisher": "Vases",
+  "license": "MIT",
+  "homepage": "https://github.com/Vipaswi/4dgl-intellisense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vipaswi/4dgl-intellisense"
+  },
+  "bugs": {
+    "url": "https://github.com/Vipaswi/4dgl-intellisense/issues"
+  },
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "4dgl",
+    "4d systems",
+    "picaso",
+    "diablo16",
+    "goldelox",
+    "pixxi"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension/index.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "4dgl",
+        "aliases": [
+          "4DGL",
+          "4D Graphics Language",
+          "4dgl"
+        ],
+        "extensions": [
+          ".4dg",
+          ".4dgl",
+          ".lib",
+          ".inc"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "4dgl",
+        "scopeName": "source.4dgl",
+        "path": "./syntaxes/4dgl.tmLanguage.json"
+      }
+    ],
+    "configuration": {
+      "title": "4DGL",
+      "properties": {
+        "4dgl.library": {
+          "type": "string",
+          "enum": [
+            "diablo16",
+            "goldelox",
+            "picaso",
+            "pixxi"
+          ],
+          "description": "The 4D Systems internal functions library to use for hover docs, completion, and signature help. Leave unset to be prompted on first use.",
+          "scope": "window"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "4dgl.switchLibrary",
+        "title": "4DGL: Switch Internal Functions Library"
+      }
+    ]
+  },
+  "scripts": {
+    "extract-docs": "python tools/extract_all_libraries.py",
+    "extract-syntax": "python tools/extract_4dgl_syntax.py",
+    "extract-colors": "python tools/extract_4dgl_colors.py",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.0.0"
+  }
+}

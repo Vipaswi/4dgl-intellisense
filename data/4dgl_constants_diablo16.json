@@ -1,0 +1,3951 @@
+{
+  "BACKGROUND_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the screen background colour",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "Colour, 0-65535"
+  },
+  "BAUD_110": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "BAUD_115200": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "13"
+  },
+  "BAUD_1200": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "BAUD_128000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "14"
+  },
+  "BAUD_14400": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "BAUD_19200": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "BAUD_2400": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "BAUD_256000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "15"
+  },
+  "BAUD_300": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "BAUD_300000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "16"
+  },
+  "BAUD_375000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "17"
+  },
+  "BAUD_38400": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "BAUD_4800": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "BAUD_500000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "18"
+  },
+  "BAUD_56000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "BAUD_57600": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "BAUD_600": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "BAUD_600000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "19"
+  },
+  "BAUD_9600": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "BEVEL_SHADOW": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "graphics button bevel shadow depth",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 None 1 to 15 pixels"
+  },
+  "BEVEL_WIDTH": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set Button Bevel Width, 0 pixel to 15pixels.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 None 1 to 15 pixels"
+  },
+  "BOTTOM_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Bottom location of Object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "CHECKUPDATE_INVALIDFILE": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "The specified file is not valid '4xe' or '4fn'",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "CHECKUPDATE_NEWFILE": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "The specified file is newer than the file running in Flash",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "CHECKUPDATE_NOFILE": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "The specified file does not exist",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "CHECKUPDATE_OLDFILE": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "The specified file is equal to or older than the file running in Flash",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "CHECKUPDATE_QUERY": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "Checks the specified file and compares its DateTime to the program running in Flash",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "CHECKUPDATE_UPDATEALWAYS": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "Always updates the program in Flash",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "CHECKUPDATE_UPDATEDONE": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "An update was performed, and the program is running from RAM",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "CHECKUPDATE_UPDATENEWER": {
+    "category": "FAT16 File Functions / file_CheckUpdate",
+    "description": "Updates the program in Flash if the program on uSD is newer",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_checkupdate",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "CLIPPING": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Turns clipping on/off. The clipping points are set with gfx_ClipWindow and must be set first.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1 or 0 (ON or OFF)"
+  },
+  "COLOUR_MODE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Sets 8 or 16bit colour mode. Function not available, fixed as 16bit mode.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or COLOUR16 1 or COLOUR8"
+  },
+  "CONTRAST": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "LCD MODULES: contrast 0 = display OFF, 1-15 = contrast level (Actually backlight brightness)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or OFF 1 to 15 for levels"
+  },
+  "DISPLAY_PAGE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Choose Page to be displayed. Applies to 4.3\" products with a Solomon SSD1961 and SSD1961 Driver IC only, with a 4.3\" display only, such as uLCD-43D/DT/DCT series and gen4-uLCD-43D/DT/DCT series of displays. Please refer to module datasheets for information on what SSD196x is present on your module. **",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or 1 for SSD1961 0, 1 or 2 for SSD1963"
+  },
+  "FALSE_REASON": {
+    "category": "System Registers Memory",
+    "description": "explanation 'false' results, currently only for flash_ functions\"",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FE_CANNOT_INIT": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Cannot init the CARD",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "15"
+  },
+  "FE_CANNOT_READ_MBR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Cannot read the MBR",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "16"
+  },
+  "FE_DIR_FULL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "All root dir entry are taken",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "FE_DISK_FULL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "All clusters in the partition are taken",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "13"
+  },
+  "FE_DISK_NOT_MNTD": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Media not mounted",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "FE_EOF": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Reached the end of file",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "FE_FAT_EOF": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Fat attempt to read beyond EOF",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "FE_FILE_NOT_FOUND": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "File not found in open for read",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "FE_FILE_OVERWRITE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "A file with same name exist already",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "14"
+  },
+  "FE_FIND_ERROR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Failure during FILE search",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "19"
+  },
+  "FE_IDE_ERROR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "IDE command execution error",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "FE_INVALID_BR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Boot Record invalid signature",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "FE_INVALID_CLUSTER": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Invalid cluster value > maxcls",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "FE_INVALID_FILE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "File not open",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "FE_INVALID_FNAME": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Invalid Filename",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "20"
+  },
+  "FE_INVALID_MBR": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "MBR sector invalid signature",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "FE_INVALID_MEDIA": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "bad media",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "21"
+  },
+  "FE_INVALID_MODE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Mode was not r.w.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "18"
+  },
+  "FE_MALLOC_FAILED": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Malloc could not allocate the FILE struct",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "17"
+  },
+  "FE_NOT_PRESENT": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "CARD not present",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "FE_OK": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "IDE function succesded",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "FE_PARTITION_TYPE": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "WRONG partition type, not FAT16",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "FE_SECTOR_READ_FAIL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Sector Read fail",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "22"
+  },
+  "FE_SECTOR_WRITE_FAIL": {
+    "category": "FAT16 File Functions / file_Error",
+    "description": "Sector Write fail",
+    "library": "diablo16",
+    "source": {
+      "anchor": "file_error",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "23"
+  },
+  "FILLPATTERN_0": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_1": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_10": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_11": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_12": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_13": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_14": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_15": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_16": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_17": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_18": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_19": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_2": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_20": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_21": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_22": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_23": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_24": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_25": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_26": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_27": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_28": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_29": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_3": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_30": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_31": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_4": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_5": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_6": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_7": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_8": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FILLPATTERN_9": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Predefined constant in range FILLPATTERN_0 through FILLPATTERN_31.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FONT_ID": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the required font. See font table Note: The value could be the name of a custom font included in a users program in a data statement.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1 to 11 or (FONT_1 to FONT_11) Default = FONT_3"
+  },
+  "FRAME_DELAY": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the inter frame delay for media_Video",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 to 255msec"
+  },
+  "GFX_BOTTOM": {
+    "category": "System Registers Memory",
+    "description": "virtual bottom point for most recent object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_BOTTOM": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_BOTTOM_VAL": {
+    "category": "System Registers Memory",
+    "description": "bottom clipping point (set with gfx_ClipWindow(...)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_LEFT": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_LEFT_VAL": {
+    "category": "System Registers Memory",
+    "description": "left clipping point (set with gfx_ClipWindow(...)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_RIGHT": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_RIGHT_VAL": {
+    "category": "System Registers Memory",
+    "description": "right clipping point (set with gfx_ClipWindow(...)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_TOP": {
+    "category": "System Registers Memory",
+    "description": "current clip value (reads full size if clipping turned off)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_CLIP_TOP_VAL": {
+    "category": "System Registers Memory",
+    "description": "top clipping point (set with gfx_ClipWindow(...)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_CHAR_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "calculated height from last call to charHeight function",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_CHAR_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "calculated char width from last call to charWidth function",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_STR_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "calculated height from last call to strHeight function",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LAST_STR_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "calculated width from last call to strWidth function",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LEFT": {
+    "category": "System Registers Memory",
+    "description": "virtual left point for most recent object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_RIGHT": {
+    "category": "System Registers Memory",
+    "description": "virtual right point for most recent object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_THUMB_BORDER_DARK": {
+    "category": "System Registers Memory",
+    "description": "darker shadow of thumb",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_THUMB_BORDER_LIGHT": {
+    "category": "System Registers Memory",
+    "description": "lighter shadow of thumb",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_THUMB_PERCENT": {
+    "category": "System Registers Memory",
+    "description": "size of slider thumb as percentage",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOP": {
+    "category": "System Registers Memory",
+    "description": "virtual top point for most recent object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_X1": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_X2": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_Y": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOUCH_REGION_Y2": {
+    "category": "System Registers Memory",
+    "description": "touch capture region",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X1": {
+    "category": "System Registers Memory",
+    "description": "clipped left point for current object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X2": {
+    "category": "System Registers Memory",
+    "description": "clipped right point for current object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_XMAX": {
+    "category": "System Registers Memory",
+    "description": "current display width-1 determined by portrait / landscape swapping",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X_ORG": {
+    "category": "System Registers Memory",
+    "description": "current X origin",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y1": {
+    "category": "System Registers Memory",
+    "description": "clipped top point for current object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y2": {
+    "category": "System Registers Memory",
+    "description": "clipped bottom point for current object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_YMAX": {
+    "category": "System Registers Memory",
+    "description": "current display height-1 determined by portrait / landscape swapping",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y_ORG": {
+    "category": "System Registers Memory",
+    "description": "current Y origin",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAM_PIXEL_COUNT_HI": {
+    "category": "System Registers Memory",
+    "description": "HI word of count of pixels in the set GRAM area",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GRAM_PIXEL_COUNT_LO": {
+    "category": "System Registers Memory",
+    "description": "LO word of count of pixels in the set GRAM area",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMAGE_CLUSTER": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image start cluster pos (for FAT16 only)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "IMAGE_DELAY": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD inter frame delay",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "IMAGE_FLAGS": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD image flags",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "IMAGE_FRAMES": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD number of frames",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "IMAGE_HEIGHT": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image height",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "IMAGE_HIWORD": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image address HI",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "IMAGE_INDEX": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD current frame",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "IMAGE_LOWORD": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image address LO",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "IMAGE_SECTOR": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image start sector in cluster pos (for FAT16 only)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "IMAGE_TAG": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD user variable #1",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "IMAGE_TAG2": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD user variable #2",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "13"
+  },
+  "IMAGE_WIDTH": {
+    "category": "Image Control Functions / img_GetWord",
+    "description": "WORD image width",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "IMAGE_XPOS": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD image location X",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "IMAGE_YPOS": {
+    "category": "Image Control Functions / img_SetWord",
+    "description": "WORD image location Y",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "IMG_COUNT": {
+    "category": "SPI Flash Functions / spiflash_LoadImageControl",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spiflash_loadimagecontrol",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "IMG_CURRENT_FRAME": {
+    "category": "System Registers Memory",
+    "description": "last frame shown",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_DAT_FILENAME": {
+    "category": "SPI Flash Functions / spiflash_LoadImageControl",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spiflash_loadimagecontrol",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "IMG_ENTRYLEN": {
+    "category": "SPI Flash Functions / spiflash_LoadImageControl",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spiflash_loadimagecontrol",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "IMG_FLAGS": {
+    "category": "System Registers Memory",
+    "description": "bit 4 determines colour mode other bits reserved",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_FRAME_COUNT": {
+    "category": "System Registers Memory",
+    "description": "count of frames in a movie",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_FRAME_DELAY": {
+    "category": "System Registers Memory",
+    "description": "if image else inter frame delay for movie",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_GCIFILE_HANDLE": {
+    "category": "SPI Flash Functions / spiflash_LoadImageControl",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spiflash_loadimagecontrol",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "IMG_GCI_FILENAME": {
+    "category": "SPI Flash Functions / spiflash_LoadImageControl",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spiflash_loadimagecontrol",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "IMG_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "height of currently loaded image",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_MODE": {
+    "category": "SPI Flash Functions / spiflash_LoadImageControl",
+    "description": "",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spiflash_loadimagecontrol",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "IMG_PIXEL_COUNT_HI": {
+    "category": "System Registers Memory",
+    "description": "count of pixels in the current frame",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_PIXEL_COUNT_LO": {
+    "category": "System Registers Memory",
+    "description": "count of pixels in the current frame",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "width of currently loaded image",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I_DARKEN": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Display dimmed.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x4000"
+  },
+  "I_ENABLED": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Set for image enabled.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x8000"
+  },
+  "I_LIGHTEN": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Display bright.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x2000"
+  },
+  "I_STAYONTOP": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Draw on top of other images always.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x0100"
+  },
+  "I_TOPMOST": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Draw on top of other images next update.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x0200"
+  },
+  "I_TOUCHED": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Touch test result.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x1000"
+  },
+  "I_TOUCH_DISABLE": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Set to disable touch for this image, default=1 for movie, 0 for image.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x0020"
+  },
+  "I_X_LOCK": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Stop X movement.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x0400"
+  },
+  "I_Y_LOCK": {
+    "category": "Image Control Functions / img_SetAttributes",
+    "description": "Stop Y movement.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "img_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x0800"
+  },
+  "LEFT_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Left location of Object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "LINE_PATTERN": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Sets the line draw pattern for line drawing. If set to zero, lines are solid, else each '1' bit represents a pixel that is turned off. Example: gfx_Set(LINE_PATTERN, 0b1111000011110000); // draw dotted line",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or OFF 1 to 0xFFFF 0 bits for pixels on 1 bits for pixels off"
+  },
+  "MEDIA_ADDRESS_HI": {
+    "category": "System Registers Memory",
+    "description": "micro-SD byte address HI",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_ADDRESS_LO": {
+    "category": "System Registers Memory",
+    "description": "micro-SD byte address LO",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_SECTOR_COUNT": {
+    "category": "System Registers Memory",
+    "description": "micro-SD number of bytes remaining in sector",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_SECTOR_HI": {
+    "category": "System Registers Memory",
+    "description": "micro-SD sector address HI",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_SECTOR_LO": {
+    "category": "System Registers Memory",
+    "description": "micro-SD sector address LO",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "OBJECT_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Generic colour for gfx_LineTo, gfx_LineRel, gfx_Dot, gfx_Bullet and gfx_BoxTo",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "Colour, 0-65535"
+  },
+  "OP1_ADD": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "signed add each element of entire array with \"value\">",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "OP1_AND": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "\"and\" the entire array with \"value\".",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "OP1_BLACKEN": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "saturate an array of RGB565 elements to black, \"value\" determines saturation.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "16"
+  },
+  "OP1_DARKEN": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "decrease luminance of an array of RGB565 elements, \"value\" determines saturation.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "18"
+  },
+  "OP1_DIV": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "signed divide each element of entire array by \"value\".",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "OP1_GRAY": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "convert an array of RGB565 elements to grayscale, \"value\" is ignored.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "14"
+  },
+  "OP1_IOR": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "\"inclusive or\" the entire array with \"value\".",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "OP1_LIGHTEN": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "increase luminance of an array of RGB565 elements, \"value\" determines saturation.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "17"
+  },
+  "OP1_MUL": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "signed multiply each element of entire array with \"value\".",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "OP1_NOP": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "No operation.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "OP1_REV": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "reverse the elements of an array (value is ignored).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "OP1_ROL": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "rotate an array left by \"value\" positions.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "OP1_ROR": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "rotate an array right by \"value\" positions.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "13"
+  },
+  "OP1_SET": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "\"set\" the entire array with \"value\".",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "OP1_SHL": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "shift an array left by \"value\" positions.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "OP1_SHR": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "shift an array right by \"value\" positions.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "OP1_SUB": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "signed subtract \"value\" from each element of entire array.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "OP1_WHITEN": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "saturate an array of RGB565 elements to white, \"value\" determines saturation.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "15"
+  },
+  "OP1_XOR": {
+    "category": "Memory Allocation Functions / mem_ArrayOp1",
+    "description": "\"exclusive or\" the entire array with \"value\".",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop1",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "OP2_ADD": {
+    "category": "Memory Allocation Functions / mem_ArrayOp2",
+    "description": "\"add\" arrays, result to array1, array1 + (array2+value).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop2",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "OP2_AND": {
+    "category": "Memory Allocation Functions / mem_ArrayOp2",
+    "description": "\"and\" arrays, result to array1 (value is ignored).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop2",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "OP2_BLEND": {
+    "category": "Memory Allocation Functions / mem_ArrayOp2",
+    "description": "blend arrays, blend percentage determined by \"value\", result to \"array1\".",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop2",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "OP2_COPY": {
+    "category": "Memory Allocation Functions / mem_ArrayOp2",
+    "description": "\"copy\" array2 to array1 (value is ignored).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop2",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "OP2_DIV": {
+    "category": "Memory Allocation Functions / mem_ArrayOp2",
+    "description": "\"divide array1 by array2\" , result to array1 (value is ignored).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop2",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "OP2_IOR": {
+    "category": "Memory Allocation Functions / mem_ArrayOp2",
+    "description": "\"inclusive or\" arrays, result to array1 (value is ignored).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop2",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "OP2_MUL": {
+    "category": "Memory Allocation Functions / mem_ArrayOp2",
+    "description": "\"multiply\" arrays, result to array1 (value is ignored).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop2",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "OP2_SUB": {
+    "category": "Memory Allocation Functions / mem_ArrayOp2",
+    "description": "\"subtract\" array2 from array1, result to array1, array1-(array2+value).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop2",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "OP2_XOR": {
+    "category": "Memory Allocation Functions / mem_ArrayOp2",
+    "description": "\"exclusive or\" arrays, result to array1 (value is ignored).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "mem_arrayop2",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "OUTLINE_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Outline colour for rectangles and circles(set to 0 for no effect)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "Colour, 0-65535"
+  },
+  "PA0": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "61"
+  },
+  "PA1": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "62"
+  },
+  "PA10": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "43"
+  },
+  "PA11": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "44"
+  },
+  "PA12": {
+    "category": "SPI Control Functions / SPI1_SCK_pin",
+    "description": "4D predefined pin. Availability: Yes (See Note (1)).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_sck_pin",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "31"
+  },
+  "PA13": {
+    "category": "SPI Control Functions / SPI1_SCK_pin",
+    "description": "4D predefined pin. Availability: Yes (See Note (1)).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_sck_pin",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "32"
+  },
+  "PA14": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "37"
+  },
+  "PA15": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "36"
+  },
+  "PA2": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "63"
+  },
+  "PA3": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "64"
+  },
+  "PA4": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "46"
+  },
+  "PA5": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "49"
+  },
+  "PA6": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "50"
+  },
+  "PA7": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "51"
+  },
+  "PA8": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "55"
+  },
+  "PA9": {
+    "category": "GPIO Functions / pin_HI",
+    "description": "4D predefined pin. Availability: Yes.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_hi",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "53"
+  },
+  "PEN_SIZE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the draw mode for gfx_LineTo, gfx_LineRel, gfx_Dot, gfx_Bullet and gfx_BoxTo (default mode is OUTLINE)*",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or SOLID 1 or OUTLINE"
+  },
+  "PIN_COUNTER_PA4": {
+    "category": "System Registers Memory",
+    "description": "pin counter for PA4",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_COUNTER_PA5": {
+    "category": "System Registers Memory",
+    "description": "pin counter for PA5",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_COUNTER_PA6": {
+    "category": "System Registers Memory",
+    "description": "pin counter for PA6",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_COUNTER_PA7": {
+    "category": "System Registers Memory",
+    "description": "pin counter for PA7",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_COUNTER_PA8": {
+    "category": "System Registers Memory",
+    "description": "pin counter for PA8",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_COUNTER_PA9": {
+    "category": "System Registers Memory",
+    "description": "pin counter for PA9",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_EVENT_PA4": {
+    "category": "System Registers Memory",
+    "description": "pin counter rollover event for PA4",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_EVENT_PA5": {
+    "category": "System Registers Memory",
+    "description": "pin counter rollover event for PA5",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_EVENT_PA6": {
+    "category": "System Registers Memory",
+    "description": "pin counter rollover event for PA6",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_EVENT_PA7": {
+    "category": "System Registers Memory",
+    "description": "pin counter rollover event for PA7",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_EVENT_PA8": {
+    "category": "System Registers Memory",
+    "description": "pin counter rollover event for PA8",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_EVENT_PA9": {
+    "category": "System Registers Memory",
+    "description": "pin counter rollover event for PA9",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_10KHZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is as specified.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_15KHZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is as specified.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_1KHZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is as specified.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_200HZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is as specified.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_20KHZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is as specified.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_25KHZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is as specified.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_30KHZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is as specified.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_35KHZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is as specified.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_500HZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is as specified.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_5KHZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is as specified.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_625HZ": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which corresponds to 62.5Hz, which takes a value from 0 to 160.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_OFF": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Turn off the PWM (pin is left as Output)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_PLAIN": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Plain PWM which value is a number between 0 and 1000. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is ~70kHz. A value of 1 is not valid.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWM_SERVO": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Servo PWM has a value which is between 100 and 200. This corresponds to 1.00 to 2.00ms. Please note values from 0 to 600 are valid (0-6ms) but should be used with caution. Repitition Rate is ~50Hz or 20ms.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PWN_BINARY": {
+    "category": "GPIO Functions / pwm_Init",
+    "description": "Binary PWM which value is a number between 0 and 1024. This corresponds to a 0.0 to 100.0% duty cycle. Raw Frequency is ~68kHz. A value of 1 is not valid.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pwm_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "QEN1_COUNTER_HI": {
+    "category": "System Registers Memory",
+    "description": "quadrature encoder #1 counter HI",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "QEN1_COUNTER_LO": {
+    "category": "System Registers Memory",
+    "description": "quadrature encoder #1 counter LO",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "QEN1_DELTA": {
+    "category": "System Registers Memory",
+    "description": "quadrature encoder #1 delta count",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "QEN2_COUNTER_HI": {
+    "category": "System Registers Memory",
+    "description": "quadrature encoder #2 counter HI",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "QEN2_COUNTER_LO": {
+    "category": "System Registers Memory",
+    "description": "quadrature encoder #2 counter LO",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "QEN2_DELTA": {
+    "category": "System Registers Memory",
+    "description": "quadrature encoder #2 delta count",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "RANDOM_HI": {
+    "category": "System Registers Memory",
+    "description": "random number generator HI word",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "RANDOM_LO": {
+    "category": "System Registers Memory",
+    "description": "random number generator LO word",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "READ_PAGE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Choose Page to be read. Applies to 4.3\" products with a Solomon SSD1961 and SSD1961 Driver IC only, with a 4.3\" display only, such as uLCD-43D/DT/DCT series and gen4-uLCD-43D/DT/DCT series of displays. Please refer to module datasheets for information on what SSD196x is present on your module. **",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or 1 for SSD1961 0, 1 or 2 for SSD1963"
+  },
+  "RIGHT_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Right location of Object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SCREEN_MODE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set required screen behaviour/orientation.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or LANDSCAPE 1 or LANDSCAPE_R 2 or PORTRAIT 3 or PORTRAIT_R"
+  },
+  "SPI16_MODE_0": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles low, SDO stable for first falling edge, SDI sampled on first falling edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "SPI16_MODE_1": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles low, SDO stable for first rising edge, SDI sampled on first rising edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "SPI16_MODE_2": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles high, SDO stable for first falling edge, SDI sampled on first falling edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "SPI16_MODE_3": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles high, SDO stable for first rising edge, SDI sampled on first falling edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "SPI16_MODE_4": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles low, SDO stable for first falling edge, SDI sampled on next rising edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "SPI16_MODE_5": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles low, SDO stable for first rising edge, SDI sampled on next falling edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "13"
+  },
+  "SPI16_MODE_6": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles high, SDO stable for first falling edge, SDI sampled on next rising edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "14"
+  },
+  "SPI16_MODE_7": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles high, SDO stable for first rising edge, SDI sampled on next rising edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "15"
+  },
+  "SPI8_MODE_0": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles low, SDO stable for first falling edge, SDI sampled on first falling edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "SPI8_MODE_1": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles low, SDO stable for first rising edge, SDI sampled on first rising edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "SPI8_MODE_2": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles high, SDO stable for first falling edge, SDI sampled on first falling edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "SPI8_MODE_3": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles high, SDO stable for first rising edge, SDI sampled on first falling edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "SPI8_MODE_4": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles low, SDO stable for first falling edge, SDI sampled on next rising edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "SPI8_MODE_5": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles low, SDO stable for first rising edge, SDI sampled on next falling edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "SPI8_MODE_6": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SCK idles high, SDO stable for first falling edge, SDI sampled on next rising edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "SPI8_MODE_7": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "SDO stable for first rising edge, SDI sampled on next rising edge.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "SPI_SPEED0": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "78.125 khz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "SPI_SPEED1": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "109.375 khz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "SPI_SPEED10": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "4.375 mhz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "SPI_SPEED11": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "5.00 mhz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "SPI_SPEED12": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "7.00 mhz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "12"
+  },
+  "SPI_SPEED13": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "8.75 mhz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "13"
+  },
+  "SPI_SPEED14": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "11.666 mhz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "14"
+  },
+  "SPI_SPEED15": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "17.5 mhz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "15"
+  },
+  "SPI_SPEED2": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "273.4375 khz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "SPI_SPEED3": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "312.5 khz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "SPI_SPEED4": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "437.5 khz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "SPI_SPEED6": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "1.09375 mhz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "SPI_SPEED7": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "1.25 mhz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "SPI_SPEED8": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "1.75 mhz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "SPI_SPEED9": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "2.1875 mhz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "SPI_SPEER5": {
+    "category": "SPI Control Functions / SPI1_Init",
+    "description": "729.166 khz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spi1_init",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "SYSTEM_TIMER_HI": {
+    "category": "System Registers Memory",
+    "description": "1msec 32-bit free running timer HI word",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYSTEM_TIMER_LO": {
+    "category": "System Registers Memory",
+    "description": "1msec 32-bit free running timer LO word",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_X_MAX": {
+    "category": "System Registers Memory",
+    "description": "display hardware X res-1",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_Y_MAX": {
+    "category": "System Registers Memory",
+    "description": "display hardware Y res-1",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_ANGLE": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets the text angle, only for plotted fonts. The feature automatically resets when screen mode is changed.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 to 359 degrees"
+  },
+  "TEXT_ATTRIBUTES": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Allows a combination of text attributes to be defined together by 'or'ing the bits together. The feature automatically resets after printing using putstr or print has completed. Example: txt_Set(TEXT_ATTRIBUTES, BOLD | INVERSE); // bold + inverse Note: bits 0-3 and 8-15 are reserved.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "16 or BOLD 32 or ITALIC 64 or INVERSE 128 or UNDERLINED"
+  },
+  "TEXT_BOLD": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets Bold Text mode for the next string or char. The feature automatically resets after printing using putstr or print has completed.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_COLOUR": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text foreground colour.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "Colour 0-65535 Default = LIME"
+  },
+  "TEXT_HEIGHT": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text height multiplier. Text will be printed magnified vertically by this factor.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1 to 16 Default = 1"
+  },
+  "TEXT_HIGHLIGHT": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text background colour.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "Colour 0-65535 Default = BLACK"
+  },
+  "TEXT_INVERSE": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets Inverse Text mode for the next string or char. The feature automatically resets after printing using putstr or print has completed.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_ITALIC": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets Italic Text mode for the next string or char. The feature automatically resets after printing using putstr or print has completed.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_MARGIN": {
+    "category": "System Registers Memory",
+    "description": "text left pixel pos for carriage return",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_OPACITY": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Selects whether or not the 'background' pixels are drawn.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or TRANSPARENT 1 or OPAQUE Default = 1 (OPAQUE)"
+  },
+  "TEXT_PRINTDELAY": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the delay between character printing to give a 'teletype' like effect.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 to 255 Default = 0 msec"
+  },
+  "TEXT_UNDERLINED": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets Underlined Text mode for the next string or char. The feature automatically resets after printing using putstr or print has completed.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON )"
+  },
+  "TEXT_WIDTH": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text width multiplier. Text will be printed magnified horizontally by this factor.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1 to 16 Default = 1"
+  },
+  "TEXT_WRAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Sets the pixel position where text wrap will occur at RHS The feature automatically resets when screen mode is changed. If the value is set to 0, text wrap is turned off of the current screen. Note: The value is in pixel.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 to n (OFF or Value) Default = 0"
+  },
+  "TEXT_XGAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the pixel gap between characters. The gap is in pixel units.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 to 32 Default = 0"
+  },
+  "TEXT_XPOS": {
+    "category": "System Registers Memory",
+    "description": "text current x pixel position",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_YGAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the pixel gap between lines. The gap is in pixel units.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 to 32 Default = 0"
+  },
+  "TEXT_YPOS": {
+    "category": "System Registers Memory",
+    "description": "text current y pixel position",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER0": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 0",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER1": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 1",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER2": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 2",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER3": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 3",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER4": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 4",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER5": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 5",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER6": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 6",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER7": {
+    "category": "System Registers Memory",
+    "description": "1msec user timer 7",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOP_POS": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Top location of Object",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_RAW_X": {
+    "category": "System Registers Memory",
+    "description": "12 bit raw A2D X value from touch screen",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_RAW_Y": {
+    "category": "System Registers Memory",
+    "description": "12 bit raw A2D Y value from touch screen",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_XMAXCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_XMINCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_YMAXCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TOUCH_YMINCAL": {
+    "category": "System Registers Memory",
+    "description": "touch calibration value",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TRANSPARENCY": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Turn the transparency ON or OFF. Transparency is automatically turned OFF after the next image or video command.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "1 or 0 (ON or OFF)"
+  },
+  "TRANSPARENT_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Colour that needs to be made transparent.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "Colour, 0-65535"
+  },
+  "TXT_FONT_HEIGHT": {
+    "category": "System Registers Memory",
+    "description": "Current font height",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_ID": {
+    "category": "System Registers Memory",
+    "description": "font type, 0 = system font, else pointer to user font\"",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_MAX": {
+    "category": "System Registers Memory",
+    "description": "max number of chars in font",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_OFFSET": {
+    "category": "System Registers Memory",
+    "description": "starting offset (normally 0x20)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TXT_FONT_WIDTH": {
+    "category": "System Registers Memory",
+    "description": "current font width",
+    "library": "diablo16",
+    "source": {
+      "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "WIDGET_DELAY": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "Inter frame delay (Flash widgets only).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "10"
+  },
+  "WIDGET_FLAGS": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "RAM Flags.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "6"
+  },
+  "WIDGET_FRAMES": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "Number of frames (Flash widgets only).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "11"
+  },
+  "WIDGET_F_FLASH": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "set if this is a flash based widget.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x0400"
+  },
+  "WIDGET_F_INITIALISED": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "Flag when 'base gauge needle, etc.' is done",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x2000"
+  },
+  "WIDGET_F_INPUT": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "Set if this is an input (Used only with the IDE).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x0800"
+  },
+  "WIDGET_F_INTERNAL": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "Internal use only (force redraw on next write).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x4000"
+  },
+  "WIDGET_F_RESERVED": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "bits 9-6 reserved.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x03c0"
+  },
+  "WIDGET_F_TOUCH_ENABLE": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "Set to disable touch for this image, (default=1 for movie, 0 for image).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x8000"
+  },
+  "WIDGET_F_UNDRAW_ONLY": {
+    "category": "Widget Functions / widget_SetAttributes",
+    "description": "Set to prevent draw of new needle.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_setattributes",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0x1000"
+  },
+  "WIDGET_HEIGHT": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "RAM height, needed for touch.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "WIDGET_HI_WORD": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "Flash offset high word (Flash widgets only).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "WIDGET_LO_WORD": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "Flash offset low word (External Flash widgets only).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "WIDGET_TAG": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "RAM tag (user or FORM#).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "7"
+  },
+  "WIDGET_TAG2": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "RAM tag2 (user or object << 8",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "8"
+  },
+  "WIDGET_VAL1": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "RAM current value.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "9"
+  },
+  "WIDGET_WIDTH": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "RAM width, needed for touch.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "WIDGET_XOTHER": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "RAM xpos 'other' (Non Flash widgets only).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "WIDGET_XPOS": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "RAM xpos",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "WIDGET_YOTHER": {
+    "category": "Widget Functions / widget_GetWord",
+    "description": "RAM ypos 'other' (Non Flash widgets only).",
+    "library": "diablo16",
+    "source": {
+      "anchor": "widget_getword",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "WRITE_PAGE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Choose Page to be written. Applies to 4.3\" products with a Solomon SSD1961 and SSD1961 Driver IC only, with a 4.3\" display only, such as uLCD-43D/DT/DCT series and gen4-uLCD-43D/DT/DCT series of displays. Please refer to module datasheets for information on what SSD196x is present on your module. **",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": "0 or 1 for SSD1961 0, 1 or 2 for SSD1963"
+  },
+  "X_MAX": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Current orientations Max X Value (X_MAX)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "X_ORG": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Get current internal X position",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "X_ORIGIN": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "sets the origin of drawn objects to a position other than 0,0",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "Y_MAX": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Current orientations Max Y Value (Y_MAX)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "Y_ORG": {
+    "category": "Graphics Functions / gfx_Get",
+    "description": "Get current internal Y position",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_get",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "Y_ORIGIN": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "sets the origin of drawn objects to a position other than 0,0",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  }
+}

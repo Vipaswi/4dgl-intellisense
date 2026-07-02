@@ -1,0 +1,1256 @@
+{
+  "ANALOGUE_10": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set to analogue input, 10 bit mode",
+    "library": "goldelox",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "3"
+  },
+  "ANALOGUE_8": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set to analogue input, 8 bit mode",
+    "library": "goldelox",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "2"
+  },
+  "BACKGROUND_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the screen background colour",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "Colour, 0 - 65535"
+  },
+  "CLIPPING": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Turns clipping on/off. The clipping points are set with gfx_ClipWindow(...)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 or ON1 or OFF"
+  },
+  "CLIP_BOTTOM": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "bottom clipping point active",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "CLIP_BOTTOM_POS": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "bottom clipping point setting",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "CLIP_LEFT": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "left clipping point active",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "CLIP_LEFT_POS": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "left clipping point setting",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "CLIP_RIGHT": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "right clipping point active",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "CLIP_RIGHT_POS": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "right clipping point setting",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "CLIP_TOP": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "top clipping point active",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "CLIP_TOP_POS": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "top clipping point setting",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "COLOUR_MODE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Sets 8 or 16bit colour mode (only available on GOLDELOX Engineering samples, must be implemented in users code for GOLDELOX-GFX2 with external initialisation tables, refer to individual display driver data sheets)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 or COLOUR161 or COLOUR8"
+  },
+  "CONTRAST": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set contrast value, 0 = display off, 1-16 = contrast level ( only available on GOLDELOX Engineering samples, must be implemented in users code for GOLDELOX-GFX2 with external initialisation tables, refer to individual display driver data sheets)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 or OFF1 to 16 for levels"
+  },
+  "FONT_HEIGHT": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "height of font (pixel units)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FONT_ID": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the required font (0 = system font)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FONT_MAX": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "number of chars in font set",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FONT_OFFSET": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "ASCII offset (usually 0x20)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FONT_TYPE": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "0 = fixed, 1 = proportional",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FONT_WIDTH": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "width of font (pixel units)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "FRAME_DELAY": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the inter frame delay for media_Video(..)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 to 255 msec"
+  },
+  "GFX_BACK_COLOUR": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "screen background colour",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_BOTTOM": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "image bottom real point",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LEFT": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "image left real point",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_LINE_PATTERN": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "line draw tessellation",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_OBJECT_COLOUR": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "graphics object colour",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_OUTLINE_COLOUR": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "circle/rectangle outline",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_RIGHT": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "image right real point",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_SCREENMODE": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "Current screen mode (0-3)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_STRINGMETRIX": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "Low byte : string widthHigh byte : string height",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TEMPSTORE1": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "Low byte : last character printedHigh byte : video frame timer over-ride",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TEXT_BGCOLOUR": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "text background colour",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TEXT_COLOUR": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "text foreground colour",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TOP": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "image top real point",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_TRANSPARENTCOLOUR": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "Image transparency colour",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X1": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "image left clipped point",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X2": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "image right clipped point",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_XMAX": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "width of current orientation",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_X_ORG": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "current X origin",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y1": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "image top clipped point",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y2": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "image bottom clipped point",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_YMAX": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "height of current orientation",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "GFX_Y_ORG": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "current Y origin",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMAGE_DELAY": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "frame delay (if animation)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMAGE_HEIGHT": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "loaded image/animation height",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMAGE_MODE": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "image/animation colour mode",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMAGE_WIDTH": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "loaded image/animation width",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_FRAME_COUNT": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "count of frames in animation",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_PIXEL_COUNT": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "count of pixels in image",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "INCVAL": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "predec/preinc/postdec/postinc addend",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "INPUT": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set to an input",
+    "library": "goldelox",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "IO1": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "",
+    "library": "goldelox",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "IO2": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "",
+    "library": "goldelox",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "1"
+  },
+  "LINE_PATTERN": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Sets the line draw pattern for line drawing. If set to zero, lines are solid, else each '1' bit represents a pixel that is turned off. See code examples for further reference.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 bits for pixels ON1 bits for pixels OFF"
+  },
+  "MEDIA_ADDR_HI": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "media byte address HI",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_ADDR_LO": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "media byte address LO",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MEDIA_HEAD": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "media sector head position",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "OBJECT_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Generic colour for gfx_LineTo(...), gfx_LineRel(...), gfx_Dot(), gfx_Bullet(...) and gfx_BoxTo(...)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "Colour, 0 - 65535"
+  },
+  "ONEWIRE": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set as Dallas One Wire I/O mode",
+    "library": "goldelox",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "4"
+  },
+  "OUTLINE_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Outline colour for rectangles and circles. (Set to 0 for no effect)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "Colour, 0 - 65535"
+  },
+  "OUTPUT": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set to an output",
+    "library": "goldelox",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0"
+  },
+  "PEN_SIZE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set the draw mode for gfx_LineTo, gfx_LineRel, gfx_Dot, gfx_Bullet and gfx_BoxTo (default mode is OUTLINE) nb:- pen size is set to OUTLINE for normal operation",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 or SOLID1 or OUTLINE"
+  },
+  "RANDOM_HI": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "random generator HI word",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "RANDOM_LO": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "random generator LO word",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "READ_GRAM_REG": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "display GRAM read address",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SCREEN_MODE": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Set required screen behaviour/orientation",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 or LANDSCAPE1 or LANDSCAPE_R2 or PORTRAIT3 or PORTRAIT_R)"
+  },
+  "SECTOR_ADDR_HI": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "media sector address HI",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SECTOR_ADDR_LO": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "media sector address LO",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SOUND": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin is set for RTTTL sound output",
+    "library": "goldelox",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "5"
+  },
+  "SYSTEM_TIMER_HI": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "1msec system timer HI word",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYSTEM_TIMER_LO": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "1msec system timer LO word",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_COLOUR": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "internal variable for colour",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_FLAGS1": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "system control flags word 0",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_FLAGS2": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "system control flags word 1",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_OUTSTREAM": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "Output stream handle",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_OVERFLOW": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "16bit overflow register",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_RETVAL": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "return value of last function",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_STACK": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "128 level EVE machine stack",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_X_MAX": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "display hardware X res-1",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SYS_Y_MAX": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "display hardware Y res-1",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEMP_MEDIA_ADDRHI": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "temporary media address HI",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEMP_MEDIA_ADDRLO": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "temporary media address LO",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_ATTRIBUTES": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Control of functions 9,10,11,12 grouped (bits can be combined by using logical 'or' of bits) nb:- bits 0-3 and 8-15 are reserved",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "16, 32, 64, 128 or (BOLD, ITALIC, INVERSE, UNDERLINED)"
+  },
+  "TEXT_BOLD": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Embolden text",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON)"
+  },
+  "TEXT_COLOUR": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text foreground colour",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "Colour 0-65535"
+  },
+  "TEXT_DELAY": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "text delay effect (0-255msec)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_HEIGHT": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text height multiplier",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "1 to 16"
+  },
+  "TEXT_HIGHLIGHT": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text background colour",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "Colour 0-65535"
+  },
+  "TEXT_INVERSE": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Inverted text",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON)"
+  },
+  "TEXT_ITALIC": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Italicise text",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON)"
+  },
+  "TEXT_MARGIN": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "text place holder for CR",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_OPACITY": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Selects whether or not the 'background' pixels are drawn (default mode is OPAQUE)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 or TRANSPARENT and 1 or OPAQUE"
+  },
+  "TEXT_PRINTDELAY": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the delay between character printing",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "(Default 0 msec)"
+  },
+  "TEXT_UNDERLINED": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Underlined text",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 or 1 (OFF or ON)"
+  },
+  "TEXT_WIDTH": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the text width multiplier",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "1 to 16"
+  },
+  "TEXT_XGAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the pixel gap between characters",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 to n"
+  },
+  "TEXT_XMAG": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "text width magnification",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_X_GAP": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "X pixel gap between chars",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_YGAP": {
+    "category": "Text and String Functions / txt_Set",
+    "description": "Set the pixel gap between lines",
+    "library": "goldelox",
+    "source": {
+      "anchor": "txt_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "0 to n"
+  },
+  "TEXT_YMAG": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "text height magnification",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT_Y_GAP": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "Y pixel gap between chars",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER0": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "1msec user timer 0",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER1": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "1msec user timer 1",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER2": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "1msec user timer 2",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TIMER3": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "1msec user timer 3",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TRANSPARENCY": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Not implemented on GOLDELOX-GFX2",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "n/a"
+  },
+  "TRANSPARENT_COLOUR": {
+    "category": "Graphics Functions / gfx_Set",
+    "description": "Not implemented on GOLDELOX-GFX2",
+    "library": "goldelox",
+    "source": {
+      "anchor": "gfx_set",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": "n/a"
+  },
+  "USR_MEM": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "255 user variables / array(s)",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "USR_SP": {
+    "category": "System Registers Memory / 16-bit Registers Memory Map",
+    "description": "User defined stack pointer",
+    "library": "goldelox",
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "VX1": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "display hardware GRAM x1 pos",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "VX2": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "display hardware GRAM x2 pos",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "VY1": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "display hardware GRAM y1 pos",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "VY2": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "display hardware GRAM y2 pos",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "WRITE_GRAM_REG": {
+    "category": "System Registers Memory / 8-bit Registers Memory Map",
+    "description": "display GRAM write address",
+    "library": "goldelox",
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  }
+}

@@ -1,0 +1,3178 @@
+{
+  "16-bit Registers Memory Map": {
+    "category": "System Registers Memory",
+    "description": "The following tables outline in detail the GOLDELOX 16-bit system registers and flags.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "SYSTEM registers are maintained by internal system functions and should not be written to. They should only ever be read. DO NOT write to these registers. USER registers are read/write (R/W) registers used to alter the system behaviour. Refer to the individual functions for information on the interaction with these registers. USERSTACK are used by the debugging and system extension utilities MEMORY - 255-word size variables for users program STACK - 128 word EVE system stack (STACK grows upwards)s FLAGS are a mixture of bits that are either maintained by internal system functions or set/cleared by various system functions. Refer to the Flags Register Bit Map tables, and individual functions for further details. These registers are accessible with peekW and pokeW functions."
+    ],
+    "parameters": [],
+    "returns": "",
+    "signature": "16-bit Registers Memory Map",
+    "signatureVariants": [],
+    "source": {
+      "anchor": "16-bit-registers-memory-map",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "8-bit Registers Memory Map": {
+    "category": "System Registers Memory",
+    "description": "The following tables outline in detail the GOLDELOX 8-bit system registers and flags.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "SYSTEM registers are maintained by internal system functions and should not be written to. They should only ever be read. DO NOT write to these registers. USER registers are read/write (R/W) registers used to alter the system behaviour. Refer to the individual functions for information on the interaction with these registers. These registers are accessible with peekB and pokeB functions. Regiter Addresses 162-165 (or 0xA2 to 0xA5) are RESERVED 8-bit Registers"
+    ],
+    "parameters": [],
+    "returns": "",
+    "signature": "8-bit Registers Memory Map",
+    "signatureVariants": [],
+    "source": {
+      "anchor": "8-bit-registers-memory-map",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "ABS": {
+    "category": "Math Functions",
+    "description": "This function returns the absolute value of value.",
+    "examples": [
+      "// This example returns 500 in variable 'myvar'\nvar myvar, number;\nmyvar := ABS(number * 5);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "a variable, array element, expression or constant.",
+        "name": "value"
+      }
+    ],
+    "returns": "The absolute value.",
+    "signature": "ABS(value)",
+    "signatureVariants": [
+      "ABS(value)"
+    ],
+    "source": {
+      "anchor": "abs",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "COS": {
+    "category": "Math Functions",
+    "description": "This function returns the cosine of an angle. The input value is automatically shifted to lie within 0-359 degrees The returned value range is from 127 to -127 which is a more useful representation for graphics work. The real sine values vary from 1.0 to -1.0 so appropriate scaling must be done in user code as required.",
+    "examples": [
+      "var myvar, angle;\nangle := 133;\n// This example returns -86 in variable 'myvar'\nmyvar := COS(angle);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The angle in degrees.",
+        "name": "angle"
+      }
+    ],
+    "returns": "The cosine in radians of an angle specified in degrees",
+    "signature": "COS(angle)",
+    "signatureVariants": [
+      "COS(angle)"
+    ],
+    "source": {
+      "anchor": "cos",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "Display Modules": {
+    "category": "Hardware Tools",
+    "description": "The following modules, available from 4D Systems, can be used for evaluation purposes to discover what the GOLDELOX processor has to offer. Other modules, such as the 0.96\" and 1.7\" OLED, or 1.44\" LCD versions are also available. Please contact 4D Systems for more information, or visit the 4D Systems website.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "",
+    "signature": "Display Modules",
+    "signatureVariants": [],
+    "source": {
+      "anchor": "display-modules",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "MAX": {
+    "category": "Math Functions",
+    "description": "This function returns the the larger of value1 and value2.",
+    "examples": [
+      "var myvar, number1, number2;\n// This example returns 66 in variable 'myvar'.\nnumber1 := 33;\nnumber2 := 66;\nmyvar := MAX(number1, number2);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "a variable, array element, expression or constant.",
+        "name": "value1"
+      },
+      {
+        "description": "a variable, array element, expression or constant.",
+        "name": "value2"
+      }
+    ],
+    "returns": "The larger of the two values.",
+    "signature": "MAX(value1, value2)",
+    "signatureVariants": [
+      "MAX(value1, value2)"
+    ],
+    "source": {
+      "anchor": "max",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "MIN": {
+    "category": "Math Functions",
+    "description": "This function returns the the smaller of value1 and value2.",
+    "examples": [
+      "var myvar, number1, number2;\n// This example returns 33 in variable 'myvar'\nnumber1 := 33;\nnumber2 := 66;\nmyvar := MIN(number1, number2);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "a variable, array element, expression or constant.",
+        "name": "value1"
+      },
+      {
+        "description": "a variable, array element, expression or constant.",
+        "name": "value2"
+      }
+    ],
+    "returns": "The smaller of the two values.",
+    "signature": "MIN(value1, value2)",
+    "signatureVariants": [
+      "MIN(value1, value2)"
+    ],
+    "source": {
+      "anchor": "min",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "OVF": {
+    "category": "Math Functions",
+    "description": "This function returns the high order 16 bits from certain math and shift functions. It is extremely useful for calculating 32 bit address offsets for MEDIA access. It can be used with the shift operations, addition, subtraction, multiplication and modulus operations.",
+    "examples": [
+      "var loWord, hiWord;\nloWord := 0x2710 * 0x2710; // (10000 * 10000 in hex format)\nhiWord := OVF();\nprint(\"0x\", [HEX] hiWord, [HEX] loWord);\n// This example will print '0x05F5E100' to the display\n// which is 100,000,000 in hexadecimal"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "The high order 16 bits from certain math and shift functions.",
+    "signature": "OVF()",
+    "signatureVariants": [
+      "OVF()"
+    ],
+    "source": {
+      "anchor": "ovf",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "OW_Read": {
+    "category": "GPIO Functions",
+    "description": "Reads the 8 bit value from a 1-Wire devices register. (refer to Dallas 1wired documentation for further information)",
+    "examples": [
+      "// read temperature from DS1821 device\nvar temp_buf; OW_Reset(); // reset the device\nOW_Write(0xAA); // send the read command\ntemp_buf := OW_Read(); // read the device register"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "A word holding the lower 8 bits contain data bits received from the 1-Wire device. |",
+    "signature": "OW_Reset()",
+    "signatureVariants": [
+      "OW_Reset()"
+    ],
+    "source": {
+      "anchor": "ow_read",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "OW_Read9": {
+    "category": "GPIO Functions",
+    "description": "Reads the 9 or more bit value from a 1-Wire devices register. (refer to Dallas 1wired documentation for further information)",
+    "examples": [
+      "// read temperature from DS1821 device\nvar temp_buf; OW_Reset(); // reset the device\nOW_Write(0xAA); // send the read command\ntemp_buf := OW_Read9(); // read the device register"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "A word holding 9 or more data bits received from the 1-Wire device. |",
+    "signature": "OW_Read9()",
+    "signatureVariants": [
+      "OW_Read9()"
+    ],
+    "source": {
+      "anchor": "ow_read9",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "OW_Reset": {
+    "category": "GPIO Functions",
+    "description": "Resets a ONEWIRE device and returns the status. (refer to Dallas 1wired documentation for further information)",
+    "examples": [
+      "// This example will print a 0 if the device initialised successfully.\nprint (\"result=\", OW_Reset());"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "The status of the ONEWIRE device",
+    "signature": "OW_Reset()",
+    "signatureVariants": [
+      "OW_Reset()"
+    ],
+    "source": {
+      "anchor": "ow_reset",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "OW_Write": {
+    "category": "GPIO Functions",
+    "description": "Writes the 8 bit data to 1-Wire devices register. (refer to Dallas 1wired documentation for further information)",
+    "examples": [
+      "//===================================================================\n// For this demo to work, a Dallas DS1821 must be connected to\n// IO1 AND POWERED FROM\n// DS1821 pin1 = Gnd / pin2 = data in/out / pin 3 = +5v\n// Refer to the Dallas DS1821 for further information\n//===================================================================\nvar temp_buf, stat_buf;\n\nfunc main()\n    pause(1000);\n    txt_MoveCursor(0,0);\n    pin_Set(ONEWIRE, PIN_1); // set either I/O pin to 1 wire mode\n    if(OW_Reset()) // initialise and test\n        print(\"No device detected\");\n        while(1);\n    endif\n    txt_Set(TEXT_COLOUR, LIGHTGREY);\n    txt_Set(FONT_SIZE, FONT_LARGE);\n    // refer to data sheet for continuous/polled mode\n    // OW_Write(0x0C); // write status\n    // OW_Write(0b01000010); // set continuous conversion\n    repeat\n        txt_MoveCursor(0, 0);\n        print (\"result=\", OW_Reset());\n        OW_Write(0xEE); // start conversion\n        OW_Reset(); // reset\n        OW_Write(0xAA); // get temperature\n        temp_buf := OW_Read();\n        OW_Reset(); // optional\n        OW_Write( 0xAC); // optional read status\n        stat_buf := OW_Read(); // optional 82 when DS1821 run\n        txt_MoveCursor(1, 0);\n        print (\"temp_buf=0x\", [HEX2] temp_buf);\n        txt_MoveCursor(2, 0);\n        print (\"stat_buf=0x\", [ HEX2] stat_buf);\n    forever\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The lower 8 bits of data are sent to the 1-Wire device.",
+        "name": "data"
+      }
+    ],
+    "returns": "void",
+    "signature": "OW_Write(data)",
+    "signatureVariants": [
+      "OW_Write(data)"
+    ],
+    "source": {
+      "anchor": "ow_write",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "Programming Tools": {
+    "category": "Hardware Tools",
+    "description": "The 4D Programming Cable, uUSB-PA5-II and 4D-UPA Programming Adaptors are essential hardware tools to program, customise and test the GOLDELOX Processor. The 4D programming interfaces are used to program a new Firmware/PmmC, Display Driver and for downloading compiled 4DGL code into the processor. They even serve as an interface for communicating serial data to the PC. The 4D Programming Cable, uUSB-PA5 and gen4-PA Programming Adaptor are available from 4D Systems. Using a non-4D programming interface could damage your processor and void your Warranty.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "Any of the 4D Programming Cable, uUSB-PA5-II or 4D-UPA Programming Adaptor can be used, along with previous generation 4D programmers too."
+    ],
+    "parameters": [],
+    "returns": "",
+    "signature": "Programming Tools",
+    "signatureVariants": [],
+    "source": {
+      "anchor": "programming-tools",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "RAND": {
+    "category": "Math Functions",
+    "description": "This function returns a pseudo random signed number ranging from -32768 to +32767. Returns a pseudo random signed number ranging from -32768 to +32767 each time the function is called. The random number generator may first be seeded by using the SEED(number) function. The seed will generate a pseudo random sequence that is repeatable. You can use the modulo operator (%) to return a number within a certain range, eg n := RAND() % 100; will return a random number between -99 and +99. If you are using random number generation for random graphics points, or only require a positive number set, you will need to use the ABS function so only a positive number is returned, eg: X1 := ABS(RAND() % 100); will set co-ordinate X1 between 0 and 99. Note that if the random number generator is not seeded, the first number returned after reset or power up will be zero. This is normal behavior.",
+    "examples": [
+      "SEED(1234);\n// This example will print '3558, 1960' to the display.\nprint(RAND(),\", \",RAND());"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "pseudo random signed number ranging from -32768 to +32767",
+    "signature": "RAND()",
+    "signatureVariants": [
+      "RAND()"
+    ],
+    "source": {
+      "anchor": "rand",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "SEED": {
+    "category": "Math Functions",
+    "description": "This function seeds the pseudo random number generator so it will generate a new repeatable sequence. The seed value can be a positive or negative number.",
+    "examples": [
+      "SEED(-50);\n// This example will print '30129, 27266' to the display.\nprint(RAND(),\", \",RAND());"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the seed value for the pseudo random number generator.",
+        "name": "number"
+      }
+    ],
+    "returns": "void",
+    "signature": "SEED(number)",
+    "signatureVariants": [
+      "SEED(number)"
+    ],
+    "source": {
+      "anchor": "seed",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "SIN": {
+    "category": "Math Functions",
+    "description": "This function returns the sine of an angle. The input value is automatically shifted to lie within 0-359 degrees. The returned value range is from 127 to -127 which is a more useful representation for graphics work. The real sine values vary from 1.0 to -1.0 so appropriate scaling must be done in user code as required.",
+    "examples": [
+      "var myvar, angle;\nangle := 133;\n// This example returns 92 in variable 'myvar'\nmyvar := SIN(angle);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The angle in degrees.",
+        "name": "angle"
+      }
+    ],
+    "returns": "The sine in radians of an angle specified in degrees.",
+    "signature": "SIN(angle)",
+    "signatureVariants": [
+      "SIN(angle)"
+    ],
+    "source": {
+      "anchor": "sin",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "SQRT": {
+    "category": "Math Functions",
+    "description": "This function returns the integer square root which is the greatest integer less than or equal to the square root of number.",
+    "examples": [
+      "var myvar;\n// returns 161 in  'myvar' which is the 'integer square root' of 26000\nmyvar := SQRT(26000);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the positive number for the SQRT function.",
+        "name": "number"
+      }
+    ],
+    "returns": "the integer square root of a number",
+    "signature": "SQRT(number)",
+    "signatureVariants": [
+      "SQRT(number)"
+    ],
+    "source": {
+      "anchor": "sqrt",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "SWAP": {
+    "category": "Math Functions",
+    "description": "Given the addresses of two variables (var1 and var2), the values at these addresses are swapped.",
+    "examples": [
+      "var myvar, number1, number2;\n// This example swaps the values in 'number1' and 'number2'\nnumber1 := 33;\nnumber2 := 66;\nmyvar := MAX(number1, number2);\n// 'number1' will hold 66, and 'number2' will hold 33."
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The address of the first variable.",
+        "name": "&var1"
+      },
+      {
+        "description": "The address of the second variable.",
+        "name": "&var2"
+      }
+    ],
+    "returns": "void",
+    "signature": "SWAP(&var1, &var2)",
+    "signatureVariants": [
+      "SWAP(&var1, &var2)"
+    ],
+    "source": {
+      "anchor": "swap",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "beep": {
+    "category": "Sound and Tune (RTTTL) Functions",
+    "description": "Simple utility to produce a single musical note for the required duration.",
+    "examples": [
+      "Beep(20, 50); // play note 20 for 50 milliseconds"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "A value (usually a constant) specifying the frequency of the note. Note could be between 0 and 64",
+        "name": "note"
+      },
+      {
+        "description": "Secifies the time in milliseconds that the note will be played for",
+        "name": "duration"
+      }
+    ],
+    "returns": "void",
+    "signature": "beep(note, duration)",
+    "signatureVariants": [
+      "beep(note, duration)"
+    ],
+    "source": {
+      "anchor": "beep",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "bits_Clear": {
+    "category": "Memory Access Functions",
+    "description": "This function clears the required bits at address by 'ANDing' the inverted mask with the value stored at address.",
+    "examples": [
+      "// This example clears bits 10, 11, 12 and 13 of myval\nvar myval;\nmyval := 0xFFFF;\nbits_Clear(myval, 0x3C00);\nprint([HEX], myval);"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The bits_Set, bits_Clear, bits_Flip and bits_Test functions can only be used for user memory and will not work with system register variables."
+    ],
+    "parameters": [
+      {
+        "description": "The address of a user memory location.",
+        "name": "address"
+      },
+      {
+        "description": "The 16 bit mask containing bits to be cleared.",
+        "name": "mask"
+      }
+    ],
+    "returns": "void",
+    "signature": "bits_Clear(address, mask)",
+    "signatureVariants": [
+      "bits_Clear(address, mask)"
+    ],
+    "source": {
+      "anchor": "bits_clear",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "bits_Flip": {
+    "category": "Memory Access Functions",
+    "description": "This function flips the required bits at address by 'XORing' the mask with the value stored at address.",
+    "examples": [
+      "// This example clears bits 15, 11, and 1 of myval\nvar myval;\nmyval := 0xFFFF;\nbits_Flip(myval, 0x8802);\nprint([HEX], myval);"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The bits_Set, bits_Clear, bits_Flip and bits_Test functions can only be used for user memory and will not work with system register variables."
+    ],
+    "parameters": [
+      {
+        "description": "The address of a user memory location.",
+        "name": "address"
+      },
+      {
+        "description": "The 16 bit mask containing bits to be flipped.",
+        "name": "mask"
+      }
+    ],
+    "returns": "void",
+    "signature": "bits_Flip(address, mask)",
+    "signatureVariants": [
+      "bits_Flip(address, mask)"
+    ],
+    "source": {
+      "anchor": "bits_flip",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "bits_Set": {
+    "category": "Memory Access Functions",
+    "description": "This function sets the required bits at address by 'ORing' the mask with the value stored at address.",
+    "examples": [
+      "// This example sets bits 6 and 7 of myval\nvar myval;\nmyval := 3;\nbits_Set(myval, 0xC0);\nprint([HEX], myval);"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The bits_Set, bits_Clear, bits_Flip and bits_Test functions can only be used for user memory and will not work with system register variables"
+    ],
+    "parameters": [
+      {
+        "description": "The address of a user memory location.",
+        "name": "address"
+      },
+      {
+        "description": "The 16 bit mask containing bits to be set.",
+        "name": "mask"
+      }
+    ],
+    "returns": "void",
+    "signature": "bits_Set(address, mask)",
+    "signatureVariants": [
+      "bits_Set(address, mask)"
+    ],
+    "source": {
+      "anchor": "bits_set",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "bits_Test": {
+    "category": "Memory Access Functions",
+    "description": "This function tests the required bits at address using the mask with the original value. If any of the bits are set, the function returns 1. If none of the bits are set, the function returns 0.",
+    "examples": [
+      "// This example tests bits 8-15 in myval, if any bits are set, the result will be 1.\nvar myval,res;\nmyval = 0x1234;\nres := bits_Test(myval, 0xFF00);\nprint(res);"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The bits_Set, bits_Clear, bits_Flip and bits_Test functions can only be used for user memory and will not work with system register variables."
+    ],
+    "parameters": [
+      {
+        "description": "The address of a user memory location.",
+        "name": "address"
+      },
+      {
+        "description": "The 16 bit mask containing bits to be tested.",
+        "name": "mask"
+      }
+    ],
+    "returns": "",
+    "signature": "bits_Test(address, mask)",
+    "signatureVariants": [
+      "bits_Test(address, mask)"
+    ],
+    "source": {
+      "anchor": "bits_test",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "call": {
+    "category": "User Stack Functions",
+    "description": "Calls the specified function, the arguments to the called function are from the stack. The stacked parameters are consumed and the stack pointer is altered to match the number of arguments that were consumed.",
+    "examples": [
+      "// takes the function argument count, function pointer, and argument pointer\n// from the top of the stack and calls the function using the stacked parameters.\n// The 7 arguments on the stack are discarded.\npush(10);\npush(10);\npush(50);\npush(50);\npush(0xFFFF);\npush(gfx_RectangleFilled); // push the function call address\npush(5);                   // push the argument count\n//~~~~~~\ncall();"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "If the called function returns a value then it is available. |",
+    "signature": "call()",
+    "signatureVariants": [
+      "call()"
+    ],
+    "source": {
+      "anchor": "call",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "charheight": {
+    "category": "Text and String Functions",
+    "description": "charheight(char) is used to calculate the height in pixel units for a character, based on the currently selected font. The font can be proportional or mono-spaced.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The ascii character for the height calculation.",
+        "name": "'char'"
+      }
+    ],
+    "returns": "The height of a single character in pixel units.",
+    "signature": "charheight('char')",
+    "signatureVariants": [
+      "charheight('char')"
+    ],
+    "source": {
+      "anchor": "charheight",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "charwidth": {
+    "category": "Text and String Functions",
+    "description": "charwidth is used to calculate the width in pixel units for a character, based on the currently selected font. The font can be proportional or mono-spaced. If the total width of the string exceeds 255 pixel units, the function will return the 'wrapped' (modulo 8) value.",
+    "examples": [
+      "str := \"HELLO\\nTHERE\";  // note that this string spans 2 lines due\n                        // to the n.\nwidth := strwidth(str); // get the width of the string, this will\n                        // also capture the\nheight := strheight();  // note, invoking strwidth also calcs height\n                        // which we can now\n// The string above spans 2 lines, strheight() will calculate height\n// correctly for multiple lines.\nlen := strlen(str);     // the strlen() function returns the number\n                    // of characters in a string.\nprint(\" nLength=\",len); // NB: the n in \"HELLO\\nTHERE\" is counted\n                    // as a character.\ntxt_FontID(MS_SanSerif8x12);// select this font\nw := charwidth('W');        // get a characters width\nh := charheight('W');       // and height\ntxt_FontID(0);              // back to default font\nprint (\"\\n'W' is \" ,w, \" pixels wide\"); // show width of a character\n                                    // 'W' in pixel\nprint (\"\\n'W' is \" ,h, \" pixels high\"); // show height of a character\n                                        // 'W' in pixel"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The ascii character for the width calculation.",
+        "name": "'char'"
+      }
+    ],
+    "returns": "The width of a single character in pixel units.",
+    "signature": "charwidth('char')",
+    "signatureVariants": [
+      "charwidth('char')"
+    ],
+    "source": {
+      "anchor": "charwidth",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "com_AutoBaud": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "The com_AutoBaud function expects to receive an ascii 'U' (0x55) within a pre-determined time. If the function is successful, the COM port is configured to the closest speed possible, and the selected baud rate value is returned.",
+    "examples": [
+      "while (br:=com_AutoBaud(500))           // if we receive a 'U' ok\n    doMyComms(); // now connected at br baud rate\nwend"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Sets the timeout delay for autobaud detection.",
+        "name": "timeout"
+      }
+    ],
+    "returns": "The divisor value selected for the baud rate generator, else returns 0.",
+    "signature": "com_AutoBaud(timeout)",
+    "signatureVariants": [
+      "com_AutoBaud(timeout)"
+    ],
+    "source": {
+      "anchor": "com_autobaud",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "com_Checksum": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "Transparent to normal operation, a check summing system is operating. If the host sends one extra character as part of the packet (usually added at the end of the packet) which is the negated value of the addition of all the previous characters in the packet. Once the com_Full() function reports a buffer full situation (ie the packet is fully received) , the checksum can be read, and should read zero if the packet is not corrupted.",
+    "examples": [
+      "if(!com_Checksum())         // if checksum is ok\n    processMyPacket();      // continue\nelse\n    // do recovery action\nendif"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "0 if checksum has been computed correctly.",
+    "signature": "com_Checksum()",
+    "signatureVariants": [
+      "com_Checksum()"
+    ],
+    "source": {
+      "anchor": "com_checksum",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "com_Count": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "Can be read at any time (when in buffered communications is active) to determine the number of characters that are waiting in the buffer.",
+    "examples": [
+      "n := com_Count(); // get the number of chars available in the buffer"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "Current count of characters in the communications buffer.",
+    "signature": "com_Count()",
+    "signatureVariants": [
+      "com_Count()"
+    ],
+    "source": {
+      "anchor": "com_count",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "com_Error": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "If any low level errors occur during the buffering service (such as framing or over-run) the internal COM_ERROR flag will be set which can be read with this function.",
+    "examples": [
+      "if(com_Error())                     // if there were low level comms errors,\n    resetMySystem();                // take corrective action\nendif"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "1 if any low level communications error occurred, else returns 0",
+    "signature": "com_Error()",
+    "signatureVariants": [
+      "com_Error()"
+    ],
+    "source": {
+      "anchor": "com_error",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "com_Full": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "If the queue is not read frequently by the application, and characters are still being sent by the host, the head will eventually catch up with the tail setting the COM_FULL flag which is read with this function. If this flag is set, any further characters from the host are discarded, however, all the characters that were buffered up to this point are readable.",
+    "examples": [
+      "if (com_Full() & (com_Count() == 0))\n    com_Init(mybuf, 30, 0);             // buffer full, recovery\nendif"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "1 if buffer or queue has become full, or is overflowed, else returns 0",
+    "signature": "com_Full()",
+    "signatureVariants": [
+      "com_Full()"
+    ],
+    "source": {
+      "anchor": "com_full",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "com_Init": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "This is the initialisation function for the serial communications buffered service. Once initialised, the service runs in the background capturing and buffering serial data without the user application having to constantly poll the serial port. This frees up the application to service other tasks. The service also transparently keeps a checksum (see the com_Checksum() function) which can be employed if required for robust error checking. MODES OF OPERATION",
+    "examples": [
+      "//=======================================================================================\n// Example #1 - no qualifier\n// use the Workshop Terminal to test this example\n// note that if 7 characters are exceeded, no more\n// characters will be accepted as there is no action\n// to take care of the com_Full situation\n//=======================================================================================\nvar combuf[10];                                 // a buffer for up to 20 characters\nputstr(\"Default 115.2kb\");\ncom_Init(combuf, 7, 0);                         // initialize small circular queue of 7\n                                                // bytes, no qualifier\nrepeat\n\n    if (com_Count())                            // if there is a character available\n        serout(serin());                        // echo it back t o host\n    endif\n\n    txt_MoveCursor(2,0);\n    print(\"\\ncom_Error \",[DEC2ZB] com_Error()); // 1 if error\n    print(\"\\ncom_Count \",[DEC2ZB] com_Count()); // show current count\n    print(\"\\ncom_Full \",[DEC2ZB] com_Full());   // 1 if full\n    pause(1000);                                // a delay to slow things up\nforever",
+      "//=======================================================================================\n// Example #2 - no qualifier\n// use the Workshop Terminal to test this example\n// note that if 7 characters are exceeded, the\n// com_Full situat ion occurs, but is reset\n// once all the pending characters are read\n//=======================================================================================\nvar combuf[10];                                 // a buffer for up to 20 characters\nputstr(\"Default 115.2kb\");\ncom_Init(combuf, 7, 0);                         // initialize circular queue of 7 bytes,\n                                                // no qualifier\nrepeat\n\n    if (com_Count())                            // if there is a character available\n        serout(serin());                        // echo it back to host\n    endif\n    txt_MoveCursor(2,0);\n    print(\"\\ncom_Error \",[DEC2ZB] com_Error()); // 1 if error\n    print(\"\\ncom_Count \",[DEC2ZB] com_Count()); // show current count\n    print(\"\\ncom_Full \",[DEC2ZB] com_Full());   // 1 if full\n    pause(1000);                                // a delay to slow things up\n    // if the buffer overflowed, and we have read\n    // all the characters, then reset the buffer\n    if (com_Full() & (com_Count() == 0)) com_Init(combuf, 7, '0');\n\nforever"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "Transparent to normal operation, a check summing system is operating. If the host sends one extra character (usually at the end of the packet) which is the negated value of the addition of all the previous characters in the packet , the checksum (which can be read with the com_Checksum() function) should read zero. com_Checksum() will retain the most recent value until com_Init(..) is called again to reset the buffer system. Note that the checksum is only valid after the com_Full() function reports a buffer full situation (ie the packet is fully received). Transparent to normal operation, a check summing system is operating. If the host sends one extra character (usually at the end of the packet) which is the negated value of the addition of all the previous characters in the packet , the checksum (which can be read with the com_Checksum() function) should read zero. com_Checksum() will retain the most recent value until com_Init(..) is called again to reset the buffer system. Note that the checksum is only valid after the com_Full() function reports a buffer full situation (ie the packet is fully received). com_PacketSize() will indicate how large the packet is ONLY after the packet reception has started. Although it is usually not required to know the packet size until the packet has actually been read, if it is a requirement, the count is available as soon as com_Count() becomes non zero. com_PacketSize() will indicate how large the packet is ONLY after the packet reception has started. Although it is usually not required to know the packet size until the packet has actually been read, if it is a requirement, the count is available as soon as com_Count() becomes non zero."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the address of a buffer used for the background buffering service.",
+        "name": "buffer"
+      },
+      {
+        "description": "specifies the byte size of the user array provided for the buffer (each array element holds 2 bytes). If the buffer size is zero, a buffer of 63 words (126 bytes) should be provided for automatic packet length mode (see below). Buffer of 63 words (126 bytes) is the maximum buffer size possible.",
+        "name": "bufsize"
+      },
+      {
+        "description": "specifies the qualifying character that must be received to initiate serial data reception and buffer write. A zero (0x00) indicates no qualifier to be used.",
+        "name": "qualifier"
+      }
+    ],
+    "returns": "void",
+    "signature": "com_Init(buffer, bufsize, qualifier)",
+    "signatureVariants": [
+      "com_Init(buffer, bufsize, qualifier)"
+    ],
+    "source": {
+      "anchor": "com_init",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "com_PacketSize": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "com_PacketSize() will indicate how large the packet is ONLY after the packet reception has started. Although it is usually not required to know the packet size until the packet has actually been read, if it is a requirement, the count is available as soon as com_Count() becomes non zero. If not in variable packet length mode, com_PacketSize() just returns the size of the specified buffer.",
+    "examples": [
+      "If (!com_Count())\n    print(\"Waiting....\");\nelse\n    print(com_PacketSize() com_Count()), bytes to go \"\");\nendif"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "The size of a packet if in variable packet length mode, or just the size of the serial buffer if not variable packet length mode.",
+    "signature": "com_PacketSize()",
+    "signatureVariants": [
+      "com_PacketSize()"
+    ],
+    "source": {
+      "anchor": "com_packetsize",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "com_Reset": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "Resets the serial communications buffered service and returns it to the default polled mode.",
+    "examples": [
+      "com_Reset(); // reset to polled mode"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "",
+    "signature": "com_Reset()",
+    "signatureVariants": [
+      "com_Reset()"
+    ],
+    "source": {
+      "anchor": "com_reset",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "com_Sync": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "If a qualifier character is specified when using buffered communications, after the buffer is initialized with com_Init(..) , the service will ignore all characters until the qualifier is received and only then initiate the buffer write sequence with incoming data. com_Sync() is called to determine if the qualifier character has been received yet.",
+    "examples": [
+      "com_Sync(); // reset to polled mode"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "1 if the qualifier character has been received, else returns 0.",
+    "signature": "com_Sync()",
+    "signatureVariants": [
+      "com_Sync()"
+    ],
+    "source": {
+      "anchor": "com_sync",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_BlitPixelFill": {
+    "category": "Display I/O Functions",
+    "description": "Fills a preselected GRAM screen area with the specified colour.",
+    "examples": [
+      "gfx_ClipWindow(40,40,79,79);            // select a block on the display\ncount := gfx_FocusWindow();             // focus GRAM\nmyvar:=dispBlitPixelFill(RED,count);    // paint the area red"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the colour for the fill.",
+        "name": "colour"
+      },
+      {
+        "description": "Specifies the number of pixels to fill.",
+        "name": "count"
+      }
+    ],
+    "returns": "void",
+    "signature": "disp_BlitPixelFill(colour, count)",
+    "signatureVariants": [
+      "disp_BlitPixelFill(colour, count)"
+    ],
+    "source": {
+      "anchor": "disp_blitpixelfill",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_BlitPixelsFromCOM": {
+    "category": "Display I/O Functions",
+    "description": "Fills a preselected GRAM screen area with the specified colour.",
+    "examples": [
+      "// After downloading this program, open the Workshop Terminal and\n// type 2 keys per pixel for 16bit colour mode. The colour will be\n// determined by the ASCII values of the keys, it is only a simple\n// test and you have very little control of what colour is actually\n// displayed - it is simply a demo of disp_BlitPixelsFromCOM action.\n// If all is good, you will see the GRAM area being filled with\n// pixels.\n// NB if using 8bit colour mode, the correct register in the display\n// must be set to 8 bit mode, if you have done this correctly, you\n// will notice that it only requires 1 key to write each pixel.\n// If this is not done correctly, only half the gram area will be\n// filled.\n\nfunc main()\n    gfx_ClipWindow(40,40,59,59);    // writing to a 40x40 block on the\n                                    // display.\n    gfx_FocusWindow();              // NB first focus is just so we can\n                                    // get pixel count of area.\n    print(\"Filling \",*IMG_PIXEL_COUNT,\" pixels\");\n    gfx_FocusWindow();\n    disp_BlitPixelsFromCOM(0);      // get pixels from serial port,\n    while(*IMG_PIXEL_COUNT);        // wait till all the pixels come in\n    txt_MoveCursor(8,5); print(\"Done!\");\n    repeat forever\nendfunc",
+      "// the next example uses disp_BlitPixelsFromCOM in 4bit CLUT mode\nvar CLUT1[16];\n// If the argument to disp_BlitPixelsFromCOM(...) is non zero, it is\n// expected to be a pointer to a 16 element colour lookup table in\n// RAM.\n// After downloading this program, open the Workshop Terminal and\n// Each key typed will produce 2 pixels from the CLUT. The colour\n// will be determined by the values in the CLUT, it is only a simple\n// test and you have very little control of what colour is actually\n// displayed - it is simply a demo of disp_BlitPixelsFromCOM action.\n// If all is good, you will see the GRAM area being filled with\n// pixels.\n\nfunc main()\n    // CLUT is set for monochrome mode, however\n    // it can contain a colour set if required\n    CLUT1[0] := 0x0000; // BLACK\n    CLUT1[1] := 0x1082; // GRAY1\n    CLUT1[2] := 0x2104; // GRAY2\n    CLUT1[3] := 0x3186; // GRAY3\n    CLUT1[4] := 0x4208; // GRAY4\n    CLUT1[5] := 0x5285; // GRAY5\n    CLUT1[6] := 0x630C; // GRAY6\n    CLUT1[7] := 0x738E; // GRAY7\n    CLUT1[8] := 0x8410; // GRAY8\n    CLUT1[9] := 0x9492; // GRAY9\n    CLUT1[10] := 0xA514; // GRAY10\n    CLUT1[11] := 0xB596; // GRAY11\n    CLUT1[12] := 0xC618; // GRAY12\n    CLUT1[13] := 0xD69A; // GRAY13\n    CLUT1[14] := 0xE71C; // GRAY14\n    CLUT1[15] := 0xF79E; // ALMOST WHITE\n\n    gfx_ClipWindow(40,40,59,59);    // writing to a 40x40 block on\n                                // the display.\n    gfx_FocusWindow();              // NB first focus is just so we can get\n                                // pixel count of area.\n    print(\"Filling \",*IMG_PIXEL_COUNT,\" pixels\");\n    gfx_FocusWindow();\n    disp_BlitPixelsFromCOM(CLUT1);  // get pixels from COM port, 4 bit\n                                // CLUT mode mode\n    while(*IMG_PIXEL_COUNT);\n    txt_MoveCursor(8,5);\n    print(\"Done!\");\n    repeat forever\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "mode = 0 - specifies 16 bit pixels mode = pointer : specifies pointer to 16 element colour lookup table for each 4bit pixel value",
+        "name": "mode"
+      }
+    ],
+    "returns": "void",
+    "signature": "disp_BlitPixelsFromCOM(mode)",
+    "signatureVariants": [
+      "disp_BlitPixelsFromCOM(mode)"
+    ],
+    "source": {
+      "anchor": "disp_blitpixelsfromcom",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_BlitPixelsFromMedia": {
+    "category": "Display I/O Functions",
+    "description": "Read the required number of pixels consecutively from the current media stream and write them to the current display GRAM address. For 8bit colour mode, each pixel comprises a single 8bit value. For 16bit colour, each pixel is composed of 2 bytes, the high order byte is read first, the low order bye is read next.",
+    "examples": [
+      "media_SetAdd(0x0002, 0x3C00);   // point to required area of an image\ndisp_BlitPixelsFromMedia(20);   // write the next 20 pixels from\n                                // media to the current GRAM pointer."
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifying the number of pixels to be consecutively read from the media stream.",
+        "name": "pixelcount"
+      }
+    ],
+    "returns": "void",
+    "signature": "disp_BlitPixelsFromMedia(pixelcount)",
+    "signatureVariants": [
+      "disp_BlitPixelsFromMedia(pixelcount)"
+    ],
+    "source": {
+      "anchor": "disp_blitpixelsfrommedia",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_BlitPixelsToCOM": {
+    "category": "Display I/O Functions",
+    "description": "Write the selected GRAM area to the serial (COM) port.",
+    "examples": [
+      "// After downloading this program, open the Workshop Terminal and\n// type any key to start the pixel upload.\nfunc main()\n    var pixels;\n    putstr(\"Open the terminal\\n\");\n    putstr(\"Type any key to start\\n\");\n    while(serin() < 0);                 // wait for a key from terminal\n                                        // before we start\n    gfx_ClipWindow(40,40,44,44);        // within a small block on the\n                                        // display\n    pixels:=gfx_FocusWindow();          // focus GRAM and get pixel count\n                                        // of area\n    disp_BlitPixelFill(0x4142, pixels); // fill the area using ASCII\n                                        // values so we can read easily\n    disp_BlitPixelsToCOM();             // write the pixels to the COM port\n    print(\"Done!\");\n    repeat forever\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "Returns the number of pixels that were written to the serial port. |",
+    "signature": "disp_BlitPixelsToCOM()",
+    "signatureVariants": [
+      "disp_BlitPixelsToCOM()"
+    ],
+    "source": {
+      "anchor": "disp_blitpixelstocom",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_BlitPixelsToMedia": {
+    "category": "Display I/O Functions",
+    "description": "Write the selected GRAM area to the media at the current media address.",
+    "examples": [
+      "func main()\n    var n;\n    while(!media_Init())\n        putstr(\"Insert Card\");          // init the card\n        pause(200);\n        gfx_Cls();\n        pause(200);\n    wend\n    media_SetSector(0x0020,0x0000);     // we're going to write here\n    gfx_ClipWindow(40,40,55,55);        // select 16x16 block on the display\n    n:=gfx_FocusWindow();               // focus GRAM\n    while(n--)\n        disp_BlitPixelFill(RAND(),1);   // fill area with random pixels\n    wend\n    n:=disp_BlitPixelsToMedia ();       // save it to sector\n    print(n*2,\" bytes written\\n\");\n    print(\"Done!\");\n    repeat forever\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "Returns the number of pixels that were written to the media.",
+    "signature": "disp_BlitPixelsToMedia()",
+    "signatureVariants": [
+      "disp_BlitPixelsToMedia()"
+    ],
+    "source": {
+      "anchor": "disp_blitpixelstomedia",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_Init": {
+    "category": "Display I/O Functions",
+    "description": "The GOLDELOX-GFX2 needs to be aware of all the display registers and how to access them. The initialisation and the state machine tables are necessary to achieve this. Refer to the individual display data sheet available from the display manufacturer. ** Syntax **: disp_Init(initTable, stateMachine); Returns: None Example",
+    "examples": [
+      "//============================================================================\n// SD1339 Device Initialisation Procedure\n//============================================================================\n\n#DATA\nbyte initTable\n// first 4 bytes of table hold\n// display access information\n    _DI SPLAY_X_MAX,                // width 1\n    _DISPLAY_X_MAX,                 // height 1\n    WRITE_GRAM,                     // write access register\n    WRITE_GRAM,                     // read access register\n    // now the display initialisation table\n    0, DISPLAY_OFF, // Display OFF\n    1, REMAP_COLOUR_SETTINGS, _65K_COLOURS, // Set Re map/Color Depth\n    1, DISPLAY_START_LINE, 0x00,\n    1, DISPLAY_OFFSET, 0x80,\n    1, DUTY_CYCLE, 0x7F,                        // Duty 127+1 (0x80)\n    0, DISPLAY_NORMAL,                          // Normal display\n    1, MAS TER_CONFIGURE, 0x8E,                 // Set Master Configuration\n    1, CONTRAST_MASTER, 0x0F,                   // Set master contrast\n    3, CONTRAST_RGB, 0xFF, 0xFF, 0xFF,          // Set contrast current\n    1, SET_VCOMH, 0x1F,                         // Set VcomH\n    1, POWERSAVE_MODE, 0x05                     // Power saving mode\n    3, PRECHARGE_VOLTAGE_RGB, 0x1C, 0x1C, 0x1C, // Set pre charge\n                                                // voltage\n    1, PHASE_PRECHARGE, 0x11,                   // Set pre & dis_charge\n    1, CLOCK_FREQUENCY, 0x80,                   // clock & frequency (0xF0)\n    0, SLEEP_MODE_OFF,                          // Display on\n    2, SET_COLUMN_ADDRESS, 0x00, 0x7F,          // set full screen\n    2, SET_ROW_ADDRESS, 0x00, 0x7F, 0xFF\n#END\n\n//=========================================================================\n// GRAM access state machine for SSD1339 (on uOLED-128 G1(GFX))\n//=========================================================================\n\n#DATA\nbyte stateMachine\n    WRITE_CONTROL_CONSTANT, SET_COLUMN_ADDRESS,\n    WRITE_DATA_BYTE, _VX1,\n    WRITE_DATA_BYTE, _VX2,\n    WRITE_CONTROL_CONSTANT, SET_ROW_ADDRESS,\n    WRITE_DATA_BYTE, _VY1,\n    WRITE_DATA_BYTE, _VY2,\n    WRITE_EXIT\n#END\n\nfunc main()\n    disp_Init(initTable, stateMachine); // initialise the display\n    txt_MoveCursor(0, 2);\n    txt_Bold(1);\n    txt_Italic(1);\n    txt_Set(TEXT_COLOUR, WHITE);\n    print(\"4D LABS\");\n    repeat forever\nend"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "For hardware platform modules such as uOLED-96-G1(GFX), uOLED-128-G1(GFX), etc the disp_Init(,,) is not needed. The modules are factory set-up with their display specific configurations."
+    ],
+    "parameters": [
+      {
+        "description": "A reference to the device initialisation table which is stored as a data statement.",
+        "name": "initTable"
+      },
+      {
+        "description": "A reference to the device state machine table which is stored as a data statement.",
+        "name": "stateMachine"
+      }
+    ],
+    "returns": "void",
+    "signature": "disp_Init",
+    "signatureVariants": [],
+    "source": {
+      "anchor": "disp_init",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_ReadByte": {
+    "category": "Display I/O Functions",
+    "description": "Reads a byte from the display after an internal register or GRAM access has been set.",
+    "examples": [
+      "gfx_ClipWindow(40,40,44,44);    // within a small block on the display\ngfx_FocusWindow();              // focus GRAM\npixel_Hi:= dispReadByte();      // read hi byte of first pixel\npixel_Lo:= dispReadByte();      // read lo byte of first pixel"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "Returns the 8bit data that was read from the display. Only the lower 8bits are valid.",
+    "signature": "disp_ReadByte()",
+    "signatureVariants": [
+      "disp_ReadByte()"
+    ],
+    "source": {
+      "anchor": "disp_readbyte",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_ReadWord": {
+    "category": "Display I/O Functions",
+    "description": "Reads a 16bit word from the display after an internal register or GRAM access has been set.",
+    "examples": [
+      "gfx_ClipWindow(40,40,44,44);    // within a small block on the display\ngfx_FocusWindow();              // focus GRAM\npixel := dispReadWord();        // read 1st pixel, HI:LO order"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "Returns the 16bit data that was read from the display.",
+    "signature": "disp_ReadWord()",
+    "signatureVariants": [
+      "disp_ReadWord()"
+    ],
+    "source": {
+      "anchor": "disp_readword",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_SkipPixelsFromMedia": {
+    "category": "Display I/O Functions",
+    "description": "Skip the required number of pixels consecutively from the current media stream, discarding them. For 8bit colour mode, each pixel comprises a single 8bit value. For 16bit colour, each pixel is composed of 2 bytes, the high order byte is read first, the low order bye is read next.",
+    "examples": [
+      "disp_SkipPixelsFromMedia(20);   // skip the next 20 pixels from media\ndisp_BlitPixelsFromMedia(20);   // write the next 20 pixels from\n                                // media to the current GRAM pointer."
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifying the number of pixels to be consecutively skipped from the media stream.",
+        "name": "pixelcount"
+      }
+    ],
+    "returns": "void",
+    "signature": "disp_SkipPixelsFromMedia(pixelcount)",
+    "signatureVariants": [
+      "disp_SkipPixelsFromMedia(pixelcount)"
+    ],
+    "source": {
+      "anchor": "disp_skippixelsfrommedia",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_WriteByte": {
+    "category": "Display I/O Functions",
+    "description": "Sends a single byte (which is the lower 8 bits of value) to the display bus. Refer to individual data sheets for the display for more information. This function is used to extend the capabilities of the user code to gain access to the the display hardware.",
+    "examples": [
+      "// a function to utilise the hardware circle draw function\n// on a SD1339 display driver IC\n#constant DRAW_CIRCLE 0x86\nfunc myCircle(var x, var y, var r, var fillcolour, var linecolour)\n    disp_WriteControl(DRAW_CIRCLE); // Draw Circle command\n    disp_WriteByte(x);              // set x1\n    disp_WriteByte(y);              // set y1\n    disp_WriteByte(r);              // set x2\n    disp_WriteByte(linecolour>>8);  // set outline col our Hi byte\n    disp_WriteByte(linecolour);     // set outline colour Lo byte\n    disp_WriteByte(fillcolour>>8);  // set fill colour Hi byte\n    disp_WriteByte(fillcolour);     // set fill colour Lo byte\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the value to be written to the display data register. Only the lower 8 bits are sent to the display.",
+        "name": "value"
+      }
+    ],
+    "returns": "void",
+    "signature": "disp_WriteByte(value)",
+    "signatureVariants": [
+      "disp_WriteByte(value)"
+    ],
+    "source": {
+      "anchor": "disp_writebyte",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_WriteControl": {
+    "category": "Display I/O Functions",
+    "description": "Sends a single byte (which is the lower 8 bits of value) to the display bus. Refer to individual data sheets for the display for more information. This function is used to extend the capabilities of the user code to gain access to the the display hardware.",
+    "examples": [
+      "// a function to utilise the hardware circle draw function\n// on a SD1339 display driver IC\n#constant DRAW_CIRCLE 0x86\nfunc myCircle(var x, var y, var r, var fillcolour, var linecolour)\n    disp_WriteControl(DRAW_CIRCLE); // Draw Circle command\n    disp_WriteByte(x);              // set x1\n    disp_WriteByte(y);              // set y1\n    disp_WriteByte(r);              // set x2\n    disp_WriteByte(linecolour>>8);  // set outline col our Hi byte\n    disp_WriteByte(linecolour);     // set outline colour Lo byte\n    disp_WriteByte(fillcolour>>8);  // set fill colour Hi byte\n    disp_WriteByte(fillcolour);     // set fill colour Lo byte\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the value to be written to the display control register. Only the lower 8 bits are sent to the display.",
+        "name": "value"
+      }
+    ],
+    "returns": "void",
+    "signature": "disp_WriteControl(value)",
+    "signatureVariants": [
+      "disp_WriteControl(value)"
+    ],
+    "source": {
+      "anchor": "disp_writecontrol",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "disp_WriteWord": {
+    "category": "Display I/O Functions",
+    "description": "Sends a 16 bit value to the display bus. Since the GOLDELOX-GFX2 display data bus is 8bits wide, the HIGH byte is sent first followed by the LOW byte. Refer to individual data sheets for the display for more information. This function is used to extend the capabilities of the user code to gain access to the the display hardware.",
+    "examples": [
+      "// a function to utilise the hardware circle draw function\n// on a SD1339 display driver IC\n#constant DRAW_CIRCLE 0x86\nfunc myCircle(var x, var y, var r, var fillcolour, var linecolour)\n    disp_WriteControl(DRAW_CIRCLE); // Draw Circle command\n    disp_WriteByte(x);              // set x1\n    disp_WriteByte(y);              // set y1\n    disp_WriteByte(r);              // set x2\n    disp_WriteWord(linecolour);     // set outline colour\n    disp_WriteWord(fillcolour);     // set fill colour\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the value to be written to the display data register. Only the lower 8 bits are sent to the display.",
+        "name": "value"
+      }
+    ],
+    "returns": "void",
+    "signature": "disp_WriteWord(value)",
+    "signatureVariants": [
+      "disp_WriteWord(value)"
+    ],
+    "source": {
+      "anchor": "disp_writeword",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "drop": {
+    "category": "User Stack Functions",
+    "description": "Decrements the user stack pointer determined by the value n. If n exceeds the stack index, the stack pointer is zeroed.",
+    "examples": [
+      "// This example decrements the stack pointer by 2, effectively dropping\n// 'myvar' and '5678' from the stack, the next pop would yield 1234.\nmyvar := 10;\npush(1234);\npush(5678);\npush(myvar);\ndrop(2);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the number of items to be dropped from the stack.",
+        "name": "n"
+      }
+    ],
+    "returns": "void",
+    "signature": "drop(n)",
+    "signatureVariants": [
+      "drop(n)"
+    ],
+    "source": {
+      "anchor": "drop",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "exec": {
+    "category": "User Stack Functions",
+    "description": "Calls the specified function, passing the arguments to the called function from the stack. The stack and stack pointer are not altered.",
+    "examples": [
+      "push(50);           // set some arbitrary values on the stack\npush(50);\npush(10);\npush(YELLOW);\n\n// Draws a circle using the stacked parameters.\n// The stacked parameters and the stack pointer are not altered.\nexec(gfx_Circle,4); // exec the circle function using\n                    // the stacked parameters"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "A pointer to a function which will utilise the stacked arguments.",
+        "name": "functionPtr"
+      },
+      {
+        "description": "The count of arguments on the stack that are to be passed to the function call.",
+        "name": "argCount"
+      }
+    ],
+    "returns": "If the called function returns a value then it is available.",
+    "signature": "exec(functionPtr, argCount)",
+    "signatureVariants": [
+      "exec(functionPtr, argCount)"
+    ],
+    "source": {
+      "anchor": "exec",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "flash_BlockErase": {
+    "category": "Flash Memory Chip Functions",
+    "description": "",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "This functions only apply to serial SPI (NAND) flash devices interfaced to the GOLDELOX-GFX2 SPI port."
+    ],
+    "parameters": [
+      {
+        "description": "The address of the 64k FLASH block to be erased.",
+        "name": "blockAddress"
+      }
+    ],
+    "returns": "Erases the required block in a FLASH media device. The function returns no value, and the operation can take up to 3 milliseconds.",
+    "signature": "flash_BlockErase(blockAddress)",
+    "signatureVariants": [
+      "flash_BlockErase(blockAddress)"
+    ],
+    "source": {
+      "anchor": "flash_blockerase",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "flash_BulkErase": {
+    "category": "Flash Memory Chip Functions",
+    "description": "If a FLASH storage device is connected to the SPI port, and has been correctly initialised with the spi_Init(...) function, the FLASH device can be completely erased using this function. The only devices supported so far on the GOLDELOX-GFX2 are the M25Pxx range of devices which are 512Kbit to 32Mbit (2M x 8) Serial Flash Memory.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "This functions only apply to serial SPI (NAND) flash devices interfaced to the GOLDELOX-GFX2 SPI port. Erases the entire flash media device. The function returns no value, and the operation can take up to 80 seconds depending on the size of the flash device."
+    ],
+    "parameters": [],
+    "returns": "void",
+    "signature": "flash_BulkErase()",
+    "signatureVariants": [
+      "flash_BulkErase()"
+    ],
+    "source": {
+      "anchor": "flash_bulkerase",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "flash_ID": {
+    "category": "Flash Memory Chip Functions",
+    "description": "If a FLASH storage device is connected to the SPI port, and has been correctly initialised with the spi_Init(...) function, the memory type and capacity from the flash device can be read using this function. The only devices supported so far on the GOLDELOX-GFX2 are the M25Pxx range of devices which are 512Kbit to 32Mbit (2M x 8) Serial Flash Memory.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "This functions only apply to serial SPI (NAND) flash devices interfaced to the GOLDELOX-GFX2 SPI port."
+    ],
+    "parameters": [],
+    "returns": "Reads the memory type and capacity from the serial FLASH device. Hi byte contains type, and low byte contains capacity. Refer to the device data sheet for further information.",
+    "signature": "flash_ID()",
+    "signatureVariants": [
+      "flash_ID()"
+    ],
+    "source": {
+      "anchor": "flash_id",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "flash_SIG": {
+    "category": "Flash Memory Chip Functions",
+    "description": "If a FLASH storage device is connected to the SPI port, and has been correctly initialised with the spi_Init(...) function, the Electronic Signature of the device can be read using this function. The only devices supported so far on the GOLDELOX-GFX2 are the M25Pxx range of devices which are 512Kbit to 32Mbit (2M x 8) Serial Flash Memory.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "This functions only apply to serial SPI (NAND) flash devices interfaced to the GOLDELOX-GFX2 SPI port."
+    ],
+    "parameters": [],
+    "returns": "Release from Deep Power-down, and Read Electronic Signature. Only the low order byte is valid, the upper byte is ignored.",
+    "signature": "flash_SIG()",
+    "signatureVariants": [
+      "flash_SIG()"
+    ],
+    "source": {
+      "anchor": "flash_sig",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "getsp": {
+    "category": "User Stack Functions",
+    "description": "This function returns the current stack index into the stack array. If the index is zero, there are no items on the stack. Syntx: getsp(); Returns: The current stack index. Example",
+    "examples": [
+      "// This example will print '1' assuming there are no other items on the stack.\npush(1234);\nprint(getsp()); // print the stack index"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "The current stack index.",
+    "signature": "getsp",
+    "signatureVariants": [],
+    "source": {
+      "anchor": "getsp",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_BoxTo": {
+    "category": "Graphics Functions",
+    "description": "Draws a rectangle from the current origin to the new point using the current object colour. The top left corner is anchored by the current origin (x1, y1), the bottom right corner is specified by x2, y2.",
+    "examples": [
+      "gfx_MoveTo(40,40);\nn := 10;\n// This example draws 2 boxes, anchored from the current origin.\nwhile (n--)\n    gfx_BoxTo(50,50);\n    gfx_BoxTo(30,30);\nwend"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The default PEN_SIZE is set to OUTLINE, however, if PEN_SIZE is set to SOLID, the rectangle will be drawn filled, if PEN_SIZE is set to OUTLINE, the rectangle will be drawn as an outline. If the circle is drawn as SOLID, the outline colour can be specified with gfx_OutlineColour(...). If OUTLINE_COLOUR is set to 0, no outline is drawn."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the diagonally opposed corner of the rectangle to be drawn, the top left corner (assumed to be x1, y1) is anchored by the current origin.",
+        "name": "x2, y2"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_BoxTo(x2, y2)",
+    "signatureVariants": [
+      "gfx_BoxTo(x2, y2)"
+    ],
+    "source": {
+      "anchor": "gfx_boxto",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Bullet": {
+    "category": "Graphics Functions",
+    "description": "Draws a circle or 'bullet point' with radius r at at the current origin using the current object colour.",
+    "examples": [
+      "// assuming PEN_SIZE is TRANSPARENT and OBJECT_COLOUR is WHITE\n// This example draws a WHITE circle outline at the current origin with a radius of 5 pixels\ngfx_MoveTo(50,50);\ngfx_Bullet(5);"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The default PEN_SIZE is set to OUTLINE, however, if PEN_SIZE is set to SOLID, the circle will be drawn filled, if PEN_SIZE is set to OUTLINE, the circle will be drawn as an outline. If the circle is drawn as SOLID, the outline colour can be specified with gfx_OutlineColour(...)."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the radius of the bullet.",
+        "name": "radius"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Bullet(radius)",
+    "signatureVariants": [
+      "gfx_Bullet(radius)"
+    ],
+    "source": {
+      "anchor": "gfx_bullet",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_ChangeColour": {
+    "category": "Graphics Functions",
+    "description": "Changes all oldColour pixels to newColour within the clipping area.",
+    "examples": [
+      "// This example prints a test string, forces the clipping area to the extent\n// of the text that was printed, then changes the background colour.\nfunc main()\n    txt_Width(3);\n    txt_Height(5);\n    gfx_MoveTo(8,20);\n    print(\"TEST\"); // print the string\n    gfx_SetClipRegion(); // force clipping area to extents of text\n                        // just printed.\n    gfx_ChangeColour(BLACK, RED); // test change of background colour\n    repeat forever\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the sample colour to be changed within the clipping window.",
+        "name": "oldColour"
+      },
+      {
+        "description": "specifies the new colour to change all occurrences of old colour within the clipping window.",
+        "name": "newClour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_ChangeColour(oldColour, newColour)",
+    "signatureVariants": [
+      "gfx_ChangeColour(oldColour, newColour)"
+    ],
+    "source": {
+      "anchor": "gfx_changecolour",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Circle": {
+    "category": "Graphics Functions",
+    "description": "Draws a circle with centre point x1, y1 with radius r using the specified colour.",
+    "examples": [
+      "// assuming PEN_SIZE is OUTLINE\ngfx_Circle(50, 50, 30, 0x001F);\n// This example draws a BLUE circle outline centred\n// at x=50, y=50 with a radius of 30 pixel units."
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The default PEN_SIZE is set to OUTLINE, however, if PEN_SIZE is set to SOLID, the circle will be drawn filled, if PEN_SIZE is set to OUTLINE, the circle will be drawn as an outline. If the circle is drawn as SOLID, the outline colour can be specified with gfx_OutlineColour(...). If OUTLINE_COLOUR is set to 0, no outline is drawn."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the center of the circle.",
+        "name": "x, y"
+      },
+      {
+        "description": "specifies the radius of the circle.",
+        "name": "rad"
+      },
+      {
+        "description": "specifies the colour of the circle.",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Circle(x, y, radius, colour)",
+    "signatureVariants": [
+      "gfx_Circle(x, y, radius, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_circle",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_CircleFilled": {
+    "category": "Graphics Functions",
+    "description": "Draws a SOLID circle with centre point x1, y1 with radius using the specified colour. The outline colour can be specified with gfx_OutlineColour(...). If OUTLINE_COLOUR is set to 0, no outline is drawn.",
+    "examples": [
+      "// This example draws a filled RED circle with a YELLOW outline\n// at x=25, y=25 with a radius of 10 pixel units.\ngfx_OutlineColour(0xFFE0);\ngfx_CircleFilled(25,25,10, 0xF800);"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The PEN_SIZE is ignored, the circle is always drawn SOLID."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the center of the circle.",
+        "name": "x, y"
+      },
+      {
+        "description": "specifies the radius of the circle.",
+        "name": "rad"
+      },
+      {
+        "description": "specifies the colour of the circle.",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_CircleFilled(x, y, rad, colour)",
+    "signatureVariants": [
+      "gfx_CircleFilled(x, y, rad, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_circlefilled",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_ClipWindow": {
+    "category": "Graphics Functions",
+    "description": "Specifies a clipping window region on the screen such that any objects and text placed onto the screen will be clipped and displayed only within that region. For the clipping window to take effect, \"Clipping\" setting must be enabled separately using gfx_Set(CLIPPING, ON) or the shortcut gfx_Clipping(ON).",
+    "examples": [
+      "var n;\ngfx_ClipWindow(10, 10, 50, 50 )\nn := 50000;\n// This example will draw 50000 random colour pixels,\n// only the pixels within the clipping area will be visible.\nwhile(n--)\n    gfx_PutPixel(RAND()%100, RAND()%100, RAND());\nwend\nrepeat forever"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the horizontal and vertical position of the top left corner of the clipping window.",
+        "name": "x1, y1"
+      },
+      {
+        "description": "specifies the horizontal and vertical position of the bottom right corner of the clipping window.",
+        "name": "x2, y2,"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_ClipWindow(x1, y1, x2, y2)",
+    "signatureVariants": [
+      "gfx_ClipWindow(x1, y1, x2, y2)"
+    ],
+    "source": {
+      "anchor": "gfx_clipwindow",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Cls": {
+    "category": "Graphics Functions",
+    "description": "Clear the screen using the current background colour",
+    "examples": [
+      "// This example clears the entire display using colour DARKGRAY\ngfx_BGcolour(DARKGRAY);\ngfx_Cls();"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "void",
+    "signature": "gfx_Cls()",
+    "signatureVariants": [
+      "gfx_Cls()"
+    ],
+    "source": {
+      "anchor": "gfx_cls",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Dot()": {
+    "category": "Graphics Functions",
+    "description": "Draws a pixel at at the current origin using the current object colour",
+    "examples": [
+      "// This example draws a RED pixel at 40,50\ngfx_MoveTo(40,50);\ngfx_ObjectColour(0xF800);\ngfx_Dot();"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "void",
+    "signature": "gfx_Dot()",
+    "signatureVariants": [
+      "gfx_Dot()"
+    ],
+    "source": {
+      "anchor": "gfx_dot",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_FocusWindow": {
+    "category": "Graphics Functions",
+    "description": "Sets the display hardware GRAM access registers to the clipping area ready for reading or writing. The function also returns the pixel count of the selected area.",
+    "examples": [
+      "// This example prints a test string, forces the clipping area to the extent\n// of the text that was printed, then after a delay, fills the region with a colour.\n// The count of pixels in the region is then shown.\nfunc main()\n    var pixelcount;\n    txt_Height(4);\n    gfx_MoveTo(20,20);\n    print(\"TEST\"); // print a string.\n    gfx_SetClipRegion();    // force the clipping region to the\n                            // extent of the\n    Pixelcount:= gfx_FocusWindow(); // get the count, focus on region.\n    pause(1000);\n    disp_BlitPixelFill(BLUE, pixelcount); // fill the region.\n    print(pixelcount, \" pixels n\"); //show the pixel count of region.\n    repeat forever\nendfunc",
+      "// This example fills a small screen area, then outputs each pixel of the selected area to the COM port.\nfunc main()\n    var pixels;\n    putstr(\"Open the terminal n\");\n    putstr(\"Type any key to start n\");\n    while(serin() < 0); // wait for key from terminal before start\n    gfx_ClipWindow(40,40,44,44); // within a small block on display\n    pixels:=gfx_FocusWindow(); //focus GRAM and get pixel count\n    disp_BlitPixelFill(0x4142, pixels); // fill the area, using ASCII\n                                        // values so we can read easy\n    disp_BlitPixelsToCOM(); // send all the pixel values to com port\n    print(\"Done!\");\n    repeat forever\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "The pixel count of the selected area.",
+    "signature": "gfx_FocusWindow()",
+    "signatureVariants": [
+      "gfx_FocusWindow()"
+    ],
+    "source": {
+      "anchor": "gfx_focuswindow",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_GetPixel": {
+    "category": "Graphics Functions",
+    "description": "Reads the colour value of the pixel at position x,y.",
+    "examples": [
+      "// This example prints 1234, the colour of the pixel that was previously placed.\ngfx_PutPixel(20, 20, 1234);\nr := gfx_GetPixel(20, 20);\nprint(r);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the screen coordinates of the pixel colour to be returned.",
+        "name": "x, y"
+      }
+    ],
+    "returns": "The 8 or 16bit colour of the pixel (default 16bit).",
+    "signature": "gfx_GetPixel(x, y)",
+    "signatureVariants": [
+      "gfx_GetPixel(x, y)"
+    ],
+    "source": {
+      "anchor": "gfx_getpixel",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Hline": {
+    "category": "Graphics Functions",
+    "description": "",
+    "examples": [
+      "// This example draws a fast RED horizontal line at y=50, from x1=10 to x2=80\ngfx_Hline(50, 10, 880, 0xF800);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the vertical position of the horizontal line.",
+        "name": "y"
+      },
+      {
+        "description": "Specifies the horizontal end points of the line.",
+        "name": "x1, x2"
+      },
+      {
+        "description": "Specifies the colour of the horizontal line.",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Hline(y, x1, x2, colour)",
+    "signatureVariants": [
+      "gfx_Hline(y, x1, x2, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_hline",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_IncX": {
+    "category": "Graphics Functions",
+    "description": "Increment the current X origin by 1 pixel unit. The original value is returned before incrementing. The return value can be useful if a function requires the current point before insetting occurs.",
+    "examples": [
+      "var n;\ngfx_MoveTo(20,20);\nn := 96;\n// This example draws a simple rounded vertical gradient.\nwhile (n--)\n    gfx_ObjectColour(n/3);\n    gfx_Bullet(2);\n    gfx_IncX();\nwend"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "The current X origin before the increment.",
+    "signature": "gfx_IncX()",
+    "signatureVariants": [
+      "gfx_IncX()"
+    ],
+    "source": {
+      "anchor": "gfx_incx",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_IncY": {
+    "category": "Graphics Functions",
+    "description": "Increment the current Y origin by 1 pixel unit. The original value is returned before incrementing. The return value can be useful if a function requires the current point before insetting occurs.",
+    "examples": [
+      "var n;\ngfx_MoveTo(20,20);\nn := 96;\n// This example draws a simple horizontal gradient using lines.\nwhile (n--)\n    gfx_ObjectColour(n/3);\n    gfx_LineRel(20, 0);\n    gfx_IncY();\nwend"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "The current Y origin before the increment.",
+    "signature": "gfx_IncY()",
+    "signatureVariants": [
+      "gfx_IncY()"
+    ],
+    "source": {
+      "anchor": "gfx_incy",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Line": {
+    "category": "Graphics Functions",
+    "description": "Draws a line from x1,y1 to x2,y2 using the specified colour. The line is drawn using the current object colour. The current origin is not altered. The line may be tessellated with the gfx_LinePattern(...) function.",
+    "examples": [
+      "// This example draws a RED line from x1=10, y1=10 to x2=100, y2=100\ngfx_Line(100, 100, 10, 10, 0xF800);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the starting coordinates of the line.",
+        "name": "x1, y1"
+      },
+      {
+        "description": "Specifies the ending coordinates of the line.",
+        "name": "y2, y2"
+      },
+      {
+        "description": "Specifies the colour of the line",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Line(x1, y1, x2, y2, colour)",
+    "signatureVariants": [
+      "gfx_Line(x1, y1, x2, y2, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_line",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_LineRel": {
+    "category": "Graphics Functions",
+    "description": "Draws a line from the current origin to a new position. The line is drawn using the current object colour. The current origin is not altered. The line may be tessellated with the gfx_LinePattern(...) function.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "That gfx_LinePattern(0); must be used after this to return line drawing to normal solid lines."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the horizontal end point of the line.",
+        "name": "xpos"
+      },
+      {
+        "description": "specifies the vertical end point of the line.",
+        "name": "ypos"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_LineRel(xpos, ypos)",
+    "signatureVariants": [
+      "gfx_LineRel(xpos, ypos)"
+    ],
+    "source": {
+      "anchor": "gfx_linerel",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_LineTo": {
+    "category": "Graphics Functions",
+    "description": "Draws a line from the current origin to a new position. The Origin is then set to the new position. The line is drawn using the current object colour. The line may be tessellated with gfx_LinePattern(...)",
+    "examples": [
+      "// Draws a line between x1=10, y1=20 and x2=60, y2=70\ngfx_MoveTo(10, 20);\ngfx_LineTo(60, 70);\n// The new origin is now set at x=60, y=70"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the horizontal position of the line end as well as the new origin.",
+        "name": "xpos"
+      },
+      {
+        "description": "specifies the vertical position of the line end as well as the new origin.",
+        "name": "ypos"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_LineTo(xpos, ypos)",
+    "signatureVariants": [
+      "gfx_LineTo(xpos, ypos)"
+    ],
+    "source": {
+      "anchor": "gfx_lineto",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_MoveRel": {
+    "category": "Graphics Functions",
+    "description": "Moves the origin to a new position relative to the old position.",
+    "examples": [
+      "// This example draws a pixel using the current object colour at x=5, y=17\ngfx_MoveTo(10, 20);\ngfx_MoveRel(-5, -3);\ngfx_Dot();"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the horizontal offset of the new origin.",
+        "name": "xoffset"
+      },
+      {
+        "description": "specifies the vertical offset of the new origin.",
+        "name": "yoffset"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_MoveRel(xoffset, yoffset)",
+    "signatureVariants": [
+      "gfx_MoveRel(xoffset, yoffset)"
+    ],
+    "source": {
+      "anchor": "gfx_moverel",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_MoveTo": {
+    "category": "Graphics Functions",
+    "description": "Moves the origin to a new position.",
+    "examples": [
+      "// This example moves the origin to x=10, y=20 and draws a pixel.\ngfx_MoveTo(10, 20);\ngfx_Dot();"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the horizontal position of the new origin.",
+        "name": "xpos"
+      },
+      {
+        "description": "specifies the vertical position of the new origin.",
+        "name": "ypos"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_MoveTo(xpos, ypos)",
+    "signatureVariants": [
+      "gfx_MoveTo(xpos, ypos)"
+    ],
+    "source": {
+      "anchor": "gfx_moveto",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Orbit": {
+    "category": "Graphics Functions",
+    "description": "Sets Prior to using this function, the destination address of variables for the calculated coordinates must be set using the gfx_OrbitInit(..) function. The gfx_Orbit(..) function calculates the x, y coordinates of a distant point relative to the current origin, where the only known parameters are the angle and the distance from the current origin. The new coordinates are calculated and then placed in the destination variables that have been previously set with the gfx_OrbitInit(..) function.",
+    "examples": [
+      "var targetX, targetY;\ngfx_OrbitInit(&targetX, &targetY);\ngfx_MoveTo(30, 30);\ngfx_Bullet(5)           // mark the start point with a small WHITE circle\ngfx_Orbit(30, 50);      // calculate a point 50 pixels away from origin at\n                        // 30 degrees\ngfx_CircleFilled(targetX,targetY,3,0xF800); // mark the target p oint\n                                            // with a RED circle"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "Result is stored in the variables that were specified with the gfx_OrbitInit(..) function."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the angle from the origin to the remote point. The angle is specified in degrees.",
+        "name": "angle"
+      },
+      {
+        "description": "specifies the distance from the origin to the remote point in pixel units.",
+        "name": "distance"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Orbit(angle, distance)",
+    "signatureVariants": [
+      "gfx_Orbit(angle, distance)"
+    ],
+    "source": {
+      "anchor": "gfx_orbit",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_OrbitInit": {
+    "category": "Graphics Functions",
+    "description": "Sets up the internal pointers for the gfx_Orbit(..) result variables. The &x_orb and &y_orb parameters are the addresses of the variables or array elements that are used to store the result from the gfx_Orbit(..) function.",
+    "examples": [
+      "// This example sets the variables that will receive the result from a gfx_Orbit function call\nvar targetX, targetY;\ngfx_OrbitInit(&targetX, &targetY)"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the addresses of the storage locations for the orbit calculation.",
+        "name": "&x_dest, &y_dest"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_OrbitInit(&x_dest, &y_dest)",
+    "signatureVariants": [
+      "gfx_OrbitInit(&x_dest, &y_dest)"
+    ],
+    "source": {
+      "anchor": "gfx_orbitinit",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Polygon": {
+    "category": "Graphics Functions",
+    "description": "Plots lines between points specified by a pair of arrays using the specified colour. The last point is drawn back to the first point, completing the polygon. The lines may be tessellated with the gfx_LinePattern(...) function. gfx_Polygon can be used to create complex raster graphics by loading the arrays from serial input or from MEDIA with very little code requirement.",
+    "examples": [
+      "var vx[7], vy[7];\n\nfunc main()\n    // This example draws a simple polygon.\n    vx[0] := 10; vy[0] := 10;\n    vx[1] := 35; vy[1] := 5;\n    vx[2] := 80; vy[2] := 10;\n    vx[3] := 60; vy[3] := 25;\n    vx[4] := 80; vy[4] := 40;\n    vx[5] := 35; vy[5] := 50;\n    vx[6] := 10; vy[6] := 40;\n    gfx_Polygon(7, vx, vy, RED);\n    repeat forever\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the number of elements in the x and y arrays specifying the vertices for the polyline.",
+        "name": "n"
+      },
+      {
+        "description": "specifies the addresses of the storage of the array of elements for the x coordinates of the vertices.",
+        "name": "vx"
+      },
+      {
+        "description": "specifies the addresses of the storage of the array of elements for the y coordinates of the vertices.",
+        "name": "vy"
+      },
+      {
+        "description": "Specifies the colour for the lines",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Polygon(n, vx, vy, colour)",
+    "signatureVariants": [
+      "gfx_Polygon(n, vx, vy, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_polygon",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Polyline": {
+    "category": "Graphics Functions",
+    "description": "Plots lines between points specified by a pair of arrays using the specified colour. The lines may be tessellated with the gfx_LinePattern(...) function. gfx_Polyline can be used to create complex raster graphics by loading the arrays from serial input or from MEDIA with very little code requirement.",
+    "examples": [
+      "#inherit \"4DGL_16bitColours.fnc\"\n\nvar vx[20], vy[20];\n\nfunc main()\n    // This example draws a simple scene.\n    vx[0] := 36; vy[0] := 110;\n    vx[1] := 36; vy[1] := 80;\n    vx[2] := 50; vy[2] := 80;\n    vx[3] := 50; vy[3] := 110;\n\n    vx[4] := 76; vy[4] := 104;\n    vx[5] := 85; vy[5] := 80;\n    vx[6] := 94; vy[6] := 104;\n\n    vx[7] := 76; vy[7] := 70;\n    vx[8] := 85; vy[8] := 76;\n    vx[9] := 94; vy[9] := 70;\n\n    vx[1 0] := 110; vy[10] := 66;\n    vx[11] := 110; vy[11] := 80;\n    vx[12] := 100; vy[12] := 90;\n    vx[13] := 120; vy[13] := 90;\n    vx[14] := 110; vy[14] := 80;\n\n    vx[15] := 101; vy[15] := 70;\n    vx[16] := 110; vy[16] := 76;\n    vx[17] := 119; vy[17] := 70;\n\n    // house\n    gfx_Rectangle(6,50,66,110,RED);         // frame\n    gfx_Triangle(6,50,36,9,66,50,YELLOW);   // roof\n    gfx_Polyline(4, vx, vy, CYAN);          // door\n\n    // man\n    gfx_Circle(85, 56, 10, BLUE);           // head\n    gfx_Line(85, 66, 85, 80, BLUE);         // body\n    gfx_Polyline(3, vx+4, vy+4, CYAN);      // legs\n    gfx_Polyline(3, vx+7, vy+7, BLUE); // arms\n\n    // woman\n    gfx_Circle(110, 56, 10, PINK); // head\n    gfx_Polyline(5, vx +10, vy+10, BROWN); // dress\n    gfx_Line(104, 104, 106, 90, PINK); // left arm\n    gfx_Line(112, 90, 116, 104, PINK); // right arm\n    gfx_Polyline(3, vx+15, vy+15, SALMON); // dress\n\n    repeat forever\n\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the number of elements in the x and y arrays specifying the vertices for the polyline.",
+        "name": "n"
+      },
+      {
+        "description": "specifies the addresses of the storage of the array of elements for the x coordinates of the vertices.",
+        "name": "vx"
+      },
+      {
+        "description": "specifies the addresses of the storage of the array of elements for the y coordinates of the vertices.",
+        "name": "vy"
+      },
+      {
+        "description": "Specifies the colour for the lines",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Polyline(n, vx, vy, colour)",
+    "signatureVariants": [
+      "gfx_Polyline(n, vx, vy, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_polyline",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_PutPixel": {
+    "category": "Graphics Functions",
+    "description": "Draws a pixel at position x,y using the specified colour.",
+    "examples": [
+      "// This example draws a WHITE pixel at x=32, y=32\ngfx_PutPixel(32, 32, 0xFFFF);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the screen coordinates of the pixel.",
+        "name": "x, y"
+      },
+      {
+        "description": "Specifies the colour of the pixel.",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_PutPixel(x, y, colour)",
+    "signatureVariants": [
+      "gfx_PutPixel(x, y, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_putpixel",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Rectangle": {
+    "category": "Graphics Functions",
+    "description": "Draws a rectangle from x1, y1 to x2, y2 using the specified colour. The line may be tessellated with the gfx_LinePattern(...) function.",
+    "examples": [
+      "// This example draws a GREEN rectangle from x1=10, y1=10 to x2=30, y2=30\ngfx_Rectangle(10, 10, 30, 30, 0x07E0); // assuming PEN_SIZE is OUTLINE"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The default PEN_SIZE is set to OUTLINE, however, if PEN_SIZE is set to SOLID, the rectangle will be drawn filled, if PEN_SIZE is set to OUTLINE, the rectangle will be drawn as an outline. If the rectangle is drawn as SOLID, the outline colour can be specified with gfx_OutlineColour(...). If OUTLINE_COLOUR is set to 0, no outline is drawn. The outline may be tessellated with the gfx_LinePattern(...) function."
+    ],
+    "parameters": [
+      {
+        "description": "Specifies the top left corner of the rectangle.",
+        "name": "x1, y1"
+      },
+      {
+        "description": "Specifies the bottom right corner of the rectangle.",
+        "name": "x2, y2"
+      },
+      {
+        "description": "Specifies the colour of the rectangle.",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Rectangle(x1, y1, x2, y2, colour)",
+    "signatureVariants": [
+      "gfx_Rectangle(x1, y1, x2, y2, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_rectangle",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_RectangleFilled": {
+    "category": "Graphics Functions",
+    "description": "Draws a SOLID rectangle from x1, y1 to x2, y2 using the specified colour. The line may be tessellated with the gfx_LinePattern(...) function. The outline colour can be specified with gfx_OutlineColour(...). If OUTLINE_COLOUR is set to 0, no outline is drawn. The outline may be tessellated with the gfx_LinePattern(...) function.",
+    "examples": [
+      "// This example draws a filled RED rectangle with a YELLOW outline\n// from x1=30,y1=30 to x2=80,y2=80\ngfx_OutlineColour(0xFFE0);\ngfx_RectangleFilled(30,30,80,80, 0xF800);"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The PEN_SIZE is ignored, the rectangle is always drawn SOLID."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the top left corner of the rectangle.",
+        "name": "x1, y1"
+      },
+      {
+        "description": "specifies the bottom right corner of the rectangle.",
+        "name": "x2, y2"
+      },
+      {
+        "description": "specifies the colour of the rectangle.",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_RectangleFilled(x1, y1, x2, y2, colour)",
+    "signatureVariants": [
+      "gfx_RectangleFilled(x1, y1, x2, y2, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_rectanglefilled",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Set": {
+    "category": "Graphics Functions",
+    "description": "Given a function number and a value, set the required graphics control parameter, such as size, colour, and other parameters. (see the Single parameter short-cuts for the gfx_Set functions below).",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The function number determines the required action for various graphics control functions. Usually a constant, but can be a variable, array element, or expression. There are pre-defined constants for each of the functions.",
+        "name": "function"
+      },
+      {
+        "description": "A variable, array element, expression or constant holding a value for the selected function.",
+        "name": "value"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Set(function, value)",
+    "signatureVariants": [
+      "gfx_Set(function, value)"
+    ],
+    "source": {
+      "anchor": "gfx_set",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_SetClipRegion": {
+    "category": "Graphics Functions",
+    "description": "Forces the clip region to the extent of the last text that was printed, or the last image that was shown.",
+    "examples": [
+      "#constant NUMCOLOURS 6\nvar colour[NUMCOLOURS];\nfunc main()\n    var n, x, y, colr, x1, y1, x2, y2, w, h;\n    // the colour set for the random pixels\n    colour[0] := RED;\n    colour[1] := GREEN;\n    colour[2] := BLUE;\n    colour[3] := YELLOW;\n    colour[4] := CYAN;\n    colour[5]:=MAGENTA;\n\n    txt_Width(5);\n    txt_Height(7);\n    gfx_MoveTo(6,20);\n    txt_Bold(ON);\n    txt_FGcolour(1);        // start with a very dark blue\n    print(\"TEST\");          // print the string\n    gfx_SetClipRegion();    // force clipping area to extents of text just printed\n    x1 := peekB(CLIP_LEFT_POS);     // get the cliiping area to local vars\n    y1 := peekB(CLIP_TOP_POS);\n    x2 := peekB(CLIP_RIGHT_POS);\n    y2 := peekB(CLIP_BOTTOM_POS);\n    w  := x2 - x1;                  // get t he width and height\n    h  := y2 - y1;\n    txt_MoveCursor(10,0);\n    txt_FGcolour(SALMON);\n    print(\"x1=\",x1,\" y1=\",y1,\" nx2=\",x2,\" y2=\",y2); // print the clipping region\n    txt_FGcolour(GREEN);\n    pause(1000);\n    // This example prints a test string, forces the clipping area to the extent of\n    // text that was printed, then changes the text colour randomly, pixel by pixel.\n    repeat\n        if (!*TIMER0)                       // if timer has expired\n            *TIMER0 := 5000;                // reset the timer\n            colr := colour[n++%NUMCOLOURS]; // select new colour every 5 seconds.\n            txt_MoveCursor(14,0);\n            print([DEC5ZB] n);              // print n\n        endif\n        x := ABS(RAND()%w) + x1; // get random pixel position within the clip region\n        y := ABS(RAND()%h) + y1;\n        if (gfx_GetPixel(x,y)) gfx_PutPixel(x,y, colr);  // update any non black pixels\n    forever\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "void",
+    "signature": "gfx_SetClipRegion()",
+    "signatureVariants": [
+      "gfx_SetClipRegion()"
+    ],
+    "source": {
+      "anchor": "gfx_setclipregion",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Triangle": {
+    "category": "Graphics Functions",
+    "description": "Draws a triangle outline between vertices x1,y1 , x2,y2 and x3,y3 using the specified colour. The line may be tessellated with the gfx_LinePattern(...) function.",
+    "examples": [
+      "// This example draws a CYAN triangular outline with vertices at 10,10 30,10 20,30\ngfx_Triangle(10,10,30,10,20,30,0xFFE0);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the first vertices of the triangle.",
+        "name": "x1, y1"
+      },
+      {
+        "description": "specifies the second vertices of the triangle.",
+        "name": "x2, y2"
+      },
+      {
+        "description": "specifies the third vertices of the triangle.",
+        "name": "x3, y3"
+      },
+      {
+        "description": "Specifies the colour for the triangle.",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Triangle(x1, y1, x2, y2, x3, y3, colour)",
+    "signatureVariants": [
+      "gfx_Triangle(x1, y1, x2, y2, x3, y3, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_triangle",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "gfx_Vline": {
+    "category": "Graphics Functions",
+    "description": "Draws a fast vertical line from y1 to y2 at horizontal co-ordinate x using colour.",
+    "examples": [
+      "// This example draws a fast RED vertical line at x=20, from y1=30 to y2=70\ngfx_Vline(20, 30, 70, 0xF800);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Specifies the horizontal position of the vertical line.",
+        "name": "x"
+      },
+      {
+        "description": "Specifies the vertical end points of the line.",
+        "name": "y1, y2"
+      },
+      {
+        "description": "Specifies the colour of the vertical line.",
+        "name": "colour"
+      }
+    ],
+    "returns": "void",
+    "signature": "gfx_Vline(x, y1, y2, colour)",
+    "signatureVariants": [
+      "gfx_Vline(x, y1, y2, colour)"
+    ],
+    "source": {
+      "anchor": "gfx_vline",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "joystick": {
+    "category": "GPIO Functions",
+    "description": "Returns the value of the Joystick position (5 position switch implementation). The JOYSTICK values are:",
+    "examples": [
+      "joy := joystick(); // read the joystick\nif (joy == 0) putstr(\"     \");\nif (joy == 1) putstr(\"UP   \");\nif (joy == 2) putstr(\"LEFT \");\nif (joy == 3) putstr(\"DOWN \");\nif (joy == 4) putstr(\"RIGHT\");\nif (joy == 5) putstr(\"FIRE \");"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The joystick input uses IO1 utilizing the A/D converter. Each switch is connected to junction of 2 resistors that form a unique voltage divider circuit. Refer to the GOLDELOX-GFX2 data sheet example schematics for the required resistor values."
+    ],
+    "parameters": [],
+    "returns": "The joystick value.",
+    "signature": "joystickk()",
+    "signatureVariants": [
+      "joystickk()"
+    ],
+    "source": {
+      "anchor": "joystick",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "lookup16": {
+    "category": "General Purpose Functions",
+    "description": "Search a list of 16-bit constant values for a match with a search value key. If found, the index of the matching constant is returned in result, else result is set to 0. Thus, if the value is found first in the list, result is set to 1. If second in the list, result is set to 2 etc. If not found, result is returned with 0.",
+    "examples": [
+      "func main()\n    var key, r;\n\n    key := 5000;\n    r := lookup16(key,5,10,20,50,100,200,500,1000,2000,5000,10000);\n    //r := lookup16(key, LEGALVALS);\n\n    if (r)\n        print(\"\\nSearch value 5000 \\nfound at index \", r);\n    else\n        putstr(\"\\nValue not found\");\n    endif\n\n    print(\"\\nOk\"); // all done\n\n    repeat forever\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "This offers a versatile way for returning an index for a given value. This can be very useful for data entry filtering and parameter input checking and wherever you need to check the validity of certain inputs. The entire search list field can be replaced with a single name if you use the $ operator in constant, eg: #constant LEGALVALS $5,10,20,50,100,200,500,1000,2000,5000,10000"
+    ],
+    "parameters": [
+      {
+        "description": "A word value to search for in a fixed list of constants. The key argument can be a variable, array element, expression or constant",
+        "name": "key"
+      },
+      {
+        "description": "A comma separated list of constants to be matched against key.",
+        "name": "wordConstList"
+      }
+    ],
+    "returns": "Index/Position of the matching constant starting with 1. 0 if 'key' doesn't exist",
+    "signature": "lookup16(key, wordConstList)",
+    "signatureVariants": [
+      "lookup16(key, wordConstList)"
+    ],
+    "source": {
+      "anchor": "lookup16",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "lookup8": {
+    "category": "General Purpose Functions",
+    "description": "Search a list of 8-bit constant values for a match with a search value key. If found, the index of the matching constant is returned in result, else result is set to 0. Thus, if the value is found first in the list, result is set to 1. If second in the list, result is set to 2 etc. If not found, result is returned with 0.",
+    "examples": [
+      "func main()\n    var key, r;\n\n    key := 'a';\n    r := lookup8(key, 0x4D, \"abcd\", 2, 'Z', 5);\n    print(\"\\nSearch value 'a' \\nfound as index \", r);\n\n    key := 5;\n    r := lookup8(key, 0x4D, \"abcd\", 2, 'Z', 5);\n    print(\"\\nSearch value 5 \\nfound at index \", r);\n    putstr(\"\\nScanning.. n\");\n\n    key := -12000;  // we will count from 12000 to +12000, only\n                    // the hex ascii values will give a match value\n    while (key <= 12000)\n        r := lookup8(key, \"0123456789ABCDEF\" ); // hex lookup\n        if (r) print([HEX1] r-1);   // only print if we got a match in the table\n        key++;\n    wend\n\n    repeat forever\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The list of constants cannot be re-directed. This offers a versatile way for returning an index for a given value. This can be very useful for data entry filtering and parameter input checking and wherever you need to check the validity of certain inputs. The entire search list field can be replaced with a single name if you use the $ operator in constant, eg: #constant HEXVALUES $\"0123456789ABCDEF\""
+    ],
+    "parameters": [
+      {
+        "description": "A byte value to search for in a fixed list of constants. The key argument can be a variable, array element, expression or constant.",
+        "name": "key"
+      },
+      {
+        "description": "A comma separated list of constants and strings to be matched against key.",
+        "name": "byteConsList"
+      }
+    ],
+    "returns": "Index/Position of the matching constant starting with 1. 0 if 'key' doesn't exist",
+    "signature": "lookup8(key, byteConstList)",
+    "signatureVariants": [
+      "lookup8(key, byteConstList)"
+    ],
+    "source": {
+      "anchor": "lookup8",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_Flush": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "After writing any data to a sector, media_Flush() should be called to ensure that the current sector that is being written is correctly stored back to the media else write operations may be unpredictable.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "void",
+    "signature": "media_Flush()",
+    "signatureVariants": [
+      "media_Flush()"
+    ],
+    "source": {
+      "anchor": "media_flush",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_Image": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "Displays an image from the media storage at the specified co-ordinates. The image address is previously specified with the media_SetAdd(..) or **media_SetSector(...) function**. If the image is shown partially off screen, it is necessary to enable clipping for it to be displayed correctly.",
+    "examples": [
+      "// This example draws an image at several positions, showing the effects of clipping.\nwhile (media_Init()==0);        // wait if no SD card detected\nmedia_SetAdd(0x0001, 0xDA00);   // point to the books04 image\nmedia_Image(10, 10);\ngfx_Clipping(ON);               // turn off clipping to see the difference\nmedia_Image(-12, 50);           // show image off screen to the left\nmedia_Image(50, -12);           // show image o ff screen at the top\nrepeat forever"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "It is assumed that the media has been loaded with the example images in GFX2DEMO.GCI loaded at sector 0. This can be loaded using the Graphics Composer (directly onto the memory card)."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the top left position where the image will be displayed.",
+        "name": "x, y"
+      }
+    ],
+    "returns": "void",
+    "signature": "media_Image(x, y)",
+    "signatureVariants": [
+      "media_Image(x, y)"
+    ],
+    "source": {
+      "anchor": "media_image",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_Init": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "Initialise a uSD/SD/SDHC memory card for further operations. The SD card is connected to the SPI (serial peripheral interface) of the GOLDELOX-GFX2 chip.",
+    "examples": [
+      "// Waits for SD card to be inserted and initialised, flashing a message if no SD card detected.\nwhile (!media_Init())\n    gfx_Cls();\n    pause(300);\n    putstr(\u201cPlease insert SD card\u201d);\n    pause(300);\nwend"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The media can be SD/SDHC, microSD or serial (NAND) flash device interfaced to the GOLDELOX-GFX2 SPI port."
+    ],
+    "parameters": [],
+    "returns": "",
+    "signature": "media_Init()",
+    "signatureVariants": [
+      "media_Init()"
+    ],
+    "source": {
+      "anchor": "media_init",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_ReadByte": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "Returns the byte value from the current media address. The internal byte address will then be internally incremented by one.",
+    "examples": [
+      "var LObyte, HIbyte;\nif (media_Init())                       // initialises the media\n    media_SetAdd(0, 510);               // sets the media byte address to 510\n    LObyte := media_ReadByte();         // reads the last 2 bytes from sector 0\n    HIbyte := media_ReadByte();\n    print([HEX2]HIbyte,[HEX2]LObyte);\n    // If the card happens to be FAT formatted, the result will be \u201cAA55\u201d.\n    // The media internal address is internally incremented for each of the byte operations.\nendif\nrepeat forever"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "byte value",
+    "signature": "media_ReadByte()",
+    "signatureVariants": [
+      "media_ReadByte()"
+    ],
+    "source": {
+      "anchor": "media_readbyte",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_ReadWord": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "Returns the word value (2 bytes) from the current media address. The internal byte address will then be internally incremented by one. If the address is not aligned, the word will still be read correctly.",
+    "examples": [
+      "var myword;\nif (media_Init())               // initialises the media\n    media_SetAdd(0, 510);       // sets the media byte address to 510\n    myword := media_ReadWord(); // reads the last word from sector 0\n    print([HEX4]myword);    // If the card happens to be formatted, the result will be \u201cAA55\u201d\nendif\nrepeat forever"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "word value",
+    "signature": "media_ReadWord()",
+    "signatureVariants": [
+      "media_ReadWord()"
+    ],
+    "source": {
+      "anchor": "media_readword",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_SetAdd": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "Set media memory internal Address pointer for access at a non sector aligned byte address.",
+    "examples": [
+      "// sets the media address to byte 513 (which is sector #1, 2nd byte in sector) for subsequent operations.\nmedia_SetAdd(0, 513);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the high word (upper 2 bytes) of a 4 byte media memory byte address location.",
+        "name": "HIword"
+      },
+      {
+        "description": "specifies the low word (lower 2 bytes) of a 4 byte media memory byte address location.",
+        "name": "LOword"
+      }
+    ],
+    "returns": "void",
+    "signature": "media_SetAdd(HIword, LOword)",
+    "signatureVariants": [
+      "media_SetAdd(HIword, LOword)"
+    ],
+    "source": {
+      "anchor": "media_setadd",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_SetSector": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "Set media memory internal Address pointer for sector access.",
+    "examples": [
+      "// Sets the media address to the 11th sector for subsequent operations\n// (which is also byte address 5120)\nmedia_SetSector(0, 10);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the high word (upper 2 bytes) of a 4 byte media memory byte address location.",
+        "name": "HIword"
+      },
+      {
+        "description": "specifies the low word (lower 2 bytes) of a 4 byte media memory byte address location.",
+        "name": "LOword"
+      }
+    ],
+    "returns": "void",
+    "signature": "media_SetSector(HIword, LOword)",
+    "signatureVariants": [
+      "media_SetSector(HIword, LOword)"
+    ],
+    "source": {
+      "anchor": "media_setsector",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_Video": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "Displays a video clip from the media storage device at the specified co-ordinates. The video address location in the media is previously specified with the media_SetAdd(..) or media_SetSector(...) function. If the video is shown partially off screen, it is necessary to enable clipping for it be displayed correctly. Note that showing a video blocks all other processes until the video has finished showing. See the media_VideoFrame(...) functions for alternatives.",
+    "examples": [
+      "// This example plays a video clip at several positions, showing the effects of clipping.\nwhile (media_Init()==0);            // wait if no SD card detected\nmedia_SetAdd(0x0001, 0x3C00);       // point to the 10 gear clip\nmedia_Video(10, 10);\ngfx_Clipping(ON);                   // turn off clipping to see the difference\nmedia_Video(-12, 50);               // show video off screen to the left\nmedia_Video(50, -12);               // show video off screen at the top\nrepeat forever"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "It is assumed that the media has been loaded with the example video in GFX2DEMO.GCI loaded at sector 0. This can be loaded using the Graphics Composer directly onto the memory card."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the top left position where the video clip will be displayed.",
+        "name": "x, y"
+      }
+    ],
+    "returns": "void",
+    "signature": "media_Video(x, y)",
+    "signatureVariants": [
+      "media_Video(x, y)"
+    ],
+    "source": {
+      "anchor": "media_video",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_VideoFrame": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "Displays a video from the media storage device at the specified co-ordinates. The video address is previously specified with the media_SetAdd(..) or media_SetSector(...) function. If the video is shown partially off screen, it is necessary to enable clipping for it be displayed correctly. The frames can be shown in any order. This function gives you great flexibility for showing various icons from an image strip, as well as showing videos while doing other tasks",
+    "examples": [
+      "// This example shows how to display frames as required while possibly doing other tasks.\n// Note that the frame timing (although not noticeable in this small example) is not correct\n// as the delay commences after the image frame is shown, therefore adding the display\n// overheads to the frame delay.\n\nvar frame;\n\nwhile (media_Init()==0);        // wait if no SD card detected\nmedia_SetAdd(0x0002, 0x3C00);   // point to the 10 gear image\n\nrepeat\n    frame := 0;                 // start at frame 0\n    repeat\n        media_VideoFrame(30,30, frame++);   // display a frame\n        pause(peekB(IMAGE_DELAY));          // pause for the time given in\n                                            // the image header\n    until(frame == peekW(IMG_FRAME_COUNT)); // loop until we've\n                                            // shown all the frames\nforever                                     // do it forever",
+      "// This example employs a timer for the framing delay, and shows the same movie simultaneously\n// running forward and backwards with time left for other tasks as well. A number of videos\n// (or animated icons) can be shown simultaneously using this method.\n\n\nvar framecount, frame, delay, colr;\nframe := 0;\n// show the first frame so we can get the video header info\n// into the system variables, and then to our local variables.\nmedia_VideoFrame(30,30, 0);\n\nframecount := peekW(IMG_FRAME_COUNT);       // we can now set some local\n                                            // values.\ndelay := peekB(IMAGE_DELAY);                // get the frame count and delay\nrepeat\n    repeat\n        pokeW(TIMER0, dela y);              // set a timer\n        media_VideoFrame(30,30, frame++);   // show next frame\n        gfx_MoveTo(64,35);\n        print([DEC2Z] frame);               // print the frame number\n        media_VideoFrame(30,80, framecount frame);  // show movie\n                                                    // backwards.\n        gfx_MoveTo(64,85);\n        print([DEC2Z] framecount-frame);    // print the frame number\n        if ((frame & 3) == 0)\n            gfx_CircleFilled(80,20,2,colr); // a blinking circle fun\n            colr := colr ^ 0xF800;          // alternate colour,\n        endif                               // BLACK/RED using XOR\n        // do more here if required\n        while(peekW(TIMER0));               // wait for timer to expire\n    until(frame == peekW(IMG_FRAME_COUNT));\n    frame := 0;\nforever"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "It is assumed that the media has been loaded with the example video in GFX2DEMO.GCI loaded at sector 0. This can be loaded using the Graphics Composer directly onto the memory card."
+    ],
+    "parameters": [
+      {
+        "description": "specifies the top left position where the video clip will be displayed.",
+        "name": "x, y"
+      },
+      {
+        "description": "Specifies the required frame to be shown.",
+        "name": "frameBuffer"
+      }
+    ],
+    "returns": "void",
+    "signature": "media_VideoFrame(x, y, frameNumber)",
+    "signatureVariants": [
+      "media_VideoFrame(x, y, frameNumber)"
+    ],
+    "source": {
+      "anchor": "media_videoframe",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_WriteByte": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "Writes a byte to the current media address that was initially set with media_SetSector(...);",
+    "examples": [
+      "// This example initialises the media, writes some bytes to the required sector,\n// then prints the result from the required location.\nvar n, char;\nwhile (media_Init()==0);            // wait if no SD card detected\nmedia_SetSector(0, 2);              // at sector 2\n//media_SetAdd(0, 1024);            // (alternatively, use media_SetAdd(),\n                                    // lower 9 bits\nwhile (n < 10)\n    media_WriteByte(n++ +'0');      // write ASCII '0123456789' to the\nwend                                // first 10 locations.\n\nto(MDA); putstr(\"Hello World\");     // now write a ascii test string\nmedia_WriteByte('A');               // write a further 3 bytes\nmedia_WriteByte('B');\nmedia_WriteByte('C');\nmedia_WriteByte(0);                 // terminate with zero\nmedia_Flush();                      // we're finished, close the sector\n\nmedia_SetAdd(0, 1024+5);            // set the starting byte address\nwhile(char:=media_ReadByte()) putch(char);  // print result, starting\n                                            // from '5'\nrepeat forever"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "Due to design constraints on the GOLDELOX-GFX2, there is no way of writing bytes or words within a media sector without starting from the beginning of the sector. All writes will start at the beginning of a sector and are incremental until the media_Flush() function is executed, or the sector address rolls over to the next sector. Any remaining bytes in the sector will be padded with 0xFF, destroying the previous contents. An attempt to use the media_SetAdd(..) function will result in the lower 9 bits being interpreted as zero. If the writing rolls over to the next sector, the media_Flush() function is issued automatically internally."
+    ],
+    "parameters": [
+      {
+        "description": "The lower 8 bits specifies the byte to be written at the current media address location.",
+        "name": "byte_val"
+      }
+    ],
+    "returns": "Non zero if write was successful.",
+    "signature": "media_WriteByte(byte_val)",
+    "signatureVariants": [
+      "media_WriteByte(byte_val)"
+    ],
+    "source": {
+      "anchor": "media_writebyte",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "media_WriteWord": {
+    "category": "Media (SD/SDHC card or Serial Flash chip) Functions",
+    "description": "Writes a byte to the current media address that was initially set with media_SetSector(...).",
+    "examples": [
+      "// This example initialises the media, writes some words to the required sector,\n// then prints the result from the required location.\nvar n;\nwhile (media_Init()==0);        // wait until a good SD card is found\nn:=0;\nmedia_SetAdd(0, 1536);          // set the starting byte address\nwhile(n++ < 20)\n    media_WriteWord(RAND());    // write 20 random words to first 20\nwend                            // word locations.\nn:=0;\nwhile (n++ < 20)\n    media_WriteWord(n++*1000);  // write sequence of 1000*n to next 20\nwend                            // word locations.\nmedia_Flush();                  // we're finished, close the sector\n\nmedia_SetAdd(0, 1536+40);       // set the starting byte address\nn:=0;\nwhile(n++<8)                    // print result of fist 8 multiplication calcs\n    print([HEX4] media_ReadWord(),\" n\");\nwend\nrepeat forever"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "Due to design constraints on the GOLDELOX-GFX2, there is no way of writing bytes or words within a media sector without starting from the beginning of the sector. All writes will start at the beginning of a sector and are incremental until the media_Flush() function is executed, or the sector address rolls over to the next sector. Any remaining bytes in the sector will be padded with 0xFF, destroying the previous contents. An attempt to use the media_SetAdd(..) function will result in the lower 9 bits being interpreted as zero. If the writing rolls over to the next sector, the media_Flush() function is issued automatically internally."
+    ],
+    "parameters": [
+      {
+        "description": "The 16 bit word to be written at the current media address location.",
+        "name": "word_val"
+      }
+    ],
+    "returns": "Non zero if write was successful.",
+    "signature": "media_WriteWord(word_val)",
+    "signatureVariants": [
+      "media_WriteWord(word_val)"
+    ],
+    "source": {
+      "anchor": "media_writeword",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "pause": {
+    "category": "General Purpose Functions",
+    "description": "Stop execution of the user program for a predetermined amount of time.",
+    "examples": [
+      "if (joystick() == FIRE)     // if fire button pressed\n    pause(30)               // slow down the loop\nemdif"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "A value specifying the delay time in milliseconds.",
+        "name": "time"
+      }
+    ],
+    "returns": "void",
+    "signature": "pause(time)",
+    "signatureVariants": [
+      "pause(time)"
+    ],
+    "source": {
+      "anchor": "pause",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "peekB": {
+    "category": "Memory Access Functions",
+    "description": "This function returns the 8 bit value that is stored at address.",
+    "examples": [
+      "// This example places the width of the display\n// (horizontal resolution in pixel units) in 'myvar'\nvar myvar;\nmyvar := peekB(GFX_XMAX ) + 1;"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The peekB(..) and pokeB(..) functions are usually only used with internal system byte registers using the pre-defined constants. If peekB(..) or pokeB(..) are used to access other locations, the address must be doubled to get the correct pointer address."
+    ],
+    "parameters": [
+      {
+        "description": "The address of a memory byte. The address is usually a pre-defined system register address constant",
+        "name": "Address"
+      }
+    ],
+    "returns": "The 8 bit value stored at address.",
+    "signature": "peekB(address)",
+    "signatureVariants": [
+      "peekB(address)"
+    ],
+    "source": {
+      "anchor": "peekb",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "peekW": {
+    "category": "Memory Access Functions",
+    "description": "This function returns the 16 bit value that is stored at address.",
+    "examples": [
+      "/*\n * This example places the low word of the 32 bit system timer in 'myvar'.\n * The equivalent operation using a pointer is: myvar := *TIMER2;\n */\nvar myvar;\nmyvar := peekW(SYSTEM_TIMER_LO);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The address of a memory word. The address is usually a pre-defined system register address constant",
+        "name": "address"
+      }
+    ],
+    "returns": "The 16 bit value stored at address.",
+    "signature": "peekW",
+    "signatureVariants": [],
+    "source": {
+      "anchor": "peekw",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "pin_HI": {
+    "category": "GPIO Functions",
+    "description": "Outputs a \"High\" level (logic 1) on the appropriate pin that was previously selected as an Output. If the pin is not already set to an output, it is automatically made an output.",
+    "examples": [
+      "pin_HI(IO2);         // output a Logic 1 on IO2 pin"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "A value (usually a constant) specifying the pin number.",
+        "name": "pin"
+      }
+    ],
+    "returns": "void",
+    "signature": "pin_Hi(pin)",
+    "signatureVariants": [
+      "pin_Hi(pin)"
+    ],
+    "source": {
+      "anchor": "pin_hi",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "pin_LO": {
+    "category": "GPIO Functions",
+    "description": "Outputs a \"Low\" level (logic 0) on the appropriate pin that was previously selected as an Output. If the pin is not already set to an output, it is automatically made an output.",
+    "examples": [
+      "pin_LO(IO1);                  // output a Logic 0 on IO1 pin"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "A value (usually a constant) specifying the pin number",
+        "name": "pin"
+      }
+    ],
+    "returns": "void",
+    "signature": "pin_LO(pin)",
+    "signatureVariants": [
+      "pin_LO(pin)"
+    ],
+    "source": {
+      "anchor": "pin_lo",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "pin_Read": {
+    "category": "GPIO Functions",
+    "description": "Reads the logic state or the analogue value of the pin that was previously selected as an Input. Returns a \"Low\" (logic 0) or \"High\" (logic 1) or Analogue value n.",
+    "examples": [
+      "if (pin_Read(IO1) < 200) // read the analogue value on IO1\n    calc_Threshold();\nendif"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "A value (usually a constant) specifying the pin number.",
+        "name": "pin"
+      }
+    ],
+    "returns": "Logic 1 (0x0001) or a Logic 0 (0x0000) or the analogue value of the input pin.",
+    "signature": "pin_Read(pin)",
+    "signatureVariants": [
+      "pin_Read(pin)"
+    ],
+    "source": {
+      "anchor": "pin_read",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "pin_Set": {
+    "category": "GPIO Functions",
+    "description": "GOLDELOX-GFX2 has limited but powerful I/O. There are pre-defined constant for mode and pin: The following are the supported modes for the pins:",
+    "examples": [
+      "pin_Set(OUTPUT, IO2);                // set IO2 to be used as an output\npin_Set(ANALOGUE_10, IO1);           // set IO1 to be used as analogue input"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "A value (usually a constant) specifying the pin operation.",
+        "name": "mode"
+      },
+      {
+        "description": "A value (usually a constant) specifying the pin munber.",
+        "name": "pin"
+      }
+    ],
+    "returns": "void",
+    "signature": "pin_Set(mode, pin)",
+    "signatureVariants": [
+      "pin_Set(mode, pin)"
+    ],
+    "source": {
+      "anchor": "pin_set",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "pokeB": {
+    "category": "Memory Access Functions",
+    "description": "This function writes a 8 bit value to a location specified by address.",
+    "examples": [
+      "// This example manually adjusts the top clipping point to 10 pixels down from top of screen.\npokeB(CLIP_TOP, 10);"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The peekB(..) and pokeB(..) functions are usually only used with internal system byte registers using the pre-defined constants. If peekB(..) or pokeB(..) are used to access other locations, the address must be doubled to get the correct pointer address."
+    ],
+    "parameters": [
+      {
+        "description": "The address of a memory byte. The address is usually a pre-defined system register address constant",
+        "name": "address"
+      },
+      {
+        "description": "The lower 8 bits of byte_value will be stored at address.",
+        "name": "byte_value"
+      }
+    ],
+    "returns": "If poke address was a legal address (usually ignored).",
+    "signature": "pokeB(address, byte_value)",
+    "signatureVariants": [
+      "pokeB(address, byte_value)"
+    ],
+    "source": {
+      "anchor": "pokeb",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "pokeW": {
+    "category": "Memory Access Functions",
+    "description": "This function writes a 16 bit value to a location specified by address.",
+    "examples": [
+      "// This example sets TIMER2 to 5 seconds.\npokeW(TIMER2, 5000);\n// The equivalent operation using a pointer is:\n//*TIMER2 := 5000;"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The address of a memory word. The address is usually a pre-defined system register address constant",
+        "name": "address"
+      },
+      {
+        "description": "The 16 bit word_value will be stored at address.",
+        "name": "word_value"
+      }
+    ],
+    "returns": "If poke address was a legal address (usually ignored).",
+    "signature": "pokeW(address, word_value)",
+    "signatureVariants": [
+      "pokeW(address, word_value)"
+    ],
+    "source": {
+      "anchor": "pokew",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "pop": {
+    "category": "User Stack Functions",
+    "description": "This function returns the value at the current stack pointer index. The stack pointer is then decremented, so it now points to the item below. If the stack pointer is zero, (ie a pop was performed on an empty stack) the function returns 0 and the stack pointer is not altered (ie it remains at 0).",
+    "examples": [
+      "// This example prints '300' and the stack pointer is reduced by 2\npush(100);\npush(200);\nprint(pop()+ pop());"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "The value at current stack pointer index.",
+    "signature": "pop()",
+    "signatureVariants": [
+      "pop()"
+    ],
+    "source": {
+      "anchor": "pop",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "print": {
+    "category": "Text and String Functions",
+    "description": "This function provides a verstaitle way to format numerics and strings to a formatted text. It can accept directives passed in square brackets to make it print in various ways. For instance, if you wish to print a number in 4 digit hex, use the [HEX4] directive placed in front of the variable to be displayed within the print statement. Refer to List of Predefined Signed Decimal Formats for all the numeric representations available [STR] and [CHR] are additional directives that are not part of the numeric set.",
+    "examples": [
+      "// In it's simplest form, print will simply print a number as can be seen below:\nmyvar := 100;\nprint(myvar);",
+      "// print 100 to the current output device (usually the display in TEXT mode).\n\nprint(\"the value of myvar is :- \", myvar, \"and its 8bit binary representation is:-\", [BIN8]myvar);\n// Note:   if you wish to add a string anywhere within a print(...) statement,\n//         just place a quoted string expression and you will be able to mix strings\n//         and numbers in a variety of formats."
+    ],
+    "library": "goldelox",
+    "notes": [
+      "You can freely mix string pointers, strings, variables and expressions within a print statement. print(...) can also use the to(...) function to redirect it's output to a different output device other than the screen using the function (refer to the to(...) statement for further examples)."
+    ],
+    "parameters": [],
+    "returns": "void",
+    "signature": "print(...)",
+    "signatureVariants": [
+      "print(...)"
+    ],
+    "source": {
+      "anchor": "print",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "push": {
+    "category": "User Stack Functions",
+    "description": "Increment the user stack pointer first and then places the item into the user stack array at the current position. The stack pointer is now pointing to this new item.",
+    "examples": [
+      "// This example pushes 3 items to the user stack\nmyvar := 10;\npush(1234);\npush(5678);\npush(myvar);"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Argument to be pushed to the user stack.",
+        "name": "value"
+      }
+    ],
+    "returns": "void",
+    "signature": "push(value)",
+    "signatureVariants": [
+      "push(value)"
+    ],
+    "source": {
+      "anchor": "push",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "putch": {
+    "category": "Text and String Functions",
+    "description": "This function prints single characters to the current output stream, usually the display.",
+    "examples": [
+      "var v;\nv := 0x39;\nputch(v);   // print the number 9 to the current display location\nputch('\\n'); // newline"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "Holds a positive value for the required character.",
+        "name": "char"
+      }
+    ],
+    "returns": "void",
+    "signature": "putch(char)",
+    "signatureVariants": [
+      "putch(char)"
+    ],
+    "source": {
+      "anchor": "putch",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "putnum": {
+    "category": "Text and String Functions",
+    "description": "This function prints a 16bit number in various formats to the current output stream",
+    "examples": [
+      "var v;\nv := 05678;\nputnum(HEX, v);       // print the number as hex 4 digits\nputnum(BIN, v);       // print the number as binary 16 digits"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "A constant that specifies the number format.",
+        "name": "format"
+      },
+      {
+        "description": "The number to be printed.",
+        "name": "value"
+      }
+    ],
+    "returns": "The default width of the numeric field (digit count), usually ignored.",
+    "signature": "putnum(format, value)",
+    "signatureVariants": [
+      "putnum(format, value)"
+    ],
+    "source": {
+      "anchor": "putnum",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "putstr": {
+    "category": "Text and String Functions",
+    "description": "This function prints a string to the current output stream, usually the display. The argument can be a string constant, a pointer to a string, a pointer to an array, or a pointer to a data statement. This is more efficient than print(...) function",
+    "examples": [
+      "putstr(\"HELLO\\n\");          //simply print a string constant at current origin",
+      "var p;                       // a var for use as a pointer\np := \"String Constant\\n\";    // assign a string constant tp pointer s\nputstr(p);                   // print the string using the pointer"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The output can be redirected to the communications port, the media, or memory using the to(...) function."
+    ],
+    "parameters": [
+      {
+        "description": "A string constant or word pointer to a string.",
+        "name": "pointer"
+      }
+    ],
+    "returns": "Returns the pointer to the item that was printed.",
+    "signature": "putstr(pointer)",
+    "signatureVariants": [
+      "putstr(pointer)"
+    ],
+    "source": {
+      "anchor": "putstr",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "serin": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "Receives a character from the Serial Port COM0. The transmission format is: No Parity, 1 Stop Bit, 8 Data Bits (N,8,1). The default Baud Rate is 115,200 bits per second or 115,200 baud. The baud rate can be changed under program control by using the setbaud(...) function.",
+    "examples": [
+      "var char;\nchar := serin();            // test the com port\nif (char >= 0)              // if a valid character is received\n    process(char);          // process the character\nendif"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "",
+    "signature": "serin()",
+    "signatureVariants": [
+      "serin()"
+    ],
+    "source": {
+      "anchor": "serin",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "serout": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "Transmits a single byte from the Serial Port COM0. The transmission format is: No Parity, 1 Stop Bit, 8 Data Bits (N,8,1). The default Baud Rate is 115,200 bits per second or 115,200 baud. The baud rate can be changed under program control by using the setbaud(...) function.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the data byte to be sent to the serial port.",
+        "name": "char"
+      }
+    ],
+    "returns": "void",
+    "signature": "serout(char)",
+    "signatureVariants": [
+      "serout(char)"
+    ],
+    "source": {
+      "anchor": "serout",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "setbaud": {
+    "category": "Serial (UART) Communication Functions",
+    "description": "Use this function to set the required baud rate. The default baud rate is 115,200 baud. There are pre-defined baud rate constants for most common baud rates: The baud rate divisor is calculated with the following formula, and can be used when non-constant defined baud rates are required: Baud rates each have degree of accuracy for several reasons. The actual baud rate you would receive and relevant error% compared to the setting value, can be calculated.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "specifies the baud rate divisor value or pre-defined constant",
+        "name": "rate"
+      }
+    ],
+    "returns": "void",
+    "signature": "setbaud(rate)",
+    "signatureVariants": [
+      "setbaud(rate)"
+    ],
+    "source": {
+      "anchor": "setbaud",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "setsp": {
+    "category": "User Stack Functions",
+    "description": "The users stack pointer is zeroed at power up, but it is sometimes necessary to alter the stack pointer for various reasons, such as running multiple concurrent stacks, or resetting to a known position as part of an error recovery process.",
+    "examples": [
+      "// This example sets the users stack pointer to 'empty'\nsetsp(0); // reset the stack pointer"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "This argument is used to set the users SP to the required position. The stack pointer is set to zero during power-up initialisation.",
+        "name": "index"
+      }
+    ],
+    "returns": "void",
+    "signature": "setsp(index)",
+    "signatureVariants": [
+      "setsp(index)"
+    ],
+    "source": {
+      "anchor": "setsp",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "spi_Disable": {
+    "category": "SPI Control Functions",
+    "description": "This function raises the Chip Select (SDCS) line of the SPI device, disabling it from further activity. The CS line will be automatically lowered next time the SPI functions spi_Read() or spi_Write(...) are used, and also by action of any of the media_ functions.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "void",
+    "signature": "spi_Disable()",
+    "signatureVariants": [
+      "spi_Disable()"
+    ],
+    "source": {
+      "anchor": "spi_disable",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "spi_Init": {
+    "category": "SPI Control Functions",
+    "description": "Sets up the GOLDELOX-GFX2 SPI port to communicate with SPI devices.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "The SPI functions in this section are not necessary when using the memory card or serial flash chips interfaced to the SPI port. The SPI functions in this section are relevant to those devices other than the memory card and the serial flash chip used for media access."
+    ],
+    "parameters": [
+      {
+        "description": "Sets the speed of the SPI port.",
+        "name": "speed"
+      },
+      {
+        "description": "Sets the input mode of the SPI port.",
+        "name": "input_mode"
+      },
+      {
+        "description": "Sets the output mode of the SPI port.",
+        "name": "output_mode"
+      }
+    ],
+    "returns": "void",
+    "signature": "spi_Init(speed, input_mode, output_mode)",
+    "signatureVariants": [
+      "spi_Init(speed, input_mode, output_mode)"
+    ],
+    "source": {
+      "anchor": "spi_init",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "spi_Read": {
+    "category": "SPI Control Functions",
+    "description": "This function allows a raw unadorned byte read from the SPI device.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "The Chip Select line (SDCS) is lowered automatically."
+    ],
+    "parameters": [],
+    "returns": "Returns a single data byte from the SPI device.",
+    "signature": "spi_Read()",
+    "signatureVariants": [
+      "spi_Read()"
+    ],
+    "source": {
+      "anchor": "spi_read",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "spi_Write": {
+    "category": "SPI Control Functions",
+    "description": "This function allows a raw unadorned byte write to the SPI device.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [
+      "The Chip Select line (SDCS) is lowered automatically."
+    ],
+    "parameters": [],
+    "returns": "void",
+    "signature": "spi_Write(byte)",
+    "signatureVariants": [
+      "spi_Write(byte)"
+    ],
+    "source": {
+      "anchor": "spi_write",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "strheight": {
+    "category": "Text and String Functions",
+    "description": "strheight() returns the height of a zero terminated string in pixel units. The strwidth() function must be called first which makes available width and height. Note that any string constants declared in your program are automatically terminated with a zero as an end marker by the compiler. Any string that you create in the DATA section or MEM section must have a zero added as a terminator for this function to work correctly.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "The height of a string in pixel units.",
+    "signature": "strheight()",
+    "signatureVariants": [
+      "strheight()"
+    ],
+    "source": {
+      "anchor": "strheight",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "strlen": {
+    "category": "Text and String Functions",
+    "description": "strlen() returns the length of a zero terminated string in character units. Note that any string constants declared in your program are automatically terminated with a zero as an end marker by the compiler. Any string that you create in the DATA section or MEM section must have a zero added as a terminator for this function to work correctly.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The pointer to a zero (0x00) terminated string.",
+        "name": "pointer"
+      }
+    ],
+    "returns": "The length of a string in character units.",
+    "signature": "strlen(pointer)",
+    "signatureVariants": [
+      "strlen(pointer)"
+    ],
+    "source": {
+      "anchor": "strlen",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "strwidth": {
+    "category": "Text and String Functions",
+    "description": "strwidth() returns the width of a zero terminated string in pixel units. Note that any string constants declared in your program are automatically terminated with a zero as an end marker by the compiler. Any string that you create in the DATA section or MEM section must have a zero added as a terminator for this function to work correctly.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The pointer to a zero (0x00) terminated string.",
+        "name": "pointer"
+      }
+    ],
+    "returns": "The width of a string in pixel units.",
+    "signature": "strwidth(pointer)",
+    "signatureVariants": [
+      "strwidth(pointer)"
+    ],
+    "source": {
+      "anchor": "strwidth",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "to": {
+    "category": "Text and String Functions",
+    "description": "This function can be to to redirect the printouts that are normally printed on the screen. Normally, print just sends its output to the display in TEXT mode which is the default, however, the output from print can be sent to COM0, and MDA (media) 'streams'. This function can also stream to a memory array to compose and store a string for later use. Note that once the to(...) function has taken effect, the stream reverts back to the default stream which is TEXT as soon as putch, putstr, putnum or print has completed its action. The APPEND argument is used to send the printed output to the same place as the previous redirection. This is most useful for building string arrays, or adding sequential data to a media stream. The following are accepted outstream constants Alternaltively, a pointer (0x102 < 0x3FF) to a buffer/array can be used as outstream. In this case, the printouts is redirected to the memory location.",
+    "examples": [
+      "var buf[10];         // a buffer that will hold up to 20 bytes/chars\nvar s;               // a var for use as a pointer\n\nto(buf); putstr(\"ONE \"); // redirect putstr to the buffer\nto(APPEND); putstr(\"TWO \"); // and add a couple more items\nto(APPEND); putstr(\"THREE\\n\");\nputstr(buf); // print the result\n\nwhile (media_Init() == 0) 0; // wait if no SD/SDHC card detected\nmedia_SetSector(0, 2);      // at sector 2\n//media_SetAdd(0, 1024);    // (alternatively, use media_SetAdd(),\n                        // lower 9 bits\nto(MDA); putstr(\"Hello World\"); // now write a ascii test string\nmedia_WriteByte('A');       // write a further 3 bytes\nmedia_WriteByte('B');\nmedia_WriteByte('C');\nto(MDA); putstr(buf);       // write the buffer we prepared earlier\nmedia_WriteByte(0);         // terminate with ASCII zero\nmedia_Flush();\nmedia_SetAdd(0, 1024);      // reset the media address\nwhile(char:=media_ReadByte())\n    to(COM0); putch(char);      // print the stored string to the COM port\nwend\n\nrepeat forever"
+    ],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "A variable or constant specifying the destination for the putch, putstr, putnum and print functions.",
+        "name": "outstream"
+      }
+    ],
+    "returns": "void",
+    "signature": "to(outstream)",
+    "signatureVariants": [
+      "to(outstream)"
+    ],
+    "source": {
+      "anchor": "to",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "tune_Continue": {
+    "category": "Sound and Tune (RTTTL) Functions",
+    "description": "Continues playing any previously stopped or paused tune.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "void",
+    "signature": "tune_Continue()",
+    "signatureVariants": [
+      "tune_Continue()"
+    ],
+    "source": {
+      "anchor": "tune_continue",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "tune_End": {
+    "category": "Sound and Tune (RTTTL) Functions",
+    "description": "Ends any current tune and resets the tune interpreter.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "void",
+    "signature": "tune_End()",
+    "signatureVariants": [
+      "tune_End()"
+    ],
+    "source": {
+      "anchor": "tune_end",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "tune_Pause": {
+    "category": "Sound and Tune (RTTTL) Functions",
+    "description": "Suspends any current tune from playing until a tune_Continue(), tune_Stop() or a new tune_Play(\"...\") function is called. The oscillator is not stopped.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "void",
+    "signature": "tune_Pause()",
+    "signatureVariants": [
+      "tune_Pause()"
+    ],
+    "source": {
+      "anchor": "tune_pause",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "tune_Play": {
+    "category": "Sound and Tune (RTTTL) Functions",
+    "description": "This function uses a variant of \"Ring Tone Text Transfer Language\" (RTTTL) developed by Nokia for ring tones. There are differences that need to be taken into account, and several additions that can be utilised. It is suggested to refer to the original format first. Here are some useful discussions: With a little practice and minor modifications, most RTTTL tunes that can be downloaded off the web are playable with this function. Also, a wide range of sound effects can be made using standard RTTTL notation augmented with the additional 4DGL functions. The 4DGL implementation:",
+    "examples": [
+      "/*\n * This example shows how to use the RTTTL tunes to\n * generate complex sounds and music.\n*/\n\n#DATA\n    // b=250\n    byte Muppets \"d=4,o=5,b=15,\",\n                \"c6,c6,a,b,8a,b,g,p,c6,c6,a,8b,8a,8p,g.,p,e,e,g,\n                8e,f,8c6,8c,8d,e,8e,8e,8p,8e,g,2p,c6,\",\n                \"c6,a,b,8a,b,g,p,c6,c6,a,8b,a,g.,p,e,e,g,f,8e,\n                8c6,8c,8d,e,8e,d,8d,c\",0\n    // part of haunted house theme\n    byte HauntedHouse \"d=4,o=5,b=20,\",\n                    \"2a4,2e,2d#,2b4,2a4,2c,2d,2a#4,2e.,e,\n                    1d#,2e.,d,2c.,b4,1a4\", 0\n    // simple scale with default settings\n    byte SimpleScale \"c,d,e,f,g,a,b,c7\", 0\n    // simple scale with default settings and portamento\n    // Note the portamento speed change in the middle of the str ing,\n    // and the curly braces that turn the portamento on and\n    byte SimpleScaleP \"b=50,{,c,d,e,f,p=7,g,a,},b,c7\", 0\n    // simple scale, much faster\n    // note b=20 as default, so each note plays for 20msec when d=64\n    byte Scale2 \"d=64, c,d,e,f,g,a,b,c7\", 0\n    // simple scale, much faster with a repeat command set to 20\n    // note b=20 as default, so each note plays for 20msec when d=\n    // and we repeat 20 times\n    byte ScaleRep \"d=64,r=20,c,d,e,f,g,a,b,c7,R\", 0\n    // simple scale, at the fastest possible rate, repeat 200 times\n    // note that b=1 and d=64 so each note plays for only 1msec\n    byte ScaleRep2 \"b=1,d=64,r=200,c,d,e,f,g,a,b,c7,R\", 0\n    // s imple scale using appregiation to increment the note step\n    // note that commas can be left out to save space if there is no\n    // indecision about delimit value\n    byte ApprScale \"a=1,c,+++++++++++ c,+++++++++++------------------------\", 0\n    // scale using appregiation to in crement the note step, and the\n    // note step is larger\n    // note that commas can be left out to save space if there is no\n    // indecision about delimit value\n    byte ApprScaleF \"d=8,a=4,c,++++++++++++ c,++++++++++++------------------------\", 0\n    // same as above but demonst rates repeating instead of multiple\n    // inc/dec operators\n    // note that commas can be left out to save space if there is no\n    // indecision about delimit value\n    byte ApprScaleFR \"d=8,a=4,c5,r=11,+,R,r=11, 11,--,R\", 0\n    // you can build your own scale sequencers\n    byte COMPLEX_C \"d=64,a=5,c4,r=8,+,R\", 0\n    byte COMPLEX_DSHARP \"d=64,a=5,d#4,r=8,+,R\", 0\n    byte COMPLEX_G \"d=64,a=5,g4,r=8,+,R\", 0\n    // just having a bit of fun\n    byte DEMO \"a=3,p= 3,o=5,d=4,b=5,\n            {,a,r=20,+,R,},c,d=16,a=5,r=50,-,R, R\",0 // forever\n#END\n\n//===============================================================================\n\n\n\n#constant number_of_examples 13\n\nvar examples[number_of_examples];\nvar names[number_of_examples];\n\nfunc main()\n    var n;\n    // pin_Set(SOUND, PIN_1); // sound on default pin\n    // pin_Set(SOUND, PIN_\n    // lookup table for the examples\n    examples[0] := HauntedHouse;\n    examples[1] := SimpleScale;\n    examples[2] := SimpleScaleP;\n    examples[3] := Scale2;\n    examples[4] := ScaleRep;\n    examples[5] := ScaleRep2;\n    examples[6] := ApprScale;\n    examples[7] := ApprScaleF;\n    examples[8] := A pprScaleFR;\n    examples[9] := COMPLEX_C;\n    examples[10] := COMPLEX_DSHARP;\n    examples[11] := COMPLEX_G;\n    examples[12] := Muppets;\n    // lookup table for the example names\n    names[0] := \"HauntedHouse\";\n    names[1] := \"SimpleScale\";\n    names[2] := \"Sim pleScaleP\";\n    names[3] := \"Scale2\";\n    names[4] := \"ScaleRep\";\n    names[5] := \"ScaleRep2\";\n    names[6] := \"ApprScale\";\n    names[7] := \"ApprScaleF\";\n    names[8] := \"ApprScaleFR\";\n    names[9] := \"COMPLEX_C\";\n    names[10] := \"COMPLEX_DSHARP\";\n    names[11] := \"COMPLEX_G\";\n    names[12] := \"Muppets\";\n\n    repeat\n        n := 0;\n        // play each demo, demonstrate multitasking while tune playing\n        repeat\n            gfx_Cls();\n            txt_MoveCursor(0,8);\n            tune_Play( examples[n] );\n            txt_Set(TEXT_PRINTDELAY, 0);\n            putstr( names[n++] );\n            repeat\n                txt_Set(TEXT_PRINTDELAY, 50);\n                txt_MoveCursor(0,0);\n                putstr(\"Playing\");\n                pause(150);\n                txt_MoveCursor(0,0);\n                putstr(\" \");\n            until (!(sys_Get(CONTROL) & PLAYING));// wait until the tune\n                                                // string\n            pause(1000); // then pause 5 seconds\n        until (n == number_of_examples);\n\n        gfx_Cls();\n        txt_Set(TEXT_PRINTDELAY, 0);\n        tune_Play( DEMO ); // last example plays forever\n        putstr( \"DEMO CONTINUOUS\" );\n        // the last demo endlessly loops, play for 10 seconds then pause\n        pause(10000);\n        tune_Pause();\n        print(\"\\nPaused....\");\n        pause(10000); // pause for 10 seconds\n        tune_Continue(); // continue\n        print(\"\\nContinue....\");\n        pause(10000); // for 10 seconds\n        tune_End(); // then end it\n        print(\"\\nEnd....\");\n        pause(10000); // wait for 10 seconds\n    forever // then do it all again\nendfunc"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The argument passed to the tune_Play(...) function must be an ASCII string. If the string is passed as a pointer from a #DATA statement, it must be terminated with a zero (0x00). If a string is passed directly as a parameter, the '0' is automatically appended by the compiler as per normal strings."
+    ],
+    "parameters": [
+      {
+        "description": "Specifies a pointer to a data statement or a string constant containing RTTTL information.",
+        "name": "tuneptr"
+      }
+    ],
+    "returns": "void",
+    "signature": "tune_Play(tuneptr)",
+    "signatureVariants": [
+      "tune_Play(tuneptr)"
+    ],
+    "source": {
+      "anchor": "tune_play",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "tune_Playing": {
+    "category": "Sound and Tune (RTTTL) Functions",
+    "description": "Use this function to check for any current tunes being played. Returns 1 if tune is playing, 0 if no tune is playing.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "1 if a tune is playing Returns: 0 if no tune is playing |",
+    "signature": "tune_Playing()",
+    "signatureVariants": [
+      "tune_Playing()"
+    ],
+    "source": {
+      "anchor": "tune_playing",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "tune_Stop": {
+    "category": "Sound and Tune (RTTTL) Functions",
+    "description": "Pauses a tune and silences the oscillator until a tune_Continue(), tune_Stop(), tune_End() or a new tune_Play(\"...\") function is called.",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [],
+    "returns": "void",
+    "signature": "tune_Stop()",
+    "signatureVariants": [
+      "tune_Stop()"
+    ],
+    "source": {
+      "anchor": "tune_stop",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "txt_MoveCursor": {
+    "category": "Text and String Functions",
+    "description": "Moves the origin to a screen position set by line and column parameters. The line and column position is calculated, based on the size and scaling factor for the currently selected font. When text is outputted to screen it will be displayed from this position. The text position could also be set with gfx_MoveTo(...); if required to set the text position to an exact pixel location.",
+    "examples": [
+      "// This example moves the text origin to the 5th line and the 10th column.\ntxt_MoveCursor(4, 9);"
+    ],
+    "library": "goldelox",
+    "notes": [
+      "The lines and columns start from 0, so line 0 , column 0 is the top left corner of the display."
+    ],
+    "parameters": [
+      {
+        "description": "Holds a positive value for the required line position.",
+        "name": "line"
+      },
+      {
+        "description": "Holds a positive value for the required column position.",
+        "name": "column"
+      }
+    ],
+    "returns": "void",
+    "signature": "txt_MoveCursor(line, column)",
+    "signatureVariants": [
+      "txt_MoveCursor(line, column)"
+    ],
+    "source": {
+      "anchor": "txt_movecursor",
+      "document": "goldelox_internal_functions.txt"
+    }
+  },
+  "txt_Set": {
+    "category": "Text and String Functions",
+    "description": "Given a function number and a value, set the required text control parameter, such as size, colour, and other formatting controls. This function is extremely useful in a loop to select multiple parameters from a data statement or a control array. Note also that each function available for txt_Set has a single parameter 'shortcut' function that has the same effect. (see the Single parameter short-cuts for the txt_Set functions next page) Single parameter short-cuts for the txt_Set(..) functions",
+    "examples": [],
+    "library": "goldelox",
+    "notes": [],
+    "parameters": [
+      {
+        "description": "The function number determines the required action for various text control functions. Usually a constant, but can be a variable, array element, or expression. There are pre-defined constants for each of the functions.",
+        "name": "function"
+      },
+      {
+        "description": "A variable, array element, expression or constant holding a value for the selected function.",
+        "name": "value"
+      }
+    ],
+    "returns": "void",
+    "signature": "txt_Set(function, value)",
+    "signatureVariants": [
+      "txt_Set(function, value)"
+    ],
+    "source": {
+      "anchor": "txt_set",
+      "document": "goldelox_internal_functions.txt"
+    }
+  }
+}
