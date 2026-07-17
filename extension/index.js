@@ -7,6 +7,8 @@ const { DocumentManager } = require("./documentManager");
 const { registerLanguageDetection } = require("./languageDetection");
 const { registerSemanticTokensProvider } = require("./semanticTokens");
 const { ensureLibrarySelected, registerLibrarySwitching } = require("./libraryManager");
+const { registerCrossLinkSupport } = require("./crossLink");
+const { createDefinitionProvider } = require("./definition");
 
 async function activate(context) {
   registerLanguageDetection(context);
@@ -23,8 +25,10 @@ async function activate(context) {
   context.subscriptions.push(createHoverProvider(functions, constants, keywords, documentManager));
   context.subscriptions.push(createCompletionProvider(functions, constants, keywords, documentManager));
   context.subscriptions.push(createSignatureProvider(functions, documentManager));
+  context.subscriptions.push(createDefinitionProvider(functions, documentManager));
   registerSemanticTokensProvider(context, documentManager);
   registerLibrarySwitching(context, functions, constants);
+  registerCrossLinkSupport(context, functions, documentManager);
 }
 
 function deactivate() {}

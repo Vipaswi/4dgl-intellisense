@@ -24,12 +24,55 @@
       "patterns": [
         {
           "name": "comment.line.double-slash.4dgl",
-          "match": "//.*$"
+          "begin": "//",
+          "end": "(?=$)",
+          "patterns": [
+            {
+              "include": "#doc-comment-tags"
+            }
+          ]
         },
         {
           "name": "comment.block.4dgl",
           "begin": "/\\*",
-          "end": "\\*/"
+          "end": "\\*/",
+          "patterns": [
+            {
+              "include": "#doc-comment-tags"
+            }
+          ]
+        }
+      ]
+    },
+    "doc-comment-tags": {
+      "patterns": [
+        {
+          "name": "meta.tag.link.jsdoc.4dgl",
+          "begin": "(\\{)(@link)\\b",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.definition.block.tag.jsdoc.4dgl"
+            },
+            "2": {
+              "name": "storage.type.class.jsdoc.4dgl"
+            }
+          },
+          "end": "\\}",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.block.tag.jsdoc.4dgl"
+            }
+          },
+          "patterns": [
+            {
+              "name": "entity.name.function.4dgl",
+              "match": "#[A-Za-z_][A-Za-z0-9_]*\\(\\)"
+            }
+          ]
+        },
+        {
+          "name": "storage.type.class.jsdoc.4dgl",
+          "match": "@(param|returns?)\\b"
         }
       ]
     },

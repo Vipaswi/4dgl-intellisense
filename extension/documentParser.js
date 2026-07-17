@@ -237,6 +237,156 @@ function parseScope(stripped) {
 }
 
 /**
+ * Find comment blocks in the raw (unstripped) source and index them by the line
+ * immediately following the block — the only position that matters, since a doc
+ * comment must sit directly above the `func` line it documents (no blank line
+ * between) to be attributed to it.
+ *
+ *   // consecutive whole-line comments are merged into one block
+ *   // like this
+ *   func foo():
+ *
+ *   /* a block comment, single- or multi-line *\/
+ *   func bar():
+ */
+function extractDocComments(rawText) {
+  const lines = rawText.split("\n");
+  const byNextLine = {};
+  let i = 0;
+
+  while (i < lines.length) {
+    const trimmed = lines[i].trim();
+
+    if (trimmed.startsWith("/*")) {
+      const startLine = i;
+      const raw = [lines[i]];
+      while (!lines[i].includes("*/") && i < lines.length - 1) {
+        i++;
+        raw.push(lines[i]);
+      }
+      byNextLine[startLine + (raw.length)] = { raw: raw.join("\n"), kind: "block" };
+      i++;
+      continue;
+    }
+
+    if (trimmed.startsWith("//")) {
+      const startLine = i;
+      const raw = [];
+      while (i < lines.length && lines[i].trim().startsWith("//")) {
+        raw.push(lines[i]);
+        i++;
+      }
+      byNextLine[startLine + raw.length] = { raw: raw.join("\n"), kind: "line" };
+      continue;
+    }
+
+    i++;
+  }
+
+  return byNextLine;
+}
+
+// Strip comment delimiters (and, for block comments, a leading `*` on interior
+// lines — the common `/** ... * @param x ... */` javadoc shape) so only the
+// prose/tag text remains.
+function stripCommentMarkers(raw, kind) {
+  if (kind === "line") {
+    return raw
+      .split("\n")
+      .map((l) => l.replace(/^\s*\/\/\s?/, ""))
+      .join("\n");
+  }
+
+  let body = raw.trim().replace(/^\/\*+/, "").replace(/\*+\/$/, "");
+  return body
+    .split("\n")
+    .map((l) => l.replace(/^\s*\*\s?/, ""))
+    .join("\n")
+    .trim();
+}
+
+/**
+ * Parse javadoc-style tags out of cleaned comment text:
+ *   @param name description...
+ *   @return(s) description...
+ * Everything else accumulates into the free-text description.
+ *
+ * Line breaks are preserved (not flattened to spaces) so structure the author wrote — separate
+ * sentences, a bullet list, blank-line-separated paragraphs — survives into the rendered hover
+ * instead of collapsing into one run-on line.
+ *
+ * `@param`/`@return(s)` are single-line by default: the tag's text is whatever follows it on
+ * that same line. A tag's text only continues onto the next line if that line is indented (at
+ * least one leading space after comment-marker stripping) — a blank line or a line that isn't
+ * indented ends the tag. This mirrors Javadoc's "first line starts the description, indented
+ * continuation lines extend it" convention.
+ */
+function parseJavadocText(cleaned) {
+  const params = {};
+  let returns;
+  const descriptionParagraphs = [];
+
+  let currentTag = null; // { type: "param", name } | { type: "returns" } | null
+  let currentLines = [];
+
+  const flush = () => {
+    const text = currentLines.join("\n").trim();
+    currentLines = [];
+    if (!text) return;
+    if (currentTag === null) descriptionParagraphs.push(text);
+    else if (currentTag.type === "param") params[currentTag.name] = text;
+    else if (currentTag.type === "returns") returns = text;
+  };
+
+  for (const rawLine of cleaned.split("\n")) {
+    const line = rawLine.replace(/\s+$/, "");
+    // Parameter names may be pointers (4DGL's `*name` "use variable as pointer" syntax,
+    // e.g. `func f(*vState)`), so the tag must accept a leading `*` too.
+    const paramMatch = /^\s*@param\s+(\*?[A-Za-z_][A-Za-z0-9_]*)\s*(.*)$/.exec(line);
+    const returnMatch = /^\s*@returns?\b\s*(.*)$/.exec(line);
+
+    if (paramMatch) {
+      flush();
+      currentTag = { type: "param", name: paramMatch[1] };
+      currentLines = [paramMatch[2].trim()];
+      continue;
+    }
+    if (returnMatch) {
+      flush();
+      currentTag = { type: "returns" };
+      currentLines = [returnMatch[1].trim()];
+      continue;
+    }
+
+    const isBlank = line.trim() === "";
+
+    if (currentTag !== null) {
+      if (!isBlank && /^\s/.test(line)) {
+        // Indented — continuation of the current tag's text.
+        currentLines.push(line.trim());
+        continue;
+      }
+      // Blank line or a dedented line ends the tag.
+      flush();
+      currentTag = null;
+      if (isBlank) continue; // paragraph break, nothing carries over
+      currentLines.push(line.trim()); // dedented line starts the next description paragraph
+      continue;
+    }
+
+    // Plain description mode: blank line = paragraph break, otherwise keep accumulating.
+    if (isBlank) {
+      flush();
+      continue;
+    }
+    currentLines.push(line.trim());
+  }
+  flush();
+
+  return { description: descriptionParagraphs.join("\n\n").trim(), params, returns };
+}
+
+/**
  * Main entry point — parse the full source text of one 4DGL file.
  */
 function parseDocument(text) {
@@ -244,6 +394,22 @@ function parseDocument(text) {
   const stripped = stripComments(text);
   const { functions, variables } = parseScope(stripped);
   const constants = parseConstants(stripped);
+
+  const docComments = extractDocComments(text);
+  for (const fn of Object.values(functions)) {
+    const comment = docComments[fn.startLine];
+    if (!comment) continue;
+
+    const cleaned = stripCommentMarkers(comment.raw, comment.kind);
+    const { description, params, returns } = parseJavadocText(cleaned);
+
+    if (description) fn.description = description;
+    if (returns) fn.returns = returns;
+    for (const param of fn.parameters) {
+      if (params[param.name]) param.description = params[param.name];
+    }
+  }
+
   return { functions, variables, constants, includes };
 }
 

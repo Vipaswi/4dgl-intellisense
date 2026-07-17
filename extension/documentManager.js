@@ -204,9 +204,14 @@ class DocumentManager {
     // Current-file wins — don't overwrite symbols already present.
     // Functions from included files are marked so hover/completion can exclude them
     // from cursor-position scope checks (their line numbers belong to other files).
+    // Every function also records the file it came from (definedInFile), used both to
+    // navigate there on a cross-link click and — for included-file functions only — to
+    // show a "Defined in ..." line in hover text.
     for (const [name, fn] of Object.entries(parsed.functions)) {
       if (!(name in out.functions)) {
-        out.functions[name] = isRoot ? fn : { ...fn, fromInclude: true };
+        out.functions[name] = isRoot
+          ? { ...fn, definedInFile: filePath }
+          : { ...fn, fromInclude: true, definedInFile: filePath };
       }
     }
     // Variables are only in scope from the file being edited.

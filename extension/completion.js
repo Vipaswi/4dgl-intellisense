@@ -31,7 +31,7 @@ function variablesInScope(symbols, cursorLine) {
     }
     for (const param of fn.parameters || []) {
       if (!(param.name in vars)) {
-        vars[param.name] = { type: "var", userDefined: true };
+        vars[param.name] = { type: "var", userDefined: true, description: param.description };
       }
     }
     break; // functions don't nest in 4DGL
@@ -45,7 +45,9 @@ function createCompletionProvider(functions, constants, keywords, documentManage
   const builtinFunctionItems = Object.entries(functions).map(([name, fn]) => {
     const item = new vscode.CompletionItem(name, vscode.CompletionItemKind.Function);
     item.detail = fn.signature;
-    item.documentation = new vscode.MarkdownString(markdownForFunction(fn));
+    const doc = new vscode.MarkdownString(markdownForFunction(fn));
+    doc.isTrusted = { enabledCommands: ["4dgl.revealFunction"] };
+    item.documentation = doc;
     item.insertText = name;
     item.sortText = `1_${name.toLowerCase()}`;
     return item;
@@ -91,7 +93,15 @@ function createCompletionProvider(functions, constants, keywords, documentManage
         const userFunctionItems = Object.entries(userSymbols.functions).map(([name, fn]) => {
           const item = new vscode.CompletionItem(name, vscode.CompletionItemKind.Function);
           item.detail = fn.signature;
-          item.documentation = new vscode.MarkdownString(markdownForUserFunction(fn));
+          const definedInPath = fn.fromInclude ? vscode.workspace.asRelativePath(fn.definedInFile) : undefined;
+          const doc = new vscode.MarkdownString(
+            markdownForUserFunction(fn, {
+              docUriString: document.uri.toString(),
+              definedInPath,
+            })
+          );
+          doc.isTrusted = { enabledCommands: ["4dgl.revealFunction"] };
+          item.documentation = doc;
           item.insertText = name;
           item.sortText = `0_${name.toLowerCase()}`;
           return item;
@@ -101,7 +111,9 @@ function createCompletionProvider(functions, constants, keywords, documentManage
         const userVariableItems = Object.entries(scopedVars).map(([name, v]) => {
           const item = new vscode.CompletionItem(name, vscode.CompletionItemKind.Variable);
           item.detail = v.type === "var" ? `var ${name}` : `${v.type} ${name}`;
-          item.documentation = new vscode.MarkdownString(markdownForUserVariable(name, v));
+          const doc = new vscode.MarkdownString(markdownForUserVariable(name, v, document.uri.toString()));
+          doc.isTrusted = { enabledCommands: ["4dgl.revealFunction"] };
+          item.documentation = doc;
           item.insertText = name;
           item.sortText = `0_${name.toLowerCase()}`;
           return item;

@@ -15,13 +15,9 @@ function createSignatureProvider(functions, documentManager) {
         const fn = userFn || builtinFn;
         if (!fn) return undefined;
 
-        const description = fn.userDefined ? undefined : (fn.description || undefined);
-        const signature = new vscode.SignatureInformation(fn.signature, description);
+        const signature = new vscode.SignatureInformation(fn.signature, fn.description || undefined);
         signature.parameters = (fn.parameters || []).map(
-          (param) => new vscode.ParameterInformation(
-            param.name,
-            fn.userDefined ? undefined : (param.description || undefined)
-          )
+          (param) => new vscode.ParameterInformation(param.name, param.description || undefined)
         );
 
         const help = new vscode.SignatureHelp();
