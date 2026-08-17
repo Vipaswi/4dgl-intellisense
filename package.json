@@ -2,7 +2,7 @@
   "name": "4dgl-intellisense",
   "displayName": "4DGL Intellisense",
   "description": "Open-source, community-built IDE support for 4D Systems 4DGL (hover docs, completion, signature help, semantic highlighting). Not affiliated with 4D Systems. Supports function types but not libraries; #include targets must live within the project directory to resolve — it does not ship the full 4D Systems include folder.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "Vases",
   "license": "MIT",
   "homepage": "https://github.com/Vipaswi/4dgl-intellisense",
@@ -77,6 +77,28 @@
       {
         "command": "4dgl.switchLibrary",
         "title": "4DGL: Switch Internal Functions Library"
+      },
+      {
+        "command": "4dgl.searchDocumentation",
+        "title": "4DGL: Search Documentation (Library + Repository)"
+      },
+      {
+        "command": "4dgl.searchDocumentationLinked",
+        "title": "4DGL: Search Documentation (Library + Linked Functions)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "4dgl.searchDocumentation",
+        "key": "ctrl+alt+d",
+        "mac": "cmd+alt+d",
+        "when": "editorTextFocus && editorLangId == 4dgl"
+      },
+      {
+        "command": "4dgl.searchDocumentationLinked",
+        "key": "ctrl+alt+shift+d",
+        "mac": "cmd+alt+shift+d",
+        "when": "editorTextFocus && editorLangId == 4dgl"
       }
     ]
   },

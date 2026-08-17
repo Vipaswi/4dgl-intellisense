@@ -1,5 +1,29 @@
 # Changelog
 
+
+
+## 1.0.2
+
+- Fixed function/variable declarations using 4DGL's pointer (`*name`) or address-of (`&name`)
+  sigils not being offered as autocomplete candidates, not being semantically highlighted as a
+  parameter/variable, and not matching their `@param` doc comment. The sigil was being left
+  attached to the stored identifier instead of stripped, so nothing that looked up the bare name
+  ever matched. Fixed for function parameters and for `var`/`word`/`byte`/`long`/`string`
+  declarations at both global and function-local scope, in any spacing (`*name`, `* name`,
+  `var *name`).
+- Added two commands to fuzzy-search function names, descriptions, and parameter
+  names/descriptions across the active internal-functions library and your own code, jumping to
+  the selected function's definition (or its reference page, for a built-in):
+  - **4DGL: Search Documentation (Library + Repository)** (`Ctrl+Alt+D`) — every function in every
+    file in the workspace classified as 4DGL: by extension (`.4dg`/`.4dgl`/`.lib`/`.inc`), by a
+    manual `files.associations` mapping to the `4dgl` language, or by a one-off "Change Language
+    Mode" switch on a currently open file — regardless of whether it's reachable through any
+    `#include`/`#use`/`#inherit` chain.
+  - **4DGL: Search Documentation (Library + Linked Functions)** (`Ctrl+Alt+Shift+D`) — only
+    functions reachable from the open file's `#include`/`#use`/`#inherit` chain.
+  Both keybindings are ordinary VS Code defaults and can be freely rebound from Keyboard
+  Shortcuts.
+
 ## 1.0.1
 
 - Comments directly above a `func` (`//` lines or a `/* */` block) are now picked up as that

@@ -98,6 +98,23 @@ Functions, variables, and constants defined in files pulled in via `#include`, `
 bare filenames matched across your workspace). Hovering a function that comes from another file
 shows a **Defined in `<file>`** line so you always know where it actually lives.
 
+### Search documentation
+
+Two commands fuzzy-search function names, descriptions, and parameter names/descriptions across
+the active library plus your own code, in a quick-pick list. Selecting a result jumps straight to
+its definition (your own functions) or opens its reference page (built-ins):
+
+- **4DGL: Search Documentation (Library + Repository)** (`Ctrl+Alt+D` / `Cmd+Alt+D` on macOS) —
+  searches the active library plus every function defined anywhere in the workspace that's
+  classified as a 4DGL file: any `.4dg`/`.4dgl`/`.lib`/`.inc` file, any file you've manually
+  associated with the `4dgl` language (via the `files.associations` setting or "Change Language
+  Mode"), and any file currently open under the 4DGL language for the session. Reachability
+  through `#include`/`#use`/`#inherit` doesn't matter here — every classified file in the repo is
+  included, whether or not the open file actually uses it.
+- **4DGL: Search Documentation (Library + Linked Functions)** (`Ctrl+Alt+Shift+D` /
+  `Cmd+Alt+Shift+D` on macOS) — searches the active library plus only the functions actually
+  reachable from the open file's `#include`/`#use`/`#inherit` chain.
+
 ### Semantic highlighting
 
 Keywords, pre-processor directives, and built-in functions/constants are semantically
@@ -117,6 +134,20 @@ highlighted according to your color theme, on top of the bundled syntax grammar.
 | Setting | Description |
 |---|---|
 | `4dgl.library` | The internal functions library used for hover docs, completion, and signature help (`diablo16`, `goldelox`, `picaso`, or `pixxi`). Leave unset to be prompted on first use. |
+
+### Keyboard shortcuts
+
+| Command | Default (Win/Linux) | Default (macOS) |
+|---|---|---|
+| 4DGL: Search Documentation (Library + Repository) | `Ctrl+Alt+D` | `Cmd+Alt+D` |
+| 4DGL: Search Documentation (Library + Linked Functions) | `Ctrl+Alt+Shift+D` | `Cmd+Alt+Shift+D` |
+
+These are defaults, not fixed — change either one from **Preferences: Open Keyboard Shortcuts**
+(`Ctrl+K Ctrl+S` / `Cmd+K Cmd+S`), searching for the command name and recording your own key
+combination. That's standard VS Code behavior for any contributed command: keybindings live in
+Keyboard Shortcuts / `keybindings.json`, not in `settings.json`, so there's no `4dgl.*` setting for
+this — VS Code doesn't support an extension binding a key combination read from a configuration
+value at runtime.
 
 ## Known limitations
 

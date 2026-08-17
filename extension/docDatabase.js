@@ -124,7 +124,8 @@ function markdownForUserFunction(fn, options) {
     lines.push("**Parameters:**");
     for (const p of fn.parameters) {
       const description = p.description ? ` - ${linkifyExplicitLinks(p.description, docUriString)}` : "";
-      lines.push(`- \`${p.name}\`${description}`);
+      const sigil = `${p.pointer ? "*" : ""}${p.address ? "&" : ""}`;
+      lines.push(`- \`${sigil}${p.name}\`${description}`);
     }
   }
 
@@ -147,7 +148,10 @@ function markdownForUserVariable(name, variable, docUriString) {
   const lines = [];
   lines.push("```4dgl");
   const arraySuffix = variable.arraySize !== undefined ? `[${variable.arraySize}]` : "";
-  lines.push(variable.type === "var" ? `var ${name}${arraySuffix}` : `${variable.type} ${name}${arraySuffix}`);
+  const sigil = `${variable.pointer ? "*" : ""}${variable.address ? "&" : ""}`;
+  lines.push(
+    variable.type === "var" ? `var ${sigil}${name}${arraySuffix}` : `${variable.type} ${sigil}${name}${arraySuffix}`
+  );
   lines.push("```");
 
   if (variable.description) {

@@ -119,6 +119,31 @@ quick sanity check (`git diff --stat data/`, spot-check a few entries).
   to fix the case where the language *isn't* already `4dgl`) could never actually run. Fixed by
   switching to `onStartupFinished`. If you see this prompt regress to never firing again, check
   `activationEvents` first.
+- **Pointer/address sigils (`*name`, `&name`) must be stripped before an identifier is stored**:
+  `documentParser.js`'s `stripSigils()` is the one place this happens, for function parameters and
+  for `var`/`word`/`byte`/`long`/`string` declarations at both global and local scope — it returns
+  `{name, pointer, address}` with the sigil(s) removed from `name`. Everything downstream
+  (`completion.js`, `semanticTokens.js`, `signature.js`) keys off the bare `name`; reintroducing a
+  raw `p.trim()` (or similar) anywhere in that path will silently break autocomplete for
+  pointer-declared identifiers again — that was the original bug. `fn.signature` and the hover
+  markdown in `docDatabase.js` reconstruct the sigil for display (`sigilPrefix()` in
+  `documentParser.js`, inline `${p.pointer?"*":""}${p.address?"&":""}` in `docDatabase.js`/
+  `searchDocs.js`) — remember the display side too when adding a new place that renders a param.
+- **Search command keybindings are plain `contributes.keybindings` defaults, not
+  settings-driven**: `4dgl.searchDocumentation`/`4dgl.searchDocumentationLinked`
+  (`extension/searchDocs.js`) ship default keybindings in `package.json`, but VS Code has no API
+  for an extension to bind a key combination read from a configuration value at runtime —
+  keybindings are declarative only. Users already rebind them the normal VS Code way (Keyboard
+  Shortcuts editor / `keybindings.json`) with zero extra code from this extension; don't build a
+  `4dgl.*` setting that claims to "control" the shortcut, since setting it wouldn't actually change
+  what key triggers the command.
+- **`DocumentManager.getRepositorySymbols()` vs `getSymbolsForDocument()`**: the former (backing
+  the repository-wide search command) unions every function from every 4DGL-classified file in the
+  workspace — "classified" meaning matches `GLOB_PATTERN`, or is mapped to the `4dgl` language via
+  the `files.associations` setting, or is a currently open document with `languageId === "4dgl"` —
+  independent of `#include` reachability. `getSymbolsForDocument` is the pre-existing transitive
+  include-chain closure. Don't conflate them; `getRepositorySymbols` intentionally ignores
+  reachability, which is the whole point of the command it backs.
 - **Edit tool + smart quotes**: this repo's source docs are full of curly quotes / en-dashes. The
   `Edit` tool's old_string/new_string matching can silently fail against text containing them
   (mismatch reported even though the file "looks" identical in a terminal — it's usually a

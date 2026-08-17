@@ -3,16 +3,53 @@
  *
  * Returned shape:
  *   {
- *     functions: { [name]: { signature, parameters: [{name}], userDefined: true,
- *                            startLine, endLine, localVars: { [name]: {type,...} } } },
- *     variables: { [name]: { type, userDefined: true } },   // GLOBAL only
+ *     functions: { [name]: { signature, parameters: [{name, pointer?, address?}],
+ *                            userDefined: true, startLine, endLine,
+ *                            localVars: { [name]: {type, pointer?, address?, ...} } } },
+ *     variables: { [name]: { type, pointer?, address?, userDefined: true } },   // GLOBAL only
  *     constants: { [name]: { value, userDefined: true } },
  *     includes:  [ relativePathString, ... ]   // from #INCLUDE / #USE, NOT #IF EXISTS
  *   }
  *
  * variables contains only declarations at file (global) scope.
  * Declarations inside a function body are stored in that function's localVars.
+ *
+ * `name` is always the bare identifier — 4DGL's pointer (`*`) and address-of (`&`)
+ * sigils (see stripSigils below) are stripped and recorded as `pointer`/`address`
+ * flags instead, so callers can match/complete on the identifier alone.
  */
+
+/**
+ * Strip 4DGL's pointer (`*`) and address-of (`&`) sigils from an identifier, however
+ * they're spaced (`*name`, `* name`, `&name`), returning the bare name plus which
+ * sigil(s) were present. See "Use Variable as Pointer" / "Address Modifier" in
+ * directives_and_syntax.txt — the sigil sits in front of the identifier, not behind it,
+ * and is independent of any type keyword (`var`/`word`/`byte`/`long`/`string`) that may
+ * precede it.
+ */
+function stripSigils(raw) {
+  let text = raw.trim();
+  let pointer = false;
+  let address = false;
+  let changed = true;
+  while (changed) {
+    changed = false;
+    if (text.startsWith("*")) {
+      pointer = true;
+      text = text.slice(1).trimStart();
+      changed = true;
+    } else if (text.startsWith("&")) {
+      address = true;
+      text = text.slice(1).trimStart();
+      changed = true;
+    }
+  }
+  return { name: text.trim(), pointer, address };
+}
+
+function sigilPrefix(entry) {
+  return `${entry.pointer ? "*" : ""}${entry.address ? "&" : ""}`;
+}
 
 // Remove line and block comments, preserving newlines so line numbers stay valid.
 // String literals are passed through unchanged so their contents don't confuse patterns.
@@ -112,20 +149,31 @@ function parseVariablesFromText(text) {
   while ((m = varRe.exec(text)) !== null) {
     for (const decl of m[1].split(",")) {
       const withoutInit = decl.trim().split(/\s*:=/)[0].trim();
-      const arrayMatch = withoutInit.match(/^([A-Za-z_][A-Za-z0-9_]*)\s*\[\s*(\d+)\s*\]$/);
+      const { name: bare, pointer, address } = stripSigils(withoutInit);
+      const arrayMatch = bare.match(/^([A-Za-z_][A-Za-z0-9_]*)\s*\[\s*(\d+)\s*\]$/);
       if (arrayMatch) {
-        variables[arrayMatch[1]] = { type: "var", arraySize: parseInt(arrayMatch[2], 10), userDefined: true };
-      } else if (/^[A-Za-z_][A-Za-z0-9_]*$/.test(withoutInit)) {
-        variables[withoutInit] = { type: "var", userDefined: true };
+        const entry = { type: "var", arraySize: parseInt(arrayMatch[2], 10), userDefined: true };
+        if (pointer) entry.pointer = true;
+        if (address) entry.address = true;
+        variables[arrayMatch[1]] = entry;
+      } else if (/^[A-Za-z_][A-Za-z0-9_]*$/.test(bare)) {
+        const entry = { type: "var", userDefined: true };
+        if (pointer) entry.pointer = true;
+        if (address) entry.address = true;
+        variables[bare] = entry;
       }
     }
   }
 
-  const typedRe = /^\s*(word|byte|long|string)\s+([A-Za-z_][A-Za-z0-9_]*)(?:\s*\[\s*(\d+)\s*\])?\s*(?::=\s*.*?)?\s*;?/gm;
+  const typedRe = /^\s*(word|byte|long|string)\s+([*&]\s*)?([A-Za-z_][A-Za-z0-9_]*)(?:\s*\[\s*(\d+)\s*\])?\s*(?::=\s*.*?)?\s*;?/gm;
   while ((m = typedRe.exec(text)) !== null) {
     const entry = { type: m[1], userDefined: true };
-    if (m[3] !== undefined) entry.arraySize = parseInt(m[3], 10);
-    variables[m[2]] = entry;
+    if (m[2]) {
+      if (m[2].includes("*")) entry.pointer = true;
+      if (m[2].includes("&")) entry.address = true;
+    }
+    if (m[4] !== undefined) entry.arraySize = parseInt(m[4], 10);
+    variables[m[3]] = entry;
   }
 
   return variables;
@@ -200,8 +248,12 @@ function parseScope(stripped) {
           ? rawParams
               .split(",")
               .map((p) => {
-                const pname = p.trim().replace(/^(?:var|word|byte|long|string)\s+/i, "").trim();
-                return { name: pname };
+                const withoutType = p.trim().replace(/^(?:var|word|byte|long|string)\b\s*/i, "");
+                const { name, pointer, address } = stripSigils(withoutType);
+                const entry = { name };
+                if (pointer) entry.pointer = true;
+                if (address) entry.address = true;
+                return entry;
               })
               .filter((p) => p.name)
           : [];
@@ -216,7 +268,7 @@ function parseScope(stripped) {
         for (const p of params) delete localVars[p.name];
 
         functions[currentName] = {
-          signature: `func ${currentName}(${params.map((p) => p.name).join(", ")})`,
+          signature: `func ${currentName}(${params.map((p) => `${sigilPrefix(p)}${p.name}`).join(", ")})`,
           parameters: params,
           userDefined: true,
           startLine: funcStartLine,
@@ -340,9 +392,10 @@ function parseJavadocText(cleaned) {
 
   for (const rawLine of cleaned.split("\n")) {
     const line = rawLine.replace(/\s+$/, "");
-    // Parameter names may be pointers (4DGL's `*name` "use variable as pointer" syntax,
-    // e.g. `func f(*vState)`), so the tag must accept a leading `*` too.
-    const paramMatch = /^\s*@param\s+(\*?[A-Za-z_][A-Za-z0-9_]*)\s*(.*)$/.exec(line);
+    // Parameter names may carry 4DGL's `*`/`&` sigils (e.g. `@param *vState ...` for a
+    // `func f(*vState)` pointer param), so strip them here too — fn.parameters stores the
+    // bare name (see stripSigils), and this tag must key against that same bare name.
+    const paramMatch = /^\s*@param\s+[*&]*\s*([A-Za-z_][A-Za-z0-9_]*)\s*(.*)$/.exec(line);
     const returnMatch = /^\s*@returns?\b\s*(.*)$/.exec(line);
 
     if (paramMatch) {

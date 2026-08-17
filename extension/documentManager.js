@@ -240,6 +240,67 @@ class DocumentManager {
     this._mergeIncludes(uri.fsPath, out, new Set(), true);
     return out;
   }
+
+  /**
+   * Every file in the workspace classifiable as 4DGL:
+   *   - anything matching the extensions this extension registers 4dgl for
+   *     (.4dg/.4dgl/.lib/.inc — GLOB_PATTERN, also used for include resolution)
+   *   - any glob a user has manually mapped to the "4dgl" language via the
+   *     `files.associations` setting (what VS Code's "Configure File Association
+   *     for '.ext'..." command writes to)
+   *   - any currently-open document a user switched to 4dgl one-off via
+   *     "Change Language Mode", without persisting an association
+   */
+  async _findClassifiedFiles() {
+    const paths = new Set();
+
+    for (const uri of await vscode.workspace.findFiles(GLOB_PATTERN)) {
+      paths.add(uri.fsPath);
+    }
+
+    const associations = vscode.workspace.getConfiguration("files").get("associations") || {};
+    for (const [pattern, languageId] of Object.entries(associations)) {
+      if (languageId !== "4dgl") continue;
+      const glob = pattern.includes("**") ? pattern : `**/${pattern}`;
+      for (const uri of await vscode.workspace.findFiles(glob)) {
+        paths.add(uri.fsPath);
+      }
+    }
+
+    for (const doc of vscode.workspace.textDocuments) {
+      if (doc.languageId === "4dgl") paths.add(doc.uri.fsPath);
+    }
+
+    return paths;
+  }
+
+  /**
+   * Union of every function defined in every 4DGL-classified file in the workspace —
+   * unlike getSymbolsForDocument, membership here doesn't depend on being reachable
+   * through anyone's #INCLUDE chain. Where a name is defined in more than one file,
+   * `preferredUri` (typically the active editor) wins so its live unsaved buffer is
+   * what's shown, matching getSymbolsForDocument's "current file wins" behavior.
+   */
+  async getRepositorySymbols(preferredUri) {
+    const paths = [...(await this._findClassifiedFiles())];
+    if (preferredUri) {
+      const key = this._key(preferredUri.fsPath);
+      const idx = paths.findIndex((p) => this._key(p) === key);
+      if (idx > 0) {
+        paths.splice(idx, 1);
+        paths.unshift(preferredUri.fsPath);
+      }
+    }
+
+    const functions = {};
+    for (const filePath of paths) {
+      const parsed = this._parseFile(filePath);
+      for (const [name, fn] of Object.entries(parsed.functions)) {
+        if (!(name in functions)) functions[name] = { ...fn, definedInFile: filePath };
+      }
+    }
+    return { functions };
+  }
 }
 
 module.exports = { DocumentManager };

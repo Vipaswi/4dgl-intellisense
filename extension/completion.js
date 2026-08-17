@@ -31,7 +31,13 @@ function variablesInScope(symbols, cursorLine) {
     }
     for (const param of fn.parameters || []) {
       if (!(param.name in vars)) {
-        vars[param.name] = { type: "var", userDefined: true, description: param.description };
+        vars[param.name] = {
+          type: "var",
+          userDefined: true,
+          description: param.description,
+          pointer: param.pointer,
+          address: param.address,
+        };
       }
     }
     break; // functions don't nest in 4DGL
@@ -110,7 +116,8 @@ function createCompletionProvider(functions, constants, keywords, documentManage
         const scopedVars = variablesInScope(userSymbols, cursorLine);
         const userVariableItems = Object.entries(scopedVars).map(([name, v]) => {
           const item = new vscode.CompletionItem(name, vscode.CompletionItemKind.Variable);
-          item.detail = v.type === "var" ? `var ${name}` : `${v.type} ${name}`;
+          const sigil = `${v.pointer ? "*" : ""}${v.address ? "&" : ""}`;
+          item.detail = v.type === "var" ? `var ${sigil}${name}` : `${v.type} ${sigil}${name}`;
           const doc = new vscode.MarkdownString(markdownForUserVariable(name, v, document.uri.toString()));
           doc.isTrusted = { enabledCommands: ["4dgl.revealFunction"] };
           item.documentation = doc;

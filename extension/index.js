@@ -9,6 +9,7 @@ const { registerSemanticTokensProvider } = require("./semanticTokens");
 const { ensureLibrarySelected, registerLibrarySwitching } = require("./libraryManager");
 const { registerCrossLinkSupport } = require("./crossLink");
 const { createDefinitionProvider } = require("./definition");
+const { registerSearchCommands } = require("./searchDocs");
 
 async function activate(context) {
   registerLanguageDetection(context);
@@ -29,6 +30,7 @@ async function activate(context) {
   registerSemanticTokensProvider(context, documentManager);
   registerLibrarySwitching(context, functions, constants);
   registerCrossLinkSupport(context, functions, documentManager);
+  registerSearchCommands(context, functions, documentManager);
 }
 
 function deactivate() {}
