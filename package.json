@@ -1,7 +1,7 @@
 {
   "name": "4dgl-intellisense",
   "displayName": "4DGL Intellisense",
-  "description": "Open-source, community-built IDE support for 4D Systems 4DGL (hover docs, completion, signature help, semantic highlighting, and syntax/name/argument diagnostics). Not affiliated with 4D Systems. Supports function types but not libraries; #include targets must live within the project directory to resolve — it does not ship the full 4D Systems include folder.",
+  "description": "Open-source, community-built IDE support for 4D Systems 4DGL (hover docs, completion, signature help, semantic highlighting, and syntax/name/argument diagnostics with Quick Fixes). Not affiliated with 4D Systems. Supports function types but not libraries; #include targets must live within the project directory to resolve — it does not ship the full 4D Systems include folder.",
   "version": "1.1.0",
   "publisher": "Vases",
   "license": "MIT",
@@ -29,7 +29,8 @@
     "goldelox",
     "pixxi",
     "diagnostics",
-    "linter"
+    "linter",
+    "quick fix"
   ],
   "activationEvents": [
     "onStartupFinished"

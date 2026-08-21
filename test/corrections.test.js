@@ -34,19 +34,26 @@ ok("SPI_SPEED5 exists", "SPI_SPEED5" in constants.diablo16);
 ok("SPI_SPEER5 is gone", !("SPI_SPEER5" in constants.diablo16));
 equal("and it kept its documented value",
   constants.diablo16.SPI_SPEED5.description, "729.166 khz");
-// TRANSPARENT is documented only in argument-description prose, so extraction misses
-// it; TRANSPARENCY is a different, correctly-extracted gfx_Set selector.
+// TRANSPARENT now comes from extraction for diablo16 (its gfx_FillPattern argument
+// table spells out "TRANSPARENT or OPAQUE") and from the corrections `add` fallback
+// for the other three, whose manuals only use it in example code. TRANSPARENCY is a
+// different, correctly-extracted gfx_Set selector and must survive alongside it.
 ok("TRANSPARENT exists", "TRANSPARENT" in constants.diablo16);
 ok("OPAQUE exists", "OPAQUE" in constants.diablo16);
 ok("TRANSPARENCY is still there too — it is a different constant",
   "TRANSPARENCY" in constants.diablo16);
+ok("TRANSPARENT came from the manual, not the fallback, for diablo16",
+  (constants.diablo16.TRANSPARENT.source || {}).confidence === "documented",
+  JSON.stringify(constants.diablo16.TRANSPARENT));
 
 suite("corrections apply to every library that has the key");
 ok("picaso also gets mem_Free", "mem_Free" in functions.picaso && !("mem_free" in functions.picaso));
 ok("pixxi also gets mem_Free", "mem_Free" in functions.pixxi);
 ok("goldelox has no mem_Free entry to rename, and none is invented",
   !("mem_Free" in functions.goldelox) && !("mem_free" in functions.goldelox));
-ok("TRANSPARENT is added for all four", LIBRARIES.every((l) => "TRANSPARENT" in constants[l]));
+ok("TRANSPARENT ends up present for all four", LIBRARIES.every((l) => "TRANSPARENT" in constants[l]));
+ok("HEX2ZB present for all four despite the Goldelox table duplicating HEX1ZB",
+  LIBRARIES.every((l) => "HEX2ZB" in constants[l]));
 
 suite("keys that could never be called are gone");
 for (const library of LIBRARIES) {
@@ -72,6 +79,13 @@ ok("pin_HI and pin_Hi both resolve",
   "pin_HI" in functions.goldelox && "pin_Hi" in functions.goldelox);
 ok("an alias shares the original's docs",
   functions.diablo16.sys_Getdate === functions.diablo16.sys_GetDate);
+
+suite("ambiguous colour spellings resolve both ways");
+// colors.pdf spells these one way; every manual's example code the other.
+ok("DARKGRAY and DARKGREY both resolve",
+  "DARKGRAY" in constants.diablo16 && "DARKGREY" in constants.diablo16);
+ok("DARKKHAKI and DARKKHARKI both resolve",
+  "DARKKHAKI" in constants.diablo16 && "DARKKHARKI" in constants.diablo16);
 
 suite("the layer is non-destructive");
 ok("renaming never clobbers an existing entry: toupper survives alongside tolower",

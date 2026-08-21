@@ -142,15 +142,17 @@ ok(
 ok(`structural flags across all blocks stay at or under 130 (got ${structuralFlagged})`, structuralFlagged <= 130);
 
 // The near-miss rule keeps these low; most of what's left is a genuine case-sensitivity
-// bug in the vendor's own example code (`pin_set` for `pin_Set`).
+// bug in the vendor's own example code (`pin_set` for `pin_Set`). The constant count
+// is down to two manual-damage cases: `IMG_FRAME_COU NT` wrapped mid-token by the PDF,
+// and a `TXT_MARGIN` row in a Revision History table.
 ok(
   `unknown-function at or under 45 (got ${semanticCounts["unknown-function"]})`,
   semanticCounts["unknown-function"] <= 45,
   top("unknown-function")
 );
 ok(
-  `unknown-constant at or under 38 (got ${semanticCounts["unknown-constant"]})`,
-  semanticCounts["unknown-constant"] <= 38,
+  `unknown-constant at or under 5 (got ${semanticCounts["unknown-constant"]})`,
+  semanticCounts["unknown-constant"] <= 5,
   top("unknown-constant")
 );
 // Nearly all of the residue here is `name()` written in a Revision History table.

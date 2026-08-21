@@ -1,7 +1,18 @@
 {
+  "APPEND": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0x0000 putch, putstr, putnum, print, str_Printf redirection: Output is appended to user array if previous redirection was to an array.",
+    "library": "picaso",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
   "AUDIO_ENABLE": {
     "category": "GPIO Functions / pin_Set",
-    "description": "",
+    "description": "Remarks: Used internally. Permanently set as Output. HIGH: Amplifier OFF LOW : Amplifier ON",
     "library": "picaso",
     "source": {
       "anchor": "pin_set",
@@ -23,7 +34,7 @@
   },
   "BACKLITE": {
     "category": "GPIO Functions / pin_Set",
-    "description": "",
+    "description": "Remarks: Used internally. Permanently set as Output. HIGH: BACKLITE ON LOW : BACKLITE OFF",
     "library": "picaso",
     "source": {
       "anchor": "pin_set",
@@ -31,6 +42,226 @@
       "document": "picaso_internal_functions.txt"
     },
     "value": "Backlight control pin"
+  },
+  "BAUD_110": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.00 Actual Baud Rate: 110",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_115200": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 1.73 Actual Baud Rate: 117188",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_1200": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.03 Actual Baud Rate: 1200",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_128000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 4.63 Actual Baud Rate: 133929",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_14400": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.16 Actual Baud Rate: 14423",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_19200": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.33 Actual Baud Rate: 19264",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_2400": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.07 Actual Baud Rate: 2402",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_256000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 9.86 Actual Baud Rate: 281250",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_300": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.00 Actual Baud Rate: 300",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_300000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 4.17 Actual Baud Rate: 312500",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_31250": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.00 Actual Baud Rate: 31250",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_375000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 7.14 Actual Baud Rate: 401786",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_38400": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.33 Actual Baud Rate: 38527",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_4800": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.16 Actual Baud Rate: 4808",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_500000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 12.50 Actual Baud Rate: 562500",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_56000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.45 Actual Baud Rate: 56250",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_57600": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 1.73 Actual Baud Rate: 58594",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_600": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.01 Actual Baud Rate: 600",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_600000": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 17.19 Actual Baud Rate: 703125",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_9600": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.33 Actual Baud Rate: 9632",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
   },
   "BEVEL_WIDTH": {
     "category": "Graphics Functions / gfx_Set",
@@ -42,6 +273,567 @@
       "document": "picaso_internal_functions.txt"
     },
     "value": "0 None 1 to 15 pixels"
+  },
+  "BIN": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BINZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BINZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
   },
   "BOTTOM_POS": {
     "category": "Graphics Functions / gfx_Get",
@@ -65,6 +857,28 @@
     },
     "value": "1 or 0 (ON or OFF)"
   },
+  "COM0": {
+    "category": "Serial (UART) Functions / com_TXemptyEvent",
+    "description": "Accepted value for the `functionAddress` argument: Address of the event Function to be queued when COM0 or COM1 TX buffer empty.",
+    "library": "picaso",
+    "source": {
+      "anchor": "com_txemptyevent",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "COM1": {
+    "category": "Serial (UART) Functions / com_TXemptyEvent",
+    "description": "Accepted value for the `functionAddress` argument: Address of the event Function to be queued when COM0 or COM1 TX buffer empty.",
+    "library": "picaso",
+    "source": {
+      "anchor": "com_txemptyevent",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
   "CONTRAST": {
     "category": "Graphics Functions / gfx_Set",
     "description": "OLED MODULES: Set contrast value, 0 = display off, 1-9 = contrast level LCD MODULES: contrast 0 = display OFF, non-zero = display ON EXCEPTION: uLCD-43 supports Contrast values from 1-15 and 0 to turn the Display off. 3202X-P1 supports Contrast values from 1 to 9 and 0 to turn the Display off.",
@@ -76,6 +890,204 @@
     },
     "value": "0 or OFF 1 to 9 for levels 1 or 0 (ON or OFF)"
   },
+  "DEC": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DECZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DECZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
   "DISPLAY_PAGE": {
     "category": "Graphics Functions / gfx_Set",
     "description": "Choose Page to be displayed. Value depends on the resolution set. Applies to uVGA-II/III and uLCD-43 only.",
@@ -86,6 +1098,17 @@
       "document": "picaso_internal_functions.txt"
     },
     "value": "e.g. 00hex-04hex for 320x240 resolution on a uVGA-II/III."
+  },
+  "DSK": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF802 putch, putstr, putnum, print, str_Printf redirection: Output is directed to the most recently open file that has been opened in write mode.",
+    "library": "picaso",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
   },
   "FE_CANNOT_INIT": {
     "category": "FAT16 File Functions / file_Error",
@@ -890,6 +1913,215 @@
     },
     "value": ""
   },
+  "HEX": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEXZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEXZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF820 putch, putstr, putnum, print, str_Printf redirection: Output is directed to the I2C port.",
+    "library": "picaso",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_FAST": {
+    "category": "I2C Master Functions / I2C_Open",
+    "description": "Speed: 1MHz",
+    "library": "picaso",
+    "source": {
+      "anchor": "i2c_open",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_MED": {
+    "category": "I2C Master Functions / I2C_Open",
+    "description": "Speed: 400KHz",
+    "library": "picaso",
+    "source": {
+      "anchor": "i2c_open",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_SLOW": {
+    "category": "I2C Master Functions / I2C_Open",
+    "description": "Speed: 100KHz",
+    "library": "picaso",
+    "source": {
+      "anchor": "i2c_open",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
   "IMAGE_CLUSTER": {
     "category": "Image Control Functions / img_GetWord",
     "description": "WORD image start cluster pos (for FAT16 only)",
@@ -1044,12 +2276,45 @@
     },
     "value": "3"
   },
+  "IMG_COUNT": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 0",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_loadimagecontrol",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
   "IMG_CURRENT_FRAME": {
     "category": "System Registers Memory",
     "description": "last frame shown",
     "library": "picaso",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_DAT_FILENAME": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 4",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_loadimagecontrol",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_ENTRYLEN": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 1",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_loadimagecontrol",
       "confidence": "documented",
       "document": "picaso_internal_functions.txt"
     },
@@ -1088,12 +2353,45 @@
     },
     "value": ""
   },
+  "IMG_GCIFILE_HANDLE": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 5",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_loadimagecontrol",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_GCI_FILENAME": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 3",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_loadimagecontrol",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
   "IMG_HEIGHT": {
     "category": "System Registers Memory",
     "description": "height of currently loaded image",
     "library": "picaso",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_MODE": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 2",
+    "library": "picaso",
+    "source": {
+      "anchor": "file_loadimagecontrol",
       "confidence": "documented",
       "document": "picaso_internal_functions.txt"
     },
@@ -1178,7 +2476,7 @@
   },
   "IO4_PIN": {
     "category": "GPIO Functions / pin_Set",
-    "description": "",
+    "description": "Remarks: also used for BUS_RD",
     "library": "picaso",
     "source": {
       "anchor": "pin_set",
@@ -1189,7 +2487,7 @@
   },
   "IO5_PIN": {
     "category": "GPIO Functions / pin_Set",
-    "description": "",
+    "description": "Remarks: also used for BUS_WR",
     "library": "picaso",
     "source": {
       "anchor": "pin_set",
@@ -1308,6 +2606,17 @@
     },
     "value": ""
   },
+  "MDA": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF840 putch, putstr, putnum, print, str_Printf redirection: Output is directed to the SD/SDHC or FLASH media.",
+    "library": "picaso",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
   "MEDIA_ADDRESS_HI": {
     "category": "System Registers Memory",
     "description": "uSD byte address HI",
@@ -1358,6 +2667,17 @@
     "library": "picaso",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MIDI": {
+    "category": "Serial (UART) Functions / setbaud",
+    "description": "Baud Rate Error (%): 0.00 Actual Baud Rate: 31250",
+    "library": "picaso",
+    "source": {
+      "anchor": "setbaud",
       "confidence": "documented",
       "document": "picaso_internal_functions.txt"
     },
@@ -1512,6 +2832,17 @@
     "library": "picaso",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "TEXT": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF801 putch, putstr, putnum, print, str_Printf redirection: Output is directed to the screen (default).",
+    "library": "picaso",
+    "source": {
+      "anchor": "to",
       "confidence": "documented",
       "document": "picaso_internal_functions.txt"
     },
@@ -1941,6 +3272,204 @@
     "library": "picaso",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDECZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "picaso_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDECZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "picaso",
+    "source": {
+      "anchor": "putnum",
       "confidence": "documented",
       "document": "picaso_internal_functions.txt"
     },

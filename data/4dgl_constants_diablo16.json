@@ -1,4 +1,15 @@
 {
+  "APPEND": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0x0000 putch, putstr, putnum, print, str_Printf redirection: Output is appended to user array if previous redirection was to an array.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
   "BACKGROUND_COLOUR": {
     "category": "Graphics Functions / gfx_Set",
     "description": "Set the screen background colour",
@@ -12,7 +23,7 @@
   },
   "BAUD_110": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.00 Actual Baud Rate: 110",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -23,7 +34,7 @@
   },
   "BAUD_115200": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 2.64 Actual Baud Rate: 118243",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -34,7 +45,7 @@
   },
   "BAUD_1200": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.00 Actual Baud Rate: 1200",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -45,7 +56,7 @@
   },
   "BAUD_128000": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.53 Actual Baud Rate: 128676",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -56,7 +67,7 @@
   },
   "BAUD_14400": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.27 Actual Baud Rate: 14439",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -67,7 +78,7 @@
   },
   "BAUD_19200": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.38 Actual Baud Rate: 19273",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -78,7 +89,7 @@
   },
   "BAUD_2400": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.04 Actual Baud Rate: 2401",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -89,7 +100,7 @@
   },
   "BAUD_256000": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.53 Actual Baud Rate: 257353",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -100,7 +111,7 @@
   },
   "BAUD_300": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.00 Actual Baud Rate: 300",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -111,7 +122,7 @@
   },
   "BAUD_300000": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 4.17 Actual Baud Rate: 312500",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -122,7 +133,7 @@
   },
   "BAUD_375000": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 6.06 Actual Baud Rate: 397727",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -133,7 +144,7 @@
   },
   "BAUD_38400": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.83 Actual Baud Rate: 38717",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -144,7 +155,7 @@
   },
   "BAUD_4800": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.04 Actual Baud Rate: 4802",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -155,7 +166,7 @@
   },
   "BAUD_500000": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 9.38 Actual Baud Rate: 546875",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -166,7 +177,7 @@
   },
   "BAUD_56000": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.16 Actual Baud Rate: 56090",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -177,7 +188,7 @@
   },
   "BAUD_57600": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 1.27 Actual Baud Rate: 58333",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -188,7 +199,7 @@
   },
   "BAUD_600": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.00 Actual Baud Rate: 600",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -199,7 +210,7 @@
   },
   "BAUD_600000": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 4.17 Actual Baud Rate: 625000",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -210,7 +221,7 @@
   },
   "BAUD_9600": {
     "category": "Serial (UART) Functions / setbaud",
-    "description": "",
+    "description": "Baud Rate Error (%): 0.16 Actual Baud Rate: 9615",
     "library": "diablo16",
     "source": {
       "anchor": "setbaud",
@@ -240,6 +251,567 @@
       "document": "diablo16_internal_functions.txt"
     },
     "value": "0 None 1 to 15 pixels"
+  },
+  "BIN": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BINZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BINZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
   },
   "BOTTOM_POS": {
     "category": "Graphics Functions / gfx_Get",
@@ -362,6 +934,50 @@
     },
     "value": "0 or COLOUR16 1 or COLOUR8"
   },
+  "COM0": {
+    "category": "Serial (UART) Functions / com_TXemptyEvent",
+    "description": "Accepted value for the `functionAddress` argument: Address of the event Function to be queued when COM0, COM1, COM2 or COM3 TX buffer empty.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "com_txemptyevent",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "COM1": {
+    "category": "Serial (UART) Functions / com_TXemptyEvent",
+    "description": "Accepted value for the `functionAddress` argument: Address of the event Function to be queued when COM0, COM1, COM2 or COM3 TX buffer empty.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "com_txemptyevent",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "COM2": {
+    "category": "Serial (UART) Functions / com_TXemptyEvent",
+    "description": "Accepted value for the `functionAddress` argument: Address of the event Function to be queued when COM0, COM1, COM2 or COM3 TX buffer empty.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "com_txemptyevent",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "COM3": {
+    "category": "Serial (UART) Functions / com_TXemptyEvent",
+    "description": "Accepted value for the `functionAddress` argument: Address of the event Function to be queued when COM0, COM1, COM2 or COM3 TX buffer empty.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "com_txemptyevent",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
   "CONTRAST": {
     "category": "Graphics Functions / gfx_Set",
     "description": "LCD MODULES: contrast 0 = display OFF, 1-15 = contrast level (Actually backlight brightness)",
@@ -373,6 +989,204 @@
     },
     "value": "0 or OFF 1 to 15 for levels"
   },
+  "DEC": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DECZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DECZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
   "DISPLAY_PAGE": {
     "category": "Graphics Functions / gfx_Set",
     "description": "Choose Page to be displayed. Applies to 4.3\" products with a Solomon SSD1961 and SSD1961 Driver IC only, with a 4.3\" display only, such as uLCD-43D/DT/DCT series and gen4-uLCD-43D/DT/DCT series of displays. Please refer to module datasheets for information on what SSD196x is present on your module. **",
@@ -383,6 +1197,17 @@
       "document": "diablo16_internal_functions.txt"
     },
     "value": "0 or 1 for SSD1961 0, 1 or 2 for SSD1963"
+  },
+  "DSK": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF802 putch, putstr, putnum, print, str_Printf redirection: Output is directed to the most recently open file that has been opened in write mode.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
   },
   "FALSE_REASON": {
     "category": "System Registers Memory",
@@ -1396,6 +2221,281 @@
     },
     "value": ""
   },
+  "HEX": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEXZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEXZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C1": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF820 putch, putstr, putnum, print, str_Printf redirection: Output is directed to the I2C1 port.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C2": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF821 putch, putstr, putnum, print, str_Printf redirection: Output is directed to the I2C2 port.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C3": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF822 putch, putstr, putnum, print, str_Printf redirection: Output is directed to the I2C3 port.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_10KHZ": {
+    "category": "I2C Master Functions / I2C_Open",
+    "description": "Speed: 10KHz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "i2c_open",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_20KHZ": {
+    "category": "I2C Master Functions / I2C_Open",
+    "description": "Speed: 20KHz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "i2c_open",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_250KHZ": {
+    "category": "I2C Master Functions / I2C_Open",
+    "description": "Speed: 250KHz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "i2c_open",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_50KHZ": {
+    "category": "I2C Master Functions / I2C_Open",
+    "description": "Speed: 50KHz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "i2c_open",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_FAST": {
+    "category": "I2C Master Functions / I2C_Open",
+    "description": "Speed: 1MHz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "i2c_open",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_MED": {
+    "category": "I2C Master Functions / I2C_Open",
+    "description": "Speed: 400KHz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "i2c_open",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_SLOW": {
+    "category": "I2C Master Functions / I2C_Open",
+    "description": "Speed: 100KHz",
+    "library": "diablo16",
+    "source": {
+      "anchor": "i2c_open",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
   "IMAGE_CLUSTER": {
     "category": "Image Control Functions / img_GetWord",
     "description": "WORD image start cluster pos (for FAT16 only)",
@@ -1825,6 +2925,17 @@
     },
     "value": "0 or OFF 1 to 0xFFFF 0 bits for pixels on 1 bits for pixels off"
   },
+  "MDA": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF840 putch, putstr, putnum, print, str_Printf redirection: Output is directed to the SD/SDHC or FLASH media.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
   "MEDIA_ADDRESS_HI": {
     "category": "System Registers Memory",
     "description": "micro-SD byte address HI",
@@ -1875,6 +2986,39 @@
     "library": "diablo16",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "NP_565": {
+    "category": "GPIO Functions / NP_Write",
+    "description": "Accepted value for the `Options` argument: The format of the data pixels, NP_565, NP_RGB or NP_XRGB.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "np_write",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "NP_RGB": {
+    "category": "GPIO Functions / NP_Write",
+    "description": "Accepted value for the `Options` argument: The format of the data pixels, NP_565, NP_RGB or NP_XRGB.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "np_write",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "NP_XRGB": {
+    "category": "GPIO Functions / NP_Write",
+    "description": "Accepted value for the `Options` argument: The format of the data pixels, NP_565, NP_RGB or NP_XRGB.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "np_write",
       "confidence": "documented",
       "document": "diablo16_internal_functions.txt"
     },
@@ -2199,6 +3343,17 @@
     },
     "value": "3"
   },
+  "OPAQUE": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Accepted value for the `mode` argument: TRANSPARENT or OPAQUE (0 or 1)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
   "OUTLINE_COLOUR": {
     "category": "Graphics Functions / gfx_Set",
     "description": "Outline colour for rectangles and circles(set to 0 for no effect)",
@@ -2397,6 +3552,28 @@
     },
     "value": "0 or SOLID 1 or OUTLINE"
   },
+  "PIN_AN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "mode: 5 PA0: Yes PA1: Yes PA2: Yes PA3: Yes PA4: No PA5: No PA6: No PA7: No PA8: No PA9: No PA10: No PA11: No PA12: No PA13: No PA14: No PA15: No",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_ANAVG": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "mode: 6 PA0: Yes PA1: Yes PA2: Yes PA3: Yes PA4: No PA5: No PA6: No PA7: No PA8: No PA9: No PA10: No PA11: No PA12: No PA13: No PA14: No PA15: No",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
   "PIN_COUNTER_PA4": {
     "category": "System Registers Memory",
     "description": "pin counter for PA4",
@@ -2524,6 +3701,61 @@
     "library": "diablo16",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_INP": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "mode: 0 PA0: Yes PA1: Yes PA2: Yes PA3: Yes PA4: Yes PA5: Yes PA6: Yes PA7: Yes PA8: Yes PA9: Yes PA10: Yes PA11: Yes PA12: Yes PA13: Yes PA14: Yes PA15: Yes",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_INP_HI": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "mode: 1 PA0: Yes PA1: Yes PA2: Yes PA3: Yes PA4: Yes PA5: Yes PA6: Yes PA7: Yes PA8: Yes PA9: Yes PA10: Yes PA11: Yes PA12: Yes PA13: Yes PA14: Yes PA15: Yes",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_INP_LO": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "mode: 2 PA0: Yes PA1: Yes PA2: Yes PA3: Yes PA4: Yes PA5: Yes PA6: Yes PA7: Yes PA8: Yes PA9: Yes PA10: Yes PA11: Yes PA12: Yes PA13: Yes PA14: Yes PA15: Yes",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_OUT": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "mode: 3 PA0: Yes PA1: Yes PA2: Yes PA3: Yes PA4: Yes PA5: Yes PA6: Yes PA7: Yes PA8: Yes PA9: Yes PA10: Yes PA11: Yes PA12: Yes PA13: Yes PA14: Yes PA15: Yes",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "PIN_OUT_OD": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "mode: 4 PA0: No PA1: No PA2: No PA3: No PA4: Yes PA5: Yes PA6: Yes PA7: Yes PA8: Yes PA9: Yes PA10: Yes PA11: Yes PA12: Yes PA13: Yes PA14: Yes PA15: Yes",
+    "library": "diablo16",
+    "source": {
+      "anchor": "pin_set",
       "confidence": "documented",
       "document": "diablo16_internal_functions.txt"
     },
@@ -2815,6 +4047,28 @@
     },
     "value": "0 or LANDSCAPE 1 or LANDSCAPE_R 2 or PORTRAIT 3 or PORTRAIT_R"
   },
+  "SPI0": {
+    "category": "SPI Flash Functions / spiflash_BlockErase",
+    "description": "Accepted value for the `spi#` argument: The SPI port to use, e.g. SPI0, SPI1, SPI2 or SPI3.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spiflash_blockerase",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SPI1": {
+    "category": "SPI Flash Functions / spiflash_Block32Erase",
+    "description": "Accepted value for the `spi#` argument: The SPI interface to which the Flash memory chip is located SPI0 for the uSD port, or SPI1, SPI2 or SPI3.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spiflash_block32erase",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
   "SPI16_MODE_0": {
     "category": "SPI Control Functions / SPI1_Init",
     "description": "SCK idles low, SDO stable for first falling edge, SDI sampled on first falling edge.",
@@ -2902,6 +4156,28 @@
       "document": "diablo16_internal_functions.txt"
     },
     "value": "15"
+  },
+  "SPI2": {
+    "category": "SPI Flash Functions / spiflash_Block32Erase",
+    "description": "Accepted value for the `spi#` argument: The SPI interface to which the Flash memory chip is located SPI0 for the uSD port, or SPI1, SPI2 or SPI3.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spiflash_block32erase",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "SPI3": {
+    "category": "SPI Flash Functions / spiflash_Block32Erase",
+    "description": "Accepted value for the `spi#` argument: The SPI interface to which the Flash memory chip is located SPI0 for the uSD port, or SPI1, SPI2 or SPI3.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "spiflash_block32erase",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
   },
   "SPI8_MODE_0": {
     "category": "SPI Control Functions / SPI1_Init",
@@ -3585,6 +4861,17 @@
     },
     "value": "1 or 0 (ON or OFF)"
   },
+  "TRANSPARENT": {
+    "category": "Graphics Functions / gfx_FillPattern",
+    "description": "Accepted value for the `mode` argument: TRANSPARENT or OPAQUE (0 or 1)",
+    "library": "diablo16",
+    "source": {
+      "anchor": "gfx_fillpattern",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
   "TRANSPARENT_COLOUR": {
     "category": "Graphics Functions / gfx_Set",
     "description": "Colour that needs to be made transparent.",
@@ -3646,6 +4933,204 @@
     "library": "diablo16",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDECZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "diablo16_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDECZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "diablo16",
+    "source": {
+      "anchor": "putnum",
       "confidence": "documented",
       "document": "diablo16_internal_functions.txt"
     },

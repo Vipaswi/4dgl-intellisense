@@ -15,6 +15,7 @@ const FILES = [
   "documentParser.test.js",
   "semanticChecks.test.js",
   "diagnostics.test.js",
+  "codeActions.test.js",
   "activation.test.js",
   "fixture.test.js",
   "include.test.js",

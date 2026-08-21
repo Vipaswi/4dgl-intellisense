@@ -16,7 +16,6 @@
     "one), and constants that are single-character outliers in an otherwise regular family.",
     "Do not add an entry this tool can't justify."
   ],
-
   "functions": {
     "rename": [
       {
@@ -45,7 +44,6 @@
         "reason": "The heading is the whole signature, so the key is not an identifier. The Syntax line names com_Mode."
       }
     ],
-
     "alias": [
       {
         "name": "sys_Getdate",
@@ -63,7 +61,6 @@
         "reason": "Goldelox: heading says pin_HI, Syntax line says pin_Hi, one example use each. Ambiguous, so both resolve."
       }
     ],
-
     "drop": [
       {
         "name": "16-bit Registers Memory Map",
@@ -83,7 +80,6 @@
       }
     ]
   },
-
   "constants": {
     "rename": [
       {
@@ -92,19 +88,36 @@
         "reason": "A typo in the vendor's SPI speed table, which reads '... SPI_SPEED4 4 437.5 khz / SPI_SPEER5 5 729.166 khz / SPI_SPEED6 6 1.09375 mhz ...'. The SPI_SPEED* family has 15 other members and SPI_SPEER5 appears nowhere in any example."
       }
     ],
-
     "add": [
       {
         "name": "TRANSPARENT",
         "value": "0",
-        "description": "Text/fill mode in which background pixels are not drawn. The counterpart of `OPAQUE`.",
-        "reason": "Documented only inside argument-description cells ('mode TRANSPARENT or OPAQUE (0 or 1)' for gfx_FillPattern, '0 or TRANSPARENT / 1 or OPAQUE' for txt_Set TEXT_OPACITY), never in a name/value constant table, so extract_4dgl_constants.py has nothing to match. Distinct from the TRANSPARENCY gfx_Set selector, which is a different constant and is extracted correctly."
+        "description": "Text/fill mode in which background pixels are not drawn. The counterpart of OPAQUE.",
+        "reason": "Referenced by all four manuals (6/5/2/2 uses) but only diablo16 states it in a form the extractor can read - the 'mode | TRANSPARENT or OPAQUE (0 or 1)' cell in gfx_FillPattern's argument table. This fills it in for the other three, where it is used in example code (txt_Opacity(TRANSPARENT)) but never documented. No-op for diablo16, which gets the real manual description."
       },
       {
         "name": "OPAQUE",
         "value": "1",
-        "description": "Text/fill mode in which background pixels are drawn. The counterpart of `TRANSPARENT`.",
-        "reason": "Same argument-description tables as TRANSPARENT; 16 uses across the manuals' example code and no constant-table row."
+        "description": "Text/fill mode in which background pixels are drawn. The counterpart of TRANSPARENT.",
+        "reason": "Same as TRANSPARENT: 16/5/8/9 uses across the four manuals, extractable only from diablo16."
+      },
+      {
+        "name": "HEX2ZB",
+        "value": "",
+        "description": "Pre-defined putnum/print format constant: 2-digit hexadecimal, zero-blanked.",
+        "reason": "The Goldelox putnum specifier grid prints HEX1ZB twice, once where HEX2ZB belongs, so extraction cannot see it. diablo16, picaso and pixxi all have it, and Goldelox's own com_Init example uses [HEX2ZB]. No-op for the three libraries that already have it."
+      }
+    ],
+    "alias": [
+      {
+        "name": "DARKGRAY",
+        "of": "DARKGREY",
+        "reason": "colors.pdf spells it DARKGREY, but every manual's example code writes DARKGRAY (2 uses each) and DARKGREY appears in none of them. X11 defines both spellings, so rather than pick one, both resolve."
+      },
+      {
+        "name": "DARKKHAKI",
+        "of": "DARKKHARKI",
+        "reason": "colors.pdf spells it DARKKHARKI, which appears in no manual at all; the diablo16 and pixxi examples use DARKKHAKI, which is also the standard X11 name. Aliased rather than renamed because the .fnc file defines whatever it defines, and breaking the extracted spelling would be worse than accepting both."
       }
     ]
   }

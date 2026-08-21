@@ -57,9 +57,13 @@ function createStub({ settings = {}, documents = [], showQuickPick } = {}) {
     // Real values: DiagnosticSeverity.Error being 0 is load-bearing.
     DiagnosticSeverity: { Error: 0, Warning: 1, Information: 2, Hint: 3 },
     ConfigurationTarget: { Global: 1, Workspace: 2, WorkspaceFolder: 3 },
+    // Exposes `start`/`end` like the real Range, since consumers read
+    // `diagnostic.range.start.line`; the flat fields are kept for convenience.
     Range: class {
       constructor(line, character, endLine, endCharacter) {
         Object.assign(this, { line, character, endLine, endCharacter });
+        this.start = { line, character };
+        this.end = { line: endLine, character: endCharacter };
       }
     },
     Position: class {
@@ -85,6 +89,28 @@ function createStub({ settings = {}, documents = [], showQuickPick } = {}) {
     Disposable: class {
       constructor(callOnDispose) {
         this.dispose = callOnDispose || (() => {});
+      }
+    },
+    CodeActionKind: { QuickFix: "quickfix", Empty: "", Refactor: "refactor" },
+    CodeAction: class {
+      constructor(title, kind) {
+        Object.assign(this, { title, kind });
+      }
+    },
+    // Records what it was asked to do, so a test can assert the edit a Quick Fix
+    // would actually apply rather than just its title.
+    WorkspaceEdit: class {
+      constructor() {
+        this.replacements = [];
+      }
+      replace(uri, range, text) {
+        this.replacements.push({ uri, range, text });
+      }
+      insert(uri, position, text) {
+        this.replacements.push({ uri, position, text });
+      }
+      delete(uri, range) {
+        this.replacements.push({ uri, range, text: "" });
       }
     },
     languages: {

@@ -419,8 +419,11 @@ function analyze(text, lexed, options) {
   const known = new Set(KNOWN_DIRECTIVES);
   for (const alias of aliases.keys()) known.add(alias);
 
-  const report = (code, severity, message, range, related) => {
-    problems.push({ code, severity, message, ...range, related });
+  // `fixes` is an optional list of { title, replacement } describing a mechanical
+  // edit to the reported range. codeActions.js turns each into a Quick Fix; nothing
+  // here depends on them, so a check that has no safe automatic repair just omits it.
+  const report = (code, severity, message, range, related, fixes) => {
+    problems.push({ code, severity, message, ...range, related, fixes });
   };
 
   const reportUnclosedBracket = (bracket, before) => {
@@ -489,7 +492,9 @@ function analyze(text, lexed, options) {
         "unexpected-brace",
         "error",
         `Unexpected '${token.text}' — 4DGL delimits blocks with keywords (func/endfunc, if/endif, while/wend, …), not braces.`,
-        tokenRange(token)
+        tokenRange(token),
+        undefined,
+        [{ title: `Remove '${token.text}'`, replacement: "" }]
       );
       continue;
     }
@@ -514,7 +519,12 @@ function analyze(text, lexed, options) {
           "bare-equals",
           "warning",
           "'=' is not a 4DGL operator — use ':=' to assign, or '==' to compare.",
-          tokenRange(token)
+          tokenRange(token),
+          undefined,
+          [
+            { title: "Change to ':=' (assign)", replacement: ":=" },
+            { title: "Change to '==' (compare)", replacement: "==" },
+          ]
         );
       }
       continue;
@@ -618,7 +628,13 @@ function analyze(text, lexed, options) {
           "error",
           `'${display}' does not close '${top.display}' — expected ${expectationOf(top)}.`,
           tokenRange(token),
-          [{ ...tokenRange(top.token), message: `'${top.display}' opened here.` }]
+          [{ ...tokenRange(top.token), message: `'${top.display}' opened here.` }],
+          // One option per legal terminator, so `repeat` offers both 'until' and
+          // 'forever' rather than the machine picking for you.
+          top.closers.map((closer) => ({
+            title: `Change to '${CLOSERS[closer]}'`,
+            replacement: CLOSERS[closer],
+          }))
         );
         stack.pop();
       } else {

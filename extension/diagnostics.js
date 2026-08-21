@@ -92,6 +92,10 @@ function registerDiagnostics(context) {
   context.subscriptions.push(collection);
 
   const timers = new Map(); // uri string → debounce timer
+  // uri string → the raw problem records behind the published diagnostics. Kept so
+  // codeActions.js can recover each problem's `fixes`: properties hung on a
+  // vscode.Diagnostic aren't guaranteed to survive a DiagnosticCollection round trip.
+  const problemCache = new Map();
   // Populated by setSymbolSource once the active library is known. While it's empty,
   // only the structural checks run.
   const symbolSource = {};
@@ -127,6 +131,7 @@ function registerDiagnostics(context) {
     const options = readOptions();
     if (!options.enabled) {
       collection.delete(document.uri);
+      problemCache.delete(document.uri.toString());
       return;
     }
 
@@ -159,6 +164,7 @@ function registerDiagnostics(context) {
     }
 
     problems.sort((a, b) => a.line - b.line || a.character - b.character);
+    problemCache.set(document.uri.toString(), problems);
     collection.set(
       document.uri,
       problems.map((problem) => toDiagnostic(document, problem))
@@ -198,6 +204,7 @@ function registerDiagnostics(context) {
     vscode.workspace.onDidCloseTextDocument((document) => {
       cancelPending(document);
       collection.delete(document.uri);
+      problemCache.delete(document.uri.toString());
     }),
     vscode.workspace.onDidChangeConfiguration((event) => {
       // `4dgl.library` matters too: it changes which functions and constants exist,
@@ -218,6 +225,11 @@ function registerDiagnostics(context) {
   refreshAllOpen();
 
   return {
+    /** The problem records behind a document's published diagnostics, for Quick Fixes. */
+    getProblems(uri) {
+      return problemCache.get(uri.toString());
+    },
+
     /**
      * Hand over the databases and document manager once the active library has been
      * resolved, enabling the name and argument-count checks and re-running every

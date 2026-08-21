@@ -1,5 +1,8 @@
-// ── Every line marked ERROR/WARN below should squiggle; nothing else should. ──
+// ── Every line marked ERROR/WARN/NAME/ARGS below should squiggle; nothing else. ──
 // Open this in the Extension Development Host (F5) and check the Problems panel.
+// Where a Quick Fix exists, Ctrl+. on the squiggle offers it - the marked lines below
+// with a fix are: NAME (rename or allow-list), WARN on '=' (':=' or '=='), the
+// mismatched terminator, and each brace (remove).
 
 #platform "GOLDELOX"
 #frobnicate "nope"              // WARN  unknown pre-processor directive

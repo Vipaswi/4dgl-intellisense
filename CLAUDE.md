@@ -91,16 +91,11 @@ justify.** It reports three classes:
   vendor's own SPI speed table, with 15 other `SPI_SPEED*` members and zero uses anywhere. A plain
   typo in the source.
 
-The `add` list is the narrow exception to all of this, for constants documented **only** in
-argument-description prose — `TRANSPARENT` and `OPAQUE` appear as "mode TRANSPARENT or OPAQUE
-(0 or 1)" in `gfx_FillPattern`'s and `txt_Set`'s argument tables, never as a name/value row, so
-`extract_4dgl_constants.py` has nothing to match. This is **not** a general fix for that
-extraction gap: a sweep of the corpus found ~300 distinct ALL_CAPS names unaccounted for
-(`TOUCH_STATUS`, `FONT2`, `FILE_READ`, the `[HEX4]`/`[DEC2Z]` putnum specifier families, ...).
-Those stay missing, which costs nothing for diagnostics — the near-miss rule stays silent on a
-name resembling nothing known — but does mean hover and completion don't know them either. Closing
-it properly means teaching `extract_4dgl_constants.py` to read "X or Y" argument prose and the
-specifier tables it currently skips.
+The `add` list is the last resort, for names **no** source document states in an extractable
+form. It is deliberately tiny — three entries — because the extractor was taught to read the
+patterns instead (see "Constants the extractor used to miss" below). Prefer that: an entry here
+is a permanent hand-maintained exception, an extractor fix benefits hover and completion for
+every library at once.
 
 `tools/_html_extract_utils.py` holds the shared traversal helpers (`load_article_children`,
 `section_body`, `clean_text`, `extract_code_blocks`, `extract_notes`, `table_rows`). The three
@@ -117,6 +112,10 @@ python tools/extract_4dgl_colors.py
 node tools/verify_arity.js             # last: it reads the function databases above
 node tools/audit_names.js              # review: does anything need a new corrections entry?
 ```
+
+After any change to an extractor, **diff the output and read the added and removed names** — not
+just `git diff --stat`. See "Constants the extractor used to miss" for why that is the step that
+catches both fabrication and silent loss.
 
 Diff the output before committing — these scripts are heuristic (header-keyword column
 classification, prose range regexes) and a source-doc change can shift results in ways worth a
@@ -281,6 +280,60 @@ was a false positive first:
   in the corpus is in prose, compiler output, a formula, or a known manual typo — none in real
   4DGL. It's still only a *warning*, and individually switchable
   (`4dgl.diagnostics.assignmentOperator`), because the reference never says so outright.
+
+### Constants the extractor used to miss
+
+`extract_4dgl_constants.py` lost about 60% of the real constants for years, in three distinct
+ways. All three are fixed; the shapes are worth knowing before touching that file again.
+
+- **Whole tables dropped for having no recognised value or description column.** `add_constant`
+  discards an entry with neither, and `classify_columns` only recognises specific header
+  keywords — so `pin_Set`'s pin list, headed
+  `[Pin Name | Pin No. | OUTPUT | INPUT | ANALOGUE | SOUND]`, produced *nothing*. Unclassified
+  columns now become the description as `Header: cell` pairs, which is both a fix and better
+  hover text. This was the big one: it alone hid `IO1_PIN`..`IO11_PIN`, `IO19_PIN`, every
+  `BAUD_*` rate, every `PIN_*` mode and the `I2C_*` speeds. `bus_In`'s table survived only by
+  luck, because "Pin Number" happens to contain the word "number".
+- **Specifier-family grids were skipped on purpose.** The putnum/print format constants are laid
+  out as a grid where *every cell is a name* (`DEC`/`DECZ`/`DECZB`, `BIN1`/`BIN1Z`/`BIN1ZB`, ...),
+  so reading column 2 as a value would fabricate nonsense. They are now detected by "every cell
+  in the table matches `SYMBOL_RE`" — a strong test, since a real value like `0x0400` can't match
+  and neither can prose — and every cell is read as a name.
+- **Constants that only exist as an argument's alternatives.** `TRANSPARENT` and `OPAQUE` are
+  real, used throughout the vendor's example code, and appear in no name/value row anywhere — only
+  as `mode | TRANSPARENT or OPAQUE (0 or 1)` inside an Arguments/Description table, which
+  `SKIP_HEADER_SETS` skipped wholesale. Those cells are now scanned for an explicit `X or Y` /
+  `X, Y or Z` alternation. **Requiring the literal "or" is what makes this safe** — it yielded 13
+  candidates for diablo16 and all 13 were genuine. Harvesting capitalised words generally would
+  not be.
+
+Result across the four libraries, with nothing removed and nothing fabricated: 359→637,
+114→384, 182→466, 239→534. Constant false positives against the vendor corpus fell from 37 to
+3, both remaining ones being manual damage (`IMG_FRAME_COU NT` wrapped mid-token by the PDF, and
+a Revision History row).
+
+The lesson for the next extractor change: **diff the output and read the added names.** Every one
+of these fixes was verified by listing exactly what appeared and confirming each was a real
+constant — which is also how the residual per-library differences got noticed (Goldelox's grid
+prints `HEX1ZB` twice where `HEX2ZB` belongs, so that one needs a corrections entry).
+
+## Quick Fixes
+
+`extension/codeActions.js` turns a diagnostic into a `Ctrl+.` action. The checks attach a
+`fixes: [{title, replacement}]` list to problems that have a mechanical repair, and the provider
+replaces the diagnostic's range with the replacement. Two things to preserve:
+
+- **No fix is invented.** There is deliberately none for `unclosed-block`, `unclosed-bracket`,
+  `orphan-keyword` or `missing-condition` — nothing can know where a missing terminator belongs,
+  and a confidently wrong edit is worse than no lightbulb. `test/codeActions.test.js` asserts
+  those stay fix-less.
+- **Problems are matched back through the cache `diagnostics.js` keeps** (`getProblems(uri)`),
+  not by reading data off the `vscode.Diagnostic`. Extra properties hung on a Diagnostic are not
+  guaranteed to survive the round trip through a `DiagnosticCollection`, so the cache is the
+  reliable side. The pairing key is code + start position.
+
+`4dgl.addKnownName` is registered but deliberately **not** in `contributes.commands`: it takes an
+argument and only makes sense from its Quick Fix, so it has no business in the Command Palette.
 
 ## Name and arity diagnostics
 

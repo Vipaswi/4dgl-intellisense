@@ -10,6 +10,17 @@
     },
     "value": "2"
   },
+  "APPEND": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0x0000 putch, putstr, putnum, print, str_Printf redirection destination: Output is appended to user array if previous redirection was to an array.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
   "BACKGROUND_COLOUR": {
     "category": "Graphics Functions / gfx_Set",
     "description": "Set the screen background colour",
@@ -21,6 +32,226 @@
     },
     "value": "16-bit Colour, 0x0000-0xFFFF"
   },
+  "BAUD_110": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.00% Actual Baud Rate: 110",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_115200": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 2.64% Actual Baud Rate: 118243",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_1200": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.00% Actual Baud Rate: 1200",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_128000": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.53% Actual Baud Rate: 128676",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_14400": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.27% Actual Baud Rate: 14439",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_19200": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.38% Actual Baud Rate: 19273",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_2400": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.04% Actual Baud Rate: 2401",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_256000": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.53% Actual Baud Rate: 257353",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_300": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.00% Actual Baud Rate: 300",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_300000": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 4.17% Actual Baud Rate: 312500",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_31250": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.00% Actual Baud Rate: 31250",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_375000": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 6.06% Actual Baud Rate: 397727",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_38400": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.83% Actual Baud Rate: 38717",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_4800": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.04% Actual Baud Rate: 4802",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_500000": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 9.38% Actual Baud Rate: 546875",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_56000": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.16% Actual Baud Rate: 56090",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_57600": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 1.27% Actual Baud Rate: 58333",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_600": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.00% Actual Baud Rate: 600",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_600000": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 4.17% Actual Baud Rate: 625000",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_9600": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.16% Actual Baud Rate: 9615",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
   "BEVEL_WIDTH": {
     "category": "Graphics Functions / gfx_Set",
     "description": "Set Button Bevel Width, 0 pixel to 15 pixels.",
@@ -31,6 +262,567 @@
       "document": "pixxi_internal_functions.txt"
     },
     "value": "0 None1 to 15 pixels"
+  },
+  "BIN": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BINZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BINZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
   },
   "BOTTOM_POS": {
     "category": "Graphics Functions / gfx_Get",
@@ -142,6 +934,28 @@
     },
     "value": "1 or 0 (ON or OFF)"
   },
+  "COM0": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xFF04 putch, putstr, putnum, print, str_Printf redirection destination: Output is redirected to the COM0 (default serial) port.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "COM1": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xFF08 putch, putstr, putnum, print, str_Printf redirection destination: Output is redirected to the COM1 port.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
   "CONTRAST": {
     "category": "Graphics Functions / gfx_Set",
     "description": "Set contrast value, 0 = display off, 1-15 = contrast level",
@@ -152,6 +966,215 @@
       "document": "pixxi_internal_functions.txt"
     },
     "value": "0 or OFF1 to 15 for levels"
+  },
+  "DEC": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DECZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DECZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DSK": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF802 putch, putstr, putnum, print, str_Printf redirection destination: Output is directed to the most recently open file that has been opened in write mode.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
   },
   "EAST": {
     "category": "Graphics Functions / gfx_BlitSprite",
@@ -1044,6 +2067,215 @@
     },
     "value": ""
   },
+  "HEX": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEXZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEXZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xF820 putch, putstr, putnum, print, str_Printf redirection destination: Output is directed to the I2C port.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_FAST": {
+    "category": "I2C Master Functions / I2Cx_Open",
+    "description": "Speed: 1 MHz",
+    "library": "pixxi",
+    "source": {
+      "anchor": "i2cx_open",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_MED": {
+    "category": "I2C Master Functions / I2Cx_Open",
+    "description": "Speed: 400 kHz",
+    "library": "pixxi",
+    "source": {
+      "anchor": "i2cx_open",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "I2C_SLOW": {
+    "category": "I2C Master Functions / I2Cx_Open",
+    "description": "Speed: 100 kHz",
+    "library": "pixxi",
+    "source": {
+      "anchor": "i2cx_open",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
   "IMAGE_CLUSTER": {
     "category": "Image Control Functions / img_GetWord",
     "description": "Specifies the image start cluster pos (for FAT16 only)",
@@ -1198,12 +2430,45 @@
     },
     "value": "3"
   },
+  "IMG_COUNT": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 0",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_loadimagecontrol",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
   "IMG_CURRENT_FRAME": {
     "category": "System Registers Memory",
     "description": "last frame shown",
     "library": "pixxi",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_DAT_FILENAME": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 4",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_loadimagecontrol",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_ENTRYLEN": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 1",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_loadimagecontrol",
       "confidence": "documented",
       "document": "pixxi_internal_functions.txt"
     },
@@ -1242,12 +2507,45 @@
     },
     "value": ""
   },
+  "IMG_GCIFILE_HANDLE": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 5",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_loadimagecontrol",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_GCI_FILENAME": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 3",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_loadimagecontrol",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
   "IMG_HEIGHT": {
     "category": "System Registers Memory",
     "description": "height of currently loaded image",
     "library": "pixxi",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IMG_MODE": {
+    "category": "FAT16 File Functions / file_LoadImageControl",
+    "description": "Index: 2",
+    "library": "pixxi",
+    "source": {
+      "anchor": "file_loadimagecontrol",
       "confidence": "documented",
       "document": "pixxi_internal_functions.txt"
     },
@@ -1297,9 +2595,31 @@
     },
     "value": "1"
   },
+  "IO10_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 41 OUTPUT: Yes INPUT: Yes ANALOGUE: No SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO11_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 42 OUTPUT: Yes INPUT: Yes ANALOGUE: No SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
   "IO12_PIN": {
     "category": "GPIO Functions / bus_In",
-    "description": "",
+    "description": "BUS Bit Number: 0",
     "library": "pixxi",
     "source": {
       "anchor": "bus_in",
@@ -1310,7 +2630,7 @@
   },
   "IO13_PIN": {
     "category": "GPIO Functions / bus_In",
-    "description": "",
+    "description": "BUS Bit Number: 1",
     "library": "pixxi",
     "source": {
       "anchor": "bus_in",
@@ -1321,7 +2641,7 @@
   },
   "IO14_PIN": {
     "category": "GPIO Functions / bus_In",
-    "description": "",
+    "description": "BUS Bit Number: 2",
     "library": "pixxi",
     "source": {
       "anchor": "bus_in",
@@ -1332,7 +2652,7 @@
   },
   "IO15_PIN": {
     "category": "GPIO Functions / bus_In",
-    "description": "",
+    "description": "BUS Bit Number: 3",
     "library": "pixxi",
     "source": {
       "anchor": "bus_in",
@@ -1343,7 +2663,7 @@
   },
   "IO16_PIN": {
     "category": "GPIO Functions / bus_In",
-    "description": "",
+    "description": "BUS Bit Number: 4",
     "library": "pixxi",
     "source": {
       "anchor": "bus_in",
@@ -1354,7 +2674,7 @@
   },
   "IO17_PIN": {
     "category": "GPIO Functions / bus_In",
-    "description": "",
+    "description": "BUS Bit Number: 5",
     "library": "pixxi",
     "source": {
       "anchor": "bus_in",
@@ -1365,7 +2685,7 @@
   },
   "IO18_PIN": {
     "category": "GPIO Functions / bus_In",
-    "description": "",
+    "description": "BUS Bit Number: 6",
     "library": "pixxi",
     "source": {
       "anchor": "bus_in",
@@ -1373,6 +2693,116 @@
       "document": "pixxi_internal_functions.txt"
     },
     "value": "44"
+  },
+  "IO19_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 13 OUTPUT: Yes INPUT: Yes ANALOGUE: No SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO1_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 25 OUTPUT: Yes INPUT: Yes ANALOGUE: Yes SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO2_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 27 OUTPUT: Yes INPUT: Yes ANALOGUE: Yes SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO3_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 23 OUTPUT: Yes INPUT: Yes ANALOGUE: Yes SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO4_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 24 OUTPUT: Yes INPUT: Yes ANALOGUE: Yes SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO5_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 33 OUTPUT: Yes INPUT: Yes ANALOGUE: No SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO6_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 37 OUTPUT: Yes INPUT: Yes ANALOGUE: No SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO7_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 38 OUTPUT: Yes INPUT: Yes ANALOGUE: No SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO8_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 19 OUTPUT: Yes INPUT: Yes ANALOGUE: No SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "IO9_PIN": {
+    "category": "GPIO Functions / pin_Set",
+    "description": "Pin No.: 20 OUTPUT: Yes INPUT: Yes ANALOGUE: No SOUND: Yes",
+    "library": "pixxi",
+    "source": {
+      "anchor": "pin_set",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
   },
   "I_DARKEN": {
     "category": "Image Control Functions / img_SetAttributes",
@@ -1583,6 +3013,17 @@
     },
     "value": ""
   },
+  "MDA": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xFF40 putch, putstr, putnum, print, str_Printf redirection destination: Output is directed to the SD/SDHC or FLASH media.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
   "MEDIA_ADDRESS_HI": {
     "category": "System Registers Memory",
     "description": "uSD byte address HI",
@@ -1633,6 +3074,17 @@
     "library": "pixxi",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MIDI": {
+    "category": "Serial (UART) Communications Functions / setbaud",
+    "description": "Error %: 0.00% Actual Baud Rate: 31250",
+    "library": "pixxi",
+    "source": {
+      "anchor": "setbaud",
       "confidence": "documented",
       "document": "pixxi_internal_functions.txt"
     },
@@ -2337,6 +3789,204 @@
     "library": "pixxi",
     "source": {
       "anchor": "system-registers-memory",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDECZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "pixxi_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDECZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "pixxi",
+    "source": {
+      "anchor": "putnum",
       "confidence": "documented",
       "document": "pixxi_internal_functions.txt"
     },

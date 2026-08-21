@@ -4,6 +4,25 @@
 
 ## 1.1.0
 
+- Added Quick Fixes (`Ctrl+.`) for the problems that have one obvious repair: renaming a
+  misspelled function or constant to the suggestion, adding the name to
+  `4dgl.diagnostics.knownNames` instead when it's real but undocumented, swapping a bare `=` for
+  `:=` or `==`, replacing a mismatched block terminator with the one the open block expects (both
+  options for `repeat`), and removing a stray `{`/`}`. Nothing is offered for an unclosed block:
+  there is no way to know where the missing terminator belongs.
+- Closed most of the constants extraction gap: `tools/extract_4dgl_constants.py` now reads the
+  putnum/print format specifier grids it used to skip, picks up constants documented only as an
+  argument's alternatives ("mode | TRANSPARENT or OPAQUE (0 or 1)"), and no longer discards whole
+  tables that have a name column but no column it recognises as a value or description - which had
+  been silently losing every capability table, including `pin_Set`'s pin list. That last bug alone
+  hid `IO1_PIN`..`IO11_PIN` and `IO19_PIN` despite the manual referencing `IO1_PIN` 26 times.
+
+  Net effect, with no entry removed and none fabricated: diablo16 359 -> 637 constants, goldelox
+  114 -> 384, picaso 182 -> 466, pixxi 239 -> 534. Recovered families include all 21 `BAUD_*`
+  rates, every `PIN_*` mode, the `I2C_*` speeds, the complete `IO*_PIN` set, and the full
+  DEC/UDEC/HEX/BIN format specifier grid. Constant false positives against the vendor's own code
+  fell from 37 to 3, and hover and completion now know these names too.
+
 - Fixed three wrong names in the generated databases that made the new checks suggest a *bug*
   rather than a fix. `mem_free`/`mem_alloc` were keyed from their lower-case section headings even
   though the Syntax line and every example say `mem_Free`/`mem_Alloc`; `SPI_SPEER5` is a typo in

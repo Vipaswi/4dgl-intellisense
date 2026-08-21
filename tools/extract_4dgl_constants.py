@@ -139,31 +139,129 @@ def add_constant(
         constants[name] = incoming
 
 
-def extract_table_constants(
+# A "specifier family" table has no header text and every single cell is itself a
+# valid symbol — the putnum/print format constants are laid out this way, as a grid
+# of DEC/DECZ/DECZB, HEX/HEXZ/HEXZB, BIN/BIN1/BIN1Z... Treating column 2 as a value
+# and column 3 as a description would fabricate nonsense pairs, so every cell is
+# read as a name instead. The all-cells-are-symbols test is a strong signal: a real
+# [name, value, description] table has values like `0x0400` (SYMBOL_RE needs a
+# leading A-Z) and prose descriptions, neither of which can match.
+def is_specifier_table(headers_lower: list[str], rows: list[list[str]]) -> bool:
+    if not headers_lower or not all(h == "" for h in headers_lower):
+        return False
+    cells = [cell for row in rows for cell in row if cell]
+    if len(cells) < 4:
+        return False
+    return all(SYMBOL_RE.match(cell) for cell in cells)
+
+
+def extract_specifier_table(
+    table: Tag,
+    rows: list[list[str]],
+    category: str,
+    function_name: str,
+    anchor: str,
+    constants: dict[str, dict],
+    source_name: str,
+    library: str,
+) -> None:
+    subject = function_name or category
+    description = (
+        f"Pre-defined format constant documented under {subject}." if subject
+        else "Pre-defined format constant."
+    )
+    for row in rows:
+        for cell in row:
+            if not cell:
+                continue
+            add_constant(
+                constants,
+                cell,
+                value="",
+                description=description,
+                category=category,
+                anchor=anchor,
+                source_name=source_name,
+                library=library,
+            )
+
+
+# `NAME or NAME`, `NAME, NAME or NAME` — how an argument's accepted values are
+# written inside an Arguments/Description table when they get no table of their own:
+# "mode | TRANSPARENT or OPAQUE (0 or 1)", "spi# | The SPI port to use, e.g. SPI0,
+# SPI1, SPI2 or SPI3.". Requiring the explicit "or" alternation is what keeps this
+# from harvesting every capitalised word in a description.
+ALTERNATIVES_RE = re.compile(
+    r"\b[A-Z][A-Z0-9_]+\b(?:\s*,\s*\b[A-Z][A-Z0-9_]+\b)*\s+or\s+\b[A-Z][A-Z0-9_]+\b"
+)
+ALTERNATIVE_NAME_RE = re.compile(r"\b[A-Z][A-Z0-9_]+\b")
+
+
+def extract_argument_alternatives(
     table: Tag, category: str, anchor: str, constants: dict[str, dict], source_name: str, library: str
+) -> None:
+    """Constants that exist only as the documented alternatives for an argument.
+
+    `TRANSPARENT` and `OPAQUE` are the clearest case: they are real constants used
+    all over the manuals' example code, but they are never given a name/value row —
+    only `gfx_FillPattern`'s and `txt_Set`'s argument tables mention them, as prose
+    inside the description cell. Without this pass they simply don't exist as far as
+    the extension is concerned.
+    """
+    rows = table_rows(table)
+    for row in rows:
+        if len(row) < 2:
+            continue
+        argument, cell = row[0], row[1]
+        for match in ALTERNATIVES_RE.finditer(cell):
+            for name in ALTERNATIVE_NAME_RE.findall(match.group(0)):
+                add_constant(
+                    constants,
+                    name,
+                    value="",
+                    description=f"Accepted value for the `{argument}` argument: {cell}",
+                    category=category,
+                    anchor=anchor,
+                    source_name=source_name,
+                    library=library,
+                )
+
+
+def extract_table_constants(
+    table: Tag, category: str, function_name: str, anchor: str, constants: dict[str, dict], source_name: str, library: str
 ) -> None:
     headers = [clean_text(th.get_text()) for th in table.find_all("th")]
     headers_lower = [h.lower() for h in headers]
-    if tuple(headers_lower) in SKIP_HEADER_SETS or not headers:
+    if not headers:
+        return
+    if tuple(headers_lower) in SKIP_HEADER_SETS:
+        extract_argument_alternatives(table, category, anchor, constants, source_name, library)
+        return
+
+    rows = table_rows(table)
+    if is_specifier_table(headers_lower, rows):
+        extract_specifier_table(
+            table, rows, category, function_name, anchor, constants, source_name, library
+        )
         return
 
     name_col, value_col, desc_cols = classify_columns(headers_lower)
     if name_col is None:
         return
 
-    rows = table_rows(table)
-
-    # Blank-header 3-column tables are usually [name, value, description]
-    # (e.g. WIDGET_F_FLASH / 0x0400 / "set if..."), but a few document a
-    # family of specifier variants instead (e.g. BIN / BINZ / BINZB for
-    # putnum/print formatting) where every column is itself a valid symbol.
-    # Assigning those to value/description would fabricate nonsense pairs,
-    # so skip tables where later columns look like suffixed variants of the
-    # name column rather than a value/description.
-    if all(h == "" for h in headers_lower) and value_col is not None and rows:
-        sample = rows[0]
-        if len(sample) > max(value_col, name_col) and sample[value_col].startswith(sample[name_col]) and sample[value_col] != sample[name_col]:
-            return
+    # Columns that classify_columns didn't account for. When a table has no
+    # description column at all they become the description, as "Header: cell"
+    # pairs — otherwise every row is dropped, because add_constant discards an entry
+    # with neither a value nor a description. That was silently losing whole
+    # capability tables: `pin_Set`'s pin list is
+    # [Pin Name | Pin No. | OUTPUT | INPUT | ANALOGUE | SOUND], none of which is a
+    # "value" or "description" header, so IO1_PIN..IO11_PIN and IO19_PIN never
+    # existed even though the manual references IO1_PIN 26 times.
+    extra_cols = (
+        [i for i in range(len(headers_lower)) if i != name_col and i != value_col]
+        if not desc_cols
+        else []
+    )
 
     for row in rows:
         if name_col >= len(row):
@@ -174,6 +272,11 @@ def extract_table_constants(
             describe_cell(headers_lower[i], row[i])
             for i in desc_cols
             if i < len(row) and row[i]
+        ]
+        desc_parts += [
+            f"{headers[i]}: {row[i]}"
+            for i in extra_cols
+            if i < len(row) and row[i] and headers[i]
         ]
         add_constant(
             constants,
@@ -242,7 +345,7 @@ def build_database(source: Path, library: str) -> dict[str, dict]:
 
         tables = [tag] if tag.name == "table" else tag.find_all("table")
         for table in tables:
-            extract_table_constants(table, label, anchor, constants, source.name, library)
+            extract_table_constants(table, label, function_name, anchor, constants, source.name, library)
 
         if tag.name == "p":
             extract_prose_ranges(tag, label, anchor, constants, source.name, library)

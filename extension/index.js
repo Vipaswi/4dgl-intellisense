@@ -11,6 +11,7 @@ const { registerCrossLinkSupport } = require("./crossLink");
 const { createDefinitionProvider } = require("./definition");
 const { registerSearchCommands } = require("./searchDocs");
 const { registerDiagnostics } = require("./diagnostics");
+const { registerCodeActions } = require("./codeActions");
 
 async function activate(context) {
   registerLanguageDetection(context);
@@ -21,6 +22,7 @@ async function activate(context) {
   // syntax diagnostics don't need the library, so they start working immediately; the
   // name and argument-count checks do, and are switched on by setSymbolSource below.
   const diagnostics = registerDiagnostics(context);
+  registerCodeActions(context, (uri) => diagnostics.getProblems(uri));
 
   const library = (await ensureLibrarySelected(context)) || "diablo16";
 

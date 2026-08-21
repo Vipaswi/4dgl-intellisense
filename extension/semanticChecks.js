@@ -357,6 +357,11 @@ function check(text, symbols, options) {
               ? " 4DGL is case sensitive."
               : ""),
           ...rangeOf(call.token),
+          fixes: [{ title: `Change to '${suggestion.name}'`, replacement: suggestion.name }],
+          // Offered as a second Quick Fix, for when the suggestion is wrong because
+          // the name is real but undocumented — a symbol from an #inherit target
+          // outside the workspace, say. Cheaper than switching the check off.
+          allowName: call.name,
         });
       }
       continue;
@@ -411,6 +416,8 @@ function check(text, symbols, options) {
           `'${token.text}' is not a known constant. Did you mean '${suggestion.name}'?` +
           (suggestion.name.toLowerCase() === token.text.toLowerCase() ? " 4DGL is case sensitive." : ""),
         ...rangeOf(token),
+        fixes: [{ title: `Change to '${suggestion.name}'`, replacement: suggestion.name }],
+        allowName: token.text,
       });
     }
   }
