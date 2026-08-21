@@ -1,8 +1,8 @@
 # 4DGL Intellisense
 
 IDE support for 4D Systems 4DGL in Visual Studio Code — hover docs, autocomplete, signature
-help, and semantic highlighting for `.4dg`/`.4dgl`/`.lib`/`.inc` files, plus documentation for
-your own functions.
+help, semantic highlighting, and error checking for `.4dg`/`.4dgl`/`.lib`/`.inc` files, plus
+documentation for your own functions.
 
 > This is an independent, community-built extension and is not affiliated with, endorsed by, or
 > maintained by 4D Systems. Function names, constants, and reference text are used with
@@ -115,6 +115,91 @@ its definition (your own functions) or opens its reference page (built-ins):
   `Cmd+Alt+Shift+D` on macOS) — searches the active library plus only the functions actually
   reachable from the open file's `#include`/`#use`/`#inherit` chain.
 
+### Syntax error highlighting
+
+Structural mistakes are underlined as you type and explained on mouse-over (and listed in the
+Problems panel), so a missing `endfunc` doesn't cost you a Workshop4 compile round-trip:
+
+```4dgl
+func drawFrame()
+    while (n < 20)      // 'endif' does not close 'while' — expected 'wend'
+        n++;
+    endif
+endfunc
+```
+
+What's checked:
+
+- **Block structure** — `func`/`endfunc`, `if`/`endif`, `while`/`wend`, `for`/`next`,
+  `switch`/`endswitch`, `repeat`/`until`/`forever`, `#DATA`/`#CONST`/`#END`, `#IF`/`#ENDIF`:
+  unclosed blocks, block terminators that don't match what's open, and terminators with nothing
+  open. Errors point at the line that opened the construct — the line you have to go fix.
+- **Delimiters** — unbalanced or mismatched `(`/`)` and `[`/`]`, and `{`/`}`, which 4DGL never
+  uses.
+- **Literals** — unterminated strings and unterminated `/* */` comments.
+- **Misplaced keywords** — `else` with no `if`, `case` outside a `switch`, `break`/`continue`
+  outside a loop or switch, `return`/`endsub` outside a function body.
+- **Operators and directives** — a bare `=` (4DGL assigns with `:=` and compares with `==`), and
+  pre-processor directives the language reference doesn't document.
+
+Every documented single-line form is understood, so none of these are flagged:
+`if (c) x; else y;`, `while (c) x;`, `for (i:=0; i<n; i++) x;`, `repeat x; until (c);`, an
+`else if (...)` chain closed by one `endif`, and a `#IF`/`#ELSE` pair that opens a block in one
+branch and closes it in the other.
+
+This is a structural check only — it deliberately doesn't resolve names or evaluate pre-processor
+conditions, so it never reports an unknown function or constant. That keeps it quiet on real
+projects, where vendor `#inherit` targets often live outside the workspace. Turn the whole thing
+off with `4dgl.diagnostics.enabled`, or silence just the bare-`=` and unknown-directive warnings
+individually — see [Configuration](#configuration).
+
+### Name and argument checks
+
+Beyond structure, calls are checked against the active library and your own code:
+
+```4dgl
+gfx_Lyne(0, 0, 100, 100, BLUE);   // 'gfx_Lyne' is not a known function. Did you mean 'gfx_Line'?
+gfx_Line(0, 0, 100, 100, BLEU);   // 'BLEU' is not a known constant. Did you mean 'BLUE'?
+Pin_Set(PIN_OUT, PA1);            // Did you mean 'pin_Set'? 4DGL is case sensitive.
+gfx_Circle(63, 63, rad);          // 'gfx_Circle' takes 4 arguments, but 3 were passed.
+```
+
+**Your own functions count as known names, including ones reached through
+`#include`/`#use`/`#inherit`** — the same transitive include chain that hover and autocomplete
+use. A typo of a function defined in an inherited file is caught and suggested just like a
+built-in, and its argument count is checked exactly, from the real `func` declaration. The
+requirement is that the include *resolves*: relative to the including file, or by filename
+somewhere in the workspace. A target outside your project (the unbundled 4D Systems include
+folder, typically) is invisible, and then neither its names nor typos of them are known.
+
+**Names are only reported when they look like a misspelling of something known**, and the report
+names the suggestion. A name that resembles nothing recognised is left alone on purpose — the
+extension can't see symbols from an `#inherit` target outside your project, and the 4D Systems
+manuals document real shortcut functions (`gfx_Clipping`, `gfx_ScreenMode`, `txt_FGcolour`) only
+in prose, with no entry for the extractor to find. Asking "is this defined?" would flag 5.7% of
+the vendor's own example calls; asking "is this a typo?" brings that to 0.7%, and most of what
+remains is a genuine case-sensitivity bug in their examples. Only ALL_CAPS references are checked
+as constants, since a lower-case name can't be told apart from a variable.
+
+**Argument counts** are exact for your own functions, taken from the `func` declaration. For
+built-ins the count comes from the documented signature, with two safeguards: calls using the `@`
+argument-pointer operator are never checked (it supplies a whole argument list from one
+expression), and neither are the ~2% of functions whose documented signature the manuals' own
+example code contradicts — variadic ones written as if fixed (`lookup8`), ones missing an argument
+from their Syntax line (`file_Close`), and ones with a second lvalue form (`pokeW(addr) := value`).
+That list is generated by `npm run verify-arity`, not guessed at.
+
+If your project uses a name the manuals don't document, add it to `4dgl.diagnostics.knownNames`
+and it will never be reported. Each check can also be turned off individually — see
+[Configuration](#configuration).
+
+If a suggestion is ever *wrong* — pointing at a misspelling rather than away from one — that's a
+bug in the extracted data, not a judgement call, and worth
+[reporting](https://github.com/Vipaswi/4dgl-intellisense/issues). A few are already corrected in
+`data/4dgl_name_corrections.json`: several 4D Systems manual sections name a function one way in
+their heading and another in their Syntax line, and at least one constant table contains a plain
+typo.
+
 ### Semantic highlighting
 
 Keywords, pre-processor directives, and built-in functions/constants are semantically
@@ -134,6 +219,13 @@ highlighted according to your color theme, on top of the bundled syntax grammar.
 | Setting | Description |
 |---|---|
 | `4dgl.library` | The internal functions library used for hover docs, completion, and signature help (`diablo16`, `goldelox`, `picaso`, or `pixxi`). Leave unset to be prompted on first use. |
+| `4dgl.diagnostics.enabled` | Highlight syntax errors in the editor. Default `true`. |
+| `4dgl.diagnostics.unknownDirectives` | Warn about a pre-processor directive the 4DGL reference doesn't document. Directives your file redefines with `#constant #alias $#REAL` are recognized. Default `true`. |
+| `4dgl.diagnostics.assignmentOperator` | Warn about a bare `=`, which is not a 4DGL operator. Default `true`. |
+| `4dgl.diagnostics.unknownFunctions` | Warn when a call looks like a misspelling of a known function. Default `true`. |
+| `4dgl.diagnostics.unknownConstants` | Warn when an ALL_CAPS reference looks like a misspelling of a known constant. Default `true`. |
+| `4dgl.diagnostics.argumentCount` | Warn when a call passes the wrong number of arguments. Default `true`. |
+| `4dgl.diagnostics.knownNames` | Extra names to treat as defined, so they are never reported as unknown. Default `[]`. |
 
 ### Keyboard shortcuts
 
@@ -155,6 +247,9 @@ value at runtime.
   functions across libraries.
 - `#include`/`#use`/`#inherit` targets must live within your project directory to resolve; the
   full 4D Systems include folder isn't bundled.
+- Diagnostics are not the Workshop4 compiler, in either direction. There are no type checks, and
+  an unrecognised name is only questioned when it resembles a known one, so a clean Problems panel
+  doesn't guarantee a clean build.
 
 ## Licensing &amp; attribution
 

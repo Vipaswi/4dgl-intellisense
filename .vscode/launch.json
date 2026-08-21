@@ -1,0 +1,28 @@
+{
+  // Launches a second VS Code window — the "Extension Development Host" — with this
+  // folder loaded as an extension. `extensionHost` is built into VS Code, so F5 needs
+  // no debugger installed; without this file, F5 instead tries to debug whatever file
+  // is in the active editor and offers to install a debugger for it.
+  //
+  // There is no build step in this repo, so nothing needs compiling first. After
+  // editing anything under extension/, reload the dev-host window (Ctrl+R) to pick the
+  // change up — or use "Developer: Restart Extension Host" from its command palette.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Extension",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}"]
+    },
+    {
+      // Same, but with every other extension disabled — including any published build
+      // of this one, which otherwise shares the `Vases.4dgl-intellisense` id with the
+      // copy being developed. Use this to rule out interference.
+      "name": "Run Extension (no other extensions)",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}", "--disable-extensions"]
+    }
+  ]
+}

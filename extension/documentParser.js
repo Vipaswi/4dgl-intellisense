@@ -132,48 +132,69 @@ function parseIncludes(text) {
 }
 
 /**
+ * Split a declarator list on its top-level commas, so a comma inside an array
+ * initialiser doesn't end a declarator.
+ *
+ *   "a, b := 0, c"                -> ["a", " b := 0", " c"]
+ *   "arrayName[3] := [1, 2, 3]"   -> ["arrayName[3] := [1, 2, 3]"]
+ */
+function splitDeclarators(list) {
+  const parts = [];
+  let depth = 0;
+  let start = 0;
+  for (let i = 0; i < list.length; i++) {
+    const ch = list[i];
+    if (ch === "[" || ch === "(") depth++;
+    else if (ch === "]" || ch === ")") depth--;
+    else if (ch === "," && depth === 0) {
+      parts.push(list.slice(start, i));
+      start = i + 1;
+    }
+  }
+  parts.push(list.slice(start));
+  return parts;
+}
+
+/**
  * Parse variable declarations from an arbitrary text snippet.
  * Used for both global-scope text and function-body text.
  *
  *   var x, y := 0, z;
- *   word myWord;
+ *   var private hitcounter := 100;
+ *   word myWord, other;
  *   byte myByte;
  *   long myLong;
  *   string myStr[20];
+ *
+ * All five type keywords take a comma-separated declarator list and an optional
+ * `private` modifier. They used to be handled by two different regexes, one of which
+ * captured only the first declarator on a line, so `word a, b;` lost `b` and
+ * `var private x;` was missed entirely — both of which cost autocomplete a symbol and
+ * risked a diagnostic on a name that really is declared.
  */
 function parseVariablesFromText(text) {
   const variables = {};
 
-  const varRe = /^\s*var\s+(.+?)(?:;|$)/gm;
+  const declRe = /^[ \t]*(var|word|byte|long|string)\s+(?:private\s+)?(.+?)(?:;|$)/gm;
   let m;
-  while ((m = varRe.exec(text)) !== null) {
-    for (const decl of m[1].split(",")) {
-      const withoutInit = decl.trim().split(/\s*:=/)[0].trim();
+  while ((m = declRe.exec(text)) !== null) {
+    const type = m[1];
+    for (const declarator of splitDeclarators(m[2])) {
+      const withoutInit = declarator.split(":=")[0].trim();
       const { name: bare, pointer, address } = stripSigils(withoutInit);
-      const arrayMatch = bare.match(/^([A-Za-z_][A-Za-z0-9_]*)\s*\[\s*(\d+)\s*\]$/);
-      if (arrayMatch) {
-        const entry = { type: "var", arraySize: parseInt(arrayMatch[2], 10), userDefined: true };
-        if (pointer) entry.pointer = true;
-        if (address) entry.address = true;
-        variables[arrayMatch[1]] = entry;
-      } else if (/^[A-Za-z_][A-Za-z0-9_]*$/.test(bare)) {
-        const entry = { type: "var", userDefined: true };
-        if (pointer) entry.pointer = true;
-        if (address) entry.address = true;
-        variables[bare] = entry;
-      }
-    }
-  }
 
-  const typedRe = /^\s*(word|byte|long|string)\s+([*&]\s*)?([A-Za-z_][A-Za-z0-9_]*)(?:\s*\[\s*(\d+)\s*\])?\s*(?::=\s*.*?)?\s*;?/gm;
-  while ((m = typedRe.exec(text)) !== null) {
-    const entry = { type: m[1], userDefined: true };
-    if (m[2]) {
-      if (m[2].includes("*")) entry.pointer = true;
-      if (m[2].includes("&")) entry.address = true;
+      // Leading identifier plus an optional array size. Anything after it is ignored
+      // rather than disqualifying the declarator, so a `#DATA` body line such as
+      // `word values 0x0123, 0x4567` still contributes `values`.
+      const declared = /^([A-Za-z_][A-Za-z0-9_]*)(?:\s*\[\s*(\d+)\s*\])?/.exec(bare);
+      if (!declared) continue;
+
+      const entry = { type, userDefined: true };
+      if (declared[2] !== undefined) entry.arraySize = parseInt(declared[2], 10);
+      if (pointer) entry.pointer = true;
+      if (address) entry.address = true;
+      variables[declared[1]] = entry;
     }
-    if (m[4] !== undefined) entry.arraySize = parseInt(m[4], 10);
-    variables[m[3]] = entry;
   }
 
   return variables;

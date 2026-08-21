@@ -1,0 +1,12 @@
+#inherit "lib/helpers.inc"
+
+func main()
+    helper_Reset();                 // clean: defined in the inherited file
+    helper_DrawFrame(10, 20);       // clean: correct arity from that file
+
+    helper_DrawFram(10, 20);        // NAME  typo of an inherited function
+    helper_DrawFrame(10);           // ARGS  inherited function, wrong arity
+
+    unrelated_ThingFromNowhere();   // clean: resembles nothing known
+    repeat forever
+endfunc

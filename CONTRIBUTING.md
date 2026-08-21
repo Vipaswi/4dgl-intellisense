@@ -6,15 +6,24 @@
 > source.
 
 Phase 1 intentionally avoids a parser or language server. Built-in function docs are extracted
-into JSON ahead of time and used directly for hover documentation, function autocomplete, and
-signature help. See [CLAUDE.md](CLAUDE.md) for the full architecture writeup (data pipeline,
+into JSON ahead of time and used directly for hover documentation, function autocomplete,
+signature help, and diagnostics. See [CLAUDE.md](CLAUDE.md) for the full architecture writeup (data pipeline,
 provider wiring, known quirks) if you're changing extension code.
 
 ## Running locally
 
-Open this folder in VS Code and press `F5` to start an Extension Development Host. The provider
-code is plain JavaScript, so there's no build step before local testing. Open a `.4dg` or
-`.4dgl` file and try:
+Open **this folder** in VS Code and press `F5` to start an Extension Development Host — a second
+window with the extension loaded from source. The provider code is plain JavaScript, so there's
+no build step before local testing. After editing anything in `extension/`, reload that second
+window (`Ctrl+R`, or "Developer: Restart Extension Host" from its command palette) to pick the
+change up.
+
+`F5` relies on `.vscode/launch.json`, which is committed for this reason. If it's missing, `F5`
+falls back to trying to debug whatever file is in the active editor and offers to install a
+debugger for it — that prompt means the launch config isn't being found, not that you need a
+debugger. Check that the workspace root really is this folder.
+
+In the dev-host window, open a `.4dg` or `.4dgl` file and try:
 
 ```4dgl
 gfx_Line(10, 10, 100, 100, BLUE);
@@ -44,7 +53,12 @@ Then regenerate everything:
 python tools/extract_all_libraries.py   # Resources/<library>_internal_functions.txt -> data/4dgl_{functions,constants}_<library>.json, for all 4 libraries
 python tools/extract_4dgl_syntax.py     # Resources/directives_and_syntax.txt        -> data/4dgl_keywords.json
 python tools/extract_4dgl_colors.py     # Resources/colors.pdf                       -> data/4dgl_colors.json
+node tools/verify_arity.js              # every Resources/*.txt                     -> data/4dgl_arity_unverified.json
 ```
+
+Run `verify_arity.js` last: it reads the function databases the Python extractors produce, and
+records which built-ins have a documented argument count the manuals' own example code contradicts
+so the argument-count diagnostic can skip them. `--report` prints the disagreements.
 
 `extract_4dgl_docs.py`/`extract_4dgl_constants.py` can also be run against a single library via
 `--source Resources/<library>_internal_functions.txt` (`--library`/`--output` are inferred from
@@ -66,7 +80,20 @@ quick sanity check (`git diff --stat data/`, spot-check a few entries).
 
 ## Testing changes
 
-There's no automated test suite. To verify extension changes:
+Run the test suite first:
+
+```sh
+npm test
+```
+
+It needs no dependencies and no build step — unit cases for the syntax validator and the name/arity
+checks, the VS Code layer exercised against a stub `vscode` module, an annotated fixture, and a
+sweep of every check over the ~3,270 4DGL code samples in the vendor manuals under `Resources/`.
+That last one is the important one: anything the checks report on 4D Systems' own code is a
+suspected false positive, and the thresholds in `test/vendorCorpus.test.js` are there to make a new
+one fail the build.
+
+Then verify interactively:
 
 1. Press `F5` to launch an Extension Development Host.
 2. Open a `.4dgl`/`.4dg` test file and check hover, `Ctrl+Space` completion, and syntax
@@ -74,9 +101,11 @@ There's no automated test suite. To verify extension changes:
    (`private`, `#DATA`, `wend`, `forever`, `endswitch`, `gosub`, `sizeof`, `#MODE`, `#STACK`,
    `#inherit`).
 
-To sanity-check just the data layer without VS Code, `node -e` and `require()` the extension
-modules directly — most of `extension/` only depends on `fs`/`path`, not `vscode`, so it runs
-under plain Node.
+To poke at a single module without VS Code, `node -e` and `require()` it directly — but note that
+`require("vscode")` never resolves outside the extension host (it isn't an npm package; the host
+injects it), so only `syntaxValidator.js`, `semanticChecks.js`, `documentParser.js`,
+`docDatabase.js` and `keywordDatabase.js` load standalone. The rest need the stub in
+`test/_vscodeStub.js`.
 
 ## Packaging
 

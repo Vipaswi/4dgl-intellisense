@@ -1,20 +1,71 @@
 const fs = require("fs");
 const path = require("path");
 
+function readJson(filePath, fallback) {
+  try {
+    return fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, "utf8")) : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+/**
+ * Apply data/4dgl_name_corrections.json to a freshly-loaded table.
+ *
+ * Some manual sections name a function one way in their heading and another way in
+ * their Syntax line (`mem_free` vs `mem_Free`), some headings aren't identifiers at
+ * all (`img_ FileSize`), and at least one constant table contains a plain typo
+ * (`SPI_SPEER5` between `SPI_SPEED4` and `SPI_SPEED6`). None of that is fixable in an
+ * extractor — the source document is what's wrong — so it's corrected here, at load,
+ * which also means regenerating the databases can't silently undo it.
+ *
+ * Every operation is conditional, so one shared corrections file serves all four
+ * libraries: a rename does nothing where the key doesn't exist, and an addition never
+ * overwrites a real entry.
+ */
+function applyCorrections(table, corrections, kind) {
+  const rules = (corrections && corrections[kind]) || {};
+
+  for (const { from, to } of rules.rename || []) {
+    if (!(from in table) || to in table) continue;
+    table[to] = table[from];
+    delete table[from];
+  }
+  for (const { name, of: source } of rules.alias || []) {
+    if (name in table || !(source in table)) continue;
+    table[name] = table[source];
+  }
+  for (const { name } of rules.drop || []) {
+    delete table[name];
+  }
+  for (const { name, value, description } of rules.add || []) {
+    if (name in table) continue;
+    table[name] = { value, description, source: { confidence: "corrections" } };
+  }
+
+  return table;
+}
+
+function loadCorrections(context) {
+  return readJson(path.join(context.extensionPath, "data", "4dgl_name_corrections.json"), {});
+}
+
 function loadFunctionDatabase(context, library) {
-  const jsonPath = path.join(context.extensionPath, "data", `4dgl_functions_${library}.json`);
-  const raw = fs.existsSync(jsonPath) ? fs.readFileSync(jsonPath, "utf8") : "{}";
-  return JSON.parse(raw);
+  const functions = readJson(
+    path.join(context.extensionPath, "data", `4dgl_functions_${library}.json`),
+    {}
+  );
+  return applyCorrections(functions, loadCorrections(context), "functions");
 }
 
 function loadConstantDatabase(context, library) {
-  const jsonPath = path.join(context.extensionPath, "data", `4dgl_constants_${library}.json`);
-  const constants = fs.existsSync(jsonPath) ? JSON.parse(fs.readFileSync(jsonPath, "utf8")) : {};
+  const constants = readJson(
+    path.join(context.extensionPath, "data", `4dgl_constants_${library}.json`),
+    {}
+  );
+  const colors = readJson(path.join(context.extensionPath, "data", "4dgl_colors.json"), {});
 
-  const colorsPath = path.join(context.extensionPath, "data", "4dgl_colors.json");
-  const colors = fs.existsSync(colorsPath) ? JSON.parse(fs.readFileSync(colorsPath, "utf8")) : {};
-
-  return { ...constants, ...colors };
+  return applyCorrections({ ...constants, ...colors }, loadCorrections(context), "constants");
 }
 
 // Javadoc-style explicit link tag: {@link #methodName() Label text}. Only text wrapped this

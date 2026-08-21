@@ -5,5 +5,6 @@ Resources/**
 UserTest/**
 intellisense_versions/**
 tools/**
+test/**
 **/__pycache__/**
 *.vsix

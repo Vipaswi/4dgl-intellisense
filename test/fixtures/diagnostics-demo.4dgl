@@ -1,0 +1,167 @@
+// ── Every line marked ERROR/WARN below should squiggle; nothing else should. ──
+// Open this in the Extension Development Host (F5) and check the Problems panel.
+
+#platform "GOLDELOX"
+#frobnicate "nope"              // WARN  unknown pre-processor directive
+
+#constant #ifdef $#IF EXISTS    // aliasing is recognised...
+#ifdef SOMETHING                // ...so this opens a block
+#ENDIF                          // ...and this closes it — no error
+
+#DATA
+    word values  0x0123, 0x4567
+    byte hexval  "0123456789ABCDEF"
+#END
+
+var counter, mode;
+
+// ── Clean: every documented block form ───────────────────────────────────────
+func allTheCleanForms(var n, var *ptr, var &addr)
+    var i;
+
+    if (n > 0) i := 1;                       // single-line if
+    if (n > 0) i := 1; else i := 2;          // single-line if-else
+    if (n > 0) i := 1; endif                 // whole block on one line
+
+    if (n == 1)
+        i := 1;
+    else if (n == 2)                         // else-if chain: ONE endif closes it
+        i := 2;
+    else if (n == 3)
+        i := 3;
+    else
+        i := 0;
+    endif
+
+    while (i < 10) i++;                      // single-line while
+    while (i < 20)
+        i++;
+        if (i == 15) break;
+    wend
+
+    for (i := 0; i < 5; i++) doThing();      // single-line for
+    for (i := 0;
+         i < 5;
+         i++)                                // for header split over lines
+        doThing();
+    next
+
+    repeat i++; until (i >= 30);
+    repeat
+        i--;
+        if (i == 0) break;
+    forever
+
+    switch (n)
+        case 1:
+        case 2:
+            i := 1;
+            break;
+        default:
+            break;
+    endswitch
+
+    switch
+        case (n < 0)
+            i := -1;
+            break;
+        default:
+            break;
+    endswitch
+
+    i := (n > 5) ? n : 5;                    // ternary — the ':' is not a label
+    print([STR] hexval, "it's fine", '4');   // format specifier, apostrophes, char literal
+    i += 1; i -= 1; i *= 2; i /= 2; i %= 3; i &= 1; i |= 1; i ^= 1;
+    if (i == 1 && i != 2 && i <= 3 && i >= 0) i := 0;
+
+    goto default;                            // 'default' is a legal label name
+default:
+    gosub mysub;
+    return i;
+
+mysub:
+    print("in the subroutine");
+endsub;
+endfunc
+
+// ── Now the errors. Each is in its own func so they can't interact: a broken
+//    block next to another one changes which reading the recovery picks.
+//    Diagnostics anchor on the line that OPENED the thing, not the line you
+//    noticed it on — that's the line you have to go fix.
+func e1_unclosedIf()
+    var i;
+    if (i > 0)                               // ERROR unclosed 'if' — no 'endif'
+        i := 1;
+endfunc
+
+func e2_wrongTerminator()
+    var i;
+    while (i < 5)
+        i++;
+    endif                                    // ERROR 'endif' does not close 'while'
+endfunc
+
+func e3_brackets()
+    var i;
+    gfx_Line(1, 2, 3;                        // ERROR unclosed '('
+    gfx_Line(1, 2));                         // ERROR unmatched ')'
+    i := values[0);                          // ERROR mismatched bracket
+endfunc
+
+func e4_operatorsAndConditions()
+    var i;
+    i = 1;                                   // WARN  '=' is not a 4DGL operator
+    if i > 0                                 // ERROR missing parenthesised condition
+        i := 2;
+    endif
+    print("unterminated);                    // ERROR unterminated string
+endfunc
+
+func e5_braceHabits()                        // (the '{' below is the C reflex)
+    var i;
+    if (i > 0) {                             // ERROR unexpected '{'
+        i := 1;
+    }                                        // ERROR unexpected '}'
+    endif
+endfunc
+
+func e6_orphans()
+    var i;
+    switch (i)
+        case 1:
+            break;
+    endswitch
+    break;                                   // ERROR 'break' outside a loop/switch
+endfunc
+
+else                                         // ERROR 'else' with no 'if'
+endswitch                                    // ERROR 'endswitch' with nothing open
+
+func e7_missingItsEnd()                      // ERROR no 'endfunc' before the next func
+    var i;
+    i := 1;
+func e8_theNextOne()
+    var i;
+    i := 2;
+endfunc
+
+// ── Name and argument-count checks ──────────────────────────────────────────
+// These need the active library's databases, so they only appear in the editor,
+// not in a bare syntaxValidator run.
+func e9_names()
+    var i;
+    gfx_Lyne(0, 0, 10, 10, BLUE);            // NAME  misspelled function
+    gfx_Line(0, 0, 10, 10, BLEU);            // NAME  misspelled constant
+    Gfx_Circle(5, 5, 3, RED);                // NAME  wrong case
+    gfx_Line(0, 0, 10);                      // ARGS  too few
+    gfx_Circle(1, 2, 3, RED, 9);             // ARGS  too many
+
+    // Clean: resembles nothing known, so it is left alone. It may come from an
+    // #inherit target outside the workspace, or be one of the shortcut functions
+    // the manuals only mention in prose.
+    gfx_Clipping(ON);
+    gfx_ScreenMode(LANDSCAPE);
+    i := TOUCH_STATUS;
+    print("count is ", i, "\n");             // variadic: never arity-checked
+    gfx_Line(@ params);                       // @ pointer: never arity-checked
+endfunc
