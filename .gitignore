@@ -1,3 +1,9 @@
 __pycache__/
-.vscode/
+node_modules/
+# Personal editor state stays out, but launch.json is the documented F5 dev
+# workflow (CONTRIBUTING.md) and has to be in the repo for it to work on a clone.
+# Note the `.vscode/*` glob: with `.vscode/` git never descends into the folder, so
+# a negation for a file inside it would be ignored.
+.vscode/*
+!.vscode/launch.json
 *.vsix

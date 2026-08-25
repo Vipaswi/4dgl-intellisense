@@ -1,0 +1,124 @@
+{
+  "_readme": [
+    "The ONE hand-maintained file under data/. Everything else here is generated and must",
+    "not be edited (see CLAUDE.md, 'Data pipeline'); this file exists because some of the",
+    "source manuals are themselves wrong, and no extractor can produce a correct name from",
+    "an incorrect document.",
+    "",
+    "Applied at load time by extension/docDatabase.js, so regenerating the databases never",
+    "loses these. Renames and aliases are no-ops for a library that doesn't have the key,",
+    "so one shared file covers all four.",
+    "",
+    "Every entry needs a 'reason' citing the evidence. Run `node tools/audit_names.js` to",
+    "produce that evidence: it reports keys that aren't identifiers, key-vs-signature",
+    "disagreements weighed against how often each spelling appears in the manuals' own",
+    "example code (4DGL is case sensitive, so the spelling the vendor compiles is the real",
+    "one), and constants that are single-character outliers in an otherwise regular family.",
+    "Do not add an entry this tool can't justify."
+  ],
+  "functions": {
+    "rename": [
+      {
+        "from": "mem_free",
+        "to": "mem_Free",
+        "reason": "Key came from the section heading, which is lower-case. The section's own Syntax line reads mem_Free(allocation), and the manuals' example code uses mem_Free 10 times (diablo16) / 6 times (picaso) and mem_free never."
+      },
+      {
+        "from": "mem_alloc",
+        "to": "mem_Alloc",
+        "reason": "Same as mem_free: heading is lower-case, Syntax line says mem_Alloc(size), example code uses mem_Alloc 3 times and mem_alloc never."
+      },
+      {
+        "from": "img_ FileSize",
+        "to": "img_FileSize",
+        "reason": "The heading has a stray space, so the key is not a callable identifier at all. The Syntax line reads img_FileSize(handle, index, &HiWord, &LoWord)."
+      },
+      {
+        "from": "gfx_Dot()",
+        "to": "gfx_Dot",
+        "reason": "The heading includes empty parentheses, so the key is not an identifier. The Syntax line reads gfx_Dot()."
+      },
+      {
+        "from": "com_Mode(Databits, parity, Stopbits, comport)",
+        "to": "com_Mode",
+        "reason": "The heading is the whole signature, so the key is not an identifier. The Syntax line names com_Mode."
+      }
+    ],
+    "alias": [
+      {
+        "name": "sys_Getdate",
+        "of": "sys_GetDate",
+        "reason": "Heading says sys_GetDate, Syntax line says sys_Getdate, and each spelling appears exactly once in the example code. Genuinely ambiguous, so both resolve rather than one being reported as a misspelling of the other."
+      },
+      {
+        "name": "sys_Pmmc",
+        "of": "sys_PmmC",
+        "reason": "Heading says sys_PmmC, Syntax line says sys_Pmmc, one example use each. Ambiguous, so both resolve."
+      },
+      {
+        "name": "pin_Hi",
+        "of": "pin_HI",
+        "reason": "Goldelox: heading says pin_HI, Syntax line says pin_Hi, one example use each. Ambiguous, so both resolve."
+      }
+    ],
+    "drop": [
+      {
+        "name": "16-bit Registers Memory Map",
+        "reason": "A Goldelox document heading, not a function. Nothing can call it, and as a suggestion candidate it is noise."
+      },
+      {
+        "name": "8-bit Registers Memory Map",
+        "reason": "As above."
+      },
+      {
+        "name": "Display Modules",
+        "reason": "As above."
+      },
+      {
+        "name": "Programming Tools",
+        "reason": "As above."
+      }
+    ]
+  },
+  "constants": {
+    "rename": [
+      {
+        "from": "SPI_SPEER5",
+        "to": "SPI_SPEED5",
+        "reason": "A typo in the vendor's SPI speed table, which reads '... SPI_SPEED4 4 437.5 khz / SPI_SPEER5 5 729.166 khz / SPI_SPEED6 6 1.09375 mhz ...'. The SPI_SPEED* family has 15 other members and SPI_SPEER5 appears nowhere in any example."
+      }
+    ],
+    "add": [
+      {
+        "name": "TRANSPARENT",
+        "value": "0",
+        "description": "Text/fill mode in which background pixels are not drawn. The counterpart of OPAQUE.",
+        "reason": "Referenced by all four manuals (6/5/2/2 uses) but only diablo16 states it in a form the extractor can read - the 'mode | TRANSPARENT or OPAQUE (0 or 1)' cell in gfx_FillPattern's argument table. This fills it in for the other three, where it is used in example code (txt_Opacity(TRANSPARENT)) but never documented. No-op for diablo16, which gets the real manual description."
+      },
+      {
+        "name": "OPAQUE",
+        "value": "1",
+        "description": "Text/fill mode in which background pixels are drawn. The counterpart of TRANSPARENT.",
+        "reason": "Same as TRANSPARENT: 16/5/8/9 uses across the four manuals, extractable only from diablo16."
+      },
+      {
+        "name": "HEX2ZB",
+        "value": "",
+        "description": "Pre-defined putnum/print format constant: 2-digit hexadecimal, zero-blanked.",
+        "reason": "The Goldelox putnum specifier grid prints HEX1ZB twice, once where HEX2ZB belongs, so extraction cannot see it. diablo16, picaso and pixxi all have it, and Goldelox's own com_Init example uses [HEX2ZB]. No-op for the three libraries that already have it."
+      }
+    ],
+    "alias": [
+      {
+        "name": "DARKGRAY",
+        "of": "DARKGREY",
+        "reason": "colors.pdf spells it DARKGREY, but every manual's example code writes DARKGRAY (2 uses each) and DARKGREY appears in none of them. X11 defines both spellings, so rather than pick one, both resolve."
+      },
+      {
+        "name": "DARKKHAKI",
+        "of": "DARKKHARKI",
+        "reason": "colors.pdf spells it DARKKHARKI, which appears in no manual at all; the diablo16 and pixxi examples use DARKKHAKI, which is also the standard X11 name. Aliased rather than renamed because the .fnc file defines whatever it defines, and breaking the extracted spelling would be worse than accepting both."
+      }
+    ]
+  }
+}

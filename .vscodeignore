@@ -5,5 +5,8 @@ Resources/**
 UserTest/**
 intellisense_versions/**
 tools/**
+test/**
+CLAUDE.md
+CONTRIBUTING.md
 **/__pycache__/**
 *.vsix

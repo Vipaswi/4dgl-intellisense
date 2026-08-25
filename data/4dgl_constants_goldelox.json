@@ -21,6 +21,17 @@
     },
     "value": "2"
   },
+  "APPEND": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0x0000 Redirection: Output is directed to the same stream that was previously assigned. Output is appended to user array if previous redirection was to an array.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
   "BACKGROUND_COLOUR": {
     "category": "Graphics Functions / gfx_Set",
     "description": "Set the screen background colour",
@@ -31,6 +42,787 @@
       "document": "goldelox_internal_functions.txt"
     },
     "value": "Colour, 0 - 65535"
+  },
+  "BAUD_110": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 27272 Error %: 0.00% Actual Baud Rate: 110",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_115200": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 25 Error %: 0.16% Actual Baud Rate: 115384",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_1200": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 2499 Error %: 0.00% Actual Baud Rate: 1200",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_128000": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 12 Error %: 1.90% Actual Baud Rate: 130434",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_14400": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 207 Error %: 0.16% Actual Baud Rate: 14423",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_19200": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 155 Error %: 0.16% Actual Baud Rate: 19230",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_2400": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 1249 Error %: 0.00% Actual Baud Rate: 2400",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_256000": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 11 Error %: -2.34% Actual Baud Rate: 250000",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_300": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 9999 Error %: 0.00% Actual Baud Rate: 300",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_300000": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 10 Error %: 0.00% Actual Baud Rate: 300000",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_31250": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 95 Error %: 0.00% Actual Baud Rate: 31250",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_375000": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 8 Error %: 0.00% Actual Baud Rate: 375000",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_38400": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 77 Error %: 0.16% Actual Baud Rate: 38461",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_4800": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 624 Error %: 0.00% Actual Baud Rate: 4800",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_500000": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 6 Error %: 0.00% Actual Baud Rate: 500000",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_56000": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 53 Error %: -0.79% Actual Baud Rate: 55555",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_57600": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 51 Error %: 0.16% Actual Baud Rate: 57692",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_600": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 4999 Error %: 0.00% Actual Baud Rate: 600",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_600000": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 4 Error %: 0.00% Actual Baud Rate: 600000",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BAUD_9600": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 312 Error %: -0.16% Actual Baud Rate: 9584",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN10ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN11ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN12ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN13ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN14ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN15ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN16ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN6ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN7ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN8ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BIN9ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BINZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "BINZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
   },
   "CLIPPING": {
     "category": "Graphics Functions / gfx_Set",
@@ -142,6 +934,17 @@
     },
     "value": "0 or COLOUR161 or COLOUR8"
   },
+  "COM0": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xFF04 Redirection: Output is redirected to the COM (serial) port.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
   "CONTRAST": {
     "category": "Graphics Functions / gfx_Set",
     "description": "Set contrast value, 0 = display off, 1-16 = contrast level ( only available on GOLDELOX Engineering samples, must be implemented in users code for GOLDELOX-GFX2 with external initialisation tables, refer to individual display driver data sheets)",
@@ -152,6 +955,204 @@
       "document": "goldelox_internal_functions.txt"
     },
     "value": "0 or OFF1 to 16 for levels"
+  },
+  "DEC": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DEC5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DECZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "DECZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
   },
   "FONT_HEIGHT": {
     "category": "System Registers Memory / 8-bit Registers Memory Map",
@@ -472,6 +1473,138 @@
     },
     "value": ""
   },
+  "HEX": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEX4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEXZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "HEXZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
   "IMAGE_DELAY": {
     "category": "System Registers Memory / 8-bit Registers Memory Map",
     "description": "frame delay (if animation)",
@@ -593,6 +1726,17 @@
     },
     "value": "0 bits for pixels ON1 bits for pixels OFF"
   },
+  "MDA": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xFF10 Redirection: Output is directed to the SD/SDHC or FLASH media.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
   "MEDIA_ADDR_HI": {
     "category": "System Registers Memory / 16-bit Registers Memory Map",
     "description": "media byte address HI",
@@ -621,6 +1765,17 @@
     "library": "goldelox",
     "source": {
       "anchor": "16-bit-registers-memory-map",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "MIDI": {
+    "category": "Serial (UART) Communication Functions / setbaud",
+    "description": "Rate Divisor: 95 Error %: 0.00% Actual Baud Rate: 31250",
+    "library": "goldelox",
+    "source": {
+      "anchor": "setbaud",
       "confidence": "documented",
       "document": "goldelox_internal_functions.txt"
     },
@@ -901,6 +2056,17 @@
     },
     "value": ""
   },
+  "TEXT": {
+    "category": "Text and String Functions / to",
+    "description": "Constant: 0xFF08 Redirection: Output is directed to the screen (default).",
+    "library": "goldelox",
+    "source": {
+      "anchor": "to",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
   "TEXT_ATTRIBUTES": {
     "category": "Text and String Functions / txt_Set",
     "description": "Control of functions 9,10,11,12 grouped (bits can be combined by using logical 'or' of bits) nb:- bits 0-3 and 8-15 are reserved",
@@ -1175,6 +2341,204 @@
       "document": "goldelox_internal_functions.txt"
     },
     "value": "n/a"
+  },
+  "UDEC": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC1ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC2ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC3ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC4ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5Z": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDEC5ZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDECZ": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
+  },
+  "UDECZB": {
+    "category": "Text and String Functions / putnum",
+    "description": "Pre-defined format constant documented under putnum.",
+    "library": "goldelox",
+    "source": {
+      "anchor": "putnum",
+      "confidence": "documented",
+      "document": "goldelox_internal_functions.txt"
+    },
+    "value": ""
   },
   "USR_MEM": {
     "category": "System Registers Memory / 16-bit Registers Memory Map",

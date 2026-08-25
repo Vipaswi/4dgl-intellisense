@@ -1,0 +1,40 @@
+{
+  "diablo16": [
+    "I2C2_AckPoll",
+    "NP_Write",
+    "SPI1_Init",
+    "file_Close",
+    "flash_LoadSPIflash",
+    "flash_Run",
+    "gfx_RoundPanel",
+    "img_FileRead",
+    "img_FileSeek",
+    "img_FileSize",
+    "img_FileTell",
+    "lookup8",
+    "pokeW",
+    "putstr",
+    "spi_Init",
+    "spiflash_GetW"
+  ],
+  "goldelox": [
+    "lookup16",
+    "lookup8"
+  ],
+  "picaso": [
+    "disp_ReadWord",
+    "file_Close",
+    "lookup8",
+    "spi_Init"
+  ],
+  "pixxi": [
+    "file_CheckUpdate",
+    "file_Exec",
+    "gfx_Button",
+    "gfx_Gradient",
+    "gfx_Panel2",
+    "img_FileRead",
+    "img_FileSeek",
+    "lookup16"
+  ]
+}
